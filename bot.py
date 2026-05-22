@@ -22,8 +22,234 @@ Tu conocimiento está basado EXCLUSIVAMENTE en la información técnica contenid
 
 REGLA FUNDAMENTAL: Respondés ÚNICAMENTE con información que esté explícitamente contenida en esta base de conocimiento. NO uses conocimiento externo de tu entrenamiento bajo ninguna circunstancia. Si la consulta no está cubierta por la información de esta base, respondé exactamente: "No tengo información suficiente en mi base para responder esto con certeza."
 
+REGLA DE COINCIDENCIA EXACTA: Si el estadio, momento de aplicación, o condición específica mencionada por el usuario NO coincide exactamente con lo que figura en la base, SIEMPRE aclararlo con un ⚠️ antes de responder. Ejemplo: "⚠️ Tu consulta es para Z1.2 pero mi base solo tiene información desde Z2.1. Te muestro lo más cercano disponible:"
+
 Respondés en español, de forma clara, técnica y organizada. Usás tablas cuando es útil.
 Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
+
+=== FENOLOGÍA DE CULTIVOS ===
+
+--- FENOLOGÍA TRIGO Y CEBADA — Escala Zadoks (Zadoks et al., 1974) ---
+Fuente: INTA Pergamino / Fernanda G. González (CONICET-EEA INTA Pergamino)
+
+ESTADO 0 — GERMINACIÓN:
+Z00: Semilla seca
+Z01: Inicio absorción de agua
+Z05: Extrusión de la radícula (germinación)
+Z09: Hoja en punta del coleoptile
+
+ESTADO 1 — CRECIMIENTO DE PLÁNTULA (nº hojas expandidas):
+Z10: Primera hoja a través del coleoptile
+Z11: Primera hoja expandida — 1 hoja
+Z12: Dos hojas expandidas
+Z13: Tres hojas expandidas
+Z14: Cuatro hojas expandidas
+Z15: Cinco hojas expandidas
+Z19: Nueve o más hojas expandidas
+⚠️ Una hoja está expandida cuando se observa la lígula en la base de la lámina
+
+ESTADO 2 — MACOLLAJE (nº macollos):
+Z21: Primer macollo
+Z22: Dos macollos
+Z23: Tres macollos
+Z29: Nueve o más macollos
+⚠️ El primer macollo aparece generalmente junto con la cuarta hoja
+
+ESTADO 3 — ELONGACIÓN DE TALLO (encañazón):
+Z30: Falso tallo erecto / Espiga a 1cm
+Z31: Primer nudo detectable
+Z32: Segundo nudo detectable
+Z33: Tercer nudo detectable
+Z37: Punta de hoja bandera visible
+Z39: Hoja bandera expandida
+
+ESTADO 4 — ESTADO DE BOTA:
+Z41: Vaina de hoja bandera comenzando a ensancharse
+Z45: Vainas notablemente ensanchadas
+Z47: Vaina de hoja bandera abriéndose
+Z49: Primeras aristas visibles por encima de la vaina
+⚠️ Estado muy sensible a estrés hídrico y heladas
+
+ESTADO 5 — ESPIGAZÓN:
+Z51: Primeras espiguillas visibles
+Z53: 1/4 espiga emergida
+Z55: 1/2 espiga emergida
+Z57: 3/4 espiga emergida
+Z59: Emergencia completa
+
+ESTADO 6 — ANTESIS:
+Z61: Comienzo de antesis
+Z65: 50% antesis
+Z69: Antesis completa
+
+ESTADO 7 — DESARROLLO LECHOSO DEL GRANO:
+Z71: Grano acuoso (3mm, líquido claro al apretar)
+Z73: Grano lechoso temprano (líquido acuoso blanco)
+Z77: Grano lechoso tardío (contenido húmedo y pegajoso)
+
+ESTADO 8 — DESARROLLO PASTOSO DEL GRANO:
+Z85: Grano pastoso suave (contenido firme, impresión de uña desaparece rápido)
+Z87: Grano pastoso duro (impresión de uña permanece, cercano a madurez fisiológica)
+
+ESTADO 9 — MADUREZ:
+Z92: Grano maduro para cosecha (grano seco, no se marca al apretar con la uña)
+
+⚠️ CEBADA: usa la misma escala Zadoks. Diferencias: aristas visibles desde Z49, macollaje más corto en variedades de 2 carreras.
+
+--- FENOLOGÍA MAÍZ — Escala Ritchie & Hanway (1982) ---
+Fuente: FCA-UNC / Ing. Agr. Rubén E. Toledo
+
+ESTADIOS VEGETATIVOS:
+VE: Emergencia — el coleoptile alcanza la superficie del suelo y se establece la plántula
+V1: Collar de 1ª hoja — hoja inferior completamente desplegada, collar y lígula visible
+V2: Collar de 2ª hoja
+V3: Collar de 3ª hoja — punto de crecimiento por debajo de la superficie del suelo
+V4: Collar de 4ª hoja
+V5: Collar de 5ª hoja — punto de crecimiento se acerca a la superficie del suelo
+V6: Collar de 6ª hoja — ápice de crecimiento por encima de la superficie del suelo
+V7: Collar de 7ª hoja
+V8: Collar de 8ª hoja
+V10: Collar de 10ª hoja
+Vn: Collar de "n" hojas — "n" ésima hoja completamente desplegada, collar y lígula visible
+VT: Antesis — aparición de la panoja con liberación de polen
+
+ESTADIOS REPRODUCTIVOS:
+R1: Silking — emergencia de los estigmas que capturan los granos de polen
+R2: Ampolla o Blister — granos de color blanco asemejándose a una ampolla
+R3: Grano lechoso — granos amarillos en parte exterior, interior líquido blanco lechoso
+R4: Grano pastoso — fluido en endosperma espesado hasta consistencia pastosa, humedad ~70%
+R5: Grano dentado — mazorca color rojo oscuro, inicio de secado, humedad ~55%
+R5.25: 1/4 línea de leche — humedad ~45-50%
+R5.5: 1/2 línea de leche — humedad ~40-45%
+R5.75: 3/4 línea de leche — humedad ~35-40%
+R6: Madurez fisiológica — capa negra formada, humedad del grano 30-35%
+
+--- FENOLOGÍA SORGO — Escala Vanderlip & Reeves (1972) ---
+Fuente: FCA-UNC
+
+Estado 0: Emergencia — el coleoptile es visible en la superficie del suelo
+Estado 1: Lígula de la 3ª hoja visible — collares y lígulas de tres hojas visibles sin disección
+Estado 2: Lígula de la 5ª hoja visible — collares y lígulas de cinco hojas visibles sin disección
+Estado 3: Diferenciación de meristemas — cambio del punto de crecimiento vegetativo a reproductivo
+Estado 4: Inicio de panoja visible — panoja visible dentro de la vaina de la hoja bandera
+Estado 5: Floración (antesis) — 50% de las plantas con antesis completa
+Estado 6: Grano lechoso — granos con contenido lechoso
+Estado 7: Grano pastoso — granos con contenido pastoso
+Estado 8: Madurez fisiológica — capa negra formada en el grano
+Estado 9: Madurez de cosecha
+
+--- FENOLOGÍA SOJA — Escala Fehr & Caviness (1971/1977) ---
+Fuente: INTA EEA Paraná / Santos, Diego (2010)
+
+ESTADIOS VEGETATIVOS:
+VE: Planta emergida — cotiledones por encima de la superficie, totalmente abiertos; primer par de hojas unifoliadas sin abrir
+VC: Estado cotiledonar — primer par de hojas unifoliadas separadas y visibles; siguiente hoja trifoliada aún cerrada
+V1: Primer nudo verdadero desarrollado — primera hoja unifoliada totalmente desarrollada
+V2: Segunda hoja trifoliada totalmente desarrollada
+V3: Tercera hoja trifoliada totalmente desarrollada
+Vn: "n" ésima hoja trifoliada totalmente desarrollada
+⚠️ Una hoja está totalmente desarrollada cuando la siguiente (más arriba) ya separó los bordes de sus folíolos
+
+ESTADIOS REPRODUCTIVOS:
+R1: Inicio floración — una flor abierta en cualquier nudo de la planta
+R2: Plena floración — una flor abierta en alguno de los dos nudos superiores del tallo principal
+R3: Inicio fructificación — una vaina de al menos 0,5 cm en alguno de los cuatro últimos nudos con hoja desarrollada
+R4: Plena fructificación — una vaina de al menos 2 cm en alguno de los cuatro últimos nudos con hoja desarrollada
+R5: Inicio llenado de semilla — semilla de al menos 3 mm de diámetro en vaina de los cuatro últimos nudos ("semilla que se siente al tacto o se ve a trasluz")
+R6: Pleno llenado — semilla que ocupó toda su cavidad en vaina de los cuatro últimos nudos (vaina que se quiebra al doblar)
+R7: Inicio madurez — UNA vaina normal del tallo principal llega a color marrón o gris (madurez fisiológica)
+R8: Plena madurez — 95% de vainas normales del tallo principal con color marrón o gris (madurez cosecha)
+⚠️ Luego de R7 un desecante NO incide en el rendimiento
+
+--- FENOLOGÍA GIRASOL — Escala Schneiter & Miller (1981) adaptada ---
+Fuente: INTA Reconquista / Ing. Agr. Sebastián Zuil
+
+ESTADIOS VEGETATIVOS:
+VE: Emergencia — hipocótilo y cotiledones emergidos, primera hoja verdadera menor a 4 cm
+Vn: n hojas verdaderas (más de 4 cm de largo). Ej: V2=dos hojas, V8=ocho hojas
+⚠️ Estado vegetativo continúa hasta aproximadamente V10-V12 según genotipo
+
+ESTADIOS REPRODUCTIVOS:
+R1: Inflorescencia rodeada de brácteas inmaduras visible (vista desde arriba parece estrella)
+R2: Entrenudo debajo de la base de la inflorescencia se elonga 0,5 a 2 cm sobre última hoja
+R3: Entrenudo debajo del órgano reproductivo lleva inflorescencia a más de 2 cm de última hoja
+R4: Inflorescencia comienza a abrirse — flores liguladas comienzan a verse
+R5: Antesis de flores tubuladas — flores liguladas completamente expandidas
+   R5.1: 10% del capítulo en antesis
+   R5.5: 50% del capítulo en antesis
+   R5.9: 90% del capítulo en antesis
+R6: Antesis completa — flores liguladas perdieron turgencia y se marchitan
+R7: Receptáculo comienza a cambiar de color (amarillo claro)
+R8: Receptáculo completamente amarillo, brácteas aún verdes
+R9: Brácteas cambian a color marrón — madurez fisiológica del cultivo
+
+--- FENOLOGÍA COLZA/CANOLA — Escala BBCH ---
+Fuente: Conocimiento general (pendiente de validación con fuente propia)
+
+BBCH 00: Semilla seca
+BBCH 10: Cotiledones emergidos
+BBCH 11: Primera hoja verdadera
+BBCH 12: Segunda hoja verdadera
+BBCH 13: Tercera hoja verdadera
+BBCH 15-19: Estado de roseta (5 a 9+ hojas)
+⚠️ Ventana óptima herbicidas POE: BBCH 12-15 (roseta temprana)
+BBCH 30: Inicio elongación del tallo
+BBCH 31: Primer entrenudo visible
+BBCH 51: Primeros botones florales visibles (rodeados de hojas)
+BBCH 53: Botones florales visibles por encima de hojas
+BBCH 55: Botones florales individuales separados
+BBCH 60: Primeras flores abiertas
+BBCH 65: Plena floración
+BBCH 69: Fin de floración
+BBCH 71: 10% de vainas con tamaño final
+BBCH 75: 50% de vainas con tamaño final
+BBCH 79: Vainas con tamaño final completo
+BBCH 85: 10% de semillas con color madurez
+BBCH 87: Semillas oscuras/maduras, vainas comenzando a abrirse
+BBCH 89: Madurez fisiológica
+BBCH 99: Madurez cosecha
+
+--- FENOLOGÍA ARVEJA — Escala BBCH ---
+Fuente: Conocimiento general (pendiente de validación con fuente propia)
+
+BBCH 00: Semilla seca
+BBCH 05: Germinación — raíz emergida
+BBCH 09: Emergencia — plántula en superficie
+BBCH 11: Primera hoja verdadera expandida (1 par de folíolos)
+BBCH 12: Segunda hoja verdadera
+BBCH 13: Tercera hoja verdadera
+BBCH 14: Cuarta hoja verdadera
+BBCH 15: Quinta hoja verdadera — inicio de zarcillos
+⚠️ Ventana POE herbicidas: BBCH 11 a BBCH 14 (antes de zarcillos)
+BBCH 51: Primeros botones florales visibles
+BBCH 60: Primeras flores abiertas
+BBCH 65: Plena floración
+BBCH 69: Fin de floración
+BBCH 71: Vainas pequeñas visibles
+BBCH 75: Vainas al 50% tamaño final
+BBCH 79: Vainas con tamaño final — semillas en desarrollo
+BBCH 85: Semillas llenando vaina — grano pastoso
+BBCH 89: Madurez fisiológica — vainas comenzando a secarse
+BBCH 92: Madurez cosecha — vainas secas, semillas duras
+⚠️ Desecación: desde BBCH 89
+
+--- FENOLOGÍA CAMELINA — Escala BBCH ---
+Fuente: Conocimiento general (pendiente de validación con fuente propia)
+
+BBCH 00: Semilla seca
+BBCH 10: Cotiledones emergidos
+BBCH 11: Primera hoja verdadera
+BBCH 12: Segunda hoja verdadera
+BBCH 13-15: Estado de roseta (3 a 5 hojas)
+BBCH 30: Inicio elongación del tallo
+BBCH 51: Primeros botones florales visibles
+BBCH 60: Primeras flores abiertas
+BBCH 65: Plena floración
+BBCH 69: Fin de floración
+BBCH 79: Silículas con tamaño final
+BBCH 89: Madurez fisiológica
+BBCH 99: Madurez cosecha
+⚠️ Opciones herbicidas muy limitadas — ver sección Camelina en base de conocimiento
 
 === SOJA ===
 
@@ -308,7 +534,6 @@ Acción POE maleza / Cultivo POE (V2-V8): Malezas <5cm, evitar estrés:
 - Tembotrione 42% (0,25-0,3l) Laudis V3-V6
 - Glufosinato de amonio 28% (1,8-2l) Maíz ENLIST V1-V8
 - Pendimetalín 33% (2,5-4l) V3-V4 Maleza no emergida
-
 === GIRASOL ===
 
 --- GIRASOL: MALEZA GENERAL ---
@@ -395,6 +620,7 @@ POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Evitar repetir mecanismos de acción. Usar coadyuvantes. Control POE con malezas pequeñas. Evitar aplicaciones con estrés por frío o falta de agua.
+⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
 
 --- TRIGO: CRUCIFERAS ---
 POE MALEZA / PSI CULTIVO:
@@ -439,6 +665,8 @@ POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
 - Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
+⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
+
 --- TRIGO: RAIGRAS ---
 POE MALEZA / PSI CULTIVO:
 - Paraquat 27,6% (1,5-2,5l)
@@ -473,6 +701,7 @@ POST-EMERGENCIA CULTIVO (Z2.3-Z3.1):
 - Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Graminicidas (cletodim, haloxyfop, quizalofop) 25 DAS. Paraquat solo maleza hasta 4 hojas. Glufosinato de amonio solo malezas hasta 4 hojas.
+⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.3. Para estadios anteriores no hay opciones POE registradas en esta base.
 
 === SORGO ===
 
@@ -579,7 +808,7 @@ PEE / PSI CULTIVO:
 - Diflufenicán 50% (0,2l) sin registro 10-15 DAS
 - Imazatapir + Atrazina
 
-POST-EMERGENCIA (4ª hoja verdadera hasta antes de zarcillos):
+POST-EMERGENCIA (4ª hoja verdadera / BBCH 14 hasta antes de zarcillos / BBCH 15):
 - Cletodim 24% / Haloxyfop 54% (graminicidas)
 - Setoxidim (no disponible en Argentina)
 - Imazatapir 10% (0,5l)
@@ -603,7 +832,7 @@ POE MALEZA / PSI CULTIVO:
 
 PEE / PSI CULTIVO: Trifluralina 60% (1,5l) — ÚNICA opción residual
 
-POST-EMERGENCIA (estado roseta): Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
+POST-EMERGENCIA (estado roseta / BBCH 13-15): Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
 
 Desecante: Diquat 40% / Saflufenacil 70% / Carfentrazone 40%
 ⚠️ Cultivo con opciones muy limitadas
