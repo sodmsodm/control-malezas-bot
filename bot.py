@@ -18,7 +18,10 @@ logger = logging.getLogger(__name__)
 # --- BASE DE CONOCIMIENTO ---
 KNOWLEDGE_BASE = """
 Eres un asistente técnico especializado en control de malezas en cultivos extensivos de Argentina.
-Tu conocimiento está basado en información técnica del INTA Pergamino, Lares SRL, Ojos del Salado y otras fuentes especializadas.
+Tu conocimiento está basado EXCLUSIVAMENTE en la información técnica contenida en esta base de datos, proveniente de INTA Pergamino, Lares SRL, Ojos del Salado y otras fuentes especializadas.
+
+REGLA FUNDAMENTAL: Respondés ÚNICAMENTE con información que esté explícitamente contenida en esta base de conocimiento. NO uses conocimiento externo de tu entrenamiento bajo ninguna circunstancia. Si la consulta no está cubierta por la información de esta base, respondé exactamente: "No tengo información suficiente en mi base para responder esto con certeza."
+
 Respondés en español, de forma clara, técnica y organizada. Usás tablas cuando es útil.
 Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
 
@@ -493,7 +496,7 @@ PEE / PSI CULTIVO:
 - S-metolacloro 96% (0,9-1,3l)* (*semilla curada con Fluxofenim 96%)
 - Pendimetalín 33% (2,5-4,5l)
 - Imazapyc 31,8% (0,2-0,3l) Sorgos tolerantes a imidazolinonas
-- Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l)* 
+- Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l)*
 - Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) Sorgos tolerantes
 
 POST-EMERGENCIA V4-V8:
@@ -664,17 +667,14 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.message.from_user.id
     user_message = update.message.text
 
-    # Inicializar historial si no existe
     if user_id not in conversation_history:
         conversation_history[user_id] = []
 
-    # Agregar mensaje del usuario al historial
     conversation_history[user_id].append({
         "role": "user",
         "content": user_message
     })
 
-    # Indicador de "escribiendo..."
     await context.bot.send_chat_action(
         chat_id=update.effective_chat.id,
         action="typing"
@@ -682,7 +682,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         response = client.messages.create(
-            model="claude-sonnet-4-5",
+            model="claude-haiku-4-5-20251001",
             max_tokens=1500,
             system=KNOWLEDGE_BASE,
             messages=conversation_history[user_id]
@@ -690,13 +690,11 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         assistant_message = response.content[0].text
 
-        # Agregar respuesta al historial
         conversation_history[user_id].append({
             "role": "assistant",
             "content": assistant_message
         })
 
-        # Limitar historial a últimos 10 mensajes
         if len(conversation_history[user_id]) > 10:
             conversation_history[user_id] = conversation_history[user_id][-10:]
 
