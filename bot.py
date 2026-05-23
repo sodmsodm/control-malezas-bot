@@ -607,7 +607,7 @@ POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato / 2,4D (v.s.f.)
-- Glifosato / Dicamba 57,8% (0,1-0,2l)
+- Glifosato / Dicamba 57,8% (0,1-0,2l) [Banvel - Syngenta]
 - Glifosato / 2,4D + Dicamba
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g)
 - Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
@@ -619,8 +619,8 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / 2,4D // DG Glufosinato de amonio
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Metsulfurón 60% (8-10g)
-- Metsulfurón/Clorsulfurón (12-15g)
+- Metsulfurón 60% (8-10g) [Ally - Corteva]
+- Metsulfurón/Clorsulfurón (12-15g) [Finesse WG - FMC]
 - Flumioxazin 48% (0,15l) 10 DAS
 - Terbutrina 50% (1,2l)
 - Terbutilazina 75% (1kg)
@@ -629,18 +629,18 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Trifludimoxazin / Saflufenacil (0,1-0,15l)
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
-- Metsulfurón 60% (5-6g) / Dicamba 57,8% (0,1-0,15l)
-- Metsulfurón / Clorsulfurón (10-12g) / Dicamba 57,8% (0,4l)
-- Metsulfurón / Clorsulfurón (10-12g) / 2,4D 64,3% e.a. (0,4l)
-- 2,4D 64,3% e.a. (0,4l) / Dicamba 57,8% (0,1-0,15l)
-- 2,4D 64,3% e.a. (0,4l) / Picloram 24% (0,1-0,12l)
-- 2,4D 64,3% e.a. (0,4l) / Fluroxipir 48% (0,2-0,4l)
+- Metsulfurón 60% (5-6g) [Ally - Corteva] / Dicamba 57,8% (0,1-0,15l) [Banvel - Syngenta]
+- Metsulfurón / Clorsulfurón (10-12g) [Finesse WG - FMC] / Dicamba 57,8% (0,4l) [Banvel - Syngenta]
+- Metsulfurón / Clorsulfurón (10-12g) [Finesse WG - FMC] / 2,4D 64,3% e.a. (0,4l)
+- 2,4D 64,3% e.a. (0,4l) / Dicamba 57,8% (0,1-0,15l) [Banvel - Syngenta]
+- 2,4D 64,3% e.a. (0,4l) / Picloram 24% (0,1-0,12l) [Tordón - Corteva]
+- 2,4D 64,3% e.a. (0,4l) / Fluroxipir 48% (0,2-0,4l) [Starane - Corteva]
 - 2,4D 64,3% e.a. (0,4l) / Carfentrazone 40% (0,04l)
 - 2,4D 64,3% e.a. (0,4l) / Terbuttrina 50% (0,8-1l)
 - 2,4D 64,3% e.a. (0,4l) / Saflufenacil 70% (25g)
 - 2,4D 64,3% e.a. (0,4l) / Metribuzin 48% (0,4l)
 - 2,4D 64,3% e.a. (0,4l) / Piraflufén 2,5% (0,08l)
-- Clopyralid / MCPA (1,25-1,35l)
+- Clopyralid / MCPA (1,25-1,35l) [Lontrel - Corteva]
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / Metribuzin 48% (0,4l) Trigos HB4
@@ -676,7 +676,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bromoxinil 34,6% (0,8-1l)
+- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bromoxinil 34,6% (0,8-1l) [Bromotril - ADAMA]
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Metribuzin 48% (0,4l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Terbutrina 50% (0,8-1l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Diflufenicán 50% (0,15l)
@@ -684,9 +684,9 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Carfentrazone 40% (0,04l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Saflufenacil 70% (25g)
-- Bromoxinil 34,6% (0,8-1l) / Flurocloridona 25% (0,5l)
-- Bromoxinil 34,6% (0,8-1l) / Diflufenicán 50% (0,15l)
-- Bromoxinil 34,6% (0,8-1l) / Metribuzin 48% (0,4l)
+- Bromoxinil 34,6% (0,8-1l) [Bromotril - ADAMA] / Flurocloridona 25% (0,5l)
+- Bromoxinil 34,6% (0,8-1l) [Bromotril - ADAMA] / Diflufenicán 50% (0,15l)
+- Bromoxinil 34,6% (0,8-1l) [Bromotril - ADAMA] / Metribuzin 48% (0,4l)
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / Metribuzin 48% (0,4l) Trigos HB4
@@ -708,7 +708,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - DG Paraquat / Glufosinato
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Piroxasulfone 48% (0,18-0,21l)
+- Piroxasulfone 48% (0,18-0,21l) [Yamato Top - Summit Agro]
 - Pendimetalín 45,6% (2,5-3,5l)
 - Flumioxazin 48% (0,15l) 10 DAS
 - Terbutrina 50% (1,2l)
@@ -721,11 +721,11 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 
 POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo emergido en macollaje:
 ⚠️ IMPORTANTE: Estas opciones son para aplicar sobre el TRIGO YA EMERGIDO (macollaje Z2.3-Z3.1). Son graminicidas selectivos para trigo registrados para esa ventana. NO confundir con las opciones de barbecho anteriores.
-- Pinoxaden 5% (0,6-0,8l)
-- Clodinafop 24% (0,2l)
-- Piroxulam 21,5% (84gr)
-- Iodosulfurón/Mesosulfurón (0,2-0,3l)
-- Flucarbazone (80-100gr)
+- Pinoxaden 5% (0,6-0,8l) [Axial - Syngenta]
+- Clodinafop 24% (0,2l) [Gizmo - Sumitomo]
+- Piroxulam 21,5% (84gr) [PowerFlex - Corteva]
+- Iodosulfurón/Mesosulfurón (0,2-0,3l) [Hussar Plus - Bayer]
+- Flucarbazone (80-100gr) [Everest 70 WDG - Arysta/UPL]
 - Imazamox 70-100g Trigos CL
 - Imazapyc/Imazapy (0,2-0,3l) Trigos CL
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
