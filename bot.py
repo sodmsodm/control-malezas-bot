@@ -38,6 +38,36 @@ REGLA DE BIOTIPOS: Cuando el usuario pregunta sobre control de malezas en soja, 
 Respondés en español, de forma clara, técnica y organizada. Usás tablas cuando es útil.
 Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
 
+=== RESIDUALIDAD DE HERBICIDAS ===
+Fuente: Dto. Técnico DOW AgroSciences Argentina S.A. y otros.
+Valores orientativos. Intervalo mínimo en días desde la aplicación hasta la siembra del cultivo siguiente.
+s/d = sin dato disponible. Los valores de cletodim aplican solo con buena MO, sin lluvias y dosis no mayor a 600 g e.a./ha — RIESGOSO.
+
+--- TABLA DE RESIDUALIDAD (días desde aplicación a siembra) ---
+
+Herbicida          | P.activo         | Dosis(g/ha) | Trigo | Maíz | Sorgo | Soja | Girasol | Alfalfa | Tréboles | Colza
+Spider             | Diclosulam       | 35          | 200   | 325  | 355   | 0    | 540     | s/d     | s/d      | 540
+Starane Xtra       | Fluroxipir       | 210-450     | 0     | 0    | 0     | 1    | 1       | 1       | 1        | 1
+2,4D               | 2,4D             | 300-500     | 3-5   | 3-5  | 3-5   | 7-15 | 7-15    | 7-15    | 7-15     | 7-15
+Banvel             | Dicamba          | 120-150     | 0     | 0    | 0     | 15-20| 15-20   | 15-20   | 15-20    | 15-20
+Lontrel            | Clopyralid       | 150         | 0     | 0    | 0     | 20   | 45      | 45      | 45       | 0
+Tordon 24K         | Picloram         | 80-100      | 0     | 0    | 0     | 45   | 80      | 80      | 80       | 15-20
+Koltar             | Oxifluorfén      | 300         | 10    | 10   | 10    | 80   | 0       | s/d     | s/d      | 7-10
+Brodal             | Diflufenicán     | 250         | 15    | 20   | s/d   | 20   | 0       | s/d     | s/d      | s/d
+Ally/Metsulfurón   | Metsulfurón      | 8-10        | 0     | 60   | s/d   | 90   | 120     | 90      | 90       | s/d
+Classic            | Clorimurón       | 30-40       | 40    | 40   | s/d   | 0    | 120     | 120     | 120      | 40
+Gesaprim/Atrazina  | Atrazina 90%     | 1,5 kg/ha   | 120   | 0    | 0     | 60   | 90      | s/d     | 90       | s/d
+Authority/Capaz    | Sulfentrazone    | —           | 180   | 180  | 180   | 0    | 0       | s/d     | s/d      | s/d (270 colza)
+Flex               | Fomesafén        | —           | 180   | 180  | 270   | 0    | 180     | 180     | 180      | 270
+Select             | Cletodim         | 800-(500)   | 15(?) | 15(?)| 15(?) | 0    | 0       | 0       | 0        | 0
+Shark              | Carfentrazone    | 75          | 0     | 0    | 0     | 0?   | 0       | 0       | 0        | 0
+
+⚠️ NOTAS IMPORTANTES:
+- Spider (diclosulam): residualidad en girasol luego de un año en suelos con 2% MO. Sin efecto en girasoles CL.
+- Cletodim: valores con "?" indican incertidumbre. Aplicar solo con buena MO, sin lluvias y dosis ≤600 g e.a./ha.
+- Tordon/Picloram: residualidad muy prolongada en suelos con pH alto o bajo contenido de MO.
+- Residualidad de las AUXINAS en orden de mayor a menor: Picloram (Tordón) > Clopyralid (Lontrel) > Dicamba (Banvel) > 2,4D > Fluroxipir (Starane)
+
 === FENOLOGÍA DE CULTIVOS ===
 
 --- FENOLOGÍA TRIGO Y CEBADA — Escala Zadoks (Zadoks et al., 1974) ---
