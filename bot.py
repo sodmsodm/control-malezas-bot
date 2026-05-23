@@ -22,9 +22,16 @@ Tu conocimiento está basado EXCLUSIVAMENTE en la información técnica contenid
 
 REGLA FUNDAMENTAL: Respondés ÚNICAMENTE con información que esté explícitamente contenida en esta base de conocimiento. NO uses conocimiento externo de tu entrenamiento bajo ninguna circunstancia. Si la consulta no está cubierta por la información de esta base, respondé exactamente: "No tengo información suficiente en mi base para responder esto con certeza."
 
-REGLA DE COINCIDENCIA EXACTA: Si el estadio, momento de aplicación, o condición específica mencionada por el usuario NO coincide exactamente con lo que figura en la base, SIEMPRE aclararlo con un ⚠️ antes de responder. Ejemplo: "⚠️ Tu consulta es para Z1.2 pero mi base solo tiene información desde Z2.1. Te muestro lo más cercano disponible:"
+REGLA DE SEGURIDAD CRÍTICA — MOMENTOS DE APLICACIÓN:
+Los encabezados de cada sección indican DOS cosas separadas:
+1. El estado de LA MALEZA al momento de aplicar (POE maleza = maleza ya nacida / PEE maleza = maleza aún no emergida)
+2. El momento respecto AL CULTIVO (PSI = antes de sembrar el cultivo / PEE = cultivo aún no emergido / POE = cultivo ya emergido)
+NUNCA confundas el momento de la maleza con el momento del cultivo. Son independientes.
+Ejemplo: "Aplicar sobre maleza nacida (POE maleza) / Antes de siembra del cultivo (PSI cultivo)" significa que se aplica ANTES de sembrar el cultivo, sobre maleza que ya nació. NO significa que se aplica sobre el cultivo emergido.
 
-REGLA DE FENOLOGÍA: Para consultas sobre estadios fenológicos, aplica la misma REGLA FUNDAMENTAL. Respondé únicamente con las descripciones que figuran en la base. No agregues datos como días después de siembra, temperaturas, duraciones, ni ninguna otra información que no esté explícitamente escrita en la base de conocimiento.
+REGLA DE COINCIDENCIA EXACTA: Si el estadio, momento de aplicación, o condición específica mencionada por el usuario NO coincide exactamente con lo que figura en la base, SIEMPRE aclararlo con un ⚠️ antes de responder.
+
+REGLA DE FENOLOGÍA: Para consultas sobre estadios fenológicos, respondé únicamente con las descripciones que figuran en la base. No agregues datos como días después de siembra, temperaturas, duraciones, ni ninguna otra información que no esté explícitamente escrita en la base de conocimiento.
 
 Respondés en español, de forma clara, técnica y organizada. Usás tablas cuando es útil.
 Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
@@ -177,9 +184,9 @@ R2: Entrenudo debajo de la base de la inflorescencia se elonga 0,5 a 2 cm sobre 
 R3: Entrenudo debajo del órgano reproductivo lleva inflorescencia a más de 2 cm de última hoja
 R4: Inflorescencia comienza a abrirse — flores liguladas comienzan a verse
 R5: Antesis de flores tubuladas — flores liguladas completamente expandidas
-   R5.1: 10% del capítulo en antesis
-   R5.5: 50% del capítulo en antesis
-   R5.9: 90% del capítulo en antesis
+R5.1: 10% del capítulo en antesis
+R5.5: 50% del capítulo en antesis
+R5.9: 90% del capítulo en antesis
 R6: Antesis completa — flores liguladas perdieron turgencia y se marchitan
 R7: Receptáculo comienza a cambiar de color (amarillo claro)
 R8: Receptáculo completamente amarillo, brácteas aún verdes
@@ -256,6 +263,7 @@ BBCH 99: Madurez cosecha
 === SOJA ===
 
 --- SOJA: MALEZA GENERAL (No GMO) ---
+
 BARBECHO INTERMEDIO (45-60 DAS):
 - Flumioxazin 48% (150cc)
 - Piroxasulfone 85% (160-200g)
@@ -288,7 +296,7 @@ PEE / PSI-PEE:
 - Fomesafén 50% (0,4-0,5l) / Metribuzin 48% (0,8-1l) / Acetoclor 90% (1,5l)
 - Trifludimoxazin / Saflufenacil (0,1-0,2l) / S-metolacloro 96% (1,1-1,3l)
 
-POST-EMERGENCIA V4-V6:
+POST-EMERGENCIA CULTIVO (V4-V6) — Aplicar sobre cultivo emergido:
 - Fomesafén 25% (1-1,5l)
 - Lactofén 24% (0,6-0,8l)
 - Cletodim 24% (0,7-1l); 36% (0,5-0,7 l/ha)
@@ -307,7 +315,8 @@ POST-EMERGENCIA V4-V6:
 - Benazolín 50% (0,6l) / Diclosulam 84% (0,015g)
 
 --- SOJA: COMMELINA ERECTA ---
-POE DE LA MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato 1260 g.e.a. / 2,4D (1-1,5l) / Saflufenacil 70% (40g) / DG Paraquat 27,6% (2-3l)
 - Glifosato / 2,4D / Carfentrazone 40% (70-80cc) / DG Paraquat
 - Glifosato / 2,4D / Epirefenacil 5,5% (600cc) / DG Paraquat
@@ -320,17 +329,20 @@ POE DE LA MALEZA / PSI CULTIVO:
 - Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin
 - Glufosinato de amonio / 2,4D / Carfentrazone / DG
 - Paraquat / 2,4D / Atrazina hasta 40 DAS
+
 NOTA: Mejores opciones quemado. Sin control total.
 DG = doble golpe
 
 SOJAS RESISTENTES GLIFOSATO: Sin opciones efectivas
+
 SOJAS ENLIST:
 - Glifosato 1260 g.e.a. / Glufosinato de amonio / 2,4D 30% e.a. (1,5-2l) Hasta V4-V6
 - Glufosinato de amonio / 2,4D 30% e.a. (1,5-2l) V4-V6
 - Agregar Sulfato de Amonio 1,5-2 l/ha en mezclas con Glufosinato
 
 --- SOJA: CRUCIFERAS ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato / 2,4D (carencia v.s.f.)
 - Glifosato / MCPA 28% (1,5-2,5l)
 - Glifosato / 2,4D + Dicamba 25 DAS
@@ -345,7 +357,7 @@ POE MALEZA / PSI CULTIVO:
 - Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l)
 - Glifosato / 2,4D // DG Glufosinato de amonio
 
-MALEZA PPE BARBECHO LARGO:
+MALEZA PEE BARBECHO LARGO — Aplicar sobre suelo sin maleza emergida (PEE maleza):
 - Atrazina 90% (1kg) hasta 30 DAS
 - Amicarbazone 70% (0,4-0,5kg) hasta 45 DAS
 - Terbutilazina 75% (0,8-1kg) desde 45-60 DAS desde primera lluvia
@@ -355,7 +367,7 @@ MALEZA PPE BARBECHO LARGO:
 - Flumioxazin 48% (0,1-0,15l)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,15-1,25l) 30 DAS
 
-PEE / PSI-PEE:
+PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Metribuzin 48% (0,8-1kg)
 - Sulfentrazone 50% (0,4-0,5l)
 - Flumioxazin 48% (0,1-0,15l) 7 DAS
@@ -366,19 +378,21 @@ PEE / PSI-PEE:
 - Sulfentrazone 50% / Diflufenicán 50% (0,3l/0,3l) 15 DAS
 - Trifludimoxazin 12,5% / Saflufenacil 25% (0,1-0,2l) 7 DAS
 
-POST-EMERGENCIA CULTIVO (Soja Resistente Glifosato o No GMO):
+POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido (Soja Resistente Glifosato o No GMO):
 - Fomesafén 25% (1-1,5l)
 - Acifluorfén 24% (1-1,5l)
 - Lactofén 24% (0,6-0,8l)
 - Fomesafén 25% (1-1,5l) / Benazolín 50% (0,6l)
 - Bentazón 60% (1,5l)
+
 SOJAS ENLIST:
 - Glufosinato de amonio 28% (2-3l) hasta V4-V6
 - 2,4D 30% e.a. (1,5-2l) hasta R2
 - Glufosinato de amonio 28% (2-3l) / 2,4D 30% e.a. (1,5-2l) hasta V4-V6
 
 --- SOJA: PARIETARIA ---
-BARBECHO LARGO:
+
+BARBECHO LARGO — Aplicar sobre suelo o maleza en distintos estadios:
 - Atrazina 90% (1-1,5kg) PEE-POST MALEZA hasta 60 DAS
 - Amicarbazone 70% (0,4-0,5kg) hasta 45 DAS PEE-POST MALEZA
 - Terbutilazina 75% (0,8-1kg) hasta 45 DAS PEE-POST MALEZA
@@ -388,7 +402,7 @@ BARBECHO LARGO:
 - Flumioxazin 48% (0,1-0,15l) PEE-POST MALEZA
 - Terbutilazina 75% (1kg) / Flumioxazin 48% (0,12l) PEE-POST MALEZA
 
-PEE / PSI-PEE:
+PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (0,5kg) PEE-POST MALEZA hasta 30 DAS
 - Metribuzin 48% (0,8-1l) PEE-POST MALEZA
 - Prometrina 48% (1,5-2l) PEE-POST MALEZA
@@ -404,7 +418,8 @@ POST-EMERGENCIA CULTIVO: Sin opciones efectivas
 - Dosis glifosato > 1360 g.e.a. + sulfato de amonio + aceite, controles hasta 60%
 
 --- SOJA: AMARANTHUS SPP. (Yuyo Colorado) ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - 2,4D (1-1,5l formulación éster ethyl hexyl)
 - Epirefenacil 5,5% (600cc)
 - Trifludimoxazin / Saflufenacil (0,1-0,2l) Acción POE y PEE MALEZA
@@ -415,7 +430,7 @@ POE MALEZA / PSI CULTIVO:
 - 2,4D / Epirefenacil 5,5% (600cc)
 - Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin / Carfentrazone / Epirefenacil
 
-MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS):
+MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS) — Aplicar sobre suelo sin maleza emergida:
 - Flumioxazin 48% (150cc)
 - Piroxasulfone 85% (160-200g)
 - Diflufenicán 50% (0,3l) hasta 15 DAS
@@ -425,7 +440,7 @@ MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS):
 - Metribuzin 48% (1l)
 - Terbutilazina / Flumioxazin (1,25) hasta 45 DAS
 
-PEE / PSI-PEE:
+PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Sulfentrazone 50% (0,4-0,5l) / S-metolacloro 96% (1,1-1,3l)
 - Metribuzin 10% / S-metolacloro 60% (2,5l)
 - Sulfentrazone / Piroxasulfone 48% (0,355l)
@@ -437,12 +452,13 @@ PEE / PSI-PEE:
 - Sulfentrazone 50% (0,4-0,5l) / Metribuzin 48% (0,8-1l) / Acetoclor 90% (1,5l)
 - Trifludimoxazin / Saflufenacil / S-metolacloro 96% (1,1-1,3l)
 
-POST-EMERGENCIA (Sojas Resistentes Glifosato):
+POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido (Sojas Resistentes Glifosato):
 - Fomesafén 25% (1-1,5l)
 - Lactofén 24% (0,6-0,8l)
 - Benazolín 50% (0,6-1l)
 - Fomesafén 25% / Benazolín 50% (0,6l)
 - Fomesafén 11,9% / S-metolacloro 51,8% (1,5-2l)
+
 SOJAS ENLIST:
 - Glufosinato de amonio 28% (2-3l) hasta V4-V6
 - 2,4D 30% e.a. (1,5-2l) hasta R2
@@ -451,7 +467,8 @@ SOJAS ENLIST:
 === MAÍZ ===
 
 --- MAÍZ: AMARANTHUS SPP. ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - 2,4D (1-1,5l formulación éster ethyl hexyl)
 - Picloram (0,1-0,15l)
 - Epirefenacil 5,5% (600cc)
@@ -461,7 +478,7 @@ POE MALEZA / PSI CULTIVO:
 - 2,4D / Carfentrazone 40% (70-80cc)
 - 2,4D / Epirefenacil / Saflufenacil / Carfentrazone / Flumioxazin / Trifludimoxazin
 
-PEE / PSI-PEE:
+PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (1-2kg) / S-metolacloro 96% (1,1-1,3l)
 - Atrazina 90% (1-2kg) / Biciclopirona 20% (0,8-1l)
 - Biciclopirona 20% (0,8-1l) / S-metolacloro 96% (1,1-1,3l)
@@ -474,7 +491,7 @@ PEE / PSI-PEE:
 - Flumioxazin 4,2% / Acetoclor 90% (1,5l)
 - Isoxaflutole / Thiencarbazone (0,3-0,4l) / S-metolacloro / Atrazina
 
-POST-EMERGENCIA V2-V8:
+POST-EMERGENCIA CULTIVO (V2-V8) — Aplicar sobre cultivo emergido:
 - Atrazina 90% (1kg) / 2,4D 64,3% e.a. (0,4l)
 - Atrazina 90% (1kg) / Picloram 24% (0,1-0,15l)
 - Atrazina 90% (1kg) / Mesotrione 48% (0,3l)
@@ -482,13 +499,15 @@ POST-EMERGENCIA V2-V8:
 - Atrazina 90% (1kg) / Tolpyralate 42% (0,075-0,125l)
 - Atrazina 90% (1kg) / Tembotrione 42% (0,25-0,3l)
 - Terbutilazina 55% / Mesotrione 8,1% (2l) / Atrazina 90% (1kg)
+
 MAÍZ ENLIST:
 - Glufosinato de amonio 28% (2-3l) hasta V2-V4
 - 2,4D 45,6% e.a. (1,5-2l) hasta V8
 - Glufosinato de amonio 28% (2-3l) / 2,4D 45,6% e.a. (1,5-2l) V2-V4
 
 CONTROL QUÍMICO YUYO COLORADO EN MAÍZ (detallado):
-Acción POE maleza / Cultivo PSI:
+
+ACCIÓN SOBRE MALEZA NACIDA / CULTIVO AÚN NO SEMBRADO (POE maleza / PSI cultivo):
 - 2,4D (3-5 DAS) Hormonal
 - 2,4D sal colina 66,9% (1,5-2,5l) Maíz ENLIST
 - Dicamba 57,7% (0,15-0,2l) Hormonal
@@ -503,7 +522,7 @@ Acción POE maleza / Cultivo PSI:
 - Paraquat/diurón (1,5-2,5l)
 - Fluroxipyr/halauxifén (400-500cc)
 
-Acción PEE residual / Cultivo PSI:
+ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE maleza / PSI cultivo):
 - Atrazina 90% (1,8-2,2kg) Gesaprim Fot.II
 - Terbutilazina 75% (1,3-1,5kg) Terbine Fot.II
 - Amicarbazone 70% (0,4-0,7) Dinamic Fot.II
@@ -520,7 +539,8 @@ Acción PEE residual / Cultivo PSI:
 - Atrazina/s-metolacloro (BicepPack Gold)
 - Isoxaflutole/thiencarbazone (ALS) Adengo
 
-Acción POE maleza / Cultivo POE (V2-V8): Malezas <5cm, evitar estrés:
+ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
+⚠️ Malezas <5cm, evitar estrés:
 - Atrazina 90% (1,5-2kg) Gesaprim hasta V6
 - Bentazón 60% (1,2-1,6l) V2-V8 (cotiledonar)
 - Metribuzin 70% (210-270g) Tribune hasta V2-V8
@@ -536,10 +556,12 @@ Acción POE maleza / Cultivo POE (V2-V8): Malezas <5cm, evitar estrés:
 - Tembotrione 42% (0,25-0,3l) Laudis V3-V6
 - Glufosinato de amonio 28% (1,8-2l) Maíz ENLIST V1-V8
 - Pendimetalín 33% (2,5-4l) V3-V4 Maleza no emergida
+
 === GIRASOL ===
 
 --- GIRASOL: MALEZA GENERAL ---
-POE MALEZA / PSI-PEE:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI-PEE cultivo):
 - 2,4D (15-20 DAS) Formulaciones éster ethyl o mictoemulsión
 - Dicamba (30 DAS)
 - Fluroxipir (1 DAS)
@@ -553,7 +575,7 @@ POE MALEZA / PSI-PEE:
 - Paraquat/diurón (1,5-2,5l) Cerillo
 - Fluroxipyr/halauxifén (400-500cc) Pixxaro
 
-PEE / PSI-PEE:
+PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Sulfentrazone 50% (300-400cc) Capaz
 - Flumioxazin 48% (50-100cc) Sumisoya (20-30 DAS)
 - Prometrina 50% (1-2l) Gesagard
@@ -568,7 +590,7 @@ PEE / PSI-PEE:
 - Múltiples mezclas: Sulfentrazone/S-metolacloro, Flurocloridona/S-metolacloro, Diflufenicán/Acetoclor, Prometrina/Acetoclor, etc.
 - Imazapyr 1,5%/Imazamox 3,3% (1,5-2l) Clearsol Plus II
 
-POE CULTIVO:
+POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
 - Graminicidas (DIMs, FOPs): Cletodim, Haloxyfop-R-metil, Propaquizafop, Quizalofop-p-etil
 - Aclonifén 60% (1-1,5l) Prodigio
 - Benazolín 50% (0,3l) Dasen
@@ -580,7 +602,8 @@ POE CULTIVO:
 === TRIGO ===
 
 --- TRIGO: CONYZA SPP. ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato / 2,4D (v.s.f.)
 - Glifosato / Dicamba 57,8% (0,1-0,2l)
 - Glifosato / 2,4D + Dicamba
@@ -593,7 +616,7 @@ POE MALEZA / PSI CULTIVO:
 - Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l)
 - Glifosato / 2,4D // DG Glufosinato de amonio
 
-PEE MALEZA / PSI CULTIVO:
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Metsulfurón 60% (8-10g)
 - Metsulfurón/Clorsulfurón (12-15g)
 - Flumioxazin 48% (0,15l) 10 DAS
@@ -603,7 +626,7 @@ PEE MALEZA / PSI CULTIVO:
 - Terbutilazina 50% / Flumioxazin 3,8% (1,5l) 15 DAS
 - Trifludimoxazin / Saflufenacil (0,1-0,15l)
 
-POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
+POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 - Metsulfurón 60% (5-6g) / Dicamba 57,8% (0,1-0,15l)
 - Metsulfurón / Clorsulfurón (10-12g) / Dicamba 57,8% (0,4l)
 - Metsulfurón / Clorsulfurón (10-12g) / 2,4D 64,3% e.a. (0,4l)
@@ -622,10 +645,11 @@ POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Evitar repetir mecanismos de acción. Usar coadyuvantes. Control POE con malezas pequeñas. Evitar aplicaciones con estrés por frío o falta de agua.
-⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
 
 --- TRIGO: CRUCIFERAS ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato / 2,4D (v.s.f.)
 - Glifosato / MCPA 28% (1,5-2,5l)
 - Glifosato / 2,4D + Dicamba
@@ -637,7 +661,7 @@ POE MALEZA / PSI CULTIVO:
 - Glufosinato de amonio 28% (1-2,5l) / 2,4D
 - Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l)
 
-PEE MALEZA / PSI CULTIVO:
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Flurocloridona 25% (1,5l)
 - Diflufenicán 50% (0,3l)
 - Flumioxazin 48% (0,12l) 10 DAS
@@ -649,7 +673,7 @@ PEE MALEZA / PSI CULTIVO:
 - Trifludimoxazin / Saflufenacil (0,1-0,15l)
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 
-POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
+POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bromoxinil 34,6% (0,8-1l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Metribuzin 48% (0,4l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Terbutrina 50% (0,8-1l)
@@ -667,10 +691,12 @@ POST-EMERGENCIA CULTIVO (Z2.1-Z3.0):
 - Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
-⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
 
 --- TRIGO: RAIGRAS ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
+⚠️ IMPORTANTE: Cletodim y haloxyfop en este contexto actúan sobre el RAIGRAS ya nacido, ANTES de sembrar el trigo. NO son para aplicar sobre trigo emergido.
 - Paraquat 27,6% (1,5-2,5l)
 - Glufosinato de amonio 28% (1-2,5l)
 - Cletodim 24% (0,7-1l); 36% (0,5-0,7 l/ha)
@@ -679,7 +705,7 @@ POE MALEZA / PSI CULTIVO:
 - Paraquat / Cletodim / Glifosato
 - DG Paraquat / Glufosinato
 
-PEE MALEZA / PSI CULTIVO:
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Piroxasulfone 48% (0,18-0,21l)
 - Pendimetalín 45,6% (2,5-3,5l)
 - Flumioxazin 48% (0,15l) 10 DAS
@@ -691,7 +717,8 @@ PEE MALEZA / PSI CULTIVO:
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 - Imazapyc / Xmazapy (0,2-0,3l) Trigos CL
 
-POST-EMERGENCIA CULTIVO (Z2.3-Z3.1):
+POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo emergido en macollaje:
+⚠️ IMPORTANTE: Estas opciones son para aplicar sobre el TRIGO YA EMERGIDO (macollaje Z2.3-Z3.1). Son graminicidas selectivos para trigo registrados para esa ventana. NO confundir con las opciones de barbecho anteriores.
 - Pinoxaden 5% (0,6-0,8l)
 - Clodinafop 24% (0,2l)
 - Piroxulam 21,5% (84gr)
@@ -703,12 +730,13 @@ POST-EMERGENCIA CULTIVO (Z2.3-Z3.1):
 - Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Graminicidas (cletodim, haloxyfop, quizalofop) 25 DAS. Paraquat solo maleza hasta 4 hojas. Glufosinato de amonio solo malezas hasta 4 hojas.
-⚠️ Las opciones POE aplican ÚNICAMENTE desde Z2.3. Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.3. Para estadios anteriores no hay opciones POE registradas en esta base.
 
 === SORGO ===
 
 --- SORGO: LATIFOLIADAS/GRAMÍNEAS ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato
 - 2,4D (carencia v.s.f.) / Picloram / Fluroxipir / Clopyralid
 - Paraquat 27,6% (1,5-2,5l)
@@ -720,7 +748,7 @@ POE MALEZA / PSI CULTIVO:
 - Carfentrazone 40% (70-80cc)
 - Piraflufén 2,5% (200cc)
 
-PEE / PSI CULTIVO:
+PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Flumioxazin 48% (0,15l) 20-30 DAS
 - Terbutilazina 75% (1kg)
 - Atrazina 90% (1-2kg)
@@ -730,7 +758,7 @@ PEE / PSI CULTIVO:
 - Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l)*
 - Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) Sorgos tolerantes
 
-POST-EMERGENCIA V4-V8:
+POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - 2,4D (aplicación dirigida >V8)
 - MCPA / Picloram / Clopyralid / Dicamba
 - Bromoxinil 34,6% (0,8-1l) V2-V4
@@ -741,12 +769,14 @@ POST-EMERGENCIA V4-V8:
 - Atrazina 90% / Hormonal / Mezclas hormonales
 
 Desecante: Paraquat / Glifosato
+
 ⚠️ *Semilla curada con Fluxofenim 96% requerida para usar atrazina + s-metolacloro
 
 === COLZA / CANOLA / CARINATA ===
 
 --- COLZA: MALEZA GENERAL ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Paraquat 27,6% (1,5-2,5l)
 - Glufosinato de amonio 28% (1-2,5l)
 - Glifosato
@@ -754,7 +784,7 @@ POE MALEZA / PSI CULTIVO:
 - Saflufenacil 70% (35-40g)
 - Carfentrazone 40% (70-80cc)
 
-PEE / PSI CULTIVO:
+PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Clomazone 36% (1,5l) sin registro
 - Trifluralina 60% (1,5l)
 - Pendimetalín 45,6% (2,5-3,5l)
@@ -762,7 +792,7 @@ PEE / PSI CULTIVO:
 - Triazinas: atrazina, metribuzin, terbutilazina (Colzas con resistencia a triazinas) sin registro
 - ⚠️ Carinata: solo trifluralina
 
-POST-EMERGENCIA (estado roseta):
+POST-EMERGENCIA CULTIVO (estado roseta) — Aplicar sobre cultivo emergido:
 - Cletodim / Haloxyfop (graminicidas)
 - Clopyralid 47,5% (100-150cc) → riesgo Bajo
 - Halauxifén (registro Uruguay) → riesgo Bajo
@@ -787,14 +817,15 @@ RIESGO HERBICIDAS EN ROTACIÓN (Norte Buenos Aires):
 === ARVEJA ===
 
 --- ARVEJA: MALEZA GENERAL ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato
 - Paraquat 27,6% (1,5-2,5l)
 - Glufosinato de amonio 28% (1-2,5l)
 - 2,4D (15 DAS) / Fluroxipir / Saflufenacil 70% / Carfentrazone 40% / Piraflufén 2,5%
 - Cletodim 24% / Haloxyfop 54%
 
-PEE / PSI CULTIVO:
+PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Imazatapir 10% (0,8-1l)
 - Metsulfurón 60% (4-5g) sin registro 30-40 DAS
 - Metribuzin 48% (0,5-0,8l)
@@ -810,7 +841,7 @@ PEE / PSI CULTIVO:
 - Diflufenicán 50% (0,2l) sin registro 10-15 DAS
 - Imazatapir + Atrazina
 
-POST-EMERGENCIA (4ª hoja verdadera / BBCH 14 hasta antes de zarcillos / BBCH 15):
+POST-EMERGENCIA CULTIVO (4ª hoja verdadera BBCH 14 — antes de zarcillos BBCH 15) — Aplicar sobre cultivo emergido:
 - Cletodim 24% / Haloxyfop 54% (graminicidas)
 - Setoxidim (no disponible en Argentina)
 - Imazatapir 10% (0,5l)
@@ -825,21 +856,25 @@ Desecante: Paraquat 27,6% / Diquat 40% / Saflufenacil 70% / Glufosinato 28%
 === CAMELINA ===
 
 --- CAMELINA: MALEZA GENERAL ---
-POE MALEZA / PSI CULTIVO:
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Paraquat 27,6% (1,5-2,5l)
 - Glufosinato de amonio 28% (1-2,5l)
 - Glifosato
 - 2,4D (15-20 DAS) / Fluroxipir
 - Saflufenacil 70% / Carfentrazone 40%
 
-PEE / PSI CULTIVO: Trifluralina 60% (1,5l) — ÚNICA opción residual
+PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
+Trifluralina 60% (1,5l) — ÚNICA opción residual
 
-POST-EMERGENCIA (estado roseta / BBCH 13-15): Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
+POST-EMERGENCIA CULTIVO (estado roseta BBCH 13-15) — Aplicar sobre cultivo emergido:
+Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
 
 Desecante: Diquat 40% / Saflufenacil 70% / Carfentrazone 40%
 ⚠️ Cultivo con opciones muy limitadas
 
 === SENECIO ARGENTINUS (Barbecho) ===
+
 - Especie anual/bianual, emerge abril-mayo
 - Asociada con Conyza spp. en barbechos largos
 - Produce 15.000-25.000 semillas, viabilidad 2-4 años
@@ -854,6 +889,7 @@ CONTROL:
 - Agregar cloracetamida puede tener efecto activador
 
 === PROTOCOLO INTERNO DE ENSAYOS ===
+
 PEE (Preemergente de cultivo):
 - GIRASOL: Glifosato 2L/1,5kg + Flurocloridona 1,5L + Piroxasulfone 160g
 - MAÍZ: Glifosato 2L/1,5kg + Atrazina 3L/1,5kg + Zidua Pack (HEAT 45g + Pyroxasulfone 200g) + Aceite
