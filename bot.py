@@ -350,7 +350,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / 2,4D + Dicamba 25 DAS
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
 - Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
-- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc)
+- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 - Glufosinato de amonio 28% (1-2,5l) / 2,4D
@@ -517,22 +517,22 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO AÚN NO SEMBRADO (POE maleza / PSI cultivo
 - Paraquat 27,6% (1-3,5l) (Gramoxone) Fot.I
 - Saflufenacil 70% (35g) (Heat) PPO
 - Carfentrazone 40% (50-75cc) PPO
-- Piraflufén etil 2,5% (150-200cc) PPO
-- Oxifluorfén 24% (0,25-0,3l) PPO
+- Piraflufén etil 2,5% (150-200cc) (Stagger) PPO
+- Oxifluorfén 24% (0,25-0,3l) (Galigan) PPO
 - Glifosato (dosis v.s.f.) EPSPS
 - Glufosinato de amonio 28% (1,5-3l)
 - Paraquat/diurón (1,5-2,5l)
-- Fluroxipyr/halauxifén (400-500cc)
+- Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE maleza / PSI cultivo):
 - Atrazina 90% (1,8-2,2kg) Gesaprim Fot.II
 - Terbutilazina 75% (1,3-1,5kg) Terbine Fot.II
 - Amicarbazone 70% (0,4-0,7) Dinamic Fot.II
-- Linurón 50% (2-3l) Fot.II
+- Linurón 50% (2-3l) (Afalon) Fot.II
 - S-metolacloro 96% (0,8-1,6l) Dual Gold
 - Acetoclor 90% (2-3l) (Harness) Harness
 - Piroxazulfone 85% (0,16-0,2kg) Yamato 15 DAS
-- Dimetenamida 90% (1,2-1,8l) Inh.Div.Cel.
+- Dimetenamida 90% (1,2-1,8l) (Frontier)
 - Diflufenicán 50% (0,2-0,3l)
 - Biciclopirona 20% (0,75-1l) Acuron Uno
 - Flurocloridona 25% (0,75-1,5l) Rainbow
@@ -546,7 +546,7 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 - Atrazina 90% (1,5-2kg) Gesaprim hasta V6
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8 (cotiledonar)
 - Metribuzin 70% (210-270g) Tribune hasta V2-V8
-- Linurón 50% (2-2,5l) tratamientos en bandas
+- Linurón 50% (2-2,5l) (Afalon) tratamientos en bandas
 - 2,4D V2-V8 Hormonal
 - 2,4D sal colina 66,9% (1,5-2,5l) V1-V8 Maíz ENLIST
 - Dicamba 57,7% (0,15-0,2l) V2-V8
@@ -557,7 +557,7 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 - Tolpyralate 40% (0,075-0,125l) Brucia V3-V6
 - Tembotrione 42% (0,25-0,3l) Laudis V3-V6
 - Glufosinato de amonio 28% (1,8-2l) Maíz ENLIST V1-V8
-- Pendimetalín 33% (2,5-4l) V3-V4 Maleza no emergida
+- Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 Maleza no emergida
 
 === GIRASOL ===
 
@@ -570,12 +570,12 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Halauxifén (1 DAS) 120cc
 - Paraquat 27,6% (1-3,5l) (Gramoxone)
 - Carfentrazone 40% (50-75cc) Shark
-- Piraflufén etil 2,5% (80-200cc) Stagger
-- Oxifluorfén 24% (0,25-0,3l) Galigan
+- Piraflufén etil 2,5% (80-200cc) (Stagger)
+- Oxifluorfén 24% (0,25-0,3l) (Galigan)
 - Glifosato (dosis v.s.f.)
 - Glufosinato de amonio 28% (1-3l) Lifeline
 - Paraquat/diurón (1,5-2,5l) Cerillo
-- Fluroxipyr/halauxifén (400-500cc) Pixxaro
+- Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Sulfentrazone 50% (300-400cc) Capaz
@@ -585,7 +585,7 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Acetoclor 90% (2-3l) (Harness) Harness
 - Trifluralina 60% (1-2l) Adama Essentials
 - Piroxasulfone 85% (160-200g) (Yamato) Yamato (sin registro)
-- Pendimetalín 45,5% (2-3,5l) Satellite (sin registro)
+- Pendimetalín 45,5% (2-3,5l) (Herbadox)
 - Diflufenicán 50% (0,3l) (Brodal) Brodal
 - Flurocloridona 25% (2-4l) Rainbow
 - Imazapyr 80% (100g) Clearsol (Girasoles Clearsol)
@@ -611,7 +611,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / 2,4D + Dicamba
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
 - Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
-- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc)
+- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 - Glufosinato / 2,4D / Saflufenacil / Carfentrazone
@@ -639,7 +639,7 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - 2,4D 64,3% e.a. (0,4l) / Terbuttrina 50% (0,8-1l)
 - 2,4D 64,3% e.a. (0,4l) / Saflufenacil 70% (25g) (Heat)
 - 2,4D 64,3% e.a. (0,4l) / Metribuzin 48% (0,4l) (Sencorex)
-- 2,4D 64,3% e.a. (0,4l) / Piraflufén 2,5% (0,08l)
+- 2,4D 64,3% e.a. (0,4l) / Piraflufén 2,5% (0,08l) (Stagger)
 - Clopyralid / MCPA (1,25-1,35l) (Lontrel)
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
@@ -657,7 +657,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / 2,4D + Dicamba
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
 - Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
-- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc)
+- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Tiafenacil 70% (35-50g)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 - Glufosinato de amonio 28% (1-2,5l) / 2,4D
@@ -682,7 +682,7 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Diflufenicán 50% (0,15l) (Brodal)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bentazón 60% (Basagran)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Carfentrazone 40% (0,04l)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l)
+- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l) (Stagger)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Saflufenacil 70% (25g) (Heat)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Flurocloridona 25% (0,5l)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Diflufenicán 50% (0,15l) (Brodal)
@@ -709,7 +709,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Piroxasulfone 48% (0,18-0,21l) (Yamato Top)
-- Pendimetalín 45,6% (2,5-3,5l)
+- Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
 - Flumioxazin 48% (0,15l) 10 DAS
 - Terbutrina 50% (1,2l)
 - Terbutilazina 75% (1kg)
@@ -748,14 +748,14 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Saflufenacil 70% (35-40g) (Heat)
 - Epirefenacil 5,5% (0,6l) (Empera)
 - Carfentrazone 40% (70-80cc)
-- Piraflufén 2,5% (200cc)
+- Piraflufén 2,5% (200cc) (Stagger)
 
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Flumioxazin 48% (0,15l) 20-30 DAS
 - Terbutilazina 75% (1kg)
 - Atrazina 90% (1-2kg)
 - S-metolacloro 96% (0,9-1,3l) (Dual Gold)* (*semilla curada con Fluxofenim 96%)
-- Pendimetalín 33% (2,5-4,5l)
+- Pendimetalín 33% (2,5-4,5l) (Herbadox)
 - Imazapyc 31,8% (0,2-0,3l) Sorgos tolerantes a imidazolinonas
 - Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l) (Dual Gold)*
 - Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) Sorgos tolerantes
@@ -766,7 +766,7 @@ POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - Bromoxinil 34,6% (0,8-1l) V2-V4
 - Atrazina 90% (1-2kg) V2-V4
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8
-- Pendimetalín 33% (2,5-4l) V3-V4 maleza no emergida
+- Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 maleza no emergida
 - Imazapyc/Imazapy (0,2-0,3l) Sorgos tolerantes
 - Atrazina 90% / Hormonal / Mezclas hormonales
 
@@ -789,7 +789,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Clomazone 36% (1,5l) (Command) sin registro
 - Trifluralina 60% (1,5l)
-- Pendimetalín 45,6% (2,5-3,5l)
+- Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
 - Imidazolinonas (Colzas CL) sin registro
 - Triazinas: atrazina, metribuzin, terbutilazina (Colzas con resistencia a triazinas) sin registro
 - ⚠️ Carinata: solo trifluralina
@@ -833,11 +833,11 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Metribuzin 48% (0,5-0,8l)
 - Terbutilazina 75% (0,8-1kg)
 - Prometrina 50% (2l) (Gesagard)
-- Linurón 50% (2l)
+- Linurón 50% (2l) (Afalon)
 - Atrazina 90% (0,5-1kg) sin registro
 - Flumioxazin 48% (0,1l)
 - S-metolacloro 96% (0,8-1l) (Dual Gold)
-- Pendimetalín 45,6% (2,5-3,5l)
+- Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
 - Trifluralina 60% (1-2,5l)
 - Piroxasulfone 48% (0,1l) sin registro 10-15 DAS
 - Diflufenicán 50% (0,2l) (Brodal) sin registro 10-15 DAS
