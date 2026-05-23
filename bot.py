@@ -726,8 +726,8 @@ POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo e
 - Piroxulam 21,5% (84gr) (PowerFlex)
 - Iodosulfurón/Mesosulfurón (0,2-0,3l) (Hussar Plus)
 - Flucarbazone (80-100gr) (Everest 70 WDG)
-- Imazamox 70-100g Trigos CL
-- Imazapyc/Imazapy (0,2-0,3l) Trigos CL
+- Imazamox 70-100g (Pulsar) Trigos CL
+- Imazapyc/Imazapy (0,2-0,3l) (Odyssey) Trigos CL
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) Trigos HB4
 
@@ -756,18 +756,18 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (1-2kg)
 - S-metolacloro 96% (0,9-1,3l) (Dual Gold)* (*semilla curada con Fluxofenim 96%)
 - Pendimetalín 33% (2,5-4,5l) (Herbadox)
-- Imazapyc 31,8% (0,2-0,3l) Sorgos tolerantes a imidazolinonas
+- Imazapyc 31,8% (0,2-0,3l) (Odyssey) Sorgos tolerantes
 - Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l) (Dual Gold)*
-- Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) Sorgos tolerantes
+- Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) (Odyssey) Sorgos tolerantes
 
 POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - 2,4D (aplicación dirigida >V8)
 - MCPA / Picloram / Clopyralid / Dicamba
-- Bromoxinil 34,6% (0,8-1l) V2-V4
+- Bromoxinil 34,6% (0,8-1l) (Bromotril) V2-V4
 - Atrazina 90% (1-2kg) V2-V4
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8
 - Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 maleza no emergida
-- Imazapyc/Imazapy (0,2-0,3l) Sorgos tolerantes
+- Imazapyc/Imazapy (0,2-0,3l) (Odyssey) Sorgos tolerantes
 - Atrazina 90% / Hormonal / Mezclas hormonales
 
 Desecante: Paraquat / Glifosato
@@ -796,7 +796,7 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 
 POST-EMERGENCIA CULTIVO (estado roseta) — Aplicar sobre cultivo emergido:
 - Cletodim / Haloxyfop (graminicidas)
-- Clopyralid 47,5% (100-150cc) → riesgo Bajo
+- Clopyralid 47,5% (100-150cc) (Lontrel) → riesgo Bajo
 - Halauxifén (registro Uruguay) → riesgo Bajo
 - Dicamba 57,5% (40-60cc) → riesgo Medio
 - Picloram 24% (40-80cc) → riesgo Moderado/alto
@@ -852,7 +852,7 @@ POST-EMERGENCIA CULTIVO (4ª hoja verdadera BBCH 14 — antes de zarcillos BBCH 
 - Bentazón 60% (1-1,5l) (Basagran)
 - MCPA 28% (0,5-0,75l)
 
-Desecante: Paraquat 27,6% / Diquat 40% / Saflufenacil 70% / Glufosinato 28%
+Desecante: Paraquat 27,6% / Diquat 40% (Reglone) / Saflufenacil 70% / Glufosinato 28%
 ⚠️ Evitar POE con condiciones de estrés
 
 === CAMELINA ===
@@ -872,7 +872,7 @@ Trifluralina 60% (1,5l) (Treflan) — ÚNICA opción residual
 POST-EMERGENCIA CULTIVO (estado roseta BBCH 13-15) — Aplicar sobre cultivo emergido:
 Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
 
-Desecante: Diquat 40% / Saflufenacil 70% / Carfentrazone 40%
+Desecante: Diquat 40% (Reglone) / Saflufenacil 70% / Carfentrazone 40%
 ⚠️ Cultivo con opciones muy limitadas
 
 === SENECIO ARGENTINUS (Barbecho) ===
@@ -886,7 +886,7 @@ CONTROL:
 - Glifosato 2000-2500 g.ea/ha (plantas juveniles, sin estrés)
 - Otoño húmedo: Glifosato + hormonal (2,4D, fluroxipir, clopyralid, picloram)
 - Otoño seco: Glifosato + PPO quemante (flumioxazin, saflufenacil, carfentrazone, piraflufén)
-- Desecación: Diquat / Paraquat
+- Desecación: Diquat (Reglone) / Paraquat
 - MEJOR COMBINACIÓN: Glifosato Premium 1080 g.ea + Flumioxazin (Sumisoya 120ml) + S-metolacloro (Dual Gold 1000ml) → 85-95% control
 - Agregar cloracetamida puede tener efecto activador
 
