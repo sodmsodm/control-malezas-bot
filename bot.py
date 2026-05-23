@@ -770,6 +770,8 @@ POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8
 - Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 maleza no emergida
 - Imazapyc/Imazapy (0,2-0,3l) (Odyssey) Sorgos tolerantes
+- Foramsulfurón 30% + Iodosulfurón 2% (120cc) (Equip) + Sulfato amonio + Aceite — Maíz convencional, sorgo de Alepo RG
+- Nicosulfurón 75% (70g) (Accent) + Sulfato amonio — Maíz convencional, sorgo de Alepo RG
 - Atrazina 90% / Hormonal / Mezclas hormonales
 
 Desecante: Paraquat / Glifosato
