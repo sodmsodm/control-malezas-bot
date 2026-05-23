@@ -275,7 +275,7 @@ BARBECHO INTERMEDIO (45-60 DAS):
 - Terbutilazina 75% (1kg) hasta 45 DAS
 - Metribuzin 48% (1l) (Sencorex)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,25) hasta 30 DAS
-- Sulfometurón 15% (Classic) / Clorimurón 20% (Classic) (0,1kg) SOJAS STS
+- Sulfometurón 15% + Clorimurón 20% (0,1kg) (Ligate) SOJAS STS
 
 PEE / PSI-PEE:
 - Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
@@ -293,7 +293,7 @@ PEE / PSI-PEE:
 - Flumioxazin 4,2% / Acetoclor 90% (1,5l) (Harness) 7 DAS
 - Sulfentrazone 50% (0,4l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 - Sulfometurón 30,7% (0,25l) 7 DAS SOJAS STS
-- Sulfometurón 15% (Classic) / Clorimurón 20% (Classic) (0,1kg) / Sulfentrazone 50% (0,5l) (Authority/Capaz) SOJAS STS
+- Sulfometurón 15% + Clorimurón 20% (0,1kg) (Ligate) / Sulfentrazone 50% (0,5l) (Authority/Capaz) SOJAS STS
 - Metribuzin 14,9% / S-metolacloro 62,8% (2,5l)
 - Fomesafén 50% (0,4-0,5l) / Metribuzin 48% (0,8-1l) (Sencorex) / Acetoclor 90% (1,5l) (Harness)
 - Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
@@ -630,6 +630,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 - Metsulfurón 60% (5-6g) (Ally) / Dicamba 57,8% (0,1-0,15l) (Banvel)
+- Metsulfurón 30% + Aminopyralid 44% (2 bolsas 67g/ha) (Tronador Xtra)
 - Metsulfurón / Clorsulfurón (10-12g) (Finesse WG) / Dicamba 57,8% (0,4l) (Banvel)
 - Metsulfurón / Clorsulfurón (10-12g) (Finesse WG) / 2,4D 64,3% e.a. (0,4l)
 - 2,4D 64,3% e.a. (0,4l) / Dicamba 57,8% (0,1-0,15l) (Banvel)
@@ -703,6 +704,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glufosinato de amonio 28% (1-2,5l)
 - Cletodim 24% (0,7-1l) (Select); Cletodim 36% (0,5-0,7 l/ha) (Select 36)
 - Haloxyfop 54% (0,25-0,35l) (Galant Max)
+- Fluazifop-p-butil 35% (0,4-0,6l) (Super Onecide) POE maleza/cultivo
 - Glifosato / Cletodim / Epirefenacil / Terbutilazina+Flumioxazin
 - Paraquat / Cletodim / Glifosato
 - DG Paraquat / Glufosinato
@@ -722,12 +724,12 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo emergido en macollaje:
 ⚠️ IMPORTANTE: Estas opciones son para aplicar sobre el TRIGO YA EMERGIDO (macollaje Z2.3-Z3.1). Son graminicidas selectivos para trigo registrados para esa ventana. NO confundir con las opciones de barbecho anteriores.
 - Pinoxaden 5% (0,6-0,8l) (Axial)
-- Clodinafop 24% (0,2l) (Gizmo)
-- Piroxulam 21,5% (84gr) (PowerFlex)
+- Clodinafop 24% (0,2l) (Gizmo) / (Topick 24EC)
+- Piroxulam 21,5% (84gr) (PowerFlex) — también como Piroxulam+Metsulfurón (Merit WG Pack) 400cc+6,7g
 - Iodosulfurón/Mesosulfurón (0,2-0,3l) (Hussar Plus)
 - Flucarbazone (80-100gr) (Everest 70 WDG)
-- Imazamox 70-100g (Pulsar) Trigos CL
-- Imazapyc/Imazapy (0,2-0,3l) (Odyssey) Trigos CL
+- Imazamox 70-100g (Pulsar/Trigosol) Trigos CL
+- Imazapyc/Imazapyr (0,2-0,3l) (Odyssey/Mayoral) Trigos CL
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) Trigos HB4
 
