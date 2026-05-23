@@ -513,7 +513,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (1-2kg) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 - Atrazina 90% (1-2kg) / Biciclopirona 20% (0,8-1l)
-- Biciclopirona 20% (0,8-1l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Biciclopirona 20% (0,8-1l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold) — mezcla comercial: (Acuron Pack)
 - Biciclopirona 20% (0,8-1l) / Piroxasulfone 85% (0,2kg)
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) / S-metolacloro
 - Terbutilazina 75% (0,8-1kg) / Piroxasulfone 85%
@@ -555,8 +555,8 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO AÚN NO SEMBRADO (POE maleza / PSI cultivo
 - Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE maleza / PSI cultivo):
-- Atrazina 90% (1,8-2,2kg) Gesaprim Fot.II
-- Terbutilazina 75% (1,3-1,5kg) Terbine Fot.II
+- Atrazina 90% (1,8-2,2kg) (Gesaprim) Fot.II
+- Terbutilazina 75% (1,3-1,5kg) (Terbine) Fot.II
 - Amicarbazone 70% (0,4-0,7) Dinamic Fot.II
 - Linurón 50% (2-3l) (Afalon) Fot.II
 - S-metolacloro 96% (0,8-1,6l) Dual Gold
@@ -564,16 +564,16 @@ ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE
 - Piroxazulfone 85% (0,16-0,2kg) Yamato 15 DAS
 - Dimetenamida 90% (1,2-1,8l) (Frontier)
 - Diflufenicán 50% (0,2-0,3l)
-- Biciclopirona 20% (0,75-1l) Acuron Uno
-- Flurocloridona 25% (0,75-1,5l) Rainbow
-- Piroxasulfone/saflufenacil (Zidua Pack) También POE maleza
-- Piroxasulfone/flumioxazin (Fierce 10-15 DAS)
-- Atrazina/s-metolacloro (BicepPack Gold)
-- Isoxaflutole/thiencarbazone (ALS) Adengo
+- Biciclopirona 20% (0,75-1l) (Acuron Uno)
+- Flurocloridona 25% (0,75-1,5l) (Rainbow)
+- Piroxasulfone/Saflufenacil (Zidua Pack) - también POE maleza
+- Piroxasulfone/Flumioxazin (Fierce) 10-15 DAS
+- Atrazina/S-metolacloro (BicepPack Gold)
+- Isoxaflutole/Thiencarbazone (Adengo)
 
 ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 ⚠️ Malezas <5cm, evitar estrés:
-- Atrazina 90% (1,5-2kg) Gesaprim hasta V6
+- Atrazina 90% (1,5-2kg) (Gesaprim) hasta V6
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8 (cotiledonar)
 - Metribuzin 70% (210-270g) Tribune hasta V2-V8
 - Linurón 50% (2-2,5l) (Afalon) tratamientos en bandas
@@ -582,10 +582,10 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 - Dicamba 57,7% (0,15-0,2l) V2-V8
 - Picloram 27,7% (0,1-0,15l) V2-V8
 - MCPA 28% (1,5l) V2-V8
-- Mesotrione 48% (0,3l) Callisto V2-V6
-- Topramezone 33,6% (0,08-0,1l) Convey V1-V7
-- Tolpyralate 40% (0,075-0,125l) Brucia V3-V6
-- Tembotrione 42% (0,25-0,3l) Laudis V3-V6
+- Mesotrione 48% (0,3l) (Callisto) V2-V6
+- Topramezone 33,6% (0,08-0,1l) (Convey) V1-V7
+- Tolpyralate 40% (0,075-0,125l) (Brucia) V3-V6
+- Tembotrione 42% (0,25-0,3l) (Laudis) V3-V6
 - Glufosinato de amonio 28% (1,8-2l) Maíz ENLIST V1-V8
 - Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 Maleza no emergida
 
@@ -603,8 +603,8 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Piraflufén etil 2,5% (80-200cc) (Stagger)
 - Oxifluorfén 24% (0,25-0,3l) (Galigan)
 - Glifosato (dosis v.s.f.)
-- Glufosinato de amonio 28% (1-3l) Lifeline
-- Paraquat/diurón (1,5-2,5l) Cerillo
+- Glufosinato de amonio 28% (1-3l) (Lifeline)
+- Paraquat/diurón (1,5-2,5l) (Cerillo)
 - Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
@@ -617,16 +617,16 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Piroxasulfone 85% (160-200g) (Yamato) Yamato (sin registro)
 - Pendimetalín 45,5% (2-3,5l) (Herbadox)
 - Diflufenicán 50% (0,3l) (Brodal) Brodal
-- Flurocloridona 25% (2-4l) Rainbow
-- Imazapyr 80% (100g) Clearsol (Girasoles Clearsol)
+- Flurocloridona 25% (2-4l) (Rainbow)
+- Imazapyr 80% (100g) (Clearsol) Girasoles CL
 - Múltiples mezclas: Sulfentrazone/S-metolacloro, Flurocloridona/S-metolacloro, Diflufenicán/Acetoclor, Prometrina/Acetoclor, etc.
-- Imazapyr 1,5%/Imazamox 3,3% (1,5-2l) Clearsol Plus II
+- Imazapyr 1,5%/Imazamox 3,3% (1,5-2l) (Clearsol Plus II)
 
 POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
 - Graminicidas (DIMs, FOPs): Cletodim (Select), Haloxyfop-R-metil (Galant Max), Propaquizafop (Agil), Quizalofop-p-etil (Assure)
 - Aclonifén 60% (1-1,5l) Prodigio
 - Benazolín 50% (0,3l) (Dasen) Dasen
-- Imazapyr 80% (Clearsol) Acción POE-PEE maleza
+- Imazapyr 80% (Clearsol) - Acción POE-PEE maleza
 - Imazapyr/Imazamox (Clearsol Plus II)
 
 ⚠️ NO USAR en girasol: saflufenacil, fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas
