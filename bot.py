@@ -349,7 +349,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / MCPA 28% (1,5-2,5l)
 - Glifosato / 2,4D + Dicamba 25 DAS
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
-- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
+- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc) (Shark)
 - Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
@@ -428,7 +428,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glufosinato de amonio 28% (2,5l)
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
 - 2,4D / Saflufenacil 70% (40g) (Heat)
-- 2,4D / Carfentrazone 40% (70-80cc)
+- 2,4D / Carfentrazone 40% (70-80cc) (Shark)
 - 2,4D / Epirefenacil 5,5% (600cc) (Empera)
 - Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin / Carfentrazone / Epirefenacil
 
@@ -477,7 +477,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Trifludimoxazin / Saflufenacil (0,15-0,2l) Acción POE y PEE MALEZA 7 DAS
 - Glufosinato de amonio 28% (2,5l)
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- 2,4D / Carfentrazone 40% (70-80cc)
+- 2,4D / Carfentrazone 40% (70-80cc) (Shark)
 - 2,4D / Epirefenacil / Saflufenacil / Carfentrazone / Flumioxazin / Trifludimoxazin
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
@@ -530,7 +530,7 @@ ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE
 - Amicarbazone 70% (0,4-0,7) Dinamic Fot.II
 - Linurón 50% (2-3l) (Afalon) Fot.II
 - S-metolacloro 96% (0,8-1,6l) Dual Gold
-- Acetoclor 90% (2-3l) (Harness) Harness
+- Acetoclor 90% (2-3l) (Harness)
 - Piroxazulfone 85% (0,16-0,2kg) Yamato 15 DAS
 - Dimetenamida 90% (1,2-1,8l) (Frontier)
 - Diflufenicán 50% (0,2-0,3l)
@@ -569,7 +569,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Fluroxipir (1 DAS)
 - Halauxifén (1 DAS) 120cc
 - Paraquat 27,6% (1-3,5l) (Gramoxone)
-- Carfentrazone 40% (50-75cc) Shark
+- Carfentrazone 40% (50-75cc) (Shark)
 - Piraflufén etil 2,5% (80-200cc) (Stagger)
 - Oxifluorfén 24% (0,25-0,3l) (Galigan)
 - Glifosato (dosis v.s.f.)
@@ -578,12 +578,12 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
-- Sulfentrazone 50% (300-400cc) Capaz
+- Sulfentrazone 50% (300-400cc) (Authority/Capaz)
 - Flumioxazin 48% (50-100cc) Sumisoya (20-30 DAS)
 - Prometrina 50% (1-2l) (Gesagard) Gesagard
 - S-metolacloro 96% (0,8-1l) (Dual Gold) Dual Gold
-- Acetoclor 90% (2-3l) (Harness) Harness
-- Trifluralina 60% (1-2l) Adama Essentials
+- Acetoclor 90% (2-3l) (Harness)
+- Trifluralina 60% (1-2l) (Treflan)
 - Piroxasulfone 85% (160-200g) (Yamato) Yamato (sin registro)
 - Pendimetalín 45,5% (2-3,5l) (Herbadox)
 - Diflufenicán 50% (0,3l) (Brodal) Brodal
@@ -593,7 +593,7 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Imazapyr 1,5%/Imazamox 3,3% (1,5-2l) Clearsol Plus II
 
 POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
-- Graminicidas (DIMs, FOPs): Cletodim, Haloxyfop-R-metil, Propaquizafop, Quizalofop-p-etil
+- Graminicidas (DIMs, FOPs): Cletodim (Select), Haloxyfop-R-metil (Galant Max), Propaquizafop (Agil), Quizalofop-p-etil (Assure)
 - Aclonifén 60% (1-1,5l) Prodigio
 - Benazolín 50% (0,3l) (Dasen) Dasen
 - Imazapyr 80% (Clearsol) Acción POE-PEE maleza
@@ -610,7 +610,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / Dicamba 57,8% (0,1-0,2l) (Banvel)
 - Glifosato / 2,4D + Dicamba
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
-- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
+- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc) (Shark)
 - Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
@@ -656,7 +656,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / MCPA 28% (1,5-2,5l)
 - Glifosato / 2,4D + Dicamba
 - Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
-- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc)
+- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc) (Shark)
 - Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
 - Glifosato / 2,4D o MCPA / Tiafenacil 70% (35-50g)
 - Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
@@ -747,7 +747,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Haloxyfop 54% (0,25-0,35l) 20 DAS
 - Saflufenacil 70% (35-40g) (Heat)
 - Epirefenacil 5,5% (0,6l) (Empera)
-- Carfentrazone 40% (70-80cc)
+- Carfentrazone 40% (70-80cc) (Shark)
 - Piraflufén 2,5% (200cc) (Stagger)
 
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
@@ -784,11 +784,11 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato
 - 2,4D (15-20 DAS) / Fluroxipir / Clopyralid
 - Saflufenacil 70% (35-40g) (Heat)
-- Carfentrazone 40% (70-80cc)
+- Carfentrazone 40% (70-80cc) (Shark)
 
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Clomazone 36% (1,5l) (Command) sin registro
-- Trifluralina 60% (1,5l)
+- Trifluralina 60% (1,5l) (Treflan)
 - Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
 - Imidazolinonas (Colzas CL) sin registro
 - Triazinas: atrazina, metribuzin, terbutilazina (Colzas con resistencia a triazinas) sin registro
@@ -838,7 +838,7 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Flumioxazin 48% (0,1l)
 - S-metolacloro 96% (0,8-1l) (Dual Gold)
 - Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
-- Trifluralina 60% (1-2,5l)
+- Trifluralina 60% (1-2,5l) (Treflan)
 - Piroxasulfone 48% (0,1l) sin registro 10-15 DAS
 - Diflufenicán 50% (0,2l) (Brodal) sin registro 10-15 DAS
 - Imazatapir + Atrazina
@@ -867,7 +867,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Saflufenacil 70% / Carfentrazone 40%
 
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
-Trifluralina 60% (1,5l) — ÚNICA opción residual
+Trifluralina 60% (1,5l) (Treflan) — ÚNICA opción residual
 
 POST-EMERGENCIA CULTIVO (estado roseta BBCH 13-15) — Aplicar sobre cultivo emergido:
 Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
