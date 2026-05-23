@@ -909,6 +909,44 @@ Cletodim 60% (1,5l) — ÚNICA opción, solo gramíneas
 Desecante: Diquat 40% (Reglone) / Saflufenacil 70% / Carfentrazone 40%
 ⚠️ Cultivo con opciones muy limitadas
 
+=== CRUCÍFERAS RESISTENTES (Barbecho) ===
+Fuente: AAPRESID Regional Tandilia / INTA Tandil. Campaña 2018-19. Corredor Azul-Tandil, SE bonaerense.
+
+--- CONTEXTO DE RESISTENCIA ---
+En el SE bonaerense (partidos de Azul y Tandil) se han confirmado poblaciones con resistencia múltiple:
+- Nabo (Brassica rapa): resistencia a EPSPS (glifosato) + inhibidores ALS + 2,4D
+- Nabón (Raphanus sativus): resistencia a inhibidores ALS
+- Nabillo (Hirschfeldia incana): resistencia múltiple a inhibidores ALS y 2,4D
+- Colza (Brassica napus): resistencia a inhibidores de la EPSPS
+⚠️ Estas poblaciones nacen durante todo el año, lo que dificulta el manejo
+
+--- CONTROL DE CRUCÍFERAS RESISTENTES EN BARBECHO ---
+
+CONTROL TOTAL (reseteo del lote) — POE sobre maleza nacida:
+⚠️ Glifosato + 2,4D solo: control INSUFICIENTE (10-20%) en poblaciones resistentes
+- Glifosato + 2,4D 45,6% e.a. (1,5l) + Saflufenacil 70% (35g) (Heat) → mejores controles
+- Glifosato + 2,4D 45,6% e.a. (1,5l) + Carfentrazone 40% (75cc) (Shark) → mejores controles
+- Paraquat 27,6% (2,5l) (Gramoxone) → control intermedio (sin residualidad)
+- Paraquat 27,6% (2,5l) (Gramoxone) + 2,4D 45,6% e.a. (1,5l) → control intermedio
+⚠️ El agregado de PPO quemante (Heat o Shark) al tratamiento base es clave para mejorar el control
+
+CONTROL + RESIDUAL (barbecho previo a soja) — sobre maleza nacida + nuevos nacimientos:
+⚠️ El éxito del residual depende FUERTEMENTE de la infestación inicial:
+
+Con baja infestación previa (1-2 pl/m2, lote limpio):
+- Todos los residuales funcionan >85% de control a los 25-40 días:
+  - Glifosato + 2,4D + Diflufenicán 50% (350g) (Brodal) (Tuken)
+  - Glifosato + 2,4D + Metribuzin + S-metolacloro + Flumioxazin (Tailwind+Oxalis)
+  - Glifosato + 2,4D + Diclosulam 58% (45g) (Spider) + Halauxifén 11,5% (45g) (Texaro)
+  - Glifosato + 2,4D + Piroxasulfone 85% (160g) (Yamato) + Saflufenacil 70% (35g) (Zidua Pack)
+  - Glifosato + 2,4D + Diflufenicán 50% (250cc) (Brodal)
+
+Con alta infestación (16-18 pl/m2, lote sucio):
+⚠️ Solo funcionan con control >80%:
+  - Glifosato + 2,4D + Diclosulam + Halauxifén (Texaro) → >80% a 25 y 40 días
+  - Glifosato + 2,4D + Piroxasulfone + Saflufenacil (Zidua Pack) → >80% a 25 y 40 días
+  - Resto de residuales: control parcial e insuficiente con alta infestación
+
 === SENECIO ARGENTINUS (Barbecho) ===
 
 - Especie anual/bianual, emerge abril-mayo
