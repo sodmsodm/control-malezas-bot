@@ -635,20 +635,21 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 ⚠️ Fluroxipir y Halauxifén: seguridad de uso hasta la siembra (1 DAS = sin carencia práctica)
 ⚠️ Dicamba: respetar carencia de 45 DAS antes de siembra
 ⚠️ 2,4D: respetar carencia 20 DAS, usar formulaciones éster ethyl o microemulsión
-⚠️ Trifludimoxazin: 15-45 DAS antes de siembra. Flumioxazin: 30-60 DAS antes de siembra
+⚠️ Trifludimoxazin: suelos >2% MO y textura pesada/mediana → 15 DAS + lluvias >20mm. Suelos <2% MO, >50% arena, pH>7 → 45 DAS + lluvias >50mm
+⚠️ Flumioxazin: 30 DAS (50cc/ha) o 45-60 DAS (dosis mayor). Riesgo fitotoxicidad aumenta en suelos arenosos <1% MO
 
 AUXINAS SINTÉTICAS (barbecho):
 - 2,4D (20 DAS) — éster ethyl o microemulsión
 - Dicamba (Banvel) (45 DAS)
 - Fluroxipir (Starane) (1 DAS) — seguro hasta siembra
-- Halauxifén (1 DAS) — seguro hasta siembra
+- Halauxifén (Elevore) (1 DAS) — seguro hasta siembra
 - Fluroxipir+Halauxifén (Pixxaro) (1 DAS) — seguro hasta siembra
 
 PPO (barbecho):
-- Piraflufen-etil (Stagger) (15 DAS)
+- Piraflufen-etil (Stagger) (0 DAS)
 - Carfentrazone 40% (Shark) (15 DAS)
-- Trifludimoxazin (15-45 DAS) — no usar si se va a aplicar en PEE
-- Flumioxazin 48% (Sumisoya) (30-60 DAS) — no usar si se va a aplicar en PEE
+- Trifludimoxazin (Vulcarus) (15-45 DAS según suelo — ver ⚠️ arriba) — no usar si se va a aplicar en PEE
+- Flumioxazin 48% (Sumisoya/Vesdua) CR — 30 DAS (50cc/ha) o 45-60 DAS (dosis mayor) — no usar si se va a aplicar en PEE
 
 FOTOSISTEMA I (barbecho):
 - Diquat 40% (Reglone)
@@ -668,28 +669,28 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 
 AUXINAS SINTÉTICAS (PEE):
 - Fluroxipir (Starane) (1 DAS) — seguro hasta siembra
-- Halauxifén (1 DAS) — seguro hasta siembra
-- Fluroxipir+Halauxifén (Pixxaro) (1 DAS) — seguro hasta siembra
+- Halauxifén (Elevore) (0 DAS) — seguro hasta siembra
+- Fluroxipir+Halauxifén (Pixxaro) (0 DAS) — seguro hasta siembra
 
 PPO (PEE):
-- Sulfentrazone 50% (300-400cc) (Authority/Capaz) *** ajustar dosis por suelo
+- Sulfentrazone 50% (Authority/Capaz/Shutdown) *** ajustar dosis en suelos bajo %MO, textura arenosa y pH>7,5
 
 VLCFA / INH. DIV. CEL. (PEE):
-- Acetoclor 90% (2-3l) (Harness)
-- S-metolacloro 96% (0,8-1l) (Dual Gold)
+- Acetoclor 90% (Harness)
+- S-metolacloro 96% (Dual Gold)
 - Metolacloro (dosis v.s.f.)
 
 INH. SINT. MICROT. (PEE):
-- Pendimetalín 45,5% (2-3,5l) (Herbadox)
-- Trifluralina 60% (1-2l) (Treflan)
+- Pendimetalín 45,5% (Herbadox)
+- Trifluralina 60% (Treflan)
 
 FOTOSISTEMA II (PEE):
-- Prometrina 50% (1-2l) (Gesagard)
+- Prometrina 50% (Gesagard)
 
 PDS / INH. CAROTENOIDES (PEE):
-- Diflufenicán 50% (0,3l) (Brodal)
-- Flurocloridona 25% (2-4l) (Rainbow)
-- Flurocloridona 25% (1,5l) (Rainbow) + Diflufenicán 50% (0,3l) (Brodal) — crucíferas con resistencia a flurocloridona
+- Diflufenicán 50% (Brodal/Pelican L)
+- Flurocloridona 25% (Rainbow)
+- Flurocloridona 25% (Rainbow) + Diflufenicán 50% (Brodal) — crucíferas con resistencia a flurocloridona
 
 EPSPS (PEE):
 - Glifosato (dosis v.s.f.)
@@ -703,10 +704,10 @@ INHIB. GLUTAMINO SINT. (PEE):
 
 ALS / IMIDAZOLINONAS (PEE — solo girasoles CL):
 - Imazapyr 80% (Clearsol) Girasoles CL
-- Imazapyr+Imazamox (Clearsol Plus II) Girasoles CL
+- Imazapyr+Imazamox (Clearsol Plus II) Girasoles CL Plus
 
 MEZCLAS (PEE):
-- Sulfentrazone 50% (Authority/Capaz) + S-metolacloro 96% (Dual Gold) — yuyo colorado
+- Sulfentrazone 50% (Authority/Capaz) + S-metolacloro 96% (Dual Gold) — mezcla comercial: (Capaz Elite) — yuyo colorado. Dosis ajustada
 - Sulfentrazone 50% (Authority/Capaz) + Acetoclor 90% (Harness) — yuyo colorado
 
 POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
@@ -721,13 +722,18 @@ ALS / IMIDAZOLINONAS (POE — solo girasoles CL):
 - Imazapyr+Imazamox (Clearsol Plus II) V2-V4
 
 ACCasa (POE — gramíneas):
-- Haloxyfop-R-metil (Galant Max)
+- Haloxyfop-R-metil (Galant Max/Zavobia)
 - Propaquizafop (Agil)
 - Quizalofop-P-etil (Assure)
-- Cletodim (Select)
-- Cletodim (Select) + Quizalofop-P-etil (Assure) — mezcla ACCasa
+- Cletodim (Select/Latium/Traspect)
+- Cletodim + Quizalofop-P-etil (Celebrate) — mezcla ACCasa
 
-⚠️ NO USAR en girasol: saflufenacil (no aplicar en temporada de cultivo), fomesafén (275 días + >300mm lluvia acumulada), diclosulam (no sembrar girasol temporada siguiente), biciclopirona, topramezone, sulfonilureas
+DESECANTE (madurez fisiológica — POST MF):
+- Carfentrazone etil (Shark 40 EC) — POST madurez fisiológica
+- Saflufenacil (Heat) — POST madurez fisiológica
+⚠️ Saflufenacil solo como desecante POST madurez — NO aplicar en la temporada de cultivo
+
+⚠️ NO USAR en girasol: saflufenacil durante el ciclo (solo como desecante POST MF), fomesafén (275 días + >300mm lluvia acumulada), diclosulam (no sembrar girasol temporada siguiente), biciclopirona, topramezone, sulfonilureas
 
 === TRIGO ===
 
