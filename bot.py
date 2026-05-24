@@ -671,6 +671,8 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - 2,4D 64,3% e.a. (0,4l) / Carfentrazone 40% (0,04l)
 - 2,4D 64,3% e.a. (0,4l) / Terbuttrina 50% (0,8-1l)
 - 2,4D 64,3% e.a. (0,4l) / Saflufenacil 70% (25g) (Heat)
+- Saflufenacil 70% (25g) (Heat) solo — registro POE trigo confirmado BASF Argentina. Malezas ≤10cm
+- 2,4D 64,3% e.a. (0,4l) / Diflufenicán 50% (0,15l) (Brodal) — uso en práctica, ver ⚠️ abajo
 - 2,4D 64,3% e.a. (0,4l) / Metribuzin 48% (0,4l) (Sencorex)
 - 2,4D 64,3% e.a. (0,4l) / Piraflufén 2,5% (0,08l) (Stagger)
 - Clopyralid / MCPA (1,25-1,35l) (Lontrel)
@@ -717,16 +719,18 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Carfentrazone 40% (0,04l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l) (Stagger)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Saflufenacil 70% (25g) (Heat)
+- Saflufenacil 70% (25g) (Heat) solo — registro POE trigo confirmado BASF Argentina. Malezas ≤10cm o ≤5cm roseta
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Flurocloridona 25% (0,5l) (Rainbow)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Diflufenicán 50% (0,15l) (Brodal)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Metribuzin 48% (0,4l) (Sencorex)
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / Metribuzin 48% (0,4l) (Sencorex) Trigos HB4
-- Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) Trigos HB4
+- Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) (Rainbow) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ Las opciones LATIFOLIADAS aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
+⚠️ DIFLUFENICÁN EN POE DE TRIGO: Sin registro formal POE en trigo en Argentina (Brodal marbete dice PEE). Sin embargo Tuken WG (Rotam) tramitó el registro POE en trigo y se usa en la práctica como POE precoz en macollaje mezclado con hormonales con buenos resultados. Hay algo de fitotoxicidad (10-20%) reportada en ensayos. Consultar marbete vigente antes de usar.
 
 --- TRIGO: RAIGRAS ---
 
