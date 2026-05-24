@@ -299,12 +299,12 @@ BBCH 99: Madurez cosecha
 --- SOJA: MALEZA GENERAL (No GMO) ---
 
 BARBECHO INTERMEDIO (45-60 DAS):
-- Flumioxazin 48% (150cc)
+- Flumioxazin 48% (150cc) (Sumisoya)
 - Piroxasulfone 85% (160-200g) (Yamato)
 - Diflufenicán 50% (0,3l) (Brodal) hasta 15 DAS
 - Atrazina 90% (1-1,5kg) hasta 40 DAS
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS
-- Terbutilazina 75% (1kg) hasta 45 DAS
+- Terbutilazina 75% (1kg) (Terbine/Gesatop) hasta 45 DAS
 - Metribuzin 48% (1l) (Sencorex)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,25) hasta 30 DAS
 - Sulfometurón 15% + Clorimurón 20% (0,1kg) (Ligate) SOJAS STS
@@ -394,17 +394,17 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 MALEZA PEE BARBECHO LARGO — Aplicar sobre suelo sin maleza emergida (PEE maleza):
 - Atrazina 90% (1kg) hasta 30 DAS
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS
-- Terbutilazina 75% (0,8-1kg) desde 45-60 DAS desde primera lluvia
-- Flurocloridona 25% (1,5l) hasta 45 DAS
+- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) desde 45-60 DAS desde primera lluvia
+- Flurocloridona 25% (1,5l) (Rainbow) hasta 45 DAS
 - Biciclopirona 20% (0,5l) / Atrazina 90% (0,5kg) 120 DAS
 - Diflufenicán 50% (0,3l) (Brodal)
-- Flumioxazin 48% (0,1-0,15l)
+- Flumioxazin 48% (0,1-0,15l) (Sumisoya)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,15-1,25l) 30 DAS
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Metribuzin 48% (0,8-1kg) (Sencorex)
 - Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz)
-- Flumioxazin 48% (0,1-0,15l) 7 DAS
+- Flumioxazin 48% (0,1-0,15l) (Sumisoya) 7 DAS
 - Piroxasulfone 85% (160-200g) (Yamato)
 - Diflufenicán 50% (0,3l) (Brodal) 15 DAS
 - Fomesafén 11,9% / S-metolacloro 51,8% (2,5l)
@@ -429,12 +429,12 @@ SOJAS ENLIST:
 BARBECHO LARGO — Aplicar sobre suelo o maleza en distintos estadios:
 - Atrazina 90% (1-1,5kg) PEE-POST MALEZA hasta 60 DAS
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS PEE-POST MALEZA
-- Terbutilazina 75% (0,8-1kg) hasta 45 DAS PEE-POST MALEZA
+- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) hasta 45 DAS PEE-POST MALEZA
 - Metsulfurón 60% (6-8g) hasta 60 DAS PEE MALEZA
 - Metsulfurón / Clorsulfurón (12-15g) SOJAS STS o hasta 150 DAS PEE MALEZA
 - Biciclopirona 20% (0,5l) / Atrazina 90% (0,5kg) 120 DAS PEE-POST MALEZA
-- Flumioxazin 48% (0,1-0,15l) PEE-POST MALEZA
-- Terbutilazina 75% (1kg) / Flumioxazin 48% (0,12l) PEE-POST MALEZA
+- Flumioxazin 48% (0,1-0,15l) (Sumisoya) PEE-POST MALEZA
+- Terbutilazina 75% (1kg) (Terbine/Gesatop) / Flumioxazin 48% (0,12l) (Sumisoya) PEE-POST MALEZA
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (0,5kg) PEE-POST MALEZA hasta 30 DAS
@@ -443,7 +443,7 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Metribuzin 48% (0,8-1l) (Sencorex) PEE-POST MALEZA
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Atrazina 90% (0,5kg) hasta 30 DAS
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Prometrina 48% (1,5-2l) (Gesagard)
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Flumioxazin 48% (0,1-0,15l) 7 DAS
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Flumioxazin 48% (0,1-0,15l) (Sumisoya) 7 DAS
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) PEE-POST 7 DAS
 - Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) PEE-POST MALEZA 7 DAS
 - Glifosato 1260 g.e.a. / Epirefenacil 5,5% (600cc) (Empera) POST MALEZA
@@ -465,12 +465,12 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin / Carfentrazone / Epirefenacil
 
 MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS) — Aplicar sobre suelo sin maleza emergida:
-- Flumioxazin 48% (150cc)
+- Flumioxazin 48% (150cc) (Sumisoya)
 - Piroxasulfone 85% (160-200g) (Yamato)
 - Diflufenicán 50% (0,3l) (Brodal) hasta 15 DAS
 - Atrazina 90% (1-1,5kg) hasta 40 DAS
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS
-- Terbutilazina 75% (1kg) hasta 45 DAS
+- Terbutilazina 75% (1kg) (Terbine/Gesatop) hasta 45 DAS
 - Metribuzin 48% (1l) (Sencorex)
 - Terbutilazina / Flumioxazin (1,25) hasta 45 DAS
 
@@ -518,7 +518,7 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Biciclopirona 20% (0,8-1l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold) — mezcla comercial: (Acuron Pack)
 - Biciclopirona 20% (0,8-1l) / Piroxasulfone 85% (0,2kg)
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) / S-metolacloro
-- Terbutilazina 75% (0,8-1kg) / Piroxasulfone 85%
+- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) / Piroxasulfone 85%
 - Terbutilazina 50% (0,8-1kg) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 - Mesotrione 48% (0,3l) / Piroxasulfone
 - Trifudimoxazin 8,1% (1,77-2,2l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
@@ -611,7 +611,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Sulfentrazone 50% (300-400cc) (Authority/Capaz)
-- Flumioxazin 48% (50-100cc) Sumisoya (20-30 DAS)
+- Flumioxazin 48% (50-100cc) (Sumisoya) (20-30 DAS)
 - Prometrina 50% (1-2l) (Gesagard) Gesagard
 - S-metolacloro 96% (0,8-1l) (Dual Gold) Dual Gold
 - Acetoclor 90% (2-3l) (Harness)
@@ -653,9 +653,9 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Metsulfurón 60% (8-10g) (Ally)
 - Metsulfurón/Clorsulfurón (12-15g) (Finesse WG)
-- Flumioxazin 48% (0,15l) 10 DAS
-- Terbutrina 50% (1,2l)
-- Terbutilazina 75% (1kg)
+- Flumioxazin 48% (0,15l) (Sumisoya) 10 DAS
+- Terbutrina 50% (1,2l) (Igran)
+- Terbutilazina 75% (1kg) (Terbine/Gesatop)
 - Amicarbazone (sin registro) (Dinamic)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,5l) 15 DAS
 - Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
@@ -697,13 +697,13 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l) (Gramoxone)
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Flurocloridona 25% (1,5l)
+- Flurocloridona 25% (1,5l) (Rainbow)
 - Diflufenicán 50% (0,3l) (Brodal)
-- Flumioxazin 48% (0,12l) 10 DAS
+- Flumioxazin 48% (0,12l) (Sumisoya) 10 DAS
 - Piroxasulfone 85% (0,12kg)
-- Flurocloridona 25% (1,5l) / Piroxasulfone 48% (0,21l) 15 DAS
-- Terbutrina 50% (1,2l)
-- Terbutilazina 75% (1kg)
+- Flurocloridona 25% (1,5l) (Rainbow) / Piroxasulfone 48% (0,21l) 15 DAS
+- Terbutrina 50% (1,2l) (Igran)
+- Terbutilazina 75% (1kg) (Terbine/Gesatop)
 - Amicarbazone (sin registro) (Dinamic)
 - Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
@@ -711,13 +711,13 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bromoxinil 34,6% (0,8-1l) (Bromotril)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Metribuzin 48% (0,4l) (Sencorex)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Terbutrina 50% (0,8-1l)
+- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Terbutrina 50% (0,8-1l) (Igran)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Diflufenicán 50% (0,15l) (Brodal)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bentazón 60% (Basagran)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Carfentrazone 40% (0,04l)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l) (Stagger)
 - 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Saflufenacil 70% (25g) (Heat)
-- Bromoxinil 34,6% (0,8-1l) (Bromotril) / Flurocloridona 25% (0,5l)
+- Bromoxinil 34,6% (0,8-1l) (Bromotril) / Flurocloridona 25% (0,5l) (Rainbow)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Diflufenicán 50% (0,15l) (Brodal)
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) / Metribuzin 48% (0,4l) (Sencorex)
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
@@ -744,9 +744,9 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Piroxasulfone 48% (0,18-0,21l) (Yamato Top)
 - Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
-- Flumioxazin 48% (0,15l) 10 DAS
-- Terbutrina 50% (1,2l)
-- Terbutilazina 75% (1kg)
+- Flumioxazin 48% (0,15l) (Sumisoya) 10 DAS
+- Terbutrina 50% (1,2l) (Igran)
+- Terbutilazina 75% (1kg) (Terbine/Gesatop)
 - Terbutilazina 50% / Flumioxazin 3,8% (1,5l) 15 DAS
 - Bidozone 40% (1,2-1,5l) 15 DAS
 - Flumioxazin 48% (0,12l) / Piroxasulfone 48% (0,21l) 10 DAS
@@ -763,7 +763,7 @@ POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo e
 - Imazamox 70-100g (Pulsar/Trigosol) Trigos CL
 - Imazapyc/Imazapyr (0,2-0,3l) (Odyssey/Mayoral) Trigos CL
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
-- Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) Trigos HB4
+- Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) (Axial) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Graminicidas (cletodim, haloxyfop, quizalofop) 25 DAS. Paraquat solo maleza hasta 4 hojas. Glufosinato de amonio solo malezas hasta 4 hojas.
 ⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.3. Para estadios anteriores no hay opciones POE registradas en esta base.
@@ -786,7 +786,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 
 PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Flumioxazin 48% (0,15l) 20-30 DAS
-- Terbutilazina 75% (1kg)
+- Terbutilazina 75% (1kg) (Terbine/Gesatop)
 - Atrazina 90% (1-2kg)
 - S-metolacloro 96% (0,9-1,3l) (Dual Gold)* (*semilla curada con Fluxofenim 96%)
 - Pendimetalín 33% (2,5-4,5l) (Herbadox)
@@ -867,11 +867,11 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - Imazatapir 10% (0,8-1l)
 - Metsulfurón 60% (4-5g) sin registro 30-40 DAS
 - Metribuzin 48% (0,5-0,8l)
-- Terbutilazina 75% (0,8-1kg)
+- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop)
 - Prometrina 50% (2l) (Gesagard)
 - Linurón 50% (2l) (Afalon)
 - Atrazina 90% (0,5-1kg) sin registro
-- Flumioxazin 48% (0,1l)
+- Flumioxazin 48% (0,1l) (Sumisoya)
 - S-metolacloro 96% (0,8-1l) (Dual Gold)
 - Pendimetalín 45,6% (2,5-3,5l) (Herbadox)
 - Trifluralina 60% (1-2,5l) (Treflan)
@@ -884,7 +884,7 @@ POST-EMERGENCIA CULTIVO (4ª hoja verdadera BBCH 14 — antes de zarcillos BBCH 
 - Setoxidim (no disponible en Argentina)
 - Imazatapir 10% (0,5l)
 - Metribuzin 48% (0,5l) (Sencorex)
-- Terbutilazina 75% (0,8kg)
+- Terbutilazina 75% (0,8kg) (Terbine/Gesatop)
 - Bentazón 60% (1-1,5l) (Basagran)
 - MCPA 28% (0,5-0,75l)
 
@@ -1025,7 +1025,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
+            model="claude-sonnet-4-6",
             max_tokens=1500,
             system=KNOWLEDGE_BASE,
             messages=conversation_history[user_id]
