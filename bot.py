@@ -680,7 +680,7 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Evitar repetir mecanismos de acción. Usar coadyuvantes. Control POE con malezas pequeñas. Evitar aplicaciones con estrés por frío o falta de agua.
-⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones LATIFOLIADAS aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
 
 --- TRIGO: CRUCIFERAS ---
 
@@ -726,7 +726,7 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
-⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.1 (inicio macollaje). Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones LATIFOLIADAS aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
 
 --- TRIGO: RAIGRAS ---
 
@@ -753,20 +753,26 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 - Imazapyc / Xmazapy (0,2-0,3l) Trigos CL
 
-POST-EMERGENCIA CULTIVO (estadio Z2.3-Z3.1) — Aplicar sobre cultivo de trigo emergido en macollaje:
-⚠️ IMPORTANTE: Estas opciones son para aplicar sobre el TRIGO YA EMERGIDO (macollaje Z2.3-Z3.1). Son graminicidas selectivos para trigo registrados para esa ventana. NO confundir con las opciones de barbecho anteriores.
+POST-EMERGENCIA CULTIVO — DESDE 3 HOJAS HASTA ENCAÑAZÓN (Z1.3-Z3.1):
+⚠️ Solo graminicidas — los latifoliadas (hormonales, sulfonilureas) requieren macollaje mínimo (Z2.1)
+- Pinoxaden 5% (0,6-0,8l) (Axial) — desde Z1.3 (3 hojas) hasta encañazón. Maleza: 2-4 hojas a inicio macollaje
+- Clodinafop 24% (0,2l) (Gizmo/Topick 24EC) — desde Z1.2-Z1.3 (2-3 hojas). Maleza: 1-2 hojas a macollaje
+- Iodosulfurón/Mesosulfurón (0,2-0,3l) (Hussar Plus) — desde Z1.2 (2 hojas) hasta encañazón. Maleza: 2-4 hojas (gramíneas) o 6 hojas (latifoliadas)
+
+POST-EMERGENCIA CULTIVO — DESDE MACOLLAJE (Z2.1-Z3.1):
+⚠️ IMPORTANTE: Estos graminicidas también aplican desde estado de hojas (ver arriba). Los latifoliadas ÚNICAMENTE desde macollaje.
 - Pinoxaden 5% (0,6-0,8l) (Axial)
-- Clodinafop 24% (0,2l) (Gizmo) / (Topick 24EC)
-- Piroxulam 21,5% (84gr) (PowerFlex) — también como Piroxulam+Metsulfurón (Merit WG Pack) 400cc+6,7g
+- Clodinafop 24% (0,2l) (Gizmo/Topick 24EC)
+- Piroxulam 21,5% (84gr) (PowerFlex) — también como Piroxulam+Metsulfurón (Merit WG Pack) 400cc+6,7g. Desde Z1.3 (3 hojas) hasta fin macollaje
 - Iodosulfurón/Mesosulfurón (0,2-0,3l) (Hussar Plus)
-- Flucarbazone (80-100gr) (Everest 70 WDG)
+- Flucarbazone (80-100gr) (Everest 70 WDG) — desde Z1.1 (1 hoja) hasta Z1.6 (6 hojas)
 - Imazamox 70-100g (Pulsar/Trigosol) Trigos CL
 - Imazapyc/Imazapyr (0,2-0,3l) (Odyssey/Mayoral) Trigos CL
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% / Pinoxaden 5% (0,6-0,8l) (Axial) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Graminicidas (cletodim, haloxyfop, quizalofop) 25 DAS. Paraquat solo maleza hasta 4 hojas. Glufosinato de amonio solo malezas hasta 4 hojas.
-⚠️ Las opciones POE cultivo aplican ÚNICAMENTE desde Z2.3. Para estadios anteriores no hay opciones POE registradas en esta base.
+⚠️ Las opciones LATIFOLIADAS aplican desde Z2.3 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
 
 === SORGO ===
 
