@@ -593,45 +593,141 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 
 === GIRASOL ===
 
+--- GIRASOL: CONSIDERACIONES ESTRATÉGICAS ---
+Fuente: REM Aapresid / Jorgelina Montoya INTA Anguil. Campaña 2025.
+
+BIOLOGÍA Y VENTANA CRÍTICA:
+- Baja densidad (5 pl/m²) + crecimiento inicial lento → el cultivo tarda ~5 semanas en cerrar canopeo
+- Los primeros 30-35 días desde emergencia son la ventana crítica de competencia de malezas
+- Después del cierre de canopeo el cultivo gana ventaja por sombreo — llegar limpio a ese punto es el objetivo
+
+MALEZAS PROBLEMA CLAVE EN GIRASOL (2025):
+- Rama negra (Conyza): biotipos con resistencia múltiple ampliamente expandidos → control anticipado obligatorio
+- Crucíferas: biotipos resistentes a ALS, glifosato, 2,4D y ⚠️ RECIENTEMENTE A FLUROCLORIDONA
+- Morenita: resistencia a ALS y glifosato confirmada en oeste de Buenos Aires
+- Yuyo colorado: biotipos resistentes a glifosato, 2,4D, ALS y ⚠️ PREOCUPACIÓN CRECIENTE por resistencia a PPO (pre y postemergentes)
+- Gramíneas estivales (anuales y perennes): muchas con resistencia a glifosato, ALS y graminicidas
+- Raigrás: avanzando del sur al centro del país en lotes que van a girasol
+
+CARRY-OVER — RIESGO FITOTOXICIDAD EN CULTIVO ANTECESOR:
+⚠️ El girasol es MUY sensible a residuos de herbicidas de cultivos anteriores. Verificar siempre:
+- Fomesafen (Flex) en soja antecesora + <300mm acumulados antes de siembra → RIESGO en girasol
+- Diclosulam (Spider) en soja antecesora → RESTRINGE directamente la posibilidad de sembrar girasol
+- Topramezone (Convey) en maíz + campaña seca + lote de baja productividad → daños residuales posibles
+- Sulfonilureas en barbecho o cultivo invernal + ambiente seco → riesgo de carry-over para girasol
+- HERRAMIENTA: bioensayo con muestras de suelo en macetas → si el girasol emerge y crece normal, es seguro avanzar
+
+ESTRATEGIA POR MOMENTO:
+- BARBECHO: clave para malezas otoño-invernales. Hormonales (2,4D, dicamba, fluroxipir, halauxifén), PPO (piraflufen, carfentrazone, flumioxazin). También trifludimoxazin y residuales PDS (diflufenicán, prometrina) si no se van a usar en PEE
+- PEE: momento más importante. Dosis ajustar por MO, arena, pH y humedad de suelo — no importar recetas de otras zonas
+- POE: opciones muy limitadas. La clave NO es el rescate en POE sino llegar limpio desde barbecho+PEE
+
+CONSIDERACIONES POE EN GIRASOL:
+- Aclonifén (Prodigio): eficaz en yuyo colorado SOLO con plántulas <2cm. Ventana muy estrecha
+- Girasoles CL: imidazolinonas amplían espectro, aplicar V2-V4
+- Graminicidas ACCasa (Select, Galant Max): eficaces en escapes de gramíneas con maleza chica y sin resistencia
+- Fluroxipir y halauxifén: seguridad de uso hasta la siembra sin carencia
+
 --- GIRASOL: MALEZA GENERAL ---
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI-PEE cultivo):
-- 2,4D (15-20 DAS) Formulaciones éster ethyl o mictoemulsión
-- Dicamba (30 DAS)
-- Fluroxipir (1 DAS)
-- Halauxifén (1 DAS) 120cc
-- Paraquat 27,6% (1-3,5l) (Gramoxone)
-- Carfentrazone 40% (50-75cc) (Shark)
-- Piraflufén etil 2,5% (80-200cc) (Stagger)
-- Oxifluorfén 24% (0,25-0,3l) (Galigan)
+⚠️ Barbecho cumple doble rol en girasol: control de malezas otoño-invernales + acumulación de agua en perfil
+⚠️ Fluroxipir y Halauxifén: seguridad de uso hasta la siembra (1 DAS = sin carencia práctica)
+⚠️ Dicamba: respetar carencia de 45 DAS antes de siembra
+⚠️ 2,4D: respetar carencia 20 DAS, usar formulaciones éster ethyl o microemulsión
+⚠️ Trifludimoxazin: 15-45 DAS antes de siembra. Flumioxazin: 30-60 DAS antes de siembra
+
+AUXINAS SINTÉTICAS (barbecho):
+- 2,4D (20 DAS) — éster ethyl o microemulsión
+- Dicamba (Banvel) (45 DAS)
+- Fluroxipir (Starane) (1 DAS) — seguro hasta siembra
+- Halauxifén (1 DAS) — seguro hasta siembra
+- Fluroxipir+Halauxifén (Pixxaro) (1 DAS) — seguro hasta siembra
+
+PPO (barbecho):
+- Piraflufen-etil (Stagger) (15 DAS)
+- Carfentrazone 40% (Shark) (15 DAS)
+- Trifludimoxazin (15-45 DAS) — no usar si se va a aplicar en PEE
+- Flumioxazin 48% (Sumisoya) (30-60 DAS) — no usar si se va a aplicar en PEE
+
+FOTOSISTEMA I (barbecho):
+- Diquat 40% (Reglone)
+- Paraquat 27,6% (Gramoxone)
+- Paraquat/diurón (Cerillo)
+
+EPSPS (barbecho):
 - Glifosato (dosis v.s.f.)
-- Glufosinato de amonio 28% (1-3l) (Lifeline)
-- Paraquat/diurón (1,5-2,5l) (Cerillo)
-- Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
+
+INHIB. GLUTAMINO SINT. (barbecho):
+- Glufosinato de amonio 28% (Lifeline)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
-- Sulfentrazone 50% (300-400cc) (Authority/Capaz)
-- Flumioxazin 48% (50-100cc) (Sumisoya) (20-30 DAS)
-- Prometrina 50% (1-2l) (Gesagard) Gesagard
-- S-metolacloro 96% (0,8-1l) (Dual Gold) Dual Gold
+⚠️ Dosis muy dependientes de MO, arena, pH y humedad — ajustar por zona, no importar recetas
+⚠️ YUYO COLORADO: Sulfentrazone + S-metolacloro o Acetoclor en el límite de fitotoxicidad. En suelos arenosos/baja MO reducir dosis y compensar con Diflufenicán (Brodal) o Flurocloridona (Rainbow)
+⚠️ CRUCÍFERAS: Flurocloridona (Rainbow) buena opción pero ya hay biotipos resistentes → combinar con Diflufenicán (Brodal) para sostener eficacia
+
+AUXINAS SINTÉTICAS (PEE):
+- Fluroxipir (Starane) (1 DAS) — seguro hasta siembra
+- Halauxifén (1 DAS) — seguro hasta siembra
+- Fluroxipir+Halauxifén (Pixxaro) (1 DAS) — seguro hasta siembra
+
+PPO (PEE):
+- Sulfentrazone 50% (300-400cc) (Authority/Capaz) *** ajustar dosis por suelo
+
+VLCFA / INH. DIV. CEL. (PEE):
 - Acetoclor 90% (2-3l) (Harness)
-- Trifluralina 60% (1-2l) (Treflan)
-- Piroxasulfone 85% (160-200g) (Yamato) Yamato (sin registro)
+- S-metolacloro 96% (0,8-1l) (Dual Gold)
+- Metolacloro (dosis v.s.f.)
+
+INH. SINT. MICROT. (PEE):
 - Pendimetalín 45,5% (2-3,5l) (Herbadox)
-- Diflufenicán 50% (0,3l) (Brodal) Brodal
+- Trifluralina 60% (1-2l) (Treflan)
+
+FOTOSISTEMA II (PEE):
+- Prometrina 50% (1-2l) (Gesagard)
+
+PDS / INH. CAROTENOIDES (PEE):
+- Diflufenicán 50% (0,3l) (Brodal)
 - Flurocloridona 25% (2-4l) (Rainbow)
-- Imazapyr 80% (100g) (Clearsol) Girasoles CL
-- Múltiples mezclas: Sulfentrazone/S-metolacloro, Flurocloridona/S-metolacloro, Diflufenicán/Acetoclor, Prometrina/Acetoclor, etc.
-- Imazapyr 1,5%/Imazamox 3,3% (1,5-2l) (Clearsol Plus II)
+- Flurocloridona 25% (1,5l) (Rainbow) + Diflufenicán 50% (0,3l) (Brodal) — crucíferas con resistencia a flurocloridona
+
+EPSPS (PEE):
+- Glifosato (dosis v.s.f.)
+
+FOTOSISTEMA I (PEE):
+- Diquat 40% (Reglone)
+- Paraquat 27,6% (Gramoxone)
+
+INHIB. GLUTAMINO SINT. (PEE):
+- Glufosinato de amonio 28% (Lifeline)
+
+ALS / IMIDAZOLINONAS (PEE — solo girasoles CL):
+- Imazapyr 80% (Clearsol) Girasoles CL
+- Imazapyr+Imazamox (Clearsol Plus II) Girasoles CL
+
+MEZCLAS (PEE):
+- Sulfentrazone 50% (Authority/Capaz) + S-metolacloro 96% (Dual Gold) — yuyo colorado
+- Sulfentrazone 50% (Authority/Capaz) + Acetoclor 90% (Harness) — yuyo colorado
 
 POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
-- Graminicidas (DIMs, FOPs): Cletodim (Select), Haloxyfop-R-metil (Galant Max), Propaquizafop (Agil), Quizalofop-p-etil (Assure)
-- Aclonifén 60% (1-1,5l) Prodigio
-- Benazolín 50% (0,3l) (Dasen) Dasen
-- Imazapyr 80% (Clearsol) - Acción POE-PEE maleza
-- Imazapyr/Imazamox (Clearsol Plus II)
+⚠️ OPCIONES MUY LIMITADAS — la clave es llegar limpio desde barbecho+PEE, no depender del rescate POE
+⚠️ Aclonifén (Prodigio): eficaz en yuyo colorado SOLO con plántulas <2cm. Ventana muy estrecha
 
-⚠️ NO USAR en girasol: saflufenacil, fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas
+SDPS (POE):
+- Aclonifén 60% (1-1,5l) (Prodigio) — yuyo <2cm, crucíferas pequeñas. NO mezclar con graminicidas
+
+ALS / IMIDAZOLINONAS (POE — solo girasoles CL):
+- Imazapyr 80% (Clearsol) V2-V4
+- Imazapyr+Imazamox (Clearsol Plus II) V2-V4
+
+ACCasa (POE — gramíneas):
+- Haloxyfop-R-metil (Galant Max)
+- Propaquizafop (Agil)
+- Quizalofop-P-etil (Assure)
+- Cletodim (Select)
+- Cletodim (Select) + Quizalofop-P-etil (Assure) — mezcla ACCasa
+
+⚠️ NO USAR en girasol: saflufenacil (no aplicar en temporada de cultivo), fomesafén (275 días + >300mm lluvia acumulada), diclosulam (no sembrar girasol temporada siguiente), biciclopirona, topramezone, sulfonilureas
 
 === TRIGO ===
 
