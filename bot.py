@@ -70,6 +70,7 @@ Shark              | Carfentrazone    | 75          | 0     | 0    | 0     | 0? 
 - Tordon/Picloram: residualidad muy prolongada en suelos con pH alto o bajo contenido de MO.
 - Residualidad de las AUXINAS en orden de mayor a menor: Picloram (Tordón) > Clopyralid (Lontrel) > Dicamba (Banvel) > 2,4D > Fluroxipir (Starane)
 
+
 === FENOLOGÍA DE CULTIVOS ===
 
 --- FENOLOGÍA TRIGO Y CEBADA — Escala Zadoks (Zadoks et al., 1974) ---
@@ -294,6 +295,166 @@ BBCH 89: Madurez fisiológica
 BBCH 99: Madurez cosecha
 ⚠️ Opciones herbicidas muy limitadas — ver sección Camelina en base de conocimiento
 
+
+=== CONSIDERACIONES GENERALES DE MANEJO ===
+
+--- GIRASOL: ESTRATEGIA Y MALEZAS PROBLEMA ---
+Fuente: REM Aapresid / Jorgelina Montoya INTA Anguil. Campaña 2025.
+
+BIOLOGÍA Y VENTANA CRÍTICA:
+- Baja densidad (5 pl/m²) + crecimiento inicial lento → el cultivo tarda ~5 semanas en cerrar canopeo
+- Los primeros 30-35 días desde emergencia son la ventana crítica de competencia de malezas
+- Después del cierre de canopeo el cultivo gana ventaja por sombreo — llegar limpio a ese punto es el objetivo
+
+MALEZAS PROBLEMA CLAVE EN GIRASOL (2025):
+- Rama negra (Conyza): biotipos con resistencia múltiple ampliamente expandidos → control anticipado obligatorio
+- Crucíferas: biotipos resistentes a ALS, glifosato, 2,4D y ⚠️ RECIENTEMENTE A FLUROCLORIDONA
+- Morenita: resistencia a ALS y glifosato confirmada en oeste de Buenos Aires
+- Yuyo colorado: biotipos resistentes a glifosato, 2,4D, ALS y ⚠️ PREOCUPACIÓN CRECIENTE por resistencia a PPO (pre y postemergentes)
+- Gramíneas estivales (anuales y perennes): muchas con resistencia a glifosato, ALS y graminicidas
+- Raigrás: avanzando del sur al centro del país en lotes que van a girasol
+
+CARRY-OVER — RIESGO FITOTOXICIDAD EN CULTIVO ANTECESOR:
+⚠️ El girasol es MUY sensible a residuos de herbicidas de cultivos anteriores. Verificar siempre:
+- Fomesafen (Flex) en soja antecesora + <300mm acumulados antes de siembra → RIESGO en girasol
+- Diclosulam (Spider) en soja antecesora → RESTRINGE directamente la posibilidad de sembrar girasol
+- Topramezone (Convey) en maíz + campaña seca + lote de baja productividad → daños residuales posibles
+- Sulfonilureas en barbecho o cultivo invernal + ambiente seco → riesgo de carry-over para girasol
+- HERRAMIENTA: bioensayo con muestras de suelo en macetas → si el girasol emerge y crece normal, es seguro avanzar
+
+ESTRATEGIA POR MOMENTO:
+- BARBECHO: clave para malezas otoño-invernales. Hormonales (2,4D, dicamba, fluroxipir, halauxifén), PPO (piraflufen, carfentrazone, flumioxazin). También trifludimoxazin y residuales PDS (diflufenicán, prometrina) si no se van a usar en PEE
+- PEE: momento más importante. Dosis ajustar por MO, arena, pH y humedad de suelo — no importar recetas de otras zonas
+- POE: opciones muy limitadas. La clave NO es el rescate en POE sino llegar limpio desde barbecho+PEE
+
+CONSIDERACIONES POE EN GIRASOL:
+- Aclonifén (Prodigio): eficaz en yuyo colorado SOLO con plántulas <2cm. Ventana muy estrecha
+- Girasoles CL: imidazolinonas amplían espectro, aplicar V2-V4
+- Graminicidas ACCasa (Select, Galant Max): eficaces en escapes de gramíneas con maleza chica y sin resistencia
+- Fluroxipir y halauxifén: seguridad de uso hasta la siembra sin carencia
+
+--- COMMELINA ERECTA: BIOLOGÍA Y ESTRATEGIA DE CONTROL (transversal — todos los cultivos) ---
+Fuente: Panigo E., Cortés E., Vernier F. — REM Aapresid. "Commelina erecta L.: Bases para su manejo y control en Sistemas de Siembra Directa". Mayo 2025. Editora: REM Aapresid, Rosario.
+
+NOMBRE VULGAR: Flor de Santa Lucía
+TIPO: Monocotiledónea herbácea PERENNE (familia Commelináceas)
+DISTRIBUCIÓN ARGENTINA: Presente en Buenos Aires, Catamarca, Chaco, Córdoba, Corrientes, Entre Ríos, Formosa, Jujuy, La Pampa, La Rioja, Misiones, Salta, Santiago del Estero, Santa Fe, San Juan, San Luis y Tucumán (REM Aapresid, 2023). Entre 2013 y 2023 pasó de 117 a 164 departamentos (>80% de zonas encuestadas).
+
+CARACTERÍSTICAS BIOLÓGICAS CLAVE (explican la dificultad de control):
+- Ciclo PERENNE: rebrote de rizomas en septiembre, plántulas de semilla desde octubre. Floración/fructificación: fin de primavera a otoño. En invierno solo persisten rizomas subterráneos.
+- Rizomas: fragmentos cortos engrosados en base de tallos. Actúan como órganos de reserva + permiten rebrote. La tolerancia al glifosato SOLO se observa en plantas con rizomas desarrollados (>5 hojas).
+- Banco de yemas latentes: ~50% de nudos del tallo conservan yemas vivas incluso tras aplicación de glifosato → rebrote garantizado si no se afecta el sistema subterráneo.
+- Dos tipos de semillas: alargadas (baja dormición, germina primavera-otoño) y ovoides (alta dormición, mayor longevidad en suelo). Producción estimada: ~750 semillas/planta/temporada.
+- Ceras epicuticulares: plantas adultas (>5 hojas) tienen mayor cantidad de ceras que plántulas → menor absorción foliar de herbicidas.
+- Alta capacidad competitiva: plantas de rizoma superan en competencia a Digitaria sanguinalis y Amaranthus hybridus.
+- Dispersión por aves: semillas resisten tracto digestivo de palomas.
+
+TOLERANCIA AL GLIFOSATO:
+- Plantas <5 hojas de semilla: buen manejo posible con herbicidas
+- Plantas >5 hojas o de rebrote de rizoma: TOLERANTES — glifosato solo alcanza <30% de control incluso a dosis altas
+- El almacenamiento de almidón en rizoma + ceras epicuticulares son los mecanismos principales de tolerancia
+
+P�RDIDAS EN SOJA: hasta 45% de rendimiento con 348 kg MS/ha de biomasa de Commelina (Ustarroz y Rainero, 2008)
+
+PRINCIPIOS DE MANEJO INTEGRADO:
+- Monitoreo: se establece primero en alambrados y cabeceras → controlar ahí antes de que invada el lote
+- Rotaciones: incluir cultivos invernales (trigo, cebada, servicios) → competencia del cultivo reduce rebrotes notablemente. Un ensayo (Marzetti) mostró mejor control de rebrotes con trigo que en barbecho desnudo.
+- Manejo químico: apuntar al AGOTAMIENTO PROGRESIVO del sistema de reservas. Una aplicación aislada no es suficiente → requiere estrategia encadenada.
+
+DOS ÉPOCAS CLAVE DE INTERVENCIÓN QUÍMICA:
+
+>> OTOÑO (1 momento):
+Aprovechar etapa de acumulación de reservas, POST-COSECHA de cultivos estivales (principalmente soja/girasol por baja cobertura de rastrojos).
+- Base: Glifosato + 2,4D
+- Opción específica para rizomas: Imazapir 200 cc/ha (formulado al 48%) — sistémico, puede alcanzar rizomas
+  ⚠️ Imazapir: aplicar ANTES de heladas (requiere actividad metabólica para translocación)
+  ⚠️ Imazapir: planificar cuidadosamente rotación siguiente (persistencia en suelo limita cultivos inmediatos)
+  ⚠️ Imazapir: menos eficaz post-cosecha de maíz/sorgo por cantidad de rastrojo que impide llegada al blanco
+  ⚠️ Alternativa: usar híbridos/variedades tolerantes a imidazolinonas para ampliar opciones de manejo
+
+>> PRIMAVERA (2-3 momentos escalonados):
+Desde fines de septiembre, rebrotes de rizomas + nuevas plántulas de semilla emergen desde octubre.
+OBJETIVO: intervenir con plantas ≤10-15 cm de diámetro (máxima susceptibilidad).
+
+PRIMERA APLICACIÓN PRIMAVERAL — Base + acompañante residual:
+⚠️ Base obligatoria: Glifosato + 2,4D
+⚠️ Priorizar acompañante con efecto RESIDUAL — los flujos de emergencia de Commelina van de octubre a principios de febrero
+⚠️ Elegir acompañante en función del cultivo siguiente a sembrar
+
+Acompañantes según eficacia (ensayos de campo — Fuente: REM Aapresid 2025):
+
+HPPD — promedio 72% de control:
+- Biciclopirona 20% 1000 cc/ha → MEJOR de este grupo (84% en ensayos individuales)
+- Mesotrione 48% (0,3 l) — POE maleza, PRE-POE maíz
+- Tembotrione 42% — POE maleza, POE maíz
+- Topramezone 33,6% — POE maleza, POE maíz
+- Tolpiralate 42% — POE maleza, POE maíz
+
+ALS — promedio 64% de control:
+- Diclosulam 84% 30-40 g/ha → MEJOR de este grupo (84% en ensayos — PRE-POE soja, PRE maíz)
+- Imazetapir 10% — PRE-POE maíz y soja
+- Iodosulfurón+Thiencarbazone — PRE-POE maleza, PRE maíz, PRE* soja STS
+- Nicosulfuron — POE maleza, POE maíz
+
+PPO — promedio 63% de control:
+- Flumioxazin 48% 150 cc/ha → MEJOR de este grupo (PRE maleza, PSI maíz, PRE soja)
+- Saflufenacil 70% — POE maleza, PSI maíz, PRE soja
+- Trifludiomoxazín — POE maleza, PSI maíz, PRE soja
+- Carfentrazone 40% 100 cc/ha — POE maleza, PSI maíz, PRE soja
+- Epirefenacil 5,5% 600 cc/ha — POE maleza, PSI maíz, PSI soja
+- Sulfentrazone 50% — PRE maleza, PRE maíz, PRE soja
+- Lactofen 24% — POE maleza/maíz, POE soja
+- Piraflufen — POE maleza, PSI maíz, PSI soja
+
+TRIAZINAS — promedio 59% de control:
+- Metribuzin 48% 0,8-1 l/ha → mejor desempeño de este grupo (PRE-POE maleza, PRE soja)
+- Amicarbazone 70% 0,4-0,5 kg/ha → mejor desempeño (PRE-POE maleza, PSI maíz)
+- Atrazina 90% — PRE-POE maleza, PRE-POE maíz
+
+OTRAS (sin efecto residual, solo acompañantes de contacto):
+- Trifludimoxazin + Saflufenacil (Voraxor) 150-200 cc/ha — buen control pero sin residualidad
+- Carfentrazone 40% 100 cc/ha
+- Dicamba al 57,8% 200-300 cc/ha
+- Glufosinato de amonio 28% 2500 cc/ha (formulación 28%)
+
+NOTA SOBRE RESIDUALES COMBINADOS:
+- Residuales solos (aplicación individual): 50-60% de control
+- Residuales en mezcla o solapados en el tiempo: hasta 80% → combinar modos de acción
+
+DESECANTE ÚNICO (sin residualidad, control ≤70%):
+- Paraquat 27,6% (Gramoxone) + Atrazina 90% — NO supera 70%, cantidad considerable de plantas sobrevive
+
+DOBLE GOLPE (DG) — Aplicación secuencial:
+Estrategia de mayor eficacia: 1° aplicación sistémica + 2° aplicación desecante, con intervalo acotado.
+- CUANTO MEJOR SEA LA 1° APLICACIÓN → mejor resultado del doble golpe total
+- 2° aplicación: Paraquat 27,6% (Gramoxone) o Glufosinato de amonio 28% 2500-3000 cc/ha
+- Agregar activo a la 2° aplicación no mejoró significativamente la performance de los desecantes de contacto
+- Incluir adyuvante de buena calidad (penetración + translocación) → especialmente importante en plantas con cutículas cerosas
+
+ESTRATEGIA POR BIOTIPO DE CULTIVO:
+
+SOJA RR (solo glifosato):
+⚠️ Glifosato solo: <30% de control. Control efectivo pre-siembra obligatorio. Sin herramientas eficaces en POE.
+
+SOJA ENLIST:
+- POE dentro del cultivo: Glufosinato + Glifosato + 2,4D → >80% de control
+- Amplía la ventana de acción y mejora resultado del doble golpe
+
+MAÍZ ENLIST:
+- Mismos principios que soja Enlist → muy buenos niveles de control en POE
+
+MAÍZ SIN ENLIST:
+- Estrategia más eficaz: HPPD + Triazina como aplicación secuencial POE
+- ⚠️ Para máximo potencial: 1° aplicación PRE-siembra con residual que limite nacimientos tempranos
+- HPPD + Triazina como tratamiento simple (sin intervención previa) en cultivo emergido: rara vez supera 60%
+
+CONSIDERACIONES AGRONÓMICAS CLAVE:
+- Usar adyuvante de calidad en todas las aplicaciones (hojas cerosas)
+- Aplicar POE con plantas en estadios iniciales: idealmente ≤10-15 cm de diámetro
+- No depender de una aplicación aislada: planificar la secuencia completa de la campaña
+- Definir tecnología del cultivo siguiente ANTES de elegir herbicidas (condiciona activos y estrategia DG)
+
+
 === SOJA ===
 
 --- SOJA: MALEZA GENERAL (No GMO) ---
@@ -349,6 +510,7 @@ POST-EMERGENCIA CULTIVO (V4-V6) — Aplicar sobre cultivo emergido:
 - Benazolín 50% (0,6l) (Dasen) / Diclosulam 84% (0,015g) (Spider)
 
 --- SOJA: COMMELINA ERECTA ---
+⚠️ Ver también sección "CONSIDERACIONES GENERALES DE MANEJO — COMMELINA ERECTA" para biología, estrategia de otoño y primavera completa, tabla de acompañantes y doble golpe.
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato 1260 g.e.a. / 2,4D (1-1,5l) / Saflufenacil 70% (40g) (Heat) / DG Paraquat 27,6% (2-3l) (Gramoxone)
@@ -498,6 +660,7 @@ SOJAS ENLIST:
 - 2,4D 30% e.a. (1,5-2l) hasta R2
 - Glufosinato de amonio 28% (2-3l) / 2,4D 30% e.a. (1,5-2l) hasta V4-V6
 
+
 === MAÍZ ===
 
 --- MAÍZ: AMARANTHUS SPP. ---
@@ -592,41 +755,6 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 - Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 Maleza no emergida
 
 === GIRASOL ===
-
---- GIRASOL: CONSIDERACIONES ESTRATÉGICAS ---
-Fuente: REM Aapresid / Jorgelina Montoya INTA Anguil. Campaña 2025.
-
-BIOLOGÍA Y VENTANA CRÍTICA:
-- Baja densidad (5 pl/m²) + crecimiento inicial lento → el cultivo tarda ~5 semanas en cerrar canopeo
-- Los primeros 30-35 días desde emergencia son la ventana crítica de competencia de malezas
-- Después del cierre de canopeo el cultivo gana ventaja por sombreo — llegar limpio a ese punto es el objetivo
-
-MALEZAS PROBLEMA CLAVE EN GIRASOL (2025):
-- Rama negra (Conyza): biotipos con resistencia múltiple ampliamente expandidos → control anticipado obligatorio
-- Crucíferas: biotipos resistentes a ALS, glifosato, 2,4D y ⚠️ RECIENTEMENTE A FLUROCLORIDONA
-- Morenita: resistencia a ALS y glifosato confirmada en oeste de Buenos Aires
-- Yuyo colorado: biotipos resistentes a glifosato, 2,4D, ALS y ⚠️ PREOCUPACIÓN CRECIENTE por resistencia a PPO (pre y postemergentes)
-- Gramíneas estivales (anuales y perennes): muchas con resistencia a glifosato, ALS y graminicidas
-- Raigrás: avanzando del sur al centro del país en lotes que van a girasol
-
-CARRY-OVER — RIESGO FITOTOXICIDAD EN CULTIVO ANTECESOR:
-⚠️ El girasol es MUY sensible a residuos de herbicidas de cultivos anteriores. Verificar siempre:
-- Fomesafen (Flex) en soja antecesora + <300mm acumulados antes de siembra → RIESGO en girasol
-- Diclosulam (Spider) en soja antecesora → RESTRINGE directamente la posibilidad de sembrar girasol
-- Topramezone (Convey) en maíz + campaña seca + lote de baja productividad → daños residuales posibles
-- Sulfonilureas en barbecho o cultivo invernal + ambiente seco → riesgo de carry-over para girasol
-- HERRAMIENTA: bioensayo con muestras de suelo en macetas → si el girasol emerge y crece normal, es seguro avanzar
-
-ESTRATEGIA POR MOMENTO:
-- BARBECHO: clave para malezas otoño-invernales. Hormonales (2,4D, dicamba, fluroxipir, halauxifén), PPO (piraflufen, carfentrazone, flumioxazin). También trifludimoxazin y residuales PDS (diflufenicán, prometrina) si no se van a usar en PEE
-- PEE: momento más importante. Dosis ajustar por MO, arena, pH y humedad de suelo — no importar recetas de otras zonas
-- POE: opciones muy limitadas. La clave NO es el rescate en POE sino llegar limpio desde barbecho+PEE
-
-CONSIDERACIONES POE EN GIRASOL:
-- Aclonifén (Prodigio): eficaz en yuyo colorado SOLO con plántulas <2cm. Ventana muy estrecha
-- Girasoles CL: imidazolinonas amplían espectro, aplicar V2-V4
-- Graminicidas ACCasa (Select, Galant Max): eficaces en escapes de gramíneas con maleza chica y sin resistencia
-- Fluroxipir y halauxifén: seguridad de uso hasta la siembra sin carencia
 
 --- GIRASOL: MALEZA GENERAL ---
 
@@ -734,6 +862,7 @@ DESECANTE (madurez fisiológica — POST MF):
 ⚠️ Saflufenacil solo como desecante POST madurez — NO aplicar en la temporada de cultivo
 
 ⚠️ NO USAR en girasol: saflufenacil durante el ciclo (solo como desecante POST MF), fomesafén (275 días + >300mm lluvia acumulada), diclosulam (no sembrar girasol temporada siguiente), biciclopirona, topramezone, sulfonilureas
+
 
 === TRIGO ===
 
@@ -1092,6 +1221,7 @@ POE (Postemergencia de cultivo):
 - SOJA: Glifosato 2L/1,5kg (RR) + Fomesafén 25% 1,5L + coadyuvante + Benazolin 50% 0,8L
   Enlist 1,8L (Soja Enlist) / Glufosinato (Soja Enlist)
 """
+
 
 # --- CLIENTE ANTHROPIC ---
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
