@@ -1059,7 +1059,13 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Evitar repetir mecanismos de acción. Usar coadyuvantes. Control POE con malezas pequeñas. Evitar aplicaciones con estrés por frío o falta de agua.
-⚠️ Las opciones LATIFOLIADAS aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
+⚠️ VENTANA DE APLICACIÓN POR PRINCIPIO ACTIVO:
+- Bromoxinil (Bromotril): desde Z1.2-Z1.3 (2-3 hojas) hasta fin de macollaje. Marbete ADAMA/SENASA Nº30.009.
+- MCPA 28%: desde Z1.3-Z1.5 (3-5 hojas) hasta primer nudo de encañe. Marbete Sumitomo/SENASA Nº34.567.
+- Saflufenacil (Heat) 25g/ha: desde Z1.2-Z1.3 (2-3 hojas) — SIN aceite/coadyuvante a esta dosis. Malezas ≤10cm.
+- 2,4D y MCPA a dosis plena: desde Z2.1 (macollaje) hasta encañazón.
+- Metsulfurón y otras sulfonilureas: desde Z2.1 (macollaje).
+- Para gramíneas (raigras): Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2-Z1.3.de Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
 
 --- TRIGO: CRUCIFERAS ---
 
@@ -1086,6 +1092,16 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Amicarbazone (sin registro) (Dinamic)
 - Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
+
+POST-EMERGENCIA CULTIVO — DESDE ESTADO DE HOJAS (Z1.2-Z1.9):
+Fuente: Marbete ADAMA Bromotril SENASA No.30.009 / Marbete Sumitomo MCPA 28 SENASA No.34.567 / BASF Heat.
+REGLA CRITICA: Hay opciones eficaces desde estado de hojas para cruciferas. NO es correcto decir que todo espera al macollaje.
+
+- Bromoxinil 34,6% (0,8-1l) (Bromotril) SOLO — desde Z1.2 (2-3 hojas) hasta fin macollaje. Contacto, eficaz con cruciferas en plantula (3-6 hojas o <10cm roseta). Marbete ADAMA SENASA No.30.009.
+- MCPA 28% (1,5-2,5l) SOLO — desde Z1.3-Z1.5 (3-5 hojas) hasta primer nudo encane. Eficaz en biotipos sensibles a hormonales. Marbete Sumitomo SENASA No.34.567.
+- Saflufenacil 70% (25g) (Heat) SOLO — desde Z1.2-Z1.3 (2-3 hojas). SIN aceite ni coadyuvante a esta dosis. Malezas crucifera igual o menor a 10cm o roseta igual o menor a 5cm. Con aceite aumenta fitotoxicidad en estado de hojas.
+- Bromoxinil (0,5-0,8l) (Bromotril) + MCPA 28% (0,75-1l) — desde Z1.3 (3 hojas). Sinergia contacto+sistemico. Marbete Bromotril admite esta mezcla explicitamente.
+- Bromoxinil (0,8-1l) (Bromotril) + Saflufenacil 70% (25g) (Heat) — desde Z1.2 (2-3 hojas). Sin coadyuvante. Buen espectro en cruciferas pequeñas.
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 ESTRATEGIA: Hormonales (2,4D/MCPA) son la base en biotipos susceptibles. Mezclarlos con otros sitios de acción mejora control y retrasa resistencias. Fluroxipir en estados avanzados pero con control más deficitario.
@@ -1119,7 +1135,7 @@ TRIGOS HB4 (glufosinato):
 - Glufosinato de amonio 28% (2-3l) + Flurocloridona 25% (Rainbow)
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l)
 
-ADVERTENCIA: Las opciones latifoliadas aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3, Hussar Plus desde Z1.2, Topick desde Z1.2-Z1.3.
+ADVERTENCIA VENTANA POR PRINCIPIO ACTIVO: Bromoxinil (Bromotril) y MCPA aplican desde estado de hojas (Z1.2-Z1.3). Saflufenacil (Heat) 25g/ha desde Z1.2 sin aceite. 2,4D y metsulfuron: desde Z2.1 (macollaje). Para gramineas: Axial desde Z1.3, Hussar Plus desde Z1.2, Topick desde Z1.2-Z1.3.
 ADVERTENCIA: Fluroxipir puede usarse en estados avanzados del trigo para control de crucíferas pero con eficacia mucho menor.
 ADVERTENCIA: En biotipos ALS-resistentes, no usar sulfonilureas. Mezclar hormonales con PPO/Triazinas/PDS mejora control y retrasa resistencias.
 
