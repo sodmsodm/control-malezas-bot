@@ -333,6 +333,72 @@ CONSIDERACIONES POE EN GIRASOL:
 - Graminicidas ACCasa (Select, Galant Max): eficaces en escapes de gramíneas con maleza chica y sin resistencia
 - Fluroxipir y halauxifén: seguridad de uso hasta la siembra sin carencia
 
+
+--- BRASICÁCEAS / CRUCÍFERAS: BIOLOGÍA, RESISTENCIAS Y ESTRATEGIA TRANSVERSAL ---
+Fuente: Diez de Ulzurrun P., Gigón R., Yanniccari M. — REM Aapresid. Brasicáceas o Crucíferas: Bases para su manejo y control en Sistemas de Siembra Directa. Junio 2024.
+
+IDENTIFICACIÓN DE LAS PRINCIPALES ESPECIES MALEZA EN ARGENTINA:
+- Brassica rapa Nabo/nabolza: flores abiertas sobre botones, hojas caulinares amplexicaules, pelos mamelonados, flor AMARILLA, silicua dehiscente. Nabolza = biotipo con gen GT73 (transgén colza RR resistente a glifosato).
+- Raphanus sativus Nabón: flor VIOLÁCEA/ROSADA/BLANCA, silicua INDEHISCENTE y corchosa. Hojas caulinares pecioladas (NO amplexicaules). Clave diferenciadora del nabo.
+- Hirschfeldia incana Nabillo/mostacilla: flor AMARILLO PÁLIDO, silicua adpresa al raquis, densamente pubescente.
+- Rapistrum rugosum Mostacilla: fruto SILÍCULA (no silicua) indehiscente globosa, flor amarillo pálido.
+- Diplotaxis spp. Flor amarilla: hojas aromáticas algo carnosas, cotiledones con ápice truncado.
+- Sisymbrium officinale Mostacilla: silicua lineal adpresa al raquis, hojas caulinares hastadas.
+Clave rápida de campo: color de flor (amarillo vs violáceo/rosado) + tipo de fruto (dehiscente vs indehiscente) + inserción hoja caulinar (amplexicaule vs peciolada).
+
+FLUJOS DE EMERGENCIA (define el momento óptimo de intervención):
+- Brassica rapa: todo el año, picos en OTOÑO (mayor magnitud) y primavera. Compite con cultivos invernales Y estivales.
+- Raphanus sativus: concentrado en OTOÑO y primavera. Compite en ambos tipos de cultivos.
+- Rapistrum rugosum: principalmente OTOÑO. Especialmente problemática en invernales.
+- Hirschfeldia incana / Diplotaxis spp.: principalmente otoño-invierno.
+Dispersión: principalmente por maquinaria agrícola. Semillas viables en suelo hasta 6+ años. Germinan desde 5-6 cm de profundidad; no emergen desde más de 5 cm.
+
+RESISTENCIAS CONFIRMADAS EN ARGENTINA (REM Aapresid 2024):
+La nabolza pasó del 8% al 86% de los lotes en agricultura continua del SE bonaerense (2024). Las Crucíferas son la 2ª familia con más resistencias en Argentina (luego de gramíneas).
+
+Especie              | Nombre vulgar      | Resistencia confirmada
+Hirschfeldia incana  | Nabillo/mostacilla | ALS / ALS+2,4D / Glifosato+2,4D
+Brassica napus       | Colza feral        | Glifosato (transgén GT73)
+Brassica rapa        | Nabo/nabolza       | ALS+Glifosato / ALS+Glifosato+2,4D (triple)
+Rapistrum rugosum    | Mostacilla         | ALS (desde 2018 Entre Ríos, expandiéndose)
+Raphanus sativus     | Nabón              | ALS (mutación W574L)
+
+PÉRDIDAS DE RENDIMIENTO (Fuente: ensayos citados en REM 2024):
+- Trigo: -48% con 150 nabones/m2 (Leaden, 1995)
+- Girasol: -5 a 12% con 1,6-16 nabones/m2; hasta -79% con más de 30 nabones/m2 (Pandolfo, 2016)
+- Soja: -12 a 15% con más de 40 nabones/m2 (Bianchi et al., 2011)
+
+PRINCIPIOS DE MANEJO INTEGRADO:
+- Identificar especie y biotipo (resistencias) ANTES de elegir herbicidas
+- Estrategia: controlar plantas nacidas + incorporar residual (período de emergencia prolongado)
+- Cultivos de servicio con base GRAMÍNEA (raigrás+avena o avena+vicia) reducen stand y fecundidad
+  ADVERTENCIA: NO usar crucíferas como cultivo de servicio — imposible garantizar ausencia de biotipos resistentes
+- Mayor densidad de siembra en cereales (de 64 a 188 pl/m2 redujo biomasa ~65%)
+- Las Crucíferas son muy competitivas en suelos ricos en N — la fertilización puede favorecer a la maleza
+
+ESTRATEGIA QUÍMICA EN BARBECHO (transversal a todos los cultivos):
+
+ROSETA CHICA menor a 10 cm:
+Base: Glifosato + Hormonal (2,4D o MCPA) + acompañante de sitio de acción diferente:
+- PPO: carfentrazone 40% (Shark), piraflufen 2,5% (Stagger), saflufenacil 70% (Heat), flumioxazin 48% (Sumisoya)
+- Fotosistema II: atrazina 90%, metribuzin 48% (Sencorex), amicarbazone 70% (Dinamic), terbutilazina 75% (Terbine)
+- HPPD/PDS: biciclopirona 20%, mesotrione 48% (Callisto), diflufenicán 50% (Brodal)
+- Glufosinato 28%: puede reemplazar glifosato si malezas acompañantes lo permiten
+
+ROSETA GRANDE mayor a 10 cm — Doble Golpe:
+- 1 Aplicación sistémica: Glifosato + 2,4D o MCPA + PPO/Triazina/HPPD
+- 2 Aplicación desecante: Paraquat 27,6% (Gramoxone) / Diquat 40% (Reglone) / Glufosinato 28%
+
+HERBICIDAS RESIDUALES PARA BARBECHO (previenen nuevos nacimientos):
+- Pre trigo/cebada: flurocloridona 25% (Rainbow), diflufenicán 50% (Brodal), flumioxazin 48% (Sumisoya), terbutilazina 75% (Terbine), terbutrina 50% (Igran), pyroxasulfone 85% (Yamato). Nuevas alternativas: aclonifen, mesotrione.
+- Pre cultivos de gruesa: ver secciones específicas por cultivo.
+
+REGLA CRÍTICA POR TIPO DE RESISTENCIA:
+- Con resistencia a ALS: NO usar sulfonilureas ni imidazolinonas. Cambiar a PPO/Triazinas/HPPD.
+- Con resistencia a glifosato: agregar PPO quemante (Heat, Shark) a la mezcla base. Ver sección CRUCIFERAS RESISTENTES BARBECHO.
+- Con resistencia a 2,4D: agregar PPO quemante; no depender del control hormonal.
+- Con TRIPLE resistencia (ALS+glifosato+2,4D): Glifosato+PPO/Triazina en 1° app + desecante DG. Sin opciones sencillas — enfocarse en manejo preventivo y rotación de cultivos.
+
 --- COMMELINA ERECTA: BIOLOGÍA Y ESTRATEGIA DE CONTROL (transversal — todos los cultivos) ---
 Fuente: Panigo E., Cortés E., Vernier F. — REM Aapresid. "Commelina erecta L.: Bases para su manejo y control en Sistemas de Siembra Directa". Mayo 2025. Editora: REM Aapresid, Rosario.
 
@@ -574,17 +640,22 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Sulfentrazone 50% / Diflufenicán 50% (0,3l/0,3l) 15 DAS
 - Trifludimoxazin 12,5%/Saflufenacil 25% (Voraxor) (0,1-0,2l) 7 DAS
 
-POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido (Soja Resistente Glifosato o No GMO):
-- Fomesafén 25% (1-1,5l) (Flex)
-- Acifluorfén 24% (1-1,5l) (Blazer)
-- Lactofén 24% (0,6-0,8l) (Cobra)
+POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido (Soja RR o No GMO):
+CONDICIÓN CLAVE: Maleza en ROSETA PEQUEÑA (5-8 cm). Con rosetas grandes la eficacia cae drásticamente.
+- Fomesafén 25% (1-1,5l) (Flex) — PPO, eficaz con roseta 5-8 cm
+- Acifluorfén 24% (1-1,5l) (Blazer) — PPO, eficaz con roseta 5-8 cm
+- Lactofén 24% (0,6-0,8l) (Cobra) — PPO, eficaz con roseta 5-8 cm
 - Fomesafén 25% (1-1,5l) (Flex) / Benazolín 50% (0,6l) (Dasen)
-- Bentazón 60% (1,5l) (Basagran)
+- Bentazón 60% (1,5l) (Basagran) — Fotosistema II, alternativa POE precoz
+- Imazetapir 10% (0,5-0,8l) (Pivot) / Clorimurón 25% (0,04kg) (Classic) — SOLO en biotipos ALS-susceptibles
+ADVERTENCIA: En biotipos con resistencia a ALS no usar sulfonilureas ni imidazolinonas.
+ADVERTENCIA: El glifosato solo tiene control muy limitado en biotipos susceptibles; insuficiente en resistentes.
 
-SOJAS ENLIST:
+SOJAS ENLIST — DOBLE GOLPE POSIBLE DENTRO DEL CULTIVO:
+El sinergismo glufosinato + 2,4D permite hacer doble golpe dentro del cultivo (herramienta diferencial).
 - Glufosinato de amonio 28% (2-3l) hasta V4-V6
 - 2,4D 30% e.a. (1,5-2l) hasta R2
-- Glufosinato de amonio 28% (2-3l) / 2,4D 30% e.a. (1,5-2l) hasta V4-V6
+- Glufosinato de amonio 28% (2-3l) / 2,4D 30% e.a. (1,5-2l) hasta V4-V6 — mejor opción, controla maleza emergida y permite DG
 
 --- SOJA: PARIETARIA ---
 
@@ -754,7 +825,82 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO EMERGIDO (POE maleza / POE cultivo V2-V8):
 - Glufosinato de amonio 28% (1,8-2l) Maíz ENLIST V1-V8
 - Pendimetalín 33% (2,5-4l) (Herbadox) V3-V4 Maleza no emergida
 
+
+--- MAÍZ: CRUCIFERAS ---
+Fuente: Diez de Ulzurrun P., Gigón R., Yanniccari M. — REM Aapresid. Brasicáceas o Crucíferas. Junio 2024.
+ADVERTENCIA: Ver también sección CONSIDERACIONES GENERALES DE MANEJO — BRASICACEAS para biología, flujos de emergencia y resistencias.
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
+- Glifosato + 2,4D o MCPA — base en biotipos susceptibles
+- Glifosato + 2,4D o MCPA + PPO (saflufenacil/carfentrazone/piraflufen) — con resistencia a hormonales o para mejorar control
+- Glifosato + 2,4D o MCPA + Fotosistema II (atrazina/metribuzin/amicarbazone)
+- Glifosato + 2,4D o MCPA + HPPD/PDS (biciclopirona/mesotrione/diflufenicán)
+- Glufosinato de amonio 28% (1,5-3l) — opción si las malezas acompañantes lo permiten
+- Paraquat 27,6% (Gramoxone) — desecante para DG o aplicación directa
+ADVERTENCIA: Con resistencia a ALS no usar sulfonilureas ni imidazolinonas. Con biotipos resistentes a glifosato agregar PPO quemante.
+
+PEE / PSI CULTIVO — Residuales antes de emergencia del cultivo:
+- Atrazina 90% (1-2kg) / Terbutilazina 75% (1-1,3kg) (Terbine) — Fotosistema II
+- Amicarbazone 70% (0,4-0,7kg) (Dinamic) — Fotosistema II
+- Metribuzin 70% (Tribune) — Fotosistema II
+- Flurocloridona 25% (0,75-1,5l) (Rainbow) — PDS, muy eficaz en crucíferas
+- Diflufenicán 50% (0,2-0,3l) (Brodal) — PDS
+- Biciclopirona 20% (0,75-1l) — HPPD
+- Flumioxazin 48% (Sumisoya) — PPO
+- Pyroxasulfone 85% (0,16-0,2kg) (Yamato) — VLCFA
+Ver también sección MAÍZ: AMARANTHUS SPP. para combinaciones de residuales.
+
+POST-EMERGENCIA CULTIVO (V2-V8) — Aplicar sobre cultivo emergido:
+CONDICIÓN CLAVE: En biotipos susceptibles, MCPA y 2,4D son los hormonales de elección. Mezclar con HPPD sinergiza el quemado sobre la maleza.
+- MCPA 28% (1,5l) + Atrazina 90% (1kg) — V2-V8. Base clásica maíz convencional.
+- 2,4D 64,3% e.a. + Atrazina 90% (1kg) — V2-V8
+- Mesotrione 48% (0,3l) (Callisto) + Atrazina 90% (1kg) — sinergismo HPPD+Triazina, excelente sobre crucíferas pequeñas
+- Topramezone 33,6% (0,08-0,1l) (Convey) + Atrazina 90% (1kg) — V1-V7
+- Tembotrione 42% (0,25-0,3l) (Laudis) + Atrazina 90% (1kg) — V3-V6
+- Tolpyralate 40% (0,075-0,125l) (Brucia) + Atrazina 90% (1kg) — V3-V6
+ADVERTENCIA: Los HPPD deben mezclarse siempre con atrazina o terbutilazina para sinergizar el control.
+ADVERTENCIA: En biotipos resistentes a hormonales o ALS, priorizar HPPD+Triazina como POE.
+
+MAÍZ ENLIST — POE:
+- Glufosinato de amonio 28% (1,8-2l) V1-V8 — excelente sobre crucíferas, mismos principios que soja Enlist
+- 2,4D 45,6% e.a. (1,5-2l) hasta V8
+- Glufosinato 28% + 2,4D 45,6% e.a. (1,5-2l) V2-V4 — doble golpe dentro del cultivo
+
 === GIRASOL ===
+
+--- GIRASOL: CRUCIFERAS ---
+Fuente: Diez de Ulzurrun P., Gigón R., Yanniccari M. — REM Aapresid. Brasicáceas o Crucíferas. Junio 2024.
+ADVERTENCIA: Ver también sección CONSIDERACIONES GENERALES DE MANEJO — BRASICACEAS para biología, flujos de emergencia y resistencias.
+ADVERTENCIA: Crucíferas resistentes a nabón/nabo (Raphanus sativus/Brassica rapa) generan pérdidas de girasol de hasta 79% con más de 30 pl/m2. El control previo a la siembra es crítico.
+
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza):
+Mismas opciones que la estrategia transversal de barbecho (ver sección BRASICACEAS CONSIDERACIONES GENERALES).
+- Glifosato + 2,4D + PPO (saflufenacil/carfentrazone/piraflufen) — primera opción en lotes con problemas
+- Doble golpe en rosetas grandes: sistémico + paraquat/diquat
+ADVERTENCIA: Dicamba: respetar 45 DAS antes de siembra de girasol. 2,4D: 20 DAS.
+
+PEE — Residuales antes de emergencia del cultivo:
+Ver sección GIRASOL: MALEZA GENERAL para opciones residuales por mecanismo de acción.
+Crucíferas específicamente:
+- Flurocloridona 25% (Rainbow) — PDS, muy eficaz pero biotipos resistentes ya presentes en zona. Combinar con Diflufenicán (Brodal) en zonas con sospecha de resistencia.
+- Diflufenicán 50% (Brodal) — PDS, complementario
+- Flumioxazin 48% (Sumisoya) — PPO
+- Prometrina 50% (Gesagard) — Fotosistema II
+ADVERTENCIA: Flurocloridona + Diflufenicán cuando hay sospecha de biotipos resistentes a flurocloridona.
+
+POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido:
+OPCIONES MUY LIMITADAS en girasol. La clave es llegar limpio desde barbecho+PEE.
+
+GIRASOLES CL (Clearfield):
+- Imazapir 80% (Clearsol) V2-V4 — eficaz en biotipos ALS-susceptibles
+- Imazapir + Imazamox (Clearsol Plus II) V2-V4 — mejor espectro
+- Imazapir + Aclonifén (Prodigio) — la mezcla mejora notablemente la eficacia sobre crucíferas
+ADVERTENCIA: En biotipos con resistencia a ALS (nabillo, nabolza, mostacilla resistente) el imazapir NO tiene efecto.
+
+GIRASOLES NO CL:
+- Sin opciones específicas hormonales ni ALS (fitotóxicos en girasol)
+- La clave es el control preventivo desde barbecho y PEE
+- Crucíferas que escapan: evaluar intervención mecánica o manual en manchones
 
 --- GIRASOL: MALEZA GENERAL ---
 
@@ -942,26 +1088,40 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bromoxinil 34,6% (0,8-1l) (Bromotril)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Metribuzin 48% (0,4l) (Sencorex)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Terbutrina 50% (0,8-1l) (Igran)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Diflufenicán 50% (0,15l) (Brodal)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Bentazón 60% (Basagran)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Carfentrazone 40% (0,04l)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Piraflufén 2,5% (0,08l) (Stagger)
-- 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) / Saflufenacil 70% (25g) (Heat)
-- Saflufenacil 70% (25g) (Heat) solo — registro POE trigo confirmado BASF Argentina. Malezas ≤10cm o ≤5cm roseta
-- Bromoxinil 34,6% (0,8-1l) (Bromotril) / Flurocloridona 25% (0,5l) (Rainbow)
-- Bromoxinil 34,6% (0,8-1l) (Bromotril) / Diflufenicán 50% (0,15l) (Brodal)
-- Bromoxinil 34,6% (0,8-1l) (Bromotril) / Metribuzin 48% (0,4l) (Sencorex)
-- Glufosinato de amonio 28% (2-3l) Trigos HB4
-- Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
-- Glufosinato de amonio 28% (2-3l) / Metribuzin 48% (0,4l) (Sencorex) Trigos HB4
-- Glufosinato de amonio 28% (2-3l) / Fluorocloridona 25% (0,5l) (Rainbow) Trigos HB4
-- Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
+ESTRATEGIA: Hormonales (2,4D/MCPA) son la base en biotipos susceptibles. Mezclarlos con otros sitios de acción mejora control y retrasa resistencias. Fluroxipir en estados avanzados pero con control más deficitario.
+ADVERTENCIA: En biotipos con resistencia a hormonales o ALS, las mezclas con PPO/Fotosistema II/PDS son la alternativa clave.
 
-⚠️ Las opciones LATIFOLIADAS aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
-⚠️ DIFLUFENICÁN EN POE DE TRIGO: Sin registro formal POE en trigo en Argentina (Brodal marbete dice PEE). Sin embargo Tuken WG (Rotam) tramitó el registro POE en trigo y se usa en la práctica como POE precoz en macollaje mezclado con hormonales con buenos resultados. Hay algo de fitotoxicidad (10-20%) reportada en ensayos. Consultar marbete vigente antes de usar.
+OPCIONES CON REGISTRO EN TRIGO Y CEBADA (Fuente: REM Aapresid 2024, Tabla 4):
+- Bromoxinil 34,6% (0,8-1l) (Bromotril) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo y cebada
+- Bentazón 60% (1-1,5l) (Basagran) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo y cebada
+- Carfentrazone 40% (0,04l) (Shark) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo y cebada
+- Terbutrina 50% (0,8-1l) (Igran) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo y cebada
+
+OPCIONES CON REGISTRO EN TRIGO:
+- Bromoxinil 34,6% (Bromotril) + Flurocloridona 25% (Rainbow) — Registro trigo
+- Metribuzin 48% (0,4l) (Sencorex) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo
+- Piraflufen 2,5% (0,08l) (Stagger) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo
+- Saflufenacil 70% (25g) (Heat) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo. Malezas ≤10cm o ≤5cm roseta
+- Saflufenacil 70% (25g) (Heat) solo — Registro POE trigo confirmado BASF Argentina. Malezas ≤10cm
+- Flurocloridona 25% (0,5l) (Rainbow) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — Registro trigo
+- Diflufenicán 50% (0,15l) (Brodal) + 2,4D 64,3% e.a. (0,4l) o MCPA 75% (0,8l) — SIN REGISTRO en Argentina (Brodal marbete dice PEE). Se usa en práctica como POE precoz en macollaje con buenos resultados pero con algo de fitotoxicidad (10-20%). Consultar marbete vigente.
+- Bromoxinil 34,6% (Bromotril) + Diflufenicán 50% (Brodal) — SIN REGISTRO en Argentina
+
+OPCIONES SIN REGISTRO EN ARGENTINA (informativo — no recomendar como primera opción):
+- Diflufenican + 2,4D/MCPA — Sin registro en Argentina
+- Metribuzin + Diflufenican — Sin registro en Argentina
+- Bromoxynil + Diflufenican — Sin registro en Argentina
+
+TRIGOS HB4 (glufosinato):
+- Glufosinato de amonio 28% (2-3l)
+- Glufosinato de amonio 28% (2-3l) + 2,4D 64,3% e.a. (0,4l)
+- Glufosinato de amonio 28% (2-3l) + Metribuzin 48% (0,4l) (Sencorex)
+- Glufosinato de amonio 28% (2-3l) + Flurocloridona 25% (Rainbow)
+- Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l)
+
+ADVERTENCIA: Las opciones latifoliadas aplican desde Z2.1 (macollaje). Para gramíneas: Axial desde Z1.3, Hussar Plus desde Z1.2, Topick desde Z1.2-Z1.3.
+ADVERTENCIA: Fluroxipir puede usarse en estados avanzados del trigo para control de crucíferas pero con eficacia mucho menor.
+ADVERTENCIA: En biotipos ALS-resistentes, no usar sulfonilureas. Mezclar hormonales con PPO/Triazinas/PDS mejora control y retrasa resistencias.
 
 --- TRIGO: RAIGRAS ---
 
