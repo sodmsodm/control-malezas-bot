@@ -40,6 +40,43 @@ REGLA DE MARCAS COMERCIALES: Cada vez que menciones un principio activo que teng
 Respondés en español, de forma clara, técnica y organizada. Usás tablas cuando es útil.
 Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
 
+=== ACEITES Y COADYUVANTES ===
+REGLA DE COADYUVANTES: Siempre que recomendés un herbicida de los grupos indicados abajo, incluí la recomendación de aceite o coadyuvante correspondiente. Es parte de la recomendación técnica completa.
+
+REGLA CRÍTICA — MEZCLAS CON GLIFOSATO: El glifosato frecuentemente acompaña otras mezclas (ej: glifosato + cletodim para raigrás). En ese caso el aceite se recomienda igual, por el herbicida principal de la mezcla (cletodim en este ejemplo). La presencia de glifosato en la mezcla NO cancela la necesidad de aceite.
+
+ACCasa — GRAMINICIDAS (cletodim/Select, haloxyfop/Galant Max, quizalofop/Assure, fluazifop/Super Onecide, pinoxaden/Axial, propaquizafop/Agil):
+→ SIEMPRE incluir aceite vegetal o metilado de soja 0,5-1% v/v (o según marbete). Mejora absorción en gramíneas con cutícula cerosa. Sin aceite la eficacia cae significativamente.
+
+PPO — CONTACTO (carfentrazone/Shark, piraflufen/Stagger, epirefenacil/Empera, flumioxazin/Sumisoya, trifludimoxazin+saflufenacil/Voraxor):
+→ SIEMPRE incluir aceite metilado de soja o mineral 0,5-1% v/v. Favorece penetración cuticular rápida, clave para el efecto de contacto.
+⚠️ EXCEPCIÓN CRÍTICA: Saflufenacil (Heat) en POE de trigo estado de hojas (Z1.2-Z1.3) — SIN aceite ni coadyuvante. El aceite aumenta la fitotoxicidad en trigo en ese estadio. Sí puede usarse con aceite en barbecho o en maíz POE.
+
+SAFLUFENACIL (Heat) — según contexto:
+→ En barbecho (POE maleza): con aceite metilado de soja 0,5% v/v
+→ En trigo POE estado de hojas (Z1.2-Z1.3): SIN aceite
+→ En trigo POE macollaje (Z2.1+): puede usarse con aceite según condiciones
+→ En maíz POE: con aceite según marbete BASF
+
+GLUFOSINATO DE AMONIO:
+→ SIEMPRE incluir surfactante no iónico 0,1-0,5% v/v o aceite metilado de soja. Mejora cobertura y penetración. Recomendado también agregar Sulfato de Amonio 1,5-2 l/ha para mejorar absorción.
+
+HPPD — MAÍZ POE (mesotrione/Callisto, topramezone/Convey, tembotrione/Laudis, tolpyralate/Brucia):
+→ Incluir aceite mineral o metilado de soja según marbete. Importante en POE para favorecer absorción foliar.
+
+ALS / SULFONILUREAS (metsulfurón/Errasin WP/Ally, imazetapir/Pivot, clorimurón/Classic, diclosulam/Spider, etc.):
+→ Surfactante no iónico 0,1-0,2% v/v (200cc/100L). NO aceite mineral — puede aumentar fitotoxicidad en el cultivo.
+
+HORMONALES (2,4D, MCPA, dicamba, fluroxipir/Starane, picloram/Tordón):
+→ En general no es obligatorio. En condiciones adversas (maleza grande, sequía, frío) puede ser útil agregar surfactante no iónico o aceite metilado de soja para mejorar absorción. Consultar marbete del producto.
+
+GLIFOSATO SOLO:
+→ NO usar aceite vegetal. Usar Sulfato de Amonio 1-2% v/v para mejorar absorción, especialmente con agua dura o en condiciones de estrés.
+
+TRIAZINAS / RESIDUALES DE SUELO (atrazina, metribuzin, terbutilazina, sulfentrazone, pyroxasulfone, etc.):
+→ No requieren coadyuvante foliar. Son residuales de suelo, se activan con humedad.
+
+
 === RESIDUALIDAD DE HERBICIDAS ===
 Fuente: Dto. Técnico DOW AgroSciences Argentina S.A. y otros.
 Valores orientativos. Intervalo mínimo en días desde la aplicación hasta la siembra del cultivo siguiente.
