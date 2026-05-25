@@ -521,6 +521,38 @@ CONSIDERACIONES AGRONÓMICAS CLAVE:
 - Definir tecnología del cultivo siguiente ANTES de elegir herbicidas (condiciona activos y estrategia DG)
 
 
+--- TRÉBOL BLANCO (Trifolium repens): ESTRATEGIA DE CONTROL EN BARBECHO ---
+Fuente: Corteva Agriscience, Manual Barbecho Quimico / Ensayos EEA INTA Oliveros / Marbete Starane Xtra SENASA No.35.712.
+
+BIOLOGÍA Y DIFICULTAD DE CONTROL:
+- Perenne por stolones (tallos rastreros que enraízan en nudos) — el control foliar no elimina la planta si no se transloca a stolones
+- Alta producción de semillas con dormición prolongada en el suelo
+- Muy competitiva en barbechos húmedos y suelos fértiles
+- Momento óptimo de control: follaje joven, receptivo, en activo crecimiento (NO en estrés hídrico ni frío intenso)
+
+CONTROL QUÍMICO EN BARBECHO:
+
+OPCIÓN PRINCIPAL (mejor desempeño en ensayos INTA Oliveros + Manual Corteva):
+- Glifosato 1080 g.e.a./ha + Fluroxipir 33% (Starane Xtra) 450 ml/ha
+  Sin carencia previa a siembra de cultivos. Glifosato actua en hojas; fluroxipir se transloca a stolones.
+  Cultivos en rotacion: soja 3 DAS, girasol/algodon 10 DAS, maiz/trigo sin restriccion.
+
+OPCIÓN CON PPO (refuerzo de quemado sobre follaje):
+- Glifosato 1080 g.e.a./ha + Fluroxipir 33% (Starane Xtra) 450 ml/ha + Saflufenacil 70% (Heat) 25-35g/ha
+  Saflufenacil suma efecto de contacto/quemado rapido sobre follaje. Combinar modos de accion.
+
+OPCIÓN MARBETE (dosis estandar):
+- Glifosato 48% (3 l/ha) [=1440 g.e.a./ha] + Fluroxipir 33% (Starane Xtra) 360 cc/ha
+  Marbete Starane Xtra — uso en barbecho quimico presiembra trigo.
+
+⚠️ CONDICIONES PARA ÉXITO:
+- Trebol con suficiente follaje joven y receptivo (activo crecimiento)
+- No aplicar con estres hidrico severo ni temperaturas <10°C
+- El fluroxipir necesita translocarse hasta los stolones — requiere buena absorcion foliar
+- En reinfestation por semillas del banco: planificar 2da aplicacion o residual PEE
+
+
+
 === SOJA ===
 
 --- SOJA: MALEZA GENERAL (No GMO) ---
@@ -1059,14 +1091,16 @@ POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido e
 - Glufosinato de amonio 28% (2-3l) // DG Glufosinato de amonio 28% (2-3l) Trigos HB4
 
 ⚠️ CONSIDERACIONES: Evitar repetir mecanismos de acción. Usar coadyuvantes. Control POE con malezas pequeñas. Evitar aplicaciones con estrés por frío o falta de agua.
-⚠️ VENTANA DE APLICACIÓN POR PRINCIPIO ACTIVO:
-- Bromoxinil (Bromotril): desde Z1.2-Z1.3 (2-3 hojas) hasta fin de macollaje. Marbete ADAMA/SENASA Nº30.009.
-- MCPA 28%: desde Z1.3-Z1.5 (3-5 hojas) hasta primer nudo de encañe. Marbete Sumitomo/SENASA Nº34.567.
-- Saflufenacil (Heat) 25g/ha: desde Z1.2-Z1.3 (2-3 hojas) — SIN aceite/coadyuvante a esta dosis. Malezas ≤10cm.
-- 2,4D y MCPA a dosis plena: desde Z2.1 (macollaje) hasta encañazón.
-- Metsulfurón y otras sulfonilureas: desde Z2.1 (macollaje).
-- Para gramíneas (raigras): Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2-Z1.3.de Z1.2 (2 hojas), Topick desde Z1.2 (2-3 hojas).
-
+⚠️ VENTANA DE APLICACIÓN POR PRINCIPIO ACTIVO (desde estado de hojas):
+- Bromoxinil (Bromotril): desde Z1.2 (2-3 hojas). Marbete ADAMA SENASA No.30.009.
+- MCPA 28%: desde Z1.3-Z1.5 (3-5 hojas) hasta primer nudo encane. Marbete Sumitomo SENASA No.34.567.
+- Saflufenacil (Heat) 25g/ha: desde Z1.2-Z1.3 (2-3 hojas) SIN aceite. Puede mezclarse con CUALQUIER hormonal.
+- Fluroxipir 33% (Starane Xtra): desde Z1.3 (3 hojas) hasta hoja bandera visible (Z3.9). Marbete Corteva SENASA No.35.712.
+- Dicamba 48% (Banvel/Dicamba Sigma): desde inicio del cultivo hasta fin macollaje. Marbete Sigma SENASA No.38.176.
+- Metsulfuron (Errasin WP/Ally): desde Z1.3 (3 hojas) hasta encanzaon. Marbete Chemotecnica SENASA No.38.939.
+- 2,4D y sulfonilureas (Metsulfuron a dosis plena): desde Z2.1 (macollaje) hasta encanzaon.
+- Para gramineas (raigras): Axial desde Z1.3 (3 hojas), Hussar Plus desde Z1.2 (2 hojas), Topick desde Z1.2-Z1.3.
+  REGLA SAFLUFENACIL: 25g/ha + cualquier hormonal desde Z1.2 en adelante = sinergia sistémico+contacto. Sin aceite en estado de hojas.
 --- TRIGO: CRUCIFERAS ---
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
@@ -1094,7 +1128,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 
 POST-EMERGENCIA CULTIVO — DESDE ESTADO DE HOJAS (Z1.2-Z1.9):
-Fuente: Marbete ADAMA Bromotril SENASA No.30.009 / Marbete Sumitomo MCPA 28 SENASA No.34.567 / BASF Heat / Marbete Sigma Agro Dicamba SENASA No.38.176 / Marbete Chemotecnica Errasin WP SENASA No.38.939.
+Fuente: Marbete ADAMA Bromotril SENASA No.30.009 / Marbete Sumitomo MCPA 28 SENASA No.34.567 / BASF Heat / Marbete Sigma Agro Dicamba SENASA No.38.176 / Marbete Chemotecnica Errasin WP SENASA No.38.939 / Marbete Corteva Starane Xtra SENASA No.35.712.
 REGLA CRITICA: Hay opciones eficaces desde estado de hojas para cruciferas. NO es correcto decir que todo espera al macollaje.
 
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) SOLO — desde Z1.2 (2-3 hojas) hasta fin macollaje. Contacto, eficaz con cruciferas en plantula (3-6 hojas o <10cm roseta). Marbete ADAMA SENASA No.30.009.
@@ -1116,6 +1150,25 @@ REGLA CRITICA: Hay opciones eficaces desde estado de hojas para cruciferas. NO e
 - Metsulfuron 60% (6-7 g/ha) (Errasin WP / Ally) + Picloram 24% (80 cc/ha) (Tordon) — desde Z1.3 (3 hojas). Mezcla explicita en marbete Errasin. Alternativa cuando se busca mayor accion sobre cruciferas susceptibles a hormonales.
 - Metsulfuron 60% (6-7 g/ha) (Errasin WP / Ally) + Bromoxinil 34,6% (0,8-1l) (Bromotril) — desde Z1.3 (3 hojas). ALS + contacto PPO. Excelente cobertura de espectro: Conyza + cruciferas + otras latifoliadas.
   NOTA METSULFURON: No aplicar en suelos calcarios o pH>8 (aumenta residualidad). Carencia trigo grano: 30 dias. Cebada: 90 dias. Usar surfactante no ionico 200cc/100L.
+
+
+- Fluroxipir 33% (Starane Xtra) 270-360 cc/ha SOLO — desde Z1.3 (3 hojas) hasta hoja bandera visible (Z3.9).
+  Marbete Corteva SENASA No.35.712. Malezas objetivo: caapiqui (Stellaria), sanguinaria (Polygonum aviculare),
+  enredadera anual (Polygonum convolvulus), senecio (Senecio sp.), lengua de vaca (Rumex), yuyo sapo (Wedelia).
+  NO controla cruciferas por si solo — requiere MCPA o 2,4D en mezcla para cruciferas.
+- Fluroxipir 33% (Starane Xtra) 270-360 cc/ha + MCPA 28% (1000-1500 cc/ha) — desde Z1.3 (3-4 hojas) hasta hoja bandera.
+  Mezcla explicita en marbete Starane Xtra. MCPA aporta control de cruciferas + latifoliadas susceptibles.
+  Ventana MCPA en la mezcla: Z1.3 (3-4 hojas) hasta hoja bandera visible (Z3.9).
+- Fluroxipir 33% (Starane Xtra) 270-360 cc/ha + 2,4D ester (300-400 cc/ha) — desde Z2.1 (macollaje) hasta Z3.1.
+  Mezcla explicita en marbete. Ventana 2,4D: macollaje a encanzaon segun variedad.
+- Fluroxipir 33% (Starane Xtra) 270-360 cc/ha + Saflufenacil 70% (Heat) 25g/ha — desde Z1.3 (3 hojas). SIN aceite.
+  Hormonal sistemico (fluroxipir) + PPO contacto (saflufenacil). Amplio espectro latifoliadas. Cruciferas: cobertura parcial via PPO.
+
+REGLA GENERAL — SAFLUFENACIL EN TRIGO POE:
+Saflufenacil 70% (Heat) 25g/ha puede agregarse en mezcla con CUALQUIER hormonal (2,4D, MCPA, fluroxipir, dicamba)
+en POE de trigo desde Z1.2-Z1.3 (2-3 hojas) en adelante. SIN aceite/coadyuvante a esta dosis en estado de hojas.
+Aporta efecto de contacto PPO inmediato que complementa el sistemico del hormonal. Amplia espectro de control.
+Fuente: BASF Argentina — registro POE trigo confirmado.
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 ESTRATEGIA: Hormonales (2,4D/MCPA) son la base en biotipos susceptibles. Mezclarlos con otros sitios de acción mejora control y retrasa resistencias. Fluroxipir en estados avanzados pero con control más deficitario.
@@ -1394,6 +1447,27 @@ CONTROL:
 - Desecación: Diquat (Reglone) / Paraquat
 - MEJOR COMBINACIÓN: Glifosato Premium 1080 g.ea + Flumioxazin (Sumisoya 120ml) + S-metolacloro (Dual Gold 1000ml) → 85-95% control
 - Agregar cloracetamida puede tener efecto activador
+
+=== TRÉBOL BLANCO (Trifolium repens) — Barbecho ===
+Fuente: Corteva Agriscience, Manual Barbecho Quimico / Ensayos EEA INTA Oliveros / Marbete Starane Xtra SENASA No.35.712.
+
+- Perenne por stolones — el control foliar aislado no elimina la planta si no se transloca a stolones
+- Momento optimo: follaje joven y receptivo en activo crecimiento. No aplicar con estres hidrico ni frio intenso (<10°C)
+
+OPCION PRINCIPAL (mejor desempeño en ensayos INTA Oliveros + Corteva):
+- Glifosato 1080 g.e.a./ha + Fluroxipir 33% (Starane Xtra) 450 ml/ha
+  Sin carencia previa a siembra. Glifosato actua en hojas; fluroxipir se transloca a stolones.
+  Carencia rotacion: soja 3 DAS, girasol/algodon 10 DAS, maiz/trigo sin restriccion.
+
+OPCION CON PPO (refuerzo de quemado sobre follaje):
+- Glifosato 1080 g.e.a./ha + Fluroxipir 33% (Starane Xtra) 450 ml/ha + Saflufenacil 70% (Heat) 25-35g/ha
+  Saflufenacil suma efecto contacto/quemado rapido sobre follaje. Combina 3 modos de accion.
+
+OPCION MARBETE ESTANDAR:
+- Glifosato 48% (3 l/ha) + Fluroxipir 33% (Starane Xtra) 360 cc/ha
+  Marbete Starane Xtra — uso en barbecho quimico presiembra trigo.
+
+⚠️ Reinfestacion por banco de semillas: planificar 2da aplicacion o residual PEE segun cultivo siguiente.
 
 === PROTOCOLO INTERNO DE ENSAYOS ===
 
