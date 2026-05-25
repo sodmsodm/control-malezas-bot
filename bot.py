@@ -1677,9 +1677,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(assistant_message)
 
     except Exception as e:
-        logger.error(f"Error: {e}")
+        logger.error(f"Error completo: {type(e).__name__}: {e}", exc_info=True)
         await update.message.reply_text(
-            "❌ Hubo un error procesando tu consulta. Por favor intentá de nuevo."
+            f"❌ Error: {type(e).__name__}: {str(e)[:200]}"
         )
 
 # --- MAIN ---
