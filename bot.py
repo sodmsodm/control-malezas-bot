@@ -55,7 +55,7 @@ Para advertencias usá:
 ⚠️ Texto de la advertencia
 
 Para doble golpe usá:
-🔁 1° Glifosato + Cletodim (Select) → 2° DG Paraquat (Gramoxone) ~7 días después
+🔁 1° Glifosato + Cletodim 24% (0,7-1l) (Select) → 2° DG Paraquat 27,6% (1,5-2,5l) (Gramoxone) ~7 días después
 
 Para situaciones o estrategias escalonadas usá:
 *🌱 SITUACIÓN 1 — Raigrás 1-2 hojas, baja densidad:*
@@ -704,11 +704,11 @@ DOBLE GOLPE — 1° aplicación sistémica + 2° desecante ~7 días después:
 - 1° Glifosato + 2,4D // 2° DG Paraquat 27,6% (Gramoxone)
 - 1° Glifosato + 2,4D // 2° DG Glufosinato de amonio 28%
 - 1° Glifosato + 2,4D // 2° DG (Paraquat 27,6% + Atrazina 90%) — hasta 40 DAS
-- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Atrazina 90%) — hasta 40 DAS
-- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Saflufenacil 70%) (Heat)
-- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Carfentrazone 40%) (Shark)
-- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Epirefenacil 5,5%) (Empera)
-- 1° Glifosato + 2,4D + Dicamba 57,1% (0,2l) // 2° DG (Paraquat + Atrazina) — hasta 40 DAS
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato 28% 2-3l + Atrazina 90% 1-1,5kg) — hasta 40 DAS
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato 28% 2-3l + Saflufenacil 70% 35-40g) (Heat)
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato 28% 2-3l + Carfentrazone 40% 70-80cc) (Shark)
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato 28% 2-3l + Epirefenacil 5,5% 600cc) (Empera)
+- 1° Glifosato + 2,4D + Dicamba 57,1% (0,2l) // 2° DG (Paraquat 27,6% 1,5-2,5l + Atrazina 90% 1-1,5kg) — hasta 40 DAS
 - 1° Glufosinato 28% + 2,4D // 2° DG Paraquat 27,6% (Gramoxone) (2-3l)
 - 1° Glufosinato 28% + 2,4D // 2° DG (Glufosinato + Saflufenacil)
 - 1° Glufosinato 28% + 2,4D // 2° DG (Glufosinato + Carfentrazone)
@@ -722,7 +722,7 @@ SOJAS RESISTENTES GLIFOSATO: Sin opciones efectivas
 
 SOJAS ENLIST:
 - Glifosato 1260 g.e.a. + Glufosinato de amonio 28% + 2,4D 30% e.a. (1,5-2l) — hasta V4-V6
-- Glufosinato de amonio / 2,4D 30% e.a. (1,5-2l) V4-V6
+- Glufosinato de amonio 28% (2-2,5l) + 2,4D 30% e.a. (1,5-2l) — hasta V4-V6
 - Agregar Sulfato de Amonio 1,5-2 l/ha en mezclas con Glufosinato
 
 --- SOJA: CRUCIFERAS ---
@@ -912,7 +912,7 @@ ACCIÓN SOBRE MALEZA NACIDA / CULTIVO AÚN NO SEMBRADO (POE maleza / PSI cultivo
 - Oxifluorfén 24% (0,25-0,3l) (Galigan) PPO
 - Glifosato (dosis v.s.f.) EPSPS
 - Glufosinato de amonio 28% (1,5-3l)
-- Paraquat/diurón (1,5-2,5l)
+- Paraquat/diurón (1,5-2,5l) (Cerillo)
 - Fluroxipyr/halauxifén (400-500cc) (Pixxaro)
 
 ACCIÓN RESIDUAL SOBRE SUELO SIN MALEZA EMERGIDA / CULTIVO AÚN NO SEMBRADO (PEE maleza / PSI cultivo):
@@ -1324,17 +1324,17 @@ SITUACIÓN 2 — Raigrás 2-4 hojas, densidad media, sin historial de resistenci
 - Fluazifop-p-butil 35% (0,4-0,6l) (Super Onecide) — ACCasa, también POE sobre cultivo
 
 SITUACIÓN 3 — Raigrás avanzado (>4 hojas), alta densidad, o sospecha de resistencia a glifosato:
-- Glifosato + Cletodim (Select) + Epirefenacil 5,5% (0,6l) (Empera) — triple: EPSPS+ACCasa+PPO
-- Glifosato + Cletodim (Select) + Terbutilazina/Flumioxazin (Terbyne Max Sipcam) — triple con residual
-- Glufosinato de amonio 28% (1-2,5l) + Cletodim (Select) — alternativa sin glifosato
-- Glufosinato de amonio 28% + Cletodim (Select) + Glifosato — triple única aplicación
-- Paraquat 27,6% (Gramoxone) + Cletodim (Select) + Glifosato — triple única aplicación
+- Glifosato + Cletodim 24% (0,7-1l) (Select) + Epirefenacil 5,5% (0,6l) (Empera) — triple: EPSPS+ACCasa+PPO
+- Glifosato + Cletodim 24% (0,7-1l) (Select) + Terbutilazina/Flumioxazin (Terbyne Max Sipcam) — triple con residual
+- Glufosinato de amonio 28% (1-2,5l) + Cletodim 24% (0,7-1l) (Select) — alternativa sin glifosato
+- Glufosinato de amonio 28% (2-2,5l) + Cletodim 24% (0,7-1l) (Select) + Glifosato (v.s.f.) — triple única aplicación
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + Cletodim 24% (0,7-1l) (Select) + Glifosato (v.s.f.) — triple única aplicación
 - Paraquat 27,6% (Gramoxone) + Terbutilazina/Flumioxazin (Terbyne Max Sipcam) — desecante con residual
 
 SITUACIÓN 4 — Raigrás muy avanzado, muy alta densidad, resistencia confirmada o muy probable:
 ⚠️ En estos casos una sola aplicación es insuficiente — el Doble Golpe es la estrategia correcta.
-- 1° Glifosato + Cletodim (Select) // 2° DG Paraquat 27,6% (Gramoxone) — ~7 días entre aplicaciones
-- 1° Glifosato + Cletodim (Select) // 2° DG Glufosinato de amonio 28% — ~7 días entre aplicaciones
+- 1° Glifosato (v.s.f.) + Cletodim 24% (0,7-1l) (Select) // 2° DG Paraquat 27,6% (1,5-2,5l) (Gramoxone) — ~7 días entre aplicaciones
+- 1° Glifosato (v.s.f.) + Cletodim 24% (0,7-1l) (Select) // 2° DG Glufosinato de amonio 28% (2-3l) — ~7 días entre aplicaciones
 ⚠️ En el DG: cuanto mejor sea la 1° aplicación, mejor el resultado total. No esperar demasiado entre golpes.
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
@@ -1414,7 +1414,7 @@ POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - Nicosulfurón 75% (70g) (Accent) + Sulfato amonio — Maíz convencional, sorgo de Alepo RG
 - Atrazina 90% (1-2kg) + Hormonal (2,4D o MCPA) — mezcla tanque
 
-Desecante: Paraquat / Glifosato
+Desecante: Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Glifosato (v.s.f.)
 
 ⚠️ *Semilla curada con Fluxofenim 96% requerida para usar atrazina + s-metolacloro
 
