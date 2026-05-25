@@ -1094,7 +1094,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
 
 POST-EMERGENCIA CULTIVO — DESDE ESTADO DE HOJAS (Z1.2-Z1.9):
-Fuente: Marbete ADAMA Bromotril SENASA No.30.009 / Marbete Sumitomo MCPA 28 SENASA No.34.567 / BASF Heat.
+Fuente: Marbete ADAMA Bromotril SENASA No.30.009 / Marbete Sumitomo MCPA 28 SENASA No.34.567 / BASF Heat / Marbete Sigma Agro Dicamba SENASA No.38.176 / Marbete Chemotecnica Errasin WP SENASA No.38.939.
 REGLA CRITICA: Hay opciones eficaces desde estado de hojas para cruciferas. NO es correcto decir que todo espera al macollaje.
 
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) SOLO — desde Z1.2 (2-3 hojas) hasta fin macollaje. Contacto, eficaz con cruciferas en plantula (3-6 hojas o <10cm roseta). Marbete ADAMA SENASA No.30.009.
@@ -1102,6 +1102,20 @@ REGLA CRITICA: Hay opciones eficaces desde estado de hojas para cruciferas. NO e
 - Saflufenacil 70% (25g) (Heat) SOLO — desde Z1.2-Z1.3 (2-3 hojas). SIN aceite ni coadyuvante a esta dosis. Malezas crucifera igual o menor a 10cm o roseta igual o menor a 5cm. Con aceite aumenta fitotoxicidad en estado de hojas.
 - Bromoxinil (0,5-0,8l) (Bromotril) + MCPA 28% (0,75-1l) — desde Z1.3 (3 hojas). Sinergia contacto+sistemico. Marbete Bromotril admite esta mezcla explicitamente.
 - Bromoxinil (0,8-1l) (Bromotril) + Saflufenacil 70% (25g) (Heat) — desde Z1.2 (2-3 hojas). Sin coadyuvante. Buen espectro en cruciferas pequeñas.
+
+- Dicamba 48% (100-150 cc/ha) (Dicamba Sigma / Banvel) SOLO — desde inicio del cultivo hasta fin macollaje. Maleza en 2-4 hojas o rosetas <10cm. Eficaz sobre Conyza, cardos, latifoliadas susceptibles. Marbete Sigma Agro SENASA No.38.176.
+  ACLARACION CRITICA: Las cruciferas (nabo, nabon, nabillo, mostacilla) son TOLERANTES/RESISTENTES al dicamba — el dicamba NO controla cruciferas. Usarlo en mezcla cuando hay cruciferas + otras latifoliadas acompanantes (ej. Conyza).
+- Dicamba 48% (100-150 cc/ha) + MCPA 28% (700-1000 cc/ha) — desde Z1.4 (4 hojas) hasta fin macollaje. Marbete Dicamba Sigma admite esta mezcla explicitamente. Doble modo de accion hormonal.
+- Dicamba 48% (100-150 cc/ha) + Bromoxinil 34,6% (750-1200 cc/ha) (Bromotril) — desde Z1.2 (2-3 hojas) hasta fin macollaje. Marbete Dicamba Sigma admite esta mezcla. Dicamba cubre Conyza y cardos; Bromoxinil cubre cruciferas y otras latifoliadas. Buena combinacion cuando hay mezcla de malezas.
+- Dicamba 48% (100-150 cc/ha) + 2,4D ester 100% (240-320 cc/ha) — desde inicio del cultivo hasta fin macollaje. Mezcla clasica hormonal de amplio espectro en latifoliadas susceptibles. Marbete Dicamba Sigma.
+
+- Metsulfuron metil 60% (8-10 g/ha) (Errasin WP / Ally) SOLO — desde Z1.3 (3 hojas) hasta encanzaon. ALS sistemico, muy eficaz en Conyza, cardos, quenopodiaceas, enredaderas. Marbete Chemotecnica SENASA No.38.939.
+  ACLARACION CRITICA: Las cruciferas son RESISTENTES a ALS en gran parte de la zona nucleo (nabillo, nabolza, mostacilla, nabon con resistencia ALS confirmada). Verificar biotipo antes de usar como unica opcion en cruciferas.
+  Eficaz en: Conyza spp. (rama negra), Chenopodium (quinoa), Polygonum (sanguinaria/enredadera), Stellaria (caapiqui), Lamium (ortiga mansa), cardos susceptibles.
+- Metsulfuron 60% (6-7 g/ha) (Errasin WP / Ally) + Dicamba 48% (100 cc/ha) — desde Z1.3 (3 hojas) hasta encanzaon. Mezcla explicita en marbete Errasin. Doble modo de accion ALS+hormonal. Muy eficaz en Conyza + latifoliadas mixtas.
+- Metsulfuron 60% (6-7 g/ha) (Errasin WP / Ally) + Picloram 24% (80 cc/ha) (Tordon) — desde Z1.3 (3 hojas). Mezcla explicita en marbete Errasin. Alternativa cuando se busca mayor accion sobre cruciferas susceptibles a hormonales.
+- Metsulfuron 60% (6-7 g/ha) (Errasin WP / Ally) + Bromoxinil 34,6% (0,8-1l) (Bromotril) — desde Z1.3 (3 hojas). ALS + contacto PPO. Excelente cobertura de espectro: Conyza + cruciferas + otras latifoliadas.
+  NOTA METSULFURON: No aplicar en suelos calcarios o pH>8 (aumenta residualidad). Carencia trigo grano: 30 dias. Cebada: 90 dias. Usar surfactante no ionico 200cc/100L.
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
 ESTRATEGIA: Hormonales (2,4D/MCPA) son la base en biotipos susceptibles. Mezclarlos con otros sitios de acción mejora control y retrasa resistencias. Fluroxipir en estados avanzados pero con control más deficitario.
