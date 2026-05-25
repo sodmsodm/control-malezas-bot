@@ -565,91 +565,119 @@ BARBECHO INTERMEDIO (45-60 DAS):
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS
 - Terbutilazina 75% (1kg) (Terbine/Gesatop) hasta 45 DAS
 - Metribuzin 48% (1l) (Sencorex)
-- Terbutilazina 50% / Flumioxazin 3,8% (1,25) hasta 30 DAS
+- Terbutilazina 50%/Flumioxazin 3,8% (1,25l) (Terbyne Max Sipcam) hasta 30 DAS
 - Sulfometurón 15% + Clorimurón 20% (0,1kg) (Ligate) SOJAS STS
 
 PEE / PSI-PEE:
-- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Sulfentrazone 10% / S-metolacloro 60% (2,5l)
-- Sulfentrazone 50% (0,5l) (Authority/Capaz) / Piroxasulfone 48% (0,355l)
-- Sulfentrazone 50% (0,5l) (Authority/Capaz) / Imazetapir 10% (0,8-1l) (Pivot)
-- Sulfentrazone 50% (0,5l) (Authority/Capaz) / Diclosulam 84% (0,03kg) (Spider)
-- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / Metribuzin 48% (0,8-1l) (Sencorex)
-- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / Clomazone 36% (1,75-2l) (Command)
-- Flumioxazin 15% / Piroxasulfone 34,5% (0,5l) 7 DAS
-- Flumioxazin 4,2% / S-metolacloro 84% (1,75l) 7 DAS
-- Flumioxazin 5% / S-metolacloro 57,6% / Imazetapir 5% (1,5l) 7 DAS
-- Flumioxazin 14,5% / Diclosulam 6,5% (Spider) / Imazetapir 20% (0,5l) 7 DAS
-- Flumioxazin 28,8% / Diclosulam 8,4% (Spider) (0,25l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold) 7 DAS
-- Flumioxazin 4,2% / Acetoclor 90% (1,5l) (Harness) 7 DAS
-- Sulfentrazone 50% (0,4l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Sulfentrazone 10%/S-metolacloro 60% (2,5l) — premezclado
+- Sulfentrazone 50% (0,5l) (Authority/Capaz) + Piroxasulfone 48% (0,355l)
+- Sulfentrazone 50% (0,5l) (Authority/Capaz) + Imazetapir 10% (0,8-1l) (Pivot)
+- Sulfentrazone 50% (0,5l) (Authority/Capaz) + Diclosulam 84% (0,03kg) (Spider)
+- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) + Metribuzin 48% (0,8-1l) (Sencorex)
+- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) + Clomazone 36% (1,75-2l) (Command)
+- Flumioxazin 15%/Piroxasulfone 34,5% (0,5l) (Fierce FMC) 7 DAS
+- Flumioxazin 4,2%/S-metolacloro 84% (1,75l) (Apresa ADAMA) 7 DAS
+- Flumioxazin 5%/S-metolacloro 57,6%/Imazetapir 5% (1,5l) (Zethamaxx Sumitomo) 7 DAS
+- Flumioxazin 14,5%/Diclosulam 6,5%/Imazetapir 20% (0,5l) (Predecessor DVA) 7 DAS
+- Flumioxazin 28,8%/Diclosulam 8,4% (0,25l) + S-metolacloro 96% (1,1-1,3l) (Dual Gold) 7 DAS
+- Flumioxazin 4,2%/Acetoclor 90% (1,5l) (Harness) — premezclado 7 DAS
+- Sulfentrazone 50% (0,4l) (Authority/Capaz) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 - Sulfometurón 30,7% (0,25l) 7 DAS SOJAS STS
-- Sulfometurón 15% + Clorimurón 20% (0,1kg) (Ligate) / Sulfentrazone 50% (0,5l) (Authority/Capaz) SOJAS STS
-- Metribuzin 14,9% / S-metolacloro 62,8% (2,5l)
-- Fomesafén 50% (0,4-0,5l) / Metribuzin 48% (0,8-1l) (Sencorex) / Acetoclor 90% (1,5l) (Harness)
-- Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Sulfometurón 15%+Clorimurón 20% (0,1kg) (Ligate) + Sulfentrazone 50% (0,5l) (Authority/Capaz) SOJAS STS
+- Metribuzin 14,9%/S-metolacloro 62,8% (2,5l) (Boundary Syngenta)
+- Fomesafén 50% (0,4-0,5l) + Metribuzin 48% (0,8-1l) (Sencorex) + Acetoclor 90% (1,5l) (Harness)
+- Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 
 POST-EMERGENCIA CULTIVO (V4-V6) — Aplicar sobre cultivo emergido:
 - Fomesafén 25% (1-1,5l) (Flex)
 - Lactofén 24% (0,6-0,8l) (Cobra)
 - Cletodim 24% (0,7-1l) (Select); Cletodim 36% (0,5-0,7 l/ha) (Select 36)
 - Piroxasulfone 85% (0,16-0,2 kg/ha) (Yamato) hasta V4 o V8
-- Fomesafén 25% (1-1,5l) (Flex) / Benazolín 50% (0,8l) (Dasen)
-- Fomesafén 25% (1-1,5l) (Flex) / 2,4DB 97% e.a. (0,04l)
-- Fomesafén 11,95% / S-metolacloro 51,8% (1,5-2,5l)
-- Fomesafén 25% (1-1,5l) (Flex) / Benazolín 50% (0,015kg) (Dasen)
-- Fomesafén 25% (1-1,5l) (Flex) / Clorimurón 25% (0,03kg) (Classic)
+- Fomesafén 25% (1-1,5l) (Flex) + Benazolín 50% (0,8l) (Dasen)
+- Fomesafén 25% (1-1,5l) (Flex) + 2,4DB 97% e.a. (0,04l)
+- Fomesafén 11,95%/S-metolacloro 51,8% (1,5-2,5l) — premezclado
+- Fomesafén 25% (1-1,5l) (Flex) + Benazolín 50% (0,015kg) (Dasen)
+- Fomesafén 25% (1-1,5l) (Flex) + Clorimurón 25% (0,03kg) (Classic)
 - Clorimurón 25% (0,04-0,05kg) (Classic)
 - Cloransulam 84% (0,04-0,05kg) (Pacto)
 - Imazetapir 10% (0,5-0,8l) (Pivot)
-- 2,4DB 97% e.a. (0,04l) / Bentazón 60% (0,8-1l) (Basagran)
+- 2,4DB 97% e.a. (0,04l) + Bentazón 60% (0,8-1l) (Basagran)
 - Cletodim 24% (0,7-1l) (Select); Cletodim 36% (0,5-0,7 l/ha) (Select 36)
-- Benazolín 50% (0,6l) (Dasen) / Clorimurón 25% (0,03g) (Classic)
-- Benazolín 50% (0,6l) (Dasen) / Diclosulam 84% (0,015g) (Spider)
+- Benazolín 50% (0,6l) (Dasen) + Clorimurón 25% (0,03g) (Classic)
+- Benazolín 50% (0,6l) (Dasen) + Diclosulam 84% (0,015g) (Spider)
 
 --- SOJA: COMMELINA ERECTA ---
 ⚠️ Ver también sección "CONSIDERACIONES GENERALES DE MANEJO — COMMELINA ERECTA" para biología, estrategia de otoño y primavera completa, tabla de acompañantes y doble golpe.
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Glifosato 1260 g.e.a. / 2,4D (1-1,5l) / Saflufenacil 70% (40g) (Heat) / DG Paraquat 27,6% (2-3l) (Gramoxone)
-- Glifosato / 2,4D / Carfentrazone 40% (70-80cc) / DG Paraquat
-- Glifosato / 2,4D / Epirefenacil 5,5% (600cc) (Empera) / DG Paraquat
-- Glifosato / 2,4D / Flumioxazin 48% (150cc) / DG Paraquat
-- Glifosato / 2,4D / Iodosulfurón / Imazetapir (30-45g) 30-45 DAS / DG Paraquat
-- Glifosato / 2,4D / Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) / DG Paraquat
-- Glufosinato de amonio 28% (2,5l) / 2,4D / DG Paraquat
-- Glufosinato de amonio / 2,4D / Metribuzin 48% (0,8-1l) (Sencorex) / DG Paraquat
-- Glufosinato de amonio / 2,4D / Amicarbazone 70% (0,4g) (Dinamic) / DG Paraquat hasta 45 DAS
-- Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin
-- Glufosinato de amonio / 2,4D / Carfentrazone / DG
-- Paraquat / 2,4D / Atrazina hasta 40 DAS
+ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
+⚠️ NOTA: + indica mezcla de tanque. // indica Doble Golpe (~7 días entre aplicaciones). () = producto premezclado.
+⚠️ Sin control total — estas son las mejores opciones de quemado disponibles.
 
-NOTA: Mejores opciones quemado. Sin control total.
-DG = doble golpe
+CON GLIFOSATO — Aplicación única:
+- Glifosato 1260 g.e.a. + 2,4D (1-1,5l éster ethyl hexyl) + Saflufenacil 70% (40g) (Heat)
+- Glifosato + 2,4D + Carfentrazone 40% (70-80cc) (Shark)
+- Glifosato + 2,4D + Epirefenacil 5,5% (600cc) (Empera)
+- Glifosato + 2,4D + Flumioxazin 48% (150cc) (Sumisoya)
+- Glifosato + 2,4D + (Iodosulfurón/Thiencarbazone) (30-45g) 30-45 DAS
+- Glifosato + 2,4D + Imazetapir 10% (0,8-1l) (Pivot)
+- Glifosato + 2,4D + (Trifludimoxazin/Saflufenacil) (0,1-0,2l) (Voraxor)
+- Glifosato + 2,4D + Metribuzin 48% (0,8-1l) (Sencorex)
+- Glifosato + 2,4D + Amicarbazone 70% (0,4g) (Dinamic) — hasta 45 DAS
 
+CON GLUFOSINATO — Aplicación única (verde = opción en biotipos RG resistentes a glifosato):
+- Glufosinato de amonio 28% (2,5l) + 2,4D
+- Glufosinato de amonio 28% + 2,4D + Metribuzin 48% (0,8-1l) (Sencorex)
+- Glufosinato de amonio 28% + 2,4D + Amicarbazone 70% (0,4g) (Dinamic) — hasta 45 DAS
+- Glufosinato de amonio 28% + 2,4D + Saflufenacil 70% (Heat)
+- Glufosinato de amonio 28% + 2,4D + Saflufenacil 70% (Heat) + Flumioxazin 48% (Sumisoya)
+- Glufosinato de amonio 28% + 2,4D + Carfentrazone 40% (Shark)
+- Glufosinato de amonio 28% + 2,4D + Epirefenacil 5,5% (Empera)
+- Glufosinato de amonio 28% + 2,4D + Flumioxazin 48% (Sumisoya)
+- Glufosinato de amonio 28% + 2,4D + (Trifludimoxazin/Saflufenacil) (Voraxor)
+
+DOBLE GOLPE — 1° aplicación sistémica + 2° desecante ~7 días después:
+- 1° Glifosato + 2,4D // 2° DG Paraquat 27,6% (Gramoxone)
+- 1° Glifosato + 2,4D // 2° DG Glufosinato de amonio 28%
+- 1° Glifosato + 2,4D // 2° DG (Paraquat 27,6% + Atrazina 90%) — hasta 40 DAS
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Atrazina 90%) — hasta 40 DAS
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Saflufenacil 70%) (Heat)
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Carfentrazone 40%) (Shark)
+- 1° Glifosato + 2,4D // 2° DG (Glufosinato + Epirefenacil 5,5%) (Empera)
+- 1° Glifosato + 2,4D + Dicamba 57,1% (0,2l) // 2° DG (Paraquat + Atrazina) — hasta 40 DAS
+- 1° Glufosinato 28% + 2,4D // 2° DG Paraquat 27,6% (Gramoxone) (2-3l)
+- 1° Glufosinato 28% + 2,4D // 2° DG (Glufosinato + Saflufenacil)
+- 1° Glufosinato 28% + 2,4D // 2° DG (Glufosinato + Carfentrazone)
+- 1° Glufosinato 28% + 2,4D // 2° DG (Trifludimoxazin/Saflufenacil) (Voraxor)
+
+SIN DOBLE GOLPE — Paraquat único:
+- Paraquat 27,6% (Gramoxone) + 2,4D + Atrazina 90% — hasta 40 DAS
+
+NOTA: Mejores opciones de quemado disponibles. Sin control total garantizado.
 SOJAS RESISTENTES GLIFOSATO: Sin opciones efectivas
 
 SOJAS ENLIST:
-- Glifosato 1260 g.e.a. / Glufosinato de amonio / 2,4D 30% e.a. (1,5-2l) Hasta V4-V6
+- Glifosato 1260 g.e.a. + Glufosinato de amonio 28% + 2,4D 30% e.a. (1,5-2l) — hasta V4-V6
 - Glufosinato de amonio / 2,4D 30% e.a. (1,5-2l) V4-V6
 - Agregar Sulfato de Amonio 1,5-2 l/ha en mezclas con Glufosinato
 
 --- SOJA: CRUCIFERAS ---
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Glifosato / 2,4D (carencia v.s.f.)
-- Glifosato / MCPA 28% (1,5-2,5l)
-- Glifosato / 2,4D + Dicamba 25 DAS
-- Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
-- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc) (Shark)
-- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
-- Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
-- Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
-- Glufosinato de amonio 28% (1-2,5l) / 2,4D
-- Glufosinato de amonio / 2,4D / Saflufenacil
-- Glufosinato de amonio / 2,4D / Carfentrazone
-- Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- Glifosato / 2,4D // DG Glufosinato de amonio
+- Glifosato + 2,4D (carencia v.s.f.)
+- Glifosato + MCPA 28% (1,5-2,5l)
+- Glifosato + 2,4D + Dicamba — 25 DAS
+- Glifosato + 2,4D o MCPA + Saflufenacil 70% (35-40g) (Heat)
+- Glifosato + 2,4D o MCPA + Carfentrazone 40% (70-80cc) (Shark)
+- Glifosato + 2,4D o MCPA + Piraflufén 2,5% (200cc) (Stagger)
+- Glifosato + 2,4D o MCPA + Epirefenacil 5,5% (600cc) (Empera)
+- Glifosato + 2,4D o MCPA + (Trifludimoxazin/Saflufenacil) (0,1-0,15l) (Voraxor)
+- Glufosinato de amonio 28% (1-2,5l) + 2,4D
+- Glufosinato de amonio 28% + 2,4D + Saflufenacil 70% (Heat)
+- Glufosinato de amonio 28% + 2,4D + Carfentrazone 40% (Shark)
+- 1° Glifosato + 2,4D // 2° DG Paraquat 27,6% (1,5-2,5l) (Gramoxone)
+- 1° Glifosato + 2,4D // 2° DG Glufosinato de amonio 28%
 
 MALEZA PEE BARBECHO LARGO — Aplicar sobre suelo sin maleza emergida (PEE maleza):
 - Atrazina 90% (1kg) hasta 30 DAS
@@ -667,7 +695,7 @@ PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Flumioxazin 48% (0,1-0,15l) (Sumisoya) 7 DAS
 - Piroxasulfone 85% (160-200g) (Yamato)
 - Diflufenicán 50% (0,3l) (Brodal) 15 DAS
-- Fomesafén 11,9% / S-metolacloro 51,8% (2,5l)
+- Fomesafén 11,9%/S-metolacloro 51,8% (2,5l) — premezclado
 - Flumioxazin 15% / Piroxasulfone 34,5% (0,3l/0,1l) 7 DAS
 - Sulfentrazone 50% / Diflufenicán 50% (0,3l/0,3l) 15 DAS
 - Trifludimoxazin 12,5%/Saflufenacil 25% (Voraxor) (0,1-0,2l) 7 DAS
@@ -677,9 +705,9 @@ CONDICIÓN CLAVE: Maleza en ROSETA PEQUEÑA (5-8 cm). Con rosetas grandes la efi
 - Fomesafén 25% (1-1,5l) (Flex) — PPO, eficaz con roseta 5-8 cm
 - Acifluorfén 24% (1-1,5l) (Blazer) — PPO, eficaz con roseta 5-8 cm
 - Lactofén 24% (0,6-0,8l) (Cobra) — PPO, eficaz con roseta 5-8 cm
-- Fomesafén 25% (1-1,5l) (Flex) / Benazolín 50% (0,6l) (Dasen)
+- Fomesafén 25% (1-1,5l) (Flex) + Benazolín 50% (0,6l) (Dasen)
 - Bentazón 60% (1,5l) (Basagran) — Fotosistema II, alternativa POE precoz
-- Imazetapir 10% (0,5-0,8l) (Pivot) / Clorimurón 25% (0,04kg) (Classic) — SOLO en biotipos ALS-susceptibles
+- Imazetapir 10% (0,5-0,8l) (Pivot) + Clorimurón 25% (0,04kg) (Classic)
 ADVERTENCIA: En biotipos con resistencia a ALS no usar sulfonilureas ni imidazolinonas.
 ADVERTENCIA: El glifosato solo tiene control muy limitado en biotipos susceptibles; insuficiente en resistentes.
 
@@ -687,7 +715,7 @@ SOJAS ENLIST — DOBLE GOLPE POSIBLE DENTRO DEL CULTIVO:
 El sinergismo glufosinato + 2,4D permite hacer doble golpe dentro del cultivo (herramienta diferencial).
 - Glufosinato de amonio 28% (2-3l) hasta V4-V6
 - 2,4D 30% e.a. (1,5-2l) hasta R2
-- Glufosinato de amonio 28% (2-3l) / 2,4D 30% e.a. (1,5-2l) hasta V4-V6 — mejor opción, controla maleza emergida y permite DG
+- Glufosinato de amonio 28% (2-3l) + 2,4D 30% e.a. (1,5-2l) hasta V4-V6 — mejor opción
 
 --- SOJA: PARIETARIA ---
 
@@ -696,22 +724,22 @@ BARBECHO LARGO — Aplicar sobre suelo o maleza en distintos estadios:
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS PEE-POST MALEZA
 - Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) hasta 45 DAS PEE-POST MALEZA
 - Metsulfurón 60% (6-8g) hasta 60 DAS PEE MALEZA
-- Metsulfurón / Clorsulfurón (12-15g) SOJAS STS o hasta 150 DAS PEE MALEZA
-- Biciclopirona 20% (0,5l) / Atrazina 90% (0,5kg) 120 DAS PEE-POST MALEZA
+- Metsulfurón/Clorsulfurón (12-15g) (Finesse WG) SOJAS STS o hasta 150 DAS PEE MALEZA
+- Biciclopirona 20% (0,5l) + Atrazina 90% (0,5kg) 120 DAS PEE-POST MALEZA
 - Flumioxazin 48% (0,1-0,15l) (Sumisoya) PEE-POST MALEZA
-- Terbutilazina 75% (1kg) (Terbine/Gesatop) / Flumioxazin 48% (0,12l) (Sumisoya) PEE-POST MALEZA
+- Terbutilazina 75% (1kg) (Terbine/Gesatop) + Flumioxazin 48% (0,12l) (Sumisoya) PEE-POST MALEZA — o (Terbyne Max Sipcam)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
 - Atrazina 90% (0,5kg) PEE-POST MALEZA hasta 30 DAS
 - Metribuzin 48% (0,8-1l) (Sencorex) PEE-POST MALEZA
 - Prometrina 48% (1,5-2l) (Gesagard) PEE-POST MALEZA
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Metribuzin 48% (0,8-1l) (Sencorex) PEE-POST MALEZA
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Atrazina 90% (0,5kg) hasta 30 DAS
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Prometrina 48% (1,5-2l) (Gesagard)
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Flumioxazin 48% (0,1-0,15l) (Sumisoya) 7 DAS
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone) / Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) PEE-POST 7 DAS
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + Metribuzin 48% (0,8-1l) (Sencorex) PEE-POST MALEZA
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + Atrazina 90% (0,5kg) hasta 30 DAS
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + Prometrina 48% (1,5-2l) (Gesagard)
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + Flumioxazin 48% (0,1-0,15l) (Sumisoya) 7 DAS
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) + (Trifludimoxazin/Saflufenacil) (0,1-0,2l) (Voraxor) 7 DAS
 - Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) PEE-POST MALEZA 7 DAS
-- Glifosato 1260 g.e.a. / Epirefenacil 5,5% (600cc) (Empera) POST MALEZA
+- Glifosato 1260 g.e.a. + Epirefenacil 5,5% (600cc) (Empera) POST MALEZA
 
 POST-EMERGENCIA CULTIVO: Sin opciones efectivas
 - Dosis glifosato > 1360 g.e.a. + sulfato de amonio + aceite, controles hasta 60%
@@ -724,10 +752,11 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Trifludimoxazin/Saflufenacil (0,1-0,2l) (Voraxor) Acción POE y PEE MALEZA
 - Glufosinato de amonio 28% (2,5l)
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- 2,4D / Saflufenacil 70% (40g) (Heat)
-- 2,4D / Carfentrazone 40% (70-80cc) (Shark)
-- 2,4D / Epirefenacil 5,5% (600cc) (Empera)
-- Glufosinato de amonio / 2,4D / Saflufenacil / Flumioxazin / Carfentrazone / Epirefenacil
+- 2,4D + Saflufenacil 70% (40g) (Heat)
+- 2,4D + Carfentrazone 40% (70-80cc) (Shark)
+- 2,4D + Epirefenacil 5,5% (600cc) (Empera)
+- Glufosinato de amonio 28% + 2,4D + PPO acompañante a elección:
+  opciones PPO: Saflufenacil 70% (Heat) / Flumioxazin 48% (Sumisoya) / Carfentrazone 40% (Shark) / Epirefenacil 5,5% (Empera)
 
 MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS) — Aplicar sobre suelo sin maleza emergida:
 - Flumioxazin 48% (150cc) (Sumisoya)
@@ -737,19 +766,19 @@ MALEZA PEE BARBECHO INTERMEDIO (45-60 DAS) — Aplicar sobre suelo sin maleza em
 - Amicarbazone 70% (0,4-0,5kg) (Dinamic) hasta 45 DAS
 - Terbutilazina 75% (1kg) (Terbine/Gesatop) hasta 45 DAS
 - Metribuzin 48% (1l) (Sencorex)
-- Terbutilazina / Flumioxazin (1,25) hasta 45 DAS
+- Terbutilazina 75% (1kg) (Terbine/Gesatop) + Flumioxazin 48% (0,25l) (Sumisoya) hasta 45 DAS — o (Terbyne Max Sipcam)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
-- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Metribuzin 10% / S-metolacloro 60% (2,5l)
-- Sulfentrazone / Piroxasulfone 48% (0,355l)
-- Flumioxazin 15% / Piroxasulfone 34,5% (0,5l/0,1l) 7 DAS
-- Flumioxazin 4,2% / S-metolacloro 84% (1,75l) 7 DAS
+- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Metribuzin 10%/S-metolacloro 60% (2,5l) — premezclado
+- Sulfentrazone 50% (Authority/Capaz) + Piroxasulfone 48% (0,355l)
+- Flumioxazin 15%/Piroxasulfone 34,5% (0,5l) (Fierce FMC) 7 DAS
+- Flumioxazin 4,2%/S-metolacloro 84% (1,75l) (Apresa ADAMA) 7 DAS
 - Flumioxazin 4,2% / Acetoclor 90% (1,5l) (Harness) 7 DAS
 - Fomesafén 11,9% / S-metolacloro 51,8% (2,5l)
-- Sulfentrazone 50% (0,4l) (Authority/Capaz) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) / Metribuzin 48% (0,8-1l) (Sencorex) / Acetoclor 90% (1,5l) (Harness)
-- Trifludimoxazin / Saflufenacil / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Sulfentrazone 50% (0,4l) (Authority/Capaz) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Sulfentrazone 50% (0,4-0,5l) (Authority/Capaz) + Metribuzin 48% (0,8-1l) (Sencorex) + Acetoclor 90% (1,5l) (Harness)
+- (Trifludimoxazin/Saflufenacil) (Voraxor) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
 
 POST-EMERGENCIA CULTIVO — Aplicar sobre cultivo emergido (Sojas Resistentes Glifosato):
 - Fomesafén 25% (1-1,5l) (Flex)
@@ -775,35 +804,36 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Trifludimoxazin / Saflufenacil (0,15-0,2l) Acción POE y PEE MALEZA 7 DAS
 - Glufosinato de amonio 28% (2,5l)
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- 2,4D / Carfentrazone 40% (70-80cc) (Shark)
-- 2,4D / Epirefenacil / Saflufenacil / Carfentrazone / Flumioxazin / Trifludimoxazin
+- 2,4D + Carfentrazone 40% (70-80cc) (Shark)
+- 2,4D + PPO acompañante a elección:
+  opciones PPO: Epirefenacil 5,5% (Empera) / Saflufenacil 70% (Heat) / Carfentrazone 40% (Shark) / Flumioxazin 48% (Sumisoya) / (Trifludimoxazin/Saflufenacil) (Voraxor)
 
 PEE / PSI-PEE — Aplicar antes de emergencia del cultivo:
-- Atrazina 90% (1-2kg) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Atrazina 90% (1-2kg) / Biciclopirona 20% (0,8-1l)
-- Biciclopirona 20% (0,8-1l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold) — mezcla comercial: (Acuron Pack)
-- Biciclopirona 20% (0,8-1l) / Piroxasulfone 85% (0,2kg)
-- Amicarbazone 70% (0,4-0,5kg) (Dinamic) / S-metolacloro
-- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) / Piroxasulfone 85%
-- Terbutilazina 50% (0,8-1kg) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Mesotrione 48% (0,3l) / Piroxasulfone
-- Trifudimoxazin 8,1% (1,77-2,2l) / S-metolacloro 96% (1,1-1,3l) (Dual Gold)
-- Flumioxazin 4,2% / Acetoclor 90% (1,5l) (Harness)
-- Isoxaflutole / Thiencarbazone (0,3-0,4l) / S-metolacloro / Atrazina
+- Atrazina 90% (1-2kg) + S-metolacloro 96% (1,1-1,3l) (Dual Gold) — o premezclado (BicepPack Gold)
+- Atrazina 90% (1-2kg) + Biciclopirona 20% (0,8-1l)
+- Biciclopirona 20% (0,8-1l) + S-metolacloro 96% (1,1-1,3l) (Dual Gold) — premezclado (Acuron Pack)
+- Biciclopirona 20% (0,8-1l) + Piroxasulfone 85% (0,2kg)
+- Amicarbazone 70% (0,4-0,5kg) (Dinamic) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Terbutilazina 75% (0,8-1kg) (Terbine/Gesatop) + Piroxasulfone 85% (0,16-0,2kg) (Yamato)
+- Terbutilazina 50% (0,8-1kg) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Mesotrione 48% (0,3l) (Callisto) + Piroxasulfone 85% (0,16-0,2kg) (Yamato)
+- Trifludimoxazin 8,1% (1,77-2,2l) + S-metolacloro 96% (1,1-1,3l) (Dual Gold)
+- Flumioxazin 4,2%/Acetoclor 90% (1,5l) — premezclado
+- (Isoxaflutole/Thiencarbazone) (0,3-0,4l) (Adengo) + S-metolacloro 96% (Dual Gold) + Atrazina 90%
 
 POST-EMERGENCIA CULTIVO (V2-V8) — Aplicar sobre cultivo emergido:
-- Atrazina 90% (1kg) / 2,4D 64,3% e.a. (0,4l)
-- Atrazina 90% (1kg) / Picloram 24% (0,1-0,15l)
-- Atrazina 90% (1kg) / Mesotrione 48% (0,3l)
-- Atrazina 90% (1kg) / Topramezone 33,6% (0,1l)
-- Atrazina 90% (1kg) / Tolpyralate 42% (0,075-0,125l)
-- Atrazina 90% (1kg) / Tembotrione 42% (0,25-0,3l)
-- Terbutilazina 55% / Mesotrione 8,1% (2l) / Atrazina 90% (1kg)
+- Atrazina 90% (1kg) + 2,4D 64,3% e.a. (0,4l)
+- Atrazina 90% (1kg) + Picloram 24% (0,1-0,15l)
+- Atrazina 90% (1kg) + Mesotrione 48% (0,3l) (Callisto)
+- Atrazina 90% (1kg) + Topramezone 33,6% (0,1l) (Convey)
+- Atrazina 90% (1kg) + Tolpyralate 42% (0,075-0,125l) (Brucia)
+- Atrazina 90% (1kg) + Tembotrione 42% (0,25-0,3l) (Laudis)
+- Terbutilazina 55%/Mesotrione 8,1% (2l) (premezclado) + Atrazina 90% (1kg)
 
 MAÍZ ENLIST:
 - Glufosinato de amonio 28% (2-3l) hasta V2-V4
 - 2,4D 45,6% e.a. (1,5-2l) hasta V8
-- Glufosinato de amonio 28% (2-3l) / 2,4D 45,6% e.a. (1,5-2l) V2-V4
+- Glufosinato de amonio 28% (2-3l) + 2,4D 45,6% e.a. (1,5-2l) V2-V4
 
 CONTROL QUÍMICO YUYO COLORADO EN MAÍZ (detallado):
 
@@ -872,7 +902,8 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 ADVERTENCIA: Con resistencia a ALS no usar sulfonilureas ni imidazolinonas. Con biotipos resistentes a glifosato agregar PPO quemante.
 
 PEE / PSI CULTIVO — Residuales antes de emergencia del cultivo:
-- Atrazina 90% (1-2kg) / Terbutilazina 75% (1-1,3kg) (Terbine) — Fotosistema II
+- Atrazina 90% (1-2kg) (Gesaprim) — Fotosistema II
+- Terbutilazina 75% (1-1,3kg) (Terbine/Gesatop) — Fotosistema II
 - Amicarbazone 70% (0,4-0,7kg) (Dinamic) — Fotosistema II
 - Metribuzin 70% (Tribune) — Fotosistema II
 - Flurocloridona 25% (0,75-1,5l) (Rainbow) — PDS, muy eficaz en crucíferas
@@ -1047,17 +1078,18 @@ DESECANTE (madurez fisiológica — POST MF):
 --- TRIGO: CONYZA SPP. ---
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
-- Glifosato / 2,4D (v.s.f.)
-- Glifosato / Dicamba 57,8% (0,1-0,2l) (Banvel)
-- Glifosato / 2,4D + Dicamba
-- Glifosato / 2,4D o MCPA / Saflufenacil 70% (35-40g) (Heat)
-- Glifosato / 2,4D o MCPA / Carfentrazone 40% (70-80cc) (Shark)
-- Glifosato / 2,4D o MCPA / Piraflufén 2,5% (200cc) (Stagger)
-- Glifosato / 2,4D o MCPA / Epirefenacil 5,5% (600cc) (Empera)
-- Glifosato / 2,4D o MCPA / Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
-- Glufosinato / 2,4D / Saflufenacil / Carfentrazone
-- Glifosato / 2,4D // DG Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- Glifosato / 2,4D // DG Glufosinato de amonio
+- Glifosato + 2,4D (v.s.f.)
+- Glifosato + Dicamba 57,8% (0,1-0,2l) (Banvel)
+- Glifosato + 2,4D + Dicamba
+- Glifosato + 2,4D o MCPA + Saflufenacil 70% (35-40g) (Heat)
+- Glifosato + 2,4D o MCPA + Carfentrazone 40% (70-80cc) (Shark)
+- Glifosato + 2,4D o MCPA + Piraflufén 2,5% (200cc) (Stagger)
+- Glifosato + 2,4D o MCPA + Epirefenacil 5,5% (600cc) (Empera)
+- Glifosato + 2,4D o MCPA + (Trifludimoxazin/Saflufenacil) (0,1-0,15l) (Voraxor)
+- Glufosinato de amonio 28% + 2,4D + PPO acompañante:
+  opciones PPO: Saflufenacil 70% (Heat) / Carfentrazone 40% (Shark)
+- 1° Glifosato + 2,4D // 2° DG Paraquat 27,6% (1,5-2,5l) (Gramoxone)
+- 1° Glifosato + 2,4D // 2° DG Glufosinato de amonio 28%
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Metsulfurón 60% (8-10g) (Ally)
@@ -1066,24 +1098,24 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Terbutrina 50% (1,2l) (Igran)
 - Terbutilazina 75% (1kg) (Terbine/Gesatop)
 - Amicarbazone (sin registro) (Dinamic)
-- Terbutilazina 50% / Flumioxazin 3,8% (1,5l) 15 DAS
+- Terbutilazina 50%/Flumioxazin 3,8% (1,5l) (Terbyne Max Sipcam) 15 DAS
 - Trifludimoxazin/Saflufenacil (0,1-0,15l) (Voraxor)
 
 POST-EMERGENCIA CULTIVO (estadio Z2.1-Z3.0) — Aplicar sobre cultivo emergido en macollaje:
-- Metsulfurón 60% (5-6g) (Ally) / Dicamba 57,8% (0,1-0,15l) (Banvel)
+- Metsulfurón 60% (5-6g) (Errasin WP/Ally) + Dicamba 57,8% (0,1-0,15l) (Banvel)
 - Metsulfurón 30% + Aminopyralid 44% (2 bolsas 67g/ha) (Tronador Xtra)
-- Metsulfurón / Clorsulfurón (10-12g) (Finesse WG) / Dicamba 57,8% (0,4l) (Banvel)
-- Metsulfurón / Clorsulfurón (10-12g) (Finesse WG) / 2,4D 64,3% e.a. (0,4l)
-- 2,4D 64,3% e.a. (0,4l) / Dicamba 57,8% (0,1-0,15l) (Banvel)
-- 2,4D 64,3% e.a. (0,4l) / Picloram 24% (0,1-0,12l) (Tordón)
-- 2,4D 64,3% e.a. (0,4l) / Fluroxipir 48% (0,2-0,4l) (Starane)
-- 2,4D 64,3% e.a. (0,4l) / Carfentrazone 40% (0,04l)
-- 2,4D 64,3% e.a. (0,4l) / Terbuttrina 50% (0,8-1l)
-- 2,4D 64,3% e.a. (0,4l) / Saflufenacil 70% (25g) (Heat)
+- Metsulfurón/Clorsulfurón (10-12g) (Finesse WG) + Dicamba 57,8% (0,4l) (Banvel)
+- Metsulfurón/Clorsulfurón (10-12g) (Finesse WG) + 2,4D 64,3% e.a. (0,4l)
+- 2,4D 64,3% e.a. (0,4l) + Dicamba 57,8% (0,1-0,15l) (Banvel)
+- 2,4D 64,3% e.a. (0,4l) + Picloram 24% (0,1-0,12l) (Tordón)
+- 2,4D 64,3% e.a. (0,4l) + Fluroxipir 48% (0,2-0,4l) (Starane)
+- 2,4D 64,3% e.a. (0,4l) + Carfentrazone 40% (0,04l) (Shark)
+- 2,4D 64,3% e.a. (0,4l) + Terbutrina 50% (0,8-1l) (Igran)
+- 2,4D 64,3% e.a. (0,4l) + Saflufenacil 70% (25g) (Heat)
 - Saflufenacil 70% (25g) (Heat) solo — registro POE trigo confirmado BASF Argentina. Malezas ≤10cm
-- 2,4D 64,3% e.a. (0,4l) / Diflufenicán 50% (0,15l) (Brodal) — uso en práctica, ver ⚠️ abajo
-- 2,4D 64,3% e.a. (0,4l) / Metribuzin 48% (0,4l) (Sencorex)
-- 2,4D 64,3% e.a. (0,4l) / Piraflufén 2,5% (0,08l) (Stagger)
+- 2,4D 64,3% e.a. (0,4l) + Diflufenicán 50% (0,15l) (Brodal)
+- 2,4D 64,3% e.a. (0,4l) + Metribuzin 48% (0,4l) (Sencorex)
+- 2,4D 64,3% e.a. (0,4l) + Piraflufén 2,5% (0,08l) (Stagger)
 - Clopyralid / MCPA (1,25-1,35l) (Lontrel)
 - Glufosinato de amonio 28% (2-3l) Trigos HB4
 - Glufosinato de amonio 28% (2-3l) / 2,4D 64,3% e.a. (0,4l) Trigos HB4
@@ -1207,17 +1239,40 @@ ADVERTENCIA: Fluroxipir puede usarse en estados avanzados del trigo para control
 ADVERTENCIA: En biotipos ALS-resistentes, no usar sulfonilureas. Mezclar hormonales con PPO/Triazinas/PDS mejora control y retrasa resistencias.
 
 --- TRIGO: RAIGRAS ---
+Fuente: INTA Pergamino / RG Malezas. Infografia Raigrás en Trigo.
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
-⚠️ IMPORTANTE: Cletodim y haloxyfop en este contexto actúan sobre el RAIGRAS ya nacido, ANTES de sembrar el trigo. NO son para aplicar sobre trigo emergido.
-- Paraquat 27,6% (1,5-2,5l) (Gramoxone)
-- Glufosinato de amonio 28% (1-2,5l)
-- Cletodim 24% (0,7-1l) (Select); Cletodim 36% (0,5-0,7 l/ha) (Select 36)
-- Haloxyfop 54% (0,25-0,35l) (Galant Max)
-- Fluazifop-p-butil 35% (0,4-0,6l) (Super Onecide) POE maleza/cultivo
-- Glifosato / Cletodim / Epirefenacil / Terbutilazina+Flumioxazin
-- Paraquat / Cletodim / Glifosato
-- DG Paraquat / Glufosinato
+⚠️ IMPORTANTE: Todos estos productos actúan sobre el RAIGRÁS ya nacido, ANTES de sembrar el trigo. NO aplicar sobre trigo emergido.
+⚠️ NOTA DE LECTURA: El símbolo + indica mezcla de tanque en una sola aplicación. // indica Doble Golpe (dos aplicaciones separadas ~7 días).
+
+--- ESTRATEGIA POR SITUACIÓN (en orden creciente de dificultad de control) ---
+
+SITUACIÓN 1 — Raigrás recién emergido (1-2 hojas), baja densidad, biotipo desconocido:
+- Paraquat 27,6% (1,5-2,5l) (Gramoxone) — contacto rápido, eficaz solo con maleza chica (hasta 4 hojas)
+- Glufosinato de amonio 28% (1-2,5l) — contacto, también solo hasta 4 hojas
+- Glifosato (dosis v.s.f.) + Cletodim 24% (0,7l) (Select) — sistémico doble, buena base en biotipos susceptibles
+
+SITUACIÓN 2 — Raigrás 2-4 hojas, densidad media, sin historial de resistencia:
+- Glifosato + Cletodim 24% (1l) (Select) — dosis alta dentro del rango
+- Glifosato + Cletodim 36% (0,5-0,7l) (Select 36) — formulación concentrada
+- Glifosato + Haloxyfop 54% (0,25-0,35l) (Galant Max) — ACCasa diferente al cletodim
+- Glifosato + Cletodim 12%/Haloxyfop 6% (0,8l) (Gramini Elite) — premezclado comercial, cómodo
+- Glifosato + Cletodim 24%/Quizalofop 12% (0,5l) (Celebrate UPL) — premezclado comercial alternativo
+- Fluazifop-p-butil 35% (0,4-0,6l) (Super Onecide) — ACCasa, también POE sobre cultivo
+
+SITUACIÓN 3 — Raigrás avanzado (>4 hojas), alta densidad, o sospecha de resistencia a glifosato:
+- Glifosato + Cletodim (Select) + Epirefenacil 5,5% (0,6l) (Empera) — triple: EPSPS+ACCasa+PPO
+- Glifosato + Cletodim (Select) + Terbutilazina/Flumioxazin (Terbyne Max Sipcam) — triple con residual
+- Glufosinato de amonio 28% (1-2,5l) + Cletodim (Select) — alternativa sin glifosato
+- Glufosinato de amonio 28% + Cletodim (Select) + Glifosato — triple única aplicación
+- Paraquat 27,6% (Gramoxone) + Cletodim (Select) + Glifosato — triple única aplicación
+- Paraquat 27,6% (Gramoxone) + Terbutilazina/Flumioxazin (Terbyne Max Sipcam) — desecante con residual
+
+SITUACIÓN 4 — Raigrás muy avanzado, muy alta densidad, resistencia confirmada o muy probable:
+⚠️ En estos casos una sola aplicación es insuficiente — el Doble Golpe es la estrategia correcta.
+- 1° Glifosato + Cletodim (Select) // 2° DG Paraquat 27,6% (Gramoxone) — ~7 días entre aplicaciones
+- 1° Glifosato + Cletodim (Select) // 2° DG Glufosinato de amonio 28% — ~7 días entre aplicaciones
+⚠️ En el DG: cuanto mejor sea la 1° aplicación, mejor el resultado total. No esperar demasiado entre golpes.
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Piroxasulfone 48% (0,18-0,21l) (Yamato Top)
@@ -1225,7 +1280,7 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre suelo sin maleza emergida (PEE ma
 - Flumioxazin 48% (0,15l) (Sumisoya) 10 DAS
 - Terbutrina 50% (1,2l) (Igran)
 - Terbutilazina 75% (1kg) (Terbine/Gesatop)
-- Terbutilazina 50% / Flumioxazin 3,8% (1,5l) 15 DAS
+- Terbutilazina 50%/Flumioxazin 3,8% (1,5l) (Terbyne Max Sipcam) 15 DAS
 - Bidozone 40% (1,2-1,5l) 15 DAS
 - Flumioxazin 48% (0,12l) / Piroxasulfone 48% (0,21l) 10 DAS
 - Diflufenicán / Aclonifén / Fluferacet (2-2,25l)
@@ -1258,7 +1313,10 @@ POST-EMERGENCIA CULTIVO — DESDE MACOLLAJE (Z2.1-Z3.1):
 
 ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cultivo aún no sembrado (PSI cultivo):
 - Glifosato
-- 2,4D (carencia v.s.f.) / Picloram / Fluroxipir / Clopyralid
+- 2,4D (carencia v.s.f.) — opción individual
+- Picloram (carencia v.s.f.) — opción individual
+- Fluroxipir (Starane) — opción individual
+- Clopyralid (Lontrel) — opción individual
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
 - Glufosinato de amonio 28% (1-2,5l)
 - Cletodim 24% (0,7-1l); 36% (0,5-0,7 l/ha) 20 DAS
@@ -1275,12 +1333,15 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - S-metolacloro 96% (0,9-1,3l) (Dual Gold)* (*semilla curada con Fluxofenim 96%)
 - Pendimetalín 33% (2,5-4,5l) (Herbadox)
 - Imazapyc 31,8% (0,2-0,3l) (Odyssey) Sorgos tolerantes
-- Atrazina 90% (1-2kg) / S-metolacloro 96% (0,9-1,3l) (Dual Gold)*
-- Atrazina 90% (1-2kg) / (Imazapyc/Imazapy) (Odyssey) Sorgos tolerantes
+- Atrazina 90% (1-2kg) + S-metolacloro 96% (0,9-1,3l) (Dual Gold)* — mezcla tanque
+- Atrazina 90% (1-2kg) + Imazapyc/Imazapy (Odyssey) — Sorgos tolerantes
 
 POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - 2,4D (aplicación dirigida >V8)
-- MCPA / Picloram / Clopyralid / Dicamba
+- MCPA 28% (1,5l) — opción individual
+- Picloram 24% — opción individual
+- Clopyralid (Lontrel) — opción individual
+- Dicamba 57,7% — opción individual
 - Bromoxinil 34,6% (0,8-1l) (Bromotril) V2-V4
 - Atrazina 90% (1-2kg) V2-V4
 - Bentazón 60% (1,2-1,6l) (Basagran) V2-V8
@@ -1288,7 +1349,7 @@ POST-EMERGENCIA CULTIVO (V4-V8) — Aplicar sobre cultivo emergido:
 - Imazapyc/Imazapy (0,2-0,3l) (Odyssey) Sorgos tolerantes
 - Foramsulfurón 30% + Iodosulfurón 2% (120cc) (Equip) + Sulfato amonio + Aceite — Maíz convencional, sorgo de Alepo RG
 - Nicosulfurón 75% (70g) (Accent) + Sulfato amonio — Maíz convencional, sorgo de Alepo RG
-- Atrazina 90% / Hormonal / Mezclas hormonales
+- Atrazina 90% (1-2kg) + Hormonal (2,4D o MCPA) — mezcla tanque
 
 Desecante: Paraquat / Glifosato
 
@@ -1302,7 +1363,9 @@ ANTES DE SIEMBRA DEL CULTIVO — Aplicar sobre maleza nacida (POE maleza) / Cult
 - Paraquat 27,6% (1,5-2,5l) (Gramoxone)
 - Glufosinato de amonio 28% (1-2,5l)
 - Glifosato
-- 2,4D (15-20 DAS) / Fluroxipir / Clopyralid
+- 2,4D (15-20 DAS) — opción individual
+- Fluroxipir (Starane) — opción individual
+- Clopyralid (Lontrel) — opción individual
 - Saflufenacil 70% (35-40g) (Heat)
 - Carfentrazone 40% (70-80cc) (Shark)
 
@@ -1315,7 +1378,8 @@ PEE / PSI CULTIVO — Aplicar antes de emergencia del cultivo:
 - ⚠️ Carinata: solo trifluralina
 
 POST-EMERGENCIA CULTIVO (estado roseta) — Aplicar sobre cultivo emergido:
-- Cletodim / Haloxyfop (graminicidas)
+- Cletodim 24% (Select) / Cletodim 36% (Select 36) — graminicida ACCasa
+- Haloxyfop 54% (Galant Max) — graminicida ACCasa
 - Clopyralid 47,5% (100-150cc) (Lontrel) → riesgo Bajo
 - Halauxifén (registro Uruguay) → riesgo Bajo
 - Dicamba 57,5% (40-60cc) → riesgo Medio
