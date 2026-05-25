@@ -1623,13 +1623,13 @@ conversation_history = {}
 # --- COMANDO /start ---
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "👋 ¡Hola! Soy el asistente de *Control de Malezas*.\n\n"
+        "👋 ¡Hola! Soy el asistente de <b>Control de Malezas</b>.\n\n"
         "Puedo ayudarte con recomendaciones de herbicidas para:\n"
         "🌱 Soja · Maíz · Girasol · Trigo · Sorgo\n"
         "🌿 Colza · Arveja · Camelina\n\n"
         "Preguntame sobre malezas específicas, momentos de aplicación, dosis, etc.\n\n"
-        "Ejemplo: _¿Qué uso para control de yuyo colorado en PEE de soja?_",
-        parse_mode="Markdown"
+        "Ejemplo: <i>¿Qué uso para control de yuyo colorado en PEE de soja?</i>",
+        parse_mode="HTML"
     )
 
 # --- COMANDO /nuevo ---
@@ -1674,7 +1674,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(conversation_history[user_id]) > 10:
             conversation_history[user_id] = conversation_history[user_id][-10:]
 
-        await update.message.reply_text(assistant_message, parse_mode="Markdown")
+        await update.message.reply_text(assistant_message)
 
     except Exception as e:
         logger.error(f"Error: {e}")
