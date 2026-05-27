@@ -11,7 +11,7 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 # --- ADMIN Y MONITOREO ---
 ADMIN_USER_ID = 1146686012  # Simon — unico autorizado para /stats
-usage_stats = {}  # {user_id: {"first_name": str, "count": int, "queries": [str]}}
+user_stats = {}  # {user_id: {"first_name": str, "count": int, "queries": [str]}}
 
 # --- LOGGING ---
 logging.basicConfig(
