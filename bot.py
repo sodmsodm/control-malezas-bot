@@ -1,12 +1,17 @@
 import os
 import logging
 import anthropic
+from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, CommandHandler, filters, CallbackQueryHandler
 
 # --- CONFIGURACION ---
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+
+# --- ADMIN Y MONITOREO ---
+ADMIN_USER_ID = 1146686012  # Simon — unico autorizado para /stats
+usage_stats = {}  # {user_id: {"first_name": str, "count": int, "queries": [str]}}
 
 # --- LOGGING ---
 logging.basicConfig(
@@ -31,237 +36,7 @@ COADYUVANTES_INFO = """
 ✅ ALL OK — Prevén / Correctivo — 400-600 cc/ha
 """
 
-# --- BASE DE CONOCIMIENTO ---
-KNOWLEDGE_BASE = """
-Eres un asistente técnico especializado en control de malezas en cultivos extensivos de Argentina.
-Tu conocimiento está basado EXCLUSIVAMENTE en la información técnica contenida en esta base de datos, proveniente de INTA Pergamino, Lares SRL, Ojos del Salado y otras fuentes especializadas.
-
-REGLA FUNDAMENTAL: Respondés ÚNICAMENTE con información que esté explícitamente contenida en esta base de conocimiento. NO uses conocimiento externo de tu entrenamiento bajo ninguna circunstancia. Si la consulta no está cubierta por la información de esta base, respondé exactamente: "No tengo información suficiente en mi base para responder esto con certeza."
-
-REGLA DE SEGURIDAD CRÍTICA — MOMENTOS DE APLICACIÓN:
-Los encabezados de cada sección indican DOS cosas separadas:
-1. El estado de LA MALEZA al momento de aplicar (POE maleza = maleza ya nacida / PEE maleza = maleza aún no emergida)
-2. El momento respecto AL CULTIVO (PSI = antes de sembrar el cultivo / PEE = cultivo aún no emergido / POE = cultivo ya emergido)
-NUNCA confundas el momento de la maleza con el momento del cultivo. Son independientes.
-
-REGLA DE COINCIDENCIA EXACTA: Si el estadio, momento de aplicación, o condición específica mencionada por el usuario NO coincide exactamente con lo que figura en la base, SIEMPRE aclararlo con un ⚠️ antes de responder.
-
-REGLA DE FENOLOGÍA: Para consultas sobre estadios fenológicos, respondé únicamente con las descripciones que figuran en la base. No agregues datos como días después de siembra, temperaturas, duraciones, ni ninguna otra información que no esté explícitamente escrita en la base de conocimiento.
-
-REGLA DE BIOTIPOS: Cuando el usuario pregunta sobre control de malezas en soja, trigo, maíz o cualquier cultivo sin especificar el biotipo o tecnología, SIEMPRE presentar las opciones organizadas por biotipo disponible en la base.
-
-REGLA DE MARCAS COMERCIALES: Cada vez que menciones un principio activo que tenga una marca comercial asociada en esta base, SIEMPRE incluí la marca junto al principio activo en tu respuesta. Formato obligatorio: "Principio activo dosis (Marca)".
-
-Respondés en español, de forma clara, técnica y organizada.
-
-REGLA DE FORMATO — MUY IMPORTANTE:
-NUNCA uses tablas Markdown (con | y ---) en tus respuestas. Las tablas no se renderizan bien en Telegram y quedan ilegibles.
-En su lugar, usá SIEMPRE este formato de lista con viñetas:
-
-Para listar opciones de herbicidas, usá este formato:
-✅ Principio activo dosis (Marca) — observación breve
-
-Para separar momentos de aplicación o secciones, usá encabezados con *negrita*:
-*📌 BARBECHO — Sobre maleza nacida:*
-
-Para advertencias usá:
-⚠️ Texto de la advertencia
-
-Para doble golpe usá:
-🔁 1° Glifosato + Cletodim 24% (0,7-1l) (Select) → 2° DG Paraquat 27,6% (1,5-2,5l) (Gramoxone) ~7 días después
-
-Para situaciones o estrategias escalonadas usá:
-*🌱 SITUACIÓN 1 — Raigrás 1-2 hojas, baja densidad:*
-
-Cada opción va en su propia línea. Nunca juntes múltiples opciones en una sola celda o línea separadas por guiones.
-Siempre aclarás el momento de aplicación (barbecho, PEE, PSI-PEE, POE) y el biotipo de cultivo cuando es relevante.
-
-REGLA DE COADYUVANTES EN RESPUESTA:
-Cuando en tu respuesta menciones aceite, coadyuvante, surfactante o sulfato de amonio, al FINAL de toda la respuesta agregá SIEMPRE esta línea exacta (sin modificarla):
-💧 ¿Querés ver opciones y dosis de coadyuvantes disponibles?
-
-Esta línea debe aparecer una sola vez, al final, solo cuando la respuesta incluya alguna recomendación de aceite o coadyuvante. No la incluyas en respuestas sobre fenología, residualidad u otras consultas sin herbicidas.
-
-=== ACEITES Y COADYUVANTES ===
-REGLA DE COADYUVANTES: Siempre que recomendés un herbicida de los grupos indicados abajo, incluí la recomendación de aceite o coadyuvante correspondiente.
-
-ACCasa — GRAMINICIDAS (cletodim/Select, haloxyfop/Galant Max, quizalofop/Assure, fluazifop/Super Onecide, pinoxaden/Axial, propaquizafop/Agil):
-→ SIEMPRE incluir aceite vegetal o metilado de soja 0,5-1% v/v. Sin aceite la eficacia cae significativamente.
-
-PPO — CONTACTO (carfentrazone/Shark, piraflufen/Stagger, epirefenacil/Empera, flumioxazin/Sumisoya, trifludimoxazin+saflufenacil/Voraxor):
-→ SIEMPRE incluir aceite metilado de soja o mineral 0,5-1% v/v.
-EXCEPCION CRITICA: Saflufenacil (Heat) en POE de trigo estado de hojas (Z1.2-Z1.3) — SIN aceite ni coadyuvante.
-
-SAFLUFENACIL (Heat) — según contexto:
-→ En barbecho (POE maleza): con aceite metilado de soja 0,5% v/v
-→ En trigo POE estado de hojas (Z1.2-Z1.3): SIN aceite
-→ En maíz POE: con aceite según marbete BASF
-
-GLUFOSINATO DE AMONIO:
-→ SIEMPRE incluir surfactante no iónico 0,1-0,5% v/v o aceite metilado de soja. Agregar Sulfato de Amonio 1,5-2 l/ha.
-
-HPPD — MAÍZ POE (mesotrione/Callisto, topramezone/Convey, tembotrione/Laudis, tolpyralate/Brucia):
-→ Incluir aceite mineral o metilado de soja según marbete.
-
-ALS / SULFONILUREAS (metsulfurón/Errasin WP/Ally, imazetapir/Pivot, clorimurón/Classic, diclosulam/Spider, halosulfurón/Sempra, etc.):
-→ Surfactante no iónico 0,1-0,2% v/v (200cc/100L). NO aceite mineral.
-
-HORMONALES (2,4D, MCPA, dicamba, fluroxipir/Starane, picloram/Tordón):
-→ En general no es obligatorio. En condiciones adversas agregar surfactante no iónico o aceite metilado de soja.
-
-GLIFOSATO SOLO:
-→ NO usar aceite vegetal. Usar Sulfato de Amonio 1-2% v/v para mejorar absorción.
-
-TRIAZINAS / RESIDUALES DE SUELO (atrazina, metribuzin, terbutilazina, sulfentrazone, pyroxasulfone, etc.):
-→ No requieren coadyuvante foliar. Son residuales de suelo, se activan con humedad.
-
-REGLA CRÍTICA — MEZCLAS CON GLIFOSATO: El aceite se recomienda por el herbicida principal de la mezcla. La presencia de glifosato en la mezcla NO cancela la necesidad de aceite.
-
-=== RESIDUALIDAD DE HERBICIDAS ===
-Fuente: Dto. Técnico DOW AgroSciences Argentina S.A. y otros.
-Valores orientativos. Intervalo mínimo en días desde la aplicación hasta la siembra del cultivo siguiente.
-s/d = sin dato disponible.
-
-Herbicida: Spider | P.activo: Diclosulam 35g | Trigo:200 Maíz:325 Sorgo:355 Soja:0 Girasol:540
-Herbicida: Starane Xtra | P.activo: Fluroxipir 210-450 | Trigo:0 Maíz:0 Sorgo:0 Soja:1 Girasol:1 Alfalfa:1 Tréboles:1 Colza:1
-Herbicida: 2,4D | P.activo: 2,4D 300-500 | Trigo:3-5 Maíz:3-5 Sorgo:3-5 Soja:7-15 Girasol:7-15
-Herbicida: Banvel | P.activo: Dicamba 120-150 | Trigo:0 Maíz:0 Sorgo:0 Soja:15-20 Girasol:15-20
-Herbicida: Lontrel | P.activo: Clopyralid 150 | Trigo:0 Maíz:0 Sorgo:0 Soja:20 Girasol:45 Alfalfa:45 Tréboles:45 Colza:0
-Herbicida: Tordon 24K | P.activo: Picloram 80-100 | Trigo:0 Maíz:0 Sorgo:0 Soja:45 Girasol:80 Alfalfa:80 Tréboles:80 Colza:15-20
-Herbicida: Koltar | P.activo: Oxifluorfén 300 | Trigo:10 Maíz:10 Sorgo:10 Soja:80 Girasol:0
-Herbicida: Brodal | P.activo: Diflufenicán 250 | Trigo:15 Maíz:20 Soja:20 Girasol:0
-Herbicida: Ally/Metsulfurón | P.activo: Metsulfurón 8-10 | Trigo:0 Maíz:60 Soja:90 Girasol:120 Alfalfa:90 Tréboles:90
-Herbicida: Classic | P.activo: Clorimurón 30-40 | Trigo:40 Maíz:40 Soja:0 Girasol:120 Alfalfa:120 Tréboles:120 Colza:40
-Herbicida: Gesaprim/Atrazina | P.activo: Atrazina 90% 1,5 kg/ha | Trigo:120 Maíz:0 Sorgo:0 Soja:60 Girasol:90 Tréboles:90
-Herbicida: Authority/Capaz | P.activo: Sulfentrazone | Trigo:180 Maíz:180 Sorgo:180 Soja:0 Girasol:0
-Herbicida: Flex | P.activo: Fomesafén | Trigo:180 Maíz:180 Sorgo:270 Soja:0 Girasol:180 Alfalfa:180 Tréboles:180 Colza:270
-Herbicida: Select | P.activo: Cletodim 800-(500) | Trigo:15(?) Maíz:15(?) Sorgo:15(?) Soja:0 Girasol:0 Alfalfa:0 Tréboles:0 Colza:0
-Herbicida: Shark | P.activo: Carfentrazone 75 | Trigo:0 Maíz:0 Sorgo:0 Soja:0 Girasol:0 Alfalfa:0 Tréboles:0 Colza:0
-Herbicida: Sempra | P.activo: Halosulfurón 100-150g | Trigo:s/d Maíz:0 Sorgo:s/d Soja:0 Girasol:s/d Alfalfa:s/d Tréboles:s/d Colza:s/d
-Herbicida: Pivot | P.activo: Imazapic 240g/L 1L/ha | Trigo:s/d Maíz:0 CL Sorgo:s/d Soja:90 Girasol:s/d Alfalfa:0 Tréboles:s/d Colza:s/d
-
-NOTAS IMPORTANTES:
-- Spider (diclosulam): residualidad en girasol luego de un año en suelos con 2% MO. Sin efecto en girasoles CL.
-- Cletodim: valores con "?" indican incertidumbre. Aplicar solo con buena MO, sin lluvias y dosis ≤600 g e.a./ha.
-- Tordon/Picloram: residualidad muy prolongada en suelos con pH alto o bajo contenido de MO.
-- Residualidad de las AUXINAS en orden de mayor a menor: Picloram (Tordón) > Clopyralid (Lontrel) > Dicamba (Banvel) > 2,4D > Fluroxipir (Starane)
-- Pivot (imazapic): carencia 90 días en soja. En Maíz CL y alfalfa: uso posicionado sin restricción práctica.
-- Sempra (halosulfurón): período de carencia exento por uso posicionado en soja y maíz. Carencia tomate: 51 días.
-
-=== FENOLOGÍA DE CULTIVOS ===
-
---- FENOLOGÍA TRIGO Y CEBADA — Escala Zadoks ---
-Z10: Primera hoja a través del coleoptile
-Z11: Primera hoja expandida — 1 hoja
-Z12: Dos hojas expandidas
-Z13: Tres hojas expandidas
-Z14: Cuatro hojas expandidas
-Z21: Primer macollo
-Z22: Dos macollos
-Z31: Primer nudo detectable
-Z32: Segundo nudo detectable
-Z37: Punta de hoja bandera visible
-Z39: Hoja bandera expandida
-Z41: Vaina de hoja bandera comenzando a ensancharse
-Z49: Primeras aristas visibles
-Z51: Primeras espiguillas visibles
-Z55: 1/2 espiga emergida
-Z59: Emergencia completa
-Z65: 50% antesis
-Z71: Grano acuoso
-Z85: Grano pastoso suave
-Z92: Grano maduro para cosecha
-Una hoja está expandida cuando se observa la lígula en la base de la lámina.
-El primer macollo aparece generalmente junto con la cuarta hoja.
-CEBADA: usa la misma escala Zadoks. Macollaje más corto en variedades de 2 carreras.
-
---- FENOLOGÍA MAÍZ — Escala Ritchie & Hanway ---
-VE: Emergencia
-V1: Collar de 1ª hoja — hoja inferior completamente desplegada, collar y lígula visible
-V2-V10: Collar de la hoja correspondiente completamente desplegado
-VT: Antesis — aparición de la panoja con liberación de polen
-R1: Silking — emergencia de los estigmas
-R2: Ampolla — granos de color blanco asemejándose a una ampolla
-R3: Grano lechoso — granos amarillos, interior líquido blanco lechoso
-R4: Grano pastoso — humedad ~70%
-R5: Grano dentado — inicio de secado, humedad ~55%
-R5.5: 1/2 línea de leche — humedad ~40-45%
-R6: Madurez fisiológica — capa negra formada, humedad del grano 30-35%
-
---- FENOLOGÍA SORGO — Escala Vanderlip & Reeves ---
-Estado 0: Emergencia
-Estado 1: Lígula de la 3ª hoja visible
-Estado 2: Lígula de la 5ª hoja visible
-Estado 3: Diferenciación de meristemas
-Estado 4: Inicio de panoja visible
-Estado 5: Floración (antesis)
-Estado 6: Grano lechoso
-Estado 7: Grano pastoso
-Estado 8: Madurez fisiológica — capa negra formada
-Estado 9: Madurez de cosecha
-
---- FENOLOGÍA SOJA — Escala Fehr & Caviness ---
-VE: Planta emergida — cotiledones por encima de la superficie
-VC: Estado cotiledonar — primer par de hojas unifoliadas separadas y visibles
-V1: Primer nudo verdadero desarrollado
-V2: Segunda hoja trifoliada totalmente desarrollada
-Vn: n-ésima hoja trifoliada totalmente desarrollada
-Una hoja está totalmente desarrollada cuando la siguiente ya separó los bordes de sus folíolos.
-R1: Inicio floración — una flor abierta en cualquier nudo
-R2: Plena floración — una flor abierta en los dos nudos superiores
-R3: Inicio fructificación — una vaina de al menos 0,5 cm
-R4: Plena fructificación — una vaina de al menos 2 cm
-R5: Inicio llenado de semilla — semilla de al menos 3 mm de diámetro
-R6: Pleno llenado — semilla que ocupó toda su cavidad
-R7: Inicio madurez — UNA vaina normal llega a color marrón o gris
-R8: Plena madurez — 95% de vainas con color marrón o gris
-Luego de R7 un desecante NO incide en el rendimiento.
-
---- FENOLOGÍA GIRASOL — Escala Schneiter & Miller ---
-VE: Emergencia — hipocótilo y cotiledones emergidos
-Vn: n hojas verdaderas (más de 4 cm de largo)
-R1: Inflorescencia rodeada de brácteas inmaduras visible (parece estrella desde arriba)
-R2: Entrenudo debajo de la inflorescencia se elonga 0,5 a 2 cm
-R4: Inflorescencia comienza a abrirse
-R5: Antesis de flores tubuladas
-R5.1: 10% del capítulo en antesis
-R5.5: 50% del capítulo en antesis
-R6: Antesis completa
-R7: Receptáculo comienza a cambiar de color (amarillo claro)
-R8: Receptáculo completamente amarillo, brácteas aún verdes
-R9: Brácteas cambian a color marrón — madurez fisiológica
-
---- FENOLOGÍA COLZA/CANOLA — Escala BBCH ---
-BBCH 10: Cotiledones emergidos
-BBCH 11: Primera hoja verdadera
-BBCH 12: Segunda hoja verdadera
-BBCH 15-19: Estado de roseta (5 a 9+ hojas)
-Ventana óptima herbicidas POE: BBCH 12-15 (roseta temprana)
-BBCH 30: Inicio elongación del tallo
-BBCH 60: Primeras flores abiertas
-BBCH 65: Plena floración
-BBCH 89: Madurez fisiológica
-BBCH 99: Madurez cosecha
-
---- FENOLOGÍA ARVEJA — Escala BBCH ---
-BBCH 09: Emergencia
-BBCH 11: Primera hoja verdadera expandida (1 par de folíolos)
-BBCH 12: Segunda hoja verdadera
-BBCH 13: Tercera hoja verdadera
-BBCH 14: Cuarta hoja verdadera
-BBCH 15: Quinta hoja verdadera — inicio de zarcillos
-Ventana POE herbicidas: BBCH 11 a BBCH 14 (antes de zarcillos)
-BBCH 60: Primeras flores abiertas
-BBCH 89: Madurez fisiológica
-BBCH 92: Madurez cosecha
-
---- FENOLOGÍA CAMELINA — Escala BBCH ---
-BBCH 10: Cotiledones emergidos
-BBCH 13-15: Estado de roseta (3 a 5 hojas)
-BBCH 60: Primeras flores abiertas
-BBCH 89: Madurez fisiológica
-Opciones herbicidas muy limitadas — ver sección Camelina en base de conocimiento.
-
+KNOWLEDGE_BASE += """
 === CONSIDERACIONES GENERALES DE MANEJO ===
 
 --- GIRASOL: ESTRATEGIA Y MALEZAS PROBLEMA ---
@@ -375,7 +150,9 @@ MEZCLAS CON BUENOS RESULTADOS (uso antes de siembra):
 - Glifosato 3 L/ha + Clorimurón 25% (60-80 g/ha) (Classic)
 - Glifosato 3,5 L/ha + Imazetapir 10% (800 cc/ha) + humectante — NO sembrar alfalfa pura en rotación.
 Aplicar siempre con surfactante no iónico 0,1-0,2% v/v.
+"""
 
+KNOWLEDGE_BASE += """
 === SOJA ===
 
 --- SOJA: MALEZA GENERAL (No GMO) ---
@@ -506,7 +283,9 @@ POST-EMERGENCIA — Sojas RR: Fomesafén 25% (Flex) / Lactofén 24% (Cobra) / Be
 SOJAS ENLIST:
 - Glufosinato de amonio 28% (2-3l) hasta V4-V6
 - 2,4D 30% e.a. (1,5-2l) hasta R2
+"""
 
+KNOWLEDGE_BASE += """
 === MAÍZ ===
 
 --- MAÍZ: CEBOLLÍN (Cyperus rotundus) ---
@@ -589,7 +368,9 @@ ALS (solo girasoles CL): Imazapyr (Clearsol) V2-V4 / Imazapyr+Imazamox (Clearsol
 ACCasa (gramíneas): Haloxyfop-R-metil (Galant Max) / Propaquizafop (Agil) / Cletodim (Select)
 DESECANTE POST MF: Carfentrazone (Shark) / Saflufenacil (Heat) — SOLO POST MF.
 NO USAR durante ciclo: saflufenacil, fomesafén, diclosulam, biciclopirona, topramezone, sulfonilureas.
+"""
 
+KNOWLEDGE_BASE += """
 === TRIGO ===
 
 --- TRIGO: CONYZA SPP. ---
@@ -728,10 +509,51 @@ async def nuevo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     conversation_history[user_id] = []
     await update.message.reply_text("🔄 Conversación reiniciada. ¿En qué puedo ayudarte?")
 
+# --- COMANDO /stats (solo admin) ---
+async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.message.from_user.id
+    if user_id != ADMIN_USER_ID:
+        await update.message.reply_text("⛔ Acceso restringido.")
+        return
+    if not user_stats:
+        await update.message.reply_text("📊 Sin consultas registradas todavía.")
+        return
+    lines = ["📊 <b>Consultas por usuario:</b>\n"]
+    for uid, data in sorted(user_stats.items(), key=lambda x: x[1]["mensajes"], reverse=True):
+        nombre = data.get("nombre", "Sin nombre")
+        username = f"@{data['username']}" if data.get("username") else "sin @"
+        mensajes = data["mensajes"]
+        lines.append(f"👤 {nombre} ({username}) — {mensajes} consulta{'s' if mensajes != 1 else ''}")
+    await update.message.reply_text("\n".join(lines), parse_mode="HTML")
+
 # --- MANEJO DE MENSAJES ---
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.message.from_user.id
+    user = update.message.from_user
     user_message = update.message.text
+
+    # Actualizar estadísticas
+    if user_id not in user_stats:
+        user_stats[user_id] = {
+            "nombre": user.full_name,
+            "username": user.username or "",
+            "mensajes": 0
+        }
+    user_stats[user_id]["mensajes"] += 1
+
+    # Reenviar consulta al admin (solo si no es el admin mismo)
+    if user_id != ADMIN_USER_ID:
+        nombre = user.full_name
+        username = f"@{user.username}" if user.username else "sin @"
+        total = user_stats[user_id]["mensajes"]
+        try:
+            await context.bot.send_message(
+                chat_id=ADMIN_USER_ID,
+                text=f"📨 <b>{nombre}</b> ({username}) — consulta #{total}:\n\n{user_message}",
+                parse_mode="HTML"
+            )
+        except Exception as e:
+            logger.warning(f"No se pudo notificar al admin: {e}")
 
     # Si el usuario responde "si" o "sí" y el mensaje anterior del bot tenía el botón de coadyuvantes
     if user_message.lower().strip() in ["si", "sí", "s"]:
@@ -787,9 +609,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             main_message = parts[0].rstrip()
 
         if needs_coady_button:
-            # Enviar el texto principal
             await update.message.reply_text(main_message)
-            # Enviar el botón inline como mensaje separado
             keyboard = [[InlineKeyboardButton(
                 "💧 Ver opciones y dosis de coadyuvantes",
                 callback_data="show_coadyuvantes"
@@ -820,6 +640,7 @@ def main():
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("nuevo", nuevo))
+    app.add_handler(CommandHandler("stats", stats))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_handler(CallbackQueryHandler(handle_callback))
     logger.info("Bot iniciado...")
