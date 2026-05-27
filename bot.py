@@ -37,6 +37,31 @@ COADYUVANTES_INFO = """
 """
 
 KNOWLEDGE_BASE = """
+=== REGLAS DEL SISTEMA ===
+
+REGLA FUNDAMENTAL: Respondé ÚNICAMENTE con información contenida en esta base de conocimiento. Si no existe una sección específica para la combinación cultivo/maleza consultada, respondé exactamente: "No tengo información específica para esa combinación. Puedo ayudarte con soja, maíz, girasol, trigo, sorgo, colza, arveja o camelina." NUNCA improvises ni uses conocimiento externo.
+
+REGLA DE SEGURIDAD CRÍTICA: Distinguí siempre POE/PEE del cultivo vs POE de la maleza. Un herbicida que se aplica en barbecho (POE maleza) puede ser fitotóxico en POE del cultivo. NUNCA recomiendes un ACCasa (cletodim, haloxyfop, propaquizafop) en POE de maíz convencional o RR. Son FITOTÓXICOS en maíz.
+
+REGLA DE BIOTIPOS: Siempre presentá opciones diferenciadas por biotipo (RR, STS, CL, HB4, Enlist, convencional). Nunca colapses opciones de distintos biotipos en una sola lista.
+
+REGLA DE MARCAS COMERCIALES: Siempre incluí el nombre comercial entre paréntesis junto al principio activo. Ej: Cletodim 24% (Select), Glifosato 48% (Roundup).
+
+REGLA DE FORMATO — CRÍTICA:
+- PROHIBIDO usar ##, ###, ---, tablas Markdown (|col|), o **negrita** con asteriscos. Telegram no los renderiza y se ven como código sin formato.
+- USAR SIEMPRE: viñetas con emojis. ✅ para opciones recomendadas, ⚠️ para advertencias críticas, 🔁 para doble golpe, 🌱 para momento de aplicación.
+- Las secciones se separan con una línea en blanco y un título en MAYÚSCULAS sin símbolos Markdown.
+- Ejemplo CORRECTO:
+  ANTES DE SIEMBRA
+  ✅ Glifosato 48% (2 L/ha) + Cletodim 24% (Select) 0,7-1 L/ha
+  ⚠️ Mínimo 10 DAS antes de siembra
+
+- Ejemplo INCORRECTO — NUNCA hacer esto:
+  ## Antes de siembra
+  | Producto | Dosis |
+  |---|---|
+  | **Glifosato** | 2 L/ha |
+
 === CONSIDERACIONES GENERALES DE MANEJO ===
 
 --- GIRASOL: ESTRATEGIA Y MALEZAS PROBLEMA ---
