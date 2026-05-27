@@ -300,6 +300,26 @@ MAÍZ CLEARFIELD (CL) — POE:
   ADVERTENCIA CRITICA: Pivot FITOTÓXICO en maíz convencional. Solo Clearfield.
 COADYUVANTE: Surfactante no iónico 0,1-0,2% v/v.
 
+--- MAÍZ: RAIGRÁS ---
+ADVERTENCIA CRÍTICA: Cletodim y todos los graminicidas ACCasa (fop y dim) son FITOTÓXICOS en maíz.
+NUNCA aplicar cletodim, haloxyfop, propaquizafop ni ningún ACCasa en POE de maíz convencional ni RR.
+El maíz RR no tiene tolerancia a graminicidas ACCasa. El peso del control DEBE estar en barbecho y presiembra.
+
+ANTES DE SIEMBRA — Mínimo 10 DAS (cuanto más mejor):
+- Glifosato + Cletodim 24% (0,7-1 l/ha) (Select) — mínimo 10 DAS antes de siembra
+- Glifosato + Haloxyfop 54% (Galant Max)
+- Glifosato + Cletodim 12%/Haloxyfop 6% (Gramini Elite)
+⚠️ Residualidad: cuanto más MO del suelo, menor riesgo. El riesgo aumenta si llueve entre la aplicación y la emergencia del maíz, ya que el agua puede arrastrar el producto al nivel de semilla/germinación. Con menos de 7 DAS el riesgo fitotóxico ya es significativo de por sí.
+
+PEE: Piroxasulfone (Yamato) / Pendimetalín (Herbadox)
+
+POE — MAÍZ ENLIST ÚNICAMENTE:
+- Glufosinato de amonio 28% (1,8-2 l/ha) hasta V6
+- Haloxyfop 54% (Galant Max) — maíz Enlist tolera ACCasa
+⚠️ Estas opciones NO aplican a maíz convencional ni RR.
+
+POE — MAÍZ CONVENCIONAL Y RR: SIN OPCIONES. No hay graminicida selectivo disponible.
+
 --- MAÍZ: AMARANTHUS SPP. ---
 ANTES DE SIEMBRA:
 - 2,4D / Picloram / Epirefenacil (Empera) / Glufosinato 28% / Paraquat (Gramoxone)
