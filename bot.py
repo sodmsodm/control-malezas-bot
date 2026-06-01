@@ -41,8 +41,10 @@ REGLA FUNDAMENTAL: Respondé ÚNICAMENTE con información contenida en esta base
 
 Distinguí tres situaciones:
 1. CONSULTA COMPLETA (cultivo + maleza presentes en la base): respondé con la información de la sección correspondiente.
-2. CONSULTA INCOMPLETA (el cultivo existe en la base pero falta la maleza, o la pregunta es sobre un momento de aplicación sin especificar maleza): NO respondas "no tengo información". En cambio, confirmá que tenés info para ese cultivo, indicá las malezas o temas disponibles, y preguntá cuál le interesa. Ejemplo: si alguien pregunta "PEE en trigo", respondé indicando que tenés información de PEE para trigo sobre raigrás, crucíferas y conyza, y preguntá cuál necesita.
-3. COMBINACIÓN CULTIVO/MALEZA AUSENTE DE LA BASE: respondé exactamente: "No tengo información específica para esa combinación. Puedo ayudarte con soja, maíz, girasol, trigo, sorgo, colza, arveja o camelina."
+2. CONSULTA INCOMPLETA (el cultivo existe en la base pero falta la maleza, o la pregunta es sobre un momento de aplicación sin especificar maleza): NO respondas "no tengo información". En cambio, respondé directamente con la información general disponible para ese cultivo y momento, y al final preguntá: "¿Querés que ajuste la recomendación a una maleza específica?" Ejemplo: si alguien pregunta "PEE en trigo", mostrá los herbicidas PEE disponibles para trigo organizados por sitio de acción, y al final ofrecé ajustar a una maleza puntual.
+3. COMBINACIÓN CULTIVO/MALEZA AUSENTE DE LA BASE: respondé exactamente: "No tengo información específica para esa combinación. Puedo ayudarte con soja, maíz, girasol, trigo, cebada, sorgo, colza, arveja o camelina."
+
+NOTA CEBADA: Las consultas sobre cebada (forrajera o cervecera) se responden con la misma información que trigo. Las secciones TRIGO aplican a ambos cultivos.
 
 REGLA DE SEGURIDAD CRÍTICA: Distinguí siempre POE/PEE del cultivo vs POE de la maleza. Un herbicida que se aplica en barbecho (POE maleza) puede ser fitotóxico en POE del cultivo. NUNCA recomiendes un ACCasa (cletodim, haloxyfop, propaquizafop) en POE de maíz convencional o RR. Son FITOTÓXICOS en maíz.
 
@@ -634,9 +636,65 @@ POST-EMERGENCIA — MUY LIMITADAS:
 """
 
 KNOWLEDGE_BASE += """
-=== TRIGO ===
+=== TRIGO / CEBADA ===
 
-TRIGO: CONYZA SPP.
+TRIGO / CEBADA: PEE — HERBICIDAS PREEMERGENTES (Guía general por sitio de acción)
+Fuente: Aapresid REM — Guía de Herbicidas por Sitio de Acción para Trigo. Abril 2023.
+
+ALS:
+✅ Clorsulfurón + Metsulfurón metil (Finesse)
+✅ Metsulfurón metil (Ally / Errasin WP)
+
+FOTOSISTEMA II:
+✅ Terbutilazina (Koritsu / Teliron 50 SC)
+✅ Terbutrina (Igran)
+
+FOTOSISTEMA I:
+✅ Paraquat (Paraquat Line)
+
+PPO:
+✅ Flumioxazin (Flumyzin / Sumyzin / Gemmit TOP / Darren / Sumisoya) — 10 DAS
+✅ Carfentrazone-etil (Shark)
+✅ Saflufenacil 70% (Heat)
+✅ Pyraflufen-etil (Stagger)
+
+PDS:
+✅ Flurocloridona (Talis / Rainbow)
+
+EPSPS:
+✅ Glifosato (RoundUp Full II / Control MAX / Panzer Gold / Credit Full / March II)
+
+GLUTAMINO SINTETASA:
+✅ Glufosinato de amonio (Lifeline / Biffo / Glufan)
+
+MICROTÚBULOS:
+✅ Pendimetalín (Satellite / Herbadox)
+
+VLCFA:
+✅ Piroxasulfone (Yamato TOP)
+
+AUXINAS:
+✅ 2,4D (Enlist Colex D / Mabyn / 2,4-D LV / Weedar / Voleris)
+✅ Dicamba (Kamba / Banvel)
+✅ Clopyralid (Lontrel)
+✅ Fluroxipir (Starane Xtra / Azbany)
+✅ Picloram (Tordon 24K / Toram)
+✅ 2,4D + Picloram (Tordon D30)
+✅ MCPA + Clopyralid (Curtail M)
+
+PREMEZCLADOS:
+✅ Metsulfurón + Dicamba (ALS + Auxina)
+✅ Metsulfurón + Picloram (ALS + Auxina)
+✅ Metsulfurón + Aminopyralid (ALS + Auxina)
+✅ Prosulfurón + Triasulfurón + Dicamba (Peak Pack L) — ALS + ALS + Auxina
+✅ Paraquat + Diuron (Cerillo) — FI + FII
+✅ Flumioxazin + Terbutilazina (Sumyzin T MAX / Sake) — PPO + FII
+
+⚠️ ALS en PEE: riesgo de residualidad si llueve poco antes de siembra — verificar carencias
+⚠️ Auxinas en PEE: respetar intervalo DAS según producto antes de siembra del cultivo siguiente
+
+
+TRIGO / CEBADA: CONYZA SPP.
 
 ANTES DE SIEMBRA:
 ✅ Glifosato + 2,4D
@@ -665,7 +723,7 @@ POST-EMERGENCIA Z2.1-Z3.0:
 ⚠️ VENTANA: Saflufenacil desde Z1.2-Z1.3 SIN aceite. 2,4D y sulfonilureas desde Z2.1.
 
 
-TRIGO: CRUCIFERAS
+TRIGO / CEBADA: CRUCIFERAS
 
 ANTES DE SIEMBRA:
 ✅ Glifosato + 2,4D o MCPA + Saflufenacil (Heat)
@@ -699,7 +757,7 @@ TRIGOS HB4:
 ⚠️ REGLA SAFLUFENACIL EN TRIGO POE: 25 g/ha mezclable con CUALQUIER hormonal desde Z1.2. SIN aceite en estado de hojas.
 
 
-TRIGO: RAIGRAS
+TRIGO / CEBADA: RAIGRAS
 
 SITUACIÓN 1 — 1-2 hojas, baja densidad:
 ✅ Paraquat (Gramoxone)
@@ -727,8 +785,12 @@ PEE:
 POST-EMERGENCIA:
 ✅ Pinoxaden 5% (Axial) — desde Z1.3
 ✅ Clodinafop 24% (Gizmo/Topick 24EC) — desde Z1.2-Z1.3
+✅ Diclofop-metil — desde Z1.2
+✅ Fenoxaprop-P-etil (Foxtrot Xtra) — desde Z1.2
 ✅ Iodosulfurón/Mesosulfurón (Hussar Plus) — desde Z1.2
+✅ Flucarbazone sódico (Everest) — ALS, desde Z1.2
 ✅ Piroxulam 21,5% (PowerFlex) — desde Z1.3 hasta fin macollaje
+✅ Pyraflufen-etil (Stagger) — PPO contacto
 ✅ Imazamox (Pulsar/Trigosol) Trigos CL
 ✅ Glufosinato 28% Trigos HB4
 
