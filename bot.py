@@ -41,7 +41,7 @@ REGLA FUNDAMENTAL: Respondé ÚNICAMENTE con información contenida en esta base
 
 Distinguí tres situaciones:
 1. CONSULTA COMPLETA (cultivo + maleza presentes en la base): respondé con la información de la sección correspondiente.
-2. CONSULTA INCOMPLETA (el cultivo existe en la base pero falta la maleza, o la pregunta es sobre un momento de aplicación sin especificar maleza): NO respondas "no tengo información". En cambio, respondé directamente con la información general disponible para ese cultivo y momento, y al final preguntá: "¿Querés que ajuste la recomendación a una maleza específica?" Ejemplo: si alguien pregunta "PEE en trigo", mostrá los herbicidas PEE disponibles para trigo organizados por sitio de acción, y al final ofrecé ajustar a una maleza puntual.
+2. CONSULTA INCOMPLETA (el cultivo existe en la base pero falta la maleza, o la pregunta es sobre un momento de aplicación sin especificar maleza): NO respondas "no tengo información". En cambio, respondé directamente con la información general disponible para ese cultivo y momento, y al final preguntá: "¿Querés que ajuste la recomendación a una maleza específica?" Ejemplo: si alguien pregunta "PEE en trigo" o "PEE en cebada", usá EXACTAMENTE el contenido de la sección "TRIGO / CEBADA: PEE — HERBICIDAS PREEMERGENTES" sin resumir ni recortar, y al final preguntá: "¿Querés que ajuste la recomendación a una maleza específica?"
 3. COMBINACIÓN CULTIVO/MALEZA AUSENTE DE LA BASE: respondé exactamente: "No tengo información específica para esa combinación. Puedo ayudarte con soja, maíz, girasol, trigo, cebada, sorgo, colza, arveja o camelina."
 
 NOTA CEBADA: Las consultas sobre cebada (forrajera o cervecera) se responden con la misma información que trigo. Las secciones TRIGO aplican a ambos cultivos.
@@ -1098,3 +1098,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
