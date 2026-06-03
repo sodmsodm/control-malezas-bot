@@ -40,8 +40,8 @@ KNOWLEDGE_BASE = """
 REGLA FUNDAMENTAL: Respondé ÚNICAMENTE con información contenida en esta base de conocimiento. NUNCA improvises ni uses conocimiento externo.
 
 Distinguí tres situaciones:
-1. CONSULTA COMPLETA (cultivo + maleza presentes en la base): respondé con la información de la sección correspondiente.
-2. CONSULTA GENERAL SIN MALEZA ESPECÍFICA (pregunta sobre cultivo + momento sin mencionar maleza — ej: "PEE en trigo", "POE en soja", "barbecho", "herbicidas en maíz"): este es SIEMPRE caso 2, NUNCA caso 3. Respondé consolidando TODA la información de ese cultivo y momento que existe en la base, recorriendo TODAS las secciones de ese cultivo una por una. Incluí herbicidas, dosis y marcas de CADA sección. No resumás, no recortes, no omitás secciones. Al final agregá: "¿Querés que profundice en alguna maleza específica?" Ejemplo: si alguien pregunta "PEE en trigo", recorrés TRIGO/CEBADA:PEE, TRIGO/CEBADA:RAIGRÁS bloque PEE, TRIGO/CEBADA:CRUCIFERAS bloque PEE, TRIGO/CEBADA:CONYZA bloque PEE, y mostrás todo junto con herbicidas, dosis y marcas.
+1. CONSULTA COMPLETA (cultivo + maleza presentes en la base): respondé ÚNICAMENTE con la sección específica de esa maleza. NUNCA uses la sección "TODOS LOS HERBICIDAS POR MOMENTO" si la maleza fue especificada.
+2. CONSULTA GENERAL SIN MALEZA ESPECÍFICA (pregunta sobre cultivo + momento sin mencionar maleza — ej: "PEE en trigo", "POE en soja", "herbicidas en maíz"): este es SIEMPRE caso 2, NUNCA caso 3. Buscá la sección "CULTIVO — TODOS LOS HERBICIDAS POR MOMENTO" correspondiente en la base y volcá su contenido COMPLETO sin resumir ni recortar. Al final preguntá: "¿Querés que profundice en alguna maleza específica?"
 3. CULTIVO AUSENTE DE LA BASE: SOLO si el cultivo mencionado no existe en la base (ej: papa, algodón, citrus, girasol de confitería, caña), respondé: "No tengo información específica para ese cultivo. Puedo ayudarte con soja, maíz, girasol, trigo, cebada, sorgo, colza, arveja o camelina."
 
 NOTA CEBADA: Las consultas sobre cebada (forrajera o cervecera) se responden con la misma información que trigo. Las secciones TRIGO aplican a ambos cultivos.
@@ -919,6 +919,316 @@ CONTROL + RESIDUAL Alta infestación — solo funcionan más del 80%:
 ✅ OPCIÓN PRINCIPAL: Glifosato 1080 g.e.a./ha + Fluroxipir 33% (Starane Xtra) 450 ml/ha
 ✅ OPCIÓN CON PPO: + Saflufenacil 70% (Heat) 25-35 g/ha
 ✅ OPCIÓN MARBETE: Glifosato 48% 3 l/ha + Fluroxipir 33% (Starane Xtra) 360 cc/ha
+
+=== CONSULTAS GENERALES POR CULTIVO — USAR CUANDO NO SE MENCIONA MALEZA ESPECÍFICA ===
+
+INSTRUCCIÓN AL MODELO: Cuando la consulta sea general (ej: "PEE en soja", "POE en maíz", "herbicidas en trigo") usá EXACTAMENTE las secciones de esta parte. No resumás, no recortés.
+
+---
+
+SOJA — TODOS LOS HERBICIDAS POR MOMENTO
+
+BARBECHO / ANTES DE SIEMBRA:
+✅ 2,4D 1-1,5 l
+✅ Epirefenacil 5,5% (Empera)
+✅ Glufosinato de amonio 28% 2,5 l
+✅ Paraquat 27,6% (Gramoxone)
+✅ 2,4D + Saflufenacil 70% 40 g (Heat)
+✅ 2,4D + Carfentrazone 40% (Shark)
+✅ Glifosato + 2,4D
+✅ Glifosato + Dicamba (Banvel)
+✅ Glifosato + 2,4D + Saflufenacil 70% 40 g (Heat)
+✅ Glifosato + 2,4D + Carfentrazone 40% (Shark)
+✅ Glifosato + 2,4D + Epirefenacil 5,5% (Empera)
+✅ Glifosato + 2,4D + Flumioxazin 48% 150 cc (Sumisoya)
+✅ Glifosato + 2,4D + Metribuzin 48% 0,8-1 l (Sencorex)
+✅ Glifosato + 2,4D + Amicarbazone 70% 0,4 g (Dinamic) — hasta 45 DAS
+✅ Glifosato + 2,4D + Trifludimoxazin/Saflufenacil 0,1-0,2 l (Voraxor)
+✅ Glifosato 3 L + Clorimurón 25% 60-80 g (Classic)
+✅ Glifosato 3,5 L + Imazetapir 10% 800 cc + humectante
+✅ Halosulfurón metil 75% 100-150 g (Sempra) — cebollín 10 DAS
+🔁 1° Glifosato + 2,4D // 2° Paraquat 27,6% (Gramoxone)
+🔁 1° Glifosato + 2,4D // 2° Glufosinato de amonio 28%
+
+BARBECHO INTERMEDIO (30-60 DAS):
+✅ Flumioxazin 48% 150 cc (Sumisoya)
+✅ Piroxasulfone 85% 160-200 g (Yamato)
+✅ Diflufenicán 50% 0,3 l (Brodal) hasta 15 DAS
+✅ Atrazina 90% 1-1,5 kg hasta 40 DAS
+✅ Amicarbazone 70% 0,4-0,5 kg (Dinamic) hasta 45 DAS
+✅ Terbutilazina 75% 1 kg (Terbine/Gesatop) hasta 45 DAS
+✅ Metribuzin 48% 1 l (Sencorex)
+✅ Terbutilazina 50%/Flumioxazin 3,8% 1,25 l (Terbyne Max Sipcam) hasta 30 DAS
+✅ Sulfometurón 15% + Clorimurón 20% 0,1 kg (Ligate) — SOJAS STS
+
+PEE / PSI-PEE:
+✅ Sulfentrazone 50% 0,4-0,5 l (Authority/Capaz) + S-metolacloro 96% 1,1-1,3 l (Dual Gold)
+✅ Sulfentrazone 50% 0,5 l (Authority/Capaz) + Piroxasulfone 48% 0,355 l
+✅ Sulfentrazone 50% 0,5 l (Authority/Capaz) + Imazetapir 10% 0,8-1 l (Pivot)
+✅ Sulfentrazone 50% 0,5 l (Authority/Capaz) + Diclosulam 84% 0,03 kg (Spider)
+✅ Sulfentrazone 50% 0,4-0,5 l (Authority/Capaz) + Metribuzin 48% 0,8-1 l (Sencorex)
+✅ Flumioxazin 15%/Piroxasulfone 34,5% 0,5 l (Fierce FMC) — 7 DAS
+✅ Flumioxazin 4,2%/S-metolacloro 84% 1,75 l (Apresa ADAMA) — 7 DAS
+✅ Flumioxazin 5%/S-metolacloro 57,6%/Imazetapir 5% 1,5 l (Zethamaxx Sumitomo) — 7 DAS
+✅ Flumioxazin 14,5%/Diclosulam 6,5%/Imazetapir 20% 0,5 l (Predecessor DVA) — 7 DAS
+✅ Flumioxazin 28,8%/Diclosulam 8,4% 0,25 l + S-metolacloro 96% 1,1-1,3 l (Dual Gold) — 7 DAS
+✅ Flumioxazin 4,2%/Acetoclor 90% 1,5 l (Harness) — 7 DAS
+✅ Metribuzin 14,9%/S-metolacloro 62,8% 2,5 l (Boundary Syngenta)
+✅ Trifludimoxazin/Saflufenacil 0,1-0,2 l (Voraxor) + S-metolacloro 96% 1,1-1,3 l (Dual Gold)
+✅ Metribuzin 48% 0,8-1 kg (Sencorex)
+✅ Sulfentrazone 50% (Authority/Capaz)
+✅ Flumioxazin 48% (Sumisoya) — 7 DAS
+✅ Diflufenicán 50% (Brodal) — 15 DAS
+✅ Trifludimoxazin/Saflufenacil (Voraxor) — 7 DAS
+✅ Prometrina 48% (Gesagard)
+✅ Paraquat 27,6% (Gramoxone) + Metribuzin 48% (Sencorex)
+
+POST-EMERGENCIA (V4-V6):
+✅ Fomesafén 25% 1-1,5 l (Flex)
+✅ Lactofén 24% 0,6-0,8 l (Cobra)
+✅ Cletodim 24% 0,7-1 l (Select) — solo gramíneas
+✅ Cletodim 36% 0,5-0,7 l (Select 36) — solo gramíneas
+✅ Piroxasulfone 85% 0,16-0,2 kg (Yamato) — hasta V4 o V8
+✅ Fomesafén 25% 1-1,5 l (Flex) + Benazolín 50% 0,8 l (Dasen)
+✅ Fomesafén 25% 1-1,5 l (Flex) + Clorimurón 25% 0,03 kg (Classic)
+✅ Clorimurón 25% 0,04-0,05 kg (Classic)
+✅ Cloransulam 84% 0,04-0,05 kg (Pacto)
+✅ Imazetapir 10% 0,5-0,8 l (Pivot)
+✅ Imazapic 240 g/L 1 L (Pivot) — cebollín hasta 4a hoja
+✅ 2,4DB 97% e.a. 0,04 l + Bentazón 60% 0,8-1 l (Basagran)
+✅ Benazolín 50% 0,6 l (Dasen) + Clorimurón 25% 0,03 g (Classic)
+✅ Fomesafén 25% (Flex) + Acifluorfén 24% (Blazer) — Amaranthus
+✅ Bentazón 60% 1,5 l (Basagran) — Commelina, Parietaria
+
+SOJAS ENLIST:
+✅ Glufosinato de amonio 28% 2-3 l — hasta V4-V6
+✅ 2,4D 30% e.a. 1,5-2 l — hasta R2
+✅ Glufosinato 28% + 2,4D 30% e.a. 1,5-2 l — hasta V4-V6
+
+---
+
+MAÍZ — TODOS LOS HERBICIDAS POR MOMENTO
+
+ANTES DE SIEMBRA / BARBECHO:
+✅ 2,4D
+✅ Picloram
+✅ Epirefenacil (Empera)
+✅ Glufosinato 28%
+✅ Paraquat (Gramoxone)
+✅ 2,4D + Carfentrazone 40% (Shark)
+✅ Glifosato + 2,4D
+✅ Glifosato + Cletodim 24% 0,7-1 l (Select) — mínimo 10 DAS — RAIGRÁS
+✅ Glifosato + Haloxyfop 54% (Galant Max) — mínimo 10 DAS — RAIGRÁS
+✅ Glifosato + Cletodim 12%/Haloxyfop 6% (Gramini Elite) — mínimo 10 DAS — RAIGRÁS
+✅ Glifosato + 2,4D + PPO / FII / HPPD según biotipo crucífera
+⚠️ ACCasa (cletodim, haloxyfop) SOLO en presiembra mínimo 10 DAS. NUNCA en POE maíz convencional ni RR.
+
+PEE / PSI-PEE:
+✅ Atrazina 90% 1-2 kg + S-metolacloro 96% (Dual Gold)
+✅ Atrazina 90% + Biciclopirona 20%
+✅ Amicarbazone (Dinamic) + S-metolacloro (Dual Gold)
+✅ Mesotrione 48% (Callisto) + Piroxasulfone (Yamato)
+✅ Isoxaflutole/Thiencarbazone (Adengo) + S-metolacloro (Dual Gold) + Atrazina
+✅ Acuron Pack (premezclado)
+✅ Atrazina (Gesaprim)
+✅ Terbutilazina (Terbine)
+✅ Flurocloridona (Rainbow)
+✅ Diflufenicán (Brodal)
+✅ Flumioxazin (Sumisoya)
+✅ Piroxasulfone (Yamato)
+✅ Pendimetalín (Herbadox) — RAIGRÁS
+
+POST-EMERGENCIA V2-V8:
+✅ Atrazina 90% 1 kg + 2,4D
+✅ Atrazina 90% 1 kg + Picloram
+✅ Atrazina 90% 1 kg + Mesotrione 48% (Callisto)
+✅ Atrazina 90% 1 kg + Topramezone 33,6% (Convey) — V1-V7
+✅ Atrazina 90% 1 kg + Tembotrione 42% (Laudis) — V3-V6
+✅ Atrazina 90% 1 kg + Tolpyralate 40% (Brucia) — V3-V6
+✅ 2,4D — V2-V8
+✅ Mesotrione 48% (Callisto) — V2-V6
+✅ Topramezone 33,6% (Convey) — V1-V7
+✅ MCPA 28% 1,5 l + Atrazina 90% 1 kg
+✅ Halosulfurón metil 75% 100-150 g (Sempra) — cebollín, maíz convencional
+✅ Halosulfurón metil 75% 30-50 g (Sempra) + Glifosato 48% 2,5 L — maíz RR
+✅ Glifosato 48% 3 L + Clorimurón 25% 60-80 g (Classic) — cebollín RR
+✅ Imazapic 240 g/L 1 L (Pivot) — cebollín, SOLO maíz Clearfield
+
+MAÍZ ENLIST:
+✅ Glufosinato 28% 1,8-2 l — V1-V8
+✅ 2,4D 45,6% e.a. 1,5-2 l — hasta V8
+✅ Glufosinato 28% + 2,4D — hasta V2-V4
+✅ Haloxyfop 54% (Galant Max) — gramíneas, Enlist tolera ACCasa
+
+⚠️ MAÍZ CONVENCIONAL Y RR: SIN graminicida POE. Control de raigrás solo en barbecho/presiembra.
+
+---
+
+GIRASOL — TODOS LOS HERBICIDAS POR MOMENTO
+
+BARBECHO (respetar DAS según producto):
+✅ 2,4D (20 DAS mínimo antes de siembra)
+✅ Dicamba (45 DAS mínimo)
+✅ Fluroxipir (Starane Xtra) (1 DAS)
+✅ Halauxifén (Elevore) (1 DAS)
+✅ Piraflufen (Stagger)
+✅ Carfentrazone (Shark) (15 DAS)
+✅ Flumioxazin (Sumisoya) — 30-60 DAS
+✅ Diquat (Reglone)
+✅ Paraquat (Gramoxone)
+✅ Glifosato
+✅ Glifosato mayor o igual a 2000 g.e.a. — cebollín activo 6-8 hojas
+
+PEE:
+✅ Sulfentrazone 50% (Authority/Capaz)
+✅ Acetoclor (Harness)
+✅ S-metolacloro 96% (Dual Gold)
+✅ Diflufenicán 50% (Brodal)
+✅ Flurocloridona 25% (Rainbow)
+✅ Flurocloridona (Rainbow) + Diflufenicán (Brodal) — crucíferas con resistencia
+✅ Sulfentrazone + S-metolacloro (Dual Gold)
+✅ Sulfentrazone + Acetoclor (Harness)
+
+POST-EMERGENCIA — MUY LIMITADAS:
+✅ Aclonifén (Prodigio) — yuyo colorado SOLO menor a 2 cm
+✅ ACCasa (gramíneas): Haloxyfop-R-metil (Galant Max) / Propaquizafop (Agil) / Cletodim (Select)
+✅ GIRASOLES CL: Imazapir 80% (Clearsol DF) — V2-V4
+✅ GIRASOLES CL Plus: Clearsol II Plus Pack (Imazamox + Imazapir) — 3a a 7a hoja cebollín
+⚠️ GIRASOLES CONVENCIONALES NO CL: Sin opciones POE efectivas. Control en barbecho y PEE.
+⚠️ NO USAR durante ciclo: saflufenacil, fomesafén, diclosulam, biciclopirona, topramezone, sulfonilureas
+
+---
+
+TRIGO / CEBADA — TODOS LOS HERBICIDAS POR MOMENTO
+
+ANTES DE SIEMBRA / BARBECHO:
+✅ Glifosato + 2,4D
+✅ Glifosato + Dicamba (Banvel)
+✅ Glifosato + 2,4D o MCPA + Saflufenacil (Heat)
+✅ Glifosato + 2,4D o MCPA + Carfentrazone (Shark)
+✅ Glifosato + 2,4D o MCPA + Epirefenacil (Empera)
+✅ Glifosato + Cletodim 24% (Select) — RAIGRÁS
+✅ Glifosato + Haloxyfop 54% (Galant Max) — RAIGRÁS
+✅ Glifosato + Cletodim 12%/Haloxyfop 6% (Gramini Elite) — RAIGRÁS
+🔁 1° Glifosato + 2,4D // 2° Paraquat (Gramoxone)
+🔁 1° Glifosato + Cletodim (Select) // 2° Paraquat (Gramoxone) — RAIGRÁS resistente
+
+PEE:
+✅ Clorsulfurón + Metsulfurón metil (Finesse) — ALS
+✅ Metsulfurón metil (Ally / Errasin WP) — ALS
+✅ Terbutilazina (Koritsu / Teliron 50 SC) — FII
+✅ Terbutrina (Igran) — FII
+✅ Paraquat (Paraquat Line) — FI
+✅ Flumioxazin (Flumyzin / Sumyzin / Gemmit TOP / Darren / Sumisoya) — PPO, 10 DAS
+✅ Carfentrazone-etil (Shark) — PPO
+✅ Saflufenacil 70% (Heat) — PPO
+✅ Pyraflufen-etil (Stagger) — PPO
+✅ Flurocloridona (Talis / Rainbow) — PDS
+✅ Diflufenicán (Brodal) — PDS
+✅ Glifosato (RoundUp Full II / Control MAX / Panzer Gold / Credit Full / March II) — EPSPS
+✅ Glufosinato de amonio (Lifeline / Biffo / Glufan) — Glutamino sintetasa
+✅ Pendimetalín (Satellite / Herbadox) — microtúbulos, RAIGRÁS
+✅ Piroxasulfone (Yamato TOP) — VLCFA, RAIGRÁS
+✅ 2,4D (Enlist Colex D / Mabyn / 2,4-D LV / Weedar / Voleris) — Auxina
+✅ Dicamba (Kamba / Banvel) — Auxina
+✅ Clopyralid (Lontrel) — Auxina
+✅ Fluroxipir (Starane Xtra / Azbany) — Auxina
+✅ Picloram (Tordon 24K / Toram) — Auxina
+✅ 2,4D + Picloram (Tordon D30)
+✅ MCPA + Clopyralid (Curtail M)
+✅ Metsulfurón + Dicamba — premezclado ALS+Auxina
+✅ Metsulfurón + Picloram — premezclado ALS+Auxina
+✅ Metsulfurón + Aminopyralid — premezclado ALS+Auxina
+✅ Prosulfurón + Triasulfurón + Dicamba (Peak Pack L) — ALS+ALS+Auxina
+✅ Paraquat + Diuron (Cerillo) — FI+FII
+✅ Flumioxazin + Terbutilazina (Sumyzin T MAX / Sake) — PPO+FII
+⚠️ ALS en PEE: riesgo residualidad si llueve poco — verificar carencias
+⚠️ Auxinas en PEE: respetar DAS según producto
+
+POST-EMERGENCIA (por estadio):
+
+ESTADO DE HOJAS Z1.2-Z1.3:
+✅ Bromoxinil 34,6% (Bromotril) — crucíferas en plántula
+✅ MCPA 28% 1,5-2,5 l — desde Z1.3-Z1.5
+✅ Saflufenacil 70% 25 g (Heat) — desde Z1.2-Z1.3, SIN aceite, crucíferas menores a 10 cm
+✅ Bromoxinil + MCPA — desde Z1.3, sinergia contacto+sistémico
+✅ Clodinafop 24% (Gizmo/Topick 24EC) — desde Z1.2-Z1.3, RAIGRÁS
+✅ Diclofop-metil — desde Z1.2, RAIGRÁS
+✅ Fenoxaprop-P-etil (Foxtrot Xtra) — desde Z1.2, RAIGRÁS
+✅ Iodosulfurón/Mesosulfurón (Hussar Plus) — desde Z1.2, RAIGRÁS
+✅ Flucarbazone sódico (Everest) — ALS, desde Z1.2, RAIGRÁS
+
+MACOLLAJE Z2.1+:
+✅ Metsulfurón (Errasin WP/Ally) + Dicamba (Banvel)
+✅ 2,4D + Dicamba (Banvel)
+✅ 2,4D + Picloram (Tordón)
+✅ 2,4D + Saflufenacil 70% 25 g (Heat) — malezas menores a 10 cm
+✅ Saflufenacil 70% 25 g solo — malezas menores a 10 cm
+✅ Clopyralid/MCPA (Lontrel)
+✅ Bromoxinil (Bromotril) + 2,4D o MCPA
+✅ Carfentrazone (Shark) + 2,4D o MCPA
+✅ Flurocloridona (Rainbow) + 2,4D o MCPA
+✅ Pinoxaden 5% (Axial) — desde Z1.3, RAIGRÁS
+✅ Piroxulam 21,5% (PowerFlex) — desde Z1.3 hasta fin macollaje, RAIGRÁS
+✅ Imazamox (Pulsar/Trigosol) — Trigos CL, RAIGRÁS
+✅ Flucarbazone sódico (Everest) — ALS, RAIGRÁS
+✅ Glufosinato 28% — Trigos HB4
+
+---
+
+SORGO — TODOS LOS HERBICIDAS POR MOMENTO
+
+ANTES DE SIEMBRA:
+✅ Glifosato
+✅ 2,4D
+✅ Picloram
+✅ Fluroxipir (Starane)
+✅ Paraquat (Gramoxone)
+✅ Glufosinato 28%
+✅ Cletodim 24% 0,7-1 l — 20 DAS
+✅ Haloxyfop 54% — 20 DAS
+✅ Saflufenacil (Heat)
+✅ Epirefenacil (Empera)
+✅ Carfentrazone (Shark)
+
+PEE:
+✅ Flumioxazin
+✅ Terbutilazina (Terbine)
+✅ Atrazina 90%
+✅ S-metolacloro (Dual Gold) — semilla curada con Fluxofenim 96%
+✅ Pendimetalín (Herbadox)
+
+POST-EMERGENCIA V2-V8:
+✅ Bromoxinil (Bromotril) — V2-V4
+✅ Atrazina — V2-V4
+✅ Bentazón (Basagran) — V2-V8
+✅ Foramsulfurón + Iodosulfurón (Equip) — sorgo de Alepo RG
+✅ Nicosulfurón (Accent) — sorgo de Alepo RG
+✅ Desecante: Paraquat (Gramoxone) / Glifosato
+
+---
+
+COLZA / CANOLA / CARINATA — TODOS LOS HERBICIDAS POR MOMENTO
+
+ANTES DE SIEMBRA:
+✅ Paraquat
+✅ Glufosinato
+✅ Glifosato
+✅ 2,4D (15-20 DAS)
+✅ Saflufenacil (Heat)
+✅ Carfentrazone (Shark)
+
+PEE:
+✅ Trifluralina (Treflan)
+✅ Pendimetalín (Herbadox)
+⚠️ Carinata: solo Trifluralina como opción residual
+
+POST-EMERGENCIA:
+✅ Cletodim (Select) — solo gramíneas
+✅ Haloxyfop (Galant Max) — solo gramíneas
+✅ Clopyralid (Lontrel) — riesgo bajo
+
+⚠️ RIESGO ROTACIÓN: Imidazolinonas, sulfonilureas y diclosulam — riesgo ALTO
 
 === PROTOCOLO INTERNO DE ENSAYOS ===
 
