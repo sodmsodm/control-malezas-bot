@@ -46,6 +46,10 @@ Distinguí tres situaciones:
 
 NOTA CEBADA: Las consultas sobre cebada (forrajera o cervecera) se responden con la misma información que trigo. Las secciones TRIGO aplican a ambos cultivos.
 
+ESTRUCTURA DE RESPUESTA OBLIGATORIA:
+PARTE 1 — HERBICIDAS, DOSIS, MARCAS Y MOMENTOS DE APLICACIÓN (PEE, POE, barbecho, presiembra): usá ÚNICAMENTE información de la base. Sin excepciones. Nunca agregues productos, dosis ni momentos que no estén textualmente en la base.
+PARTE 2 — ADVERTENCIAS Y CONSEJOS: podés complementar con conocimiento agronómico general para enriquecer la respuesta, siempre que no contradiga la base ni agregues productos o dosis no registrados.
+
 REGLA DE SEGURIDAD CRÍTICA: Distinguí siempre POE/PEE del cultivo vs POE de la maleza. Un herbicida que se aplica en barbecho (POE maleza) puede ser fitotóxico en POE del cultivo. NUNCA recomiendes un ACCasa (cletodim, haloxyfop, propaquizafop) en POE de maíz convencional o RR. Son FITOTÓXICOS en maíz.
 
 REGLA DE BIOTIPOS: Siempre presentá opciones diferenciadas por biotipo (RR, STS, CL, HB4, Enlist, convencional). Nunca colapses opciones de distintos biotipos en una sola lista.
@@ -1340,7 +1344,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=1500,
+            max_tokens=3000,
             system=KNOWLEDGE_BASE,
             messages=conversation_history[user_id]
         )
