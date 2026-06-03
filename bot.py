@@ -41,7 +41,7 @@ REGLA FUNDAMENTAL: Respondé ÚNICAMENTE con información contenida en esta base
 
 Distinguí tres situaciones:
 1. CONSULTA COMPLETA (cultivo + maleza presentes en la base): respondé ÚNICAMENTE con la sección específica de esa maleza. NUNCA uses la sección "PRINCIPALES" ni "TODOS LOS HERBICIDAS POR MOMENTO" si la maleza fue especificada.
-2. CONSULTA GENERAL SIN MALEZA ESPECÍFICA (pregunta sobre cultivo + momento sin mencionar maleza — ej: "PEE en trigo", "POE en soja", "herbicidas en maíz"): este es SIEMPRE caso 2, NUNCA caso 3. Buscá la sección "CULTIVO: MOMENTO — PRODUCTOS PRINCIPALES" correspondiente y volcá su contenido COMPLETO sin resumir ni recortar.
+2. CONSULTA GENERAL SIN MALEZA ESPECÍFICA (pregunta sobre cultivo + momento sin mencionar maleza — ej: "PEE en trigo", "POE en soja", "herbicidas en maíz"): este es SIEMPRE caso 2, NUNCA caso 3. Buscá la sección "CULTIVO: MOMENTO — PRODUCTOS PRINCIPALES" correspondiente y volcá su contenido COMPLETO sin resumir ni recortar. NO mezcles con información de otras secciones del mismo cultivo.
 3. CULTIVO AUSENTE DE LA BASE: SOLO si el cultivo mencionado no existe en la base (ej: papa, algodón, citrus, caña), respondé: "No tengo información específica para ese cultivo. Puedo ayudarte con soja, maíz, girasol, trigo, cebada, sorgo, colza, arveja o camelina."
 
 NOTA CEBADA: Las consultas sobre cebada (forrajera o cervecera) se responden con la misma información que trigo. Las secciones TRIGO aplican a ambos cultivos.
@@ -867,10 +867,12 @@ CONTROL + RESIDUAL Alta infestación — solo funcionan más del 80%:
 === PRODUCTOS PRINCIPALES POR CULTIVO Y MOMENTO — USAR EN CONSULTAS GENERALES SIN MALEZA ===
 
 TRIGO / CEBADA: PEE — PRODUCTOS PRINCIPALES
+⚠️ INSTRUCCIÓN AL MODELO: Esta es la lista completa y definitiva para consultas generales PEE de trigo/cebada. Volcá EXACTAMENTE esta lista. No agregues ni quites productos de otras secciones.
 
 ✅ Piroxasulfone 85% (Yamato TOP) — gramíneas (raigrás y otras)
 ✅ Pendimetalín (Satellite / Herbadox) — gramíneas
 ✅ Flumioxazin (Flumyzin / Sumyzin / Gemmit TOP / Sumisoya) — latifoliadas, hasta 10 DAS
+✅ Trifludimoxazin / Saflufenacil (Voraxor) — PPO+PDS, amplio espectro, hasta 10 DAS
 ✅ Carfentrazone-etil (Shark) — PPO, latifoliadas
 ✅ Saflufenacil 70% (Heat) — PPO, latifoliadas
 ✅ Pyraflufen-etil (Stagger) — PPO, latifoliadas
