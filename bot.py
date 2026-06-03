@@ -950,6 +950,102 @@ POE:
 """
 
 
+# --- RESPUESTAS HARDCODEADAS PARA CONSULTAS GENERALES ---
+RESPUESTAS_GENERALES = {
+    ("trigo", "pee"): (
+        "PEE EN TRIGO / CEBADA\n\n"
+        "✅ Piroxasulfone 85% (Yamato TOP) — gramíneas (raigrás y otras)\n"
+        "✅ Pendimetalín (Satellite / Herbadox) — gramíneas\n"
+        "✅ Flumioxazin (Flumyzin / Sumyzin / Gemmit TOP / Sumisoya) — latifoliadas, hasta 10 DAS\n"
+        "✅ Trifludimoxazin / Saflufenacil (Voraxor) — PPO+PDS, amplio espectro, hasta 10 DAS\n"
+        "✅ Carfentrazone-etil (Shark) — PPO, latifoliadas\n"
+        "✅ Saflufenacil 70% (Heat) — PPO, latifoliadas\n"
+        "✅ Pyraflufen-etil (Stagger) — PPO, latifoliadas\n"
+        "✅ Terbutrina (Igran) — FII, latifoliadas invernales\n"
+        "✅ Terbutilazina (Koritsu / Teliron 50 SC) — FII, latifoliadas\n"
+        "✅ Flurocloridona (Talis / Rainbow) — PDS, crucíferas y latifoliadas\n"
+        "✅ Diflufenicán (Brodal) — PDS, crucíferas y latifoliadas\n"
+        "✅ Metsulfurón metil (Ally / Errasin WP) — ALS, latifoliadas\n"
+        "✅ Clorsulfurón + Metsulfurón (Finesse) — ALS, latifoliadas\n"
+        "✅ Auxinas/hormonales (2,4D, Dicamba, MCPA, Fluroxipir, Picloram y mezclas) — según maleza objetivo y estadio\n\n"
+        "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de trigo y cebada. "
+        "La elección final depende de la maleza presente en el lote y las resistencias confirmadas en la zona.\n\n"
+        "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
+    ),
+    ("cebada", "pee"): None,  # usa la misma que trigo
+    ("soja", "pee"): (
+        "PEE EN SOJA\n\n"
+        "✅ Sulfentrazone 50% (Authority / Capaz) + S-metolacloro 96% (Dual Gold) — amplio espectro\n"
+        "✅ Flumioxazin 15% / Piroxasulfone 34,5% (Fierce FMC) — 7 DAS\n"
+        "✅ Flumioxazin 4,2% / S-metolacloro 84% (Apresa ADAMA) — 7 DAS\n"
+        "✅ Trifludimoxazin / Saflufenacil (Voraxor) + S-metolacloro 96% (Dual Gold) — 7 DAS\n"
+        "✅ Metribuzin 48% (Sencorex) — latifoliadas\n"
+        "✅ Flumioxazin 48% (Sumisoya) — PPO, 7 DAS\n"
+        "✅ Piroxasulfone 85% (Yamato) — gramíneas y latifoliadas\n"
+        "✅ Diflufenicán 50% (Brodal) — crucíferas, 15 DAS\n\n"
+        "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de soja. "
+        "La elección final depende de la maleza presente en el lote.\n\n"
+        "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
+    ),
+    ("maiz", "pee"): (
+        "PEE EN MAÍZ\n\n"
+        "✅ Atrazina 90% + S-metolacloro 96% (Dual Gold) — base clásica amplio espectro\n"
+        "✅ Atrazina 90% + Piroxasulfone (Yamato) — latifoliadas + gramíneas\n"
+        "✅ Acuron Pack (premezclado) — amplio espectro\n"
+        "✅ Adengo (Isoxaflutole / Thiencarbazone) + S-metolacloro (Dual Gold) + Atrazina — amplio espectro\n"
+        "✅ Piroxasulfone (Yamato) — gramíneas (raigrás)\n"
+        "✅ Pendimetalín (Herbadox) — gramíneas (raigrás)\n"
+        "✅ Flurocloridona (Rainbow) — crucíferas\n"
+        "✅ Diflufenicán (Brodal) — crucíferas\n\n"
+        "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de maíz. "
+        "La elección final depende de la maleza presente en el lote.\n\n"
+        "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
+    ),
+    ("girasol", "pee"): (
+        "PEE EN GIRASOL\n\n"
+        "✅ Sulfentrazone 50% (Authority / Capaz) — amplio espectro\n"
+        "✅ S-metolacloro 96% (Dual Gold) — gramíneas y algunas latifoliadas\n"
+        "✅ Acetoclor (Harness) — gramíneas y algunas latifoliadas\n"
+        "✅ Flurocloridona 25% (Rainbow) — crucíferas y latifoliadas\n"
+        "✅ Diflufenicán 50% (Brodal) — crucíferas y latifoliadas\n"
+        "✅ Sulfentrazone + S-metolacloro (Dual Gold) — mezcla amplio espectro\n"
+        "✅ Flurocloridona (Rainbow) + Diflufenicán (Brodal) — crucíferas con resistencia\n\n"
+        "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de girasol. "
+        "Las opciones POE en girasol son muy limitadas — el PEE es el momento más importante.\n\n"
+        "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
+    ),
+}
+# cebada usa la misma respuesta que trigo
+RESPUESTAS_GENERALES[("cebada", "pee")] = RESPUESTAS_GENERALES[("trigo", "pee")]
+
+CULTIVOS_ALIAS = {
+    "trigo": "trigo", "cebada": "cebada",
+    "soja": "soja", "soya": "soja",
+    "maiz": "maiz", "maíz": "maiz",
+    "girasol": "girasol",
+}
+MOMENTOS_ALIAS = {
+    "pee": "pee", "pre-emergencia": "pee", "preemergencia": "pee",
+    "pre emergencia": "pee",
+}
+
+def detectar_consulta_general(texto):
+    """Retorna la respuesta hardcodeada si el mensaje es una consulta general, o None si no lo es."""
+    t = texto.lower().strip()
+    cultivo_detectado = None
+    momento_detectado = None
+    for palabra, cultivo in CULTIVOS_ALIAS.items():
+        if palabra in t:
+            cultivo_detectado = cultivo
+            break
+    for palabra, momento in MOMENTOS_ALIAS.items():
+        if palabra in t:
+            momento_detectado = momento
+            break
+    if cultivo_detectado and momento_detectado:
+        return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
+    return None
+
 # --- CLIENTE ANTHROPIC ---
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
@@ -1041,6 +1137,16 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         chat_id=update.effective_chat.id,
         action="typing"
     )
+
+    # Detectar consulta general y responder sin llamar a la API
+    respuesta_hardcodeada = detectar_consulta_general(user_message)
+    if respuesta_hardcodeada:
+        await update.message.reply_text(respuesta_hardcodeada)
+        conversation_history[user_id].append({
+            "role": "assistant",
+            "content": respuesta_hardcodeada
+        })
+        return
 
     try:
         response = client.messages.create(
