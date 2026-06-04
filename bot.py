@@ -891,14 +891,17 @@ TRIGO / CEBADA: PEE — PRODUCTOS PRINCIPALES
 
 SOJA: PEE — PRODUCTOS PRINCIPALES
 
-✅ Sulfentrazone 50% (Authority / Capaz) + S-metolacloro 96% (Dual Gold) — amplio espectro
-✅ Flumioxazin 15% / Piroxasulfone 34,5% (Fierce FMC) — 7 DAS
-✅ Flumioxazin 4,2% / S-metolacloro 84% (Apresa ADAMA) — 7 DAS
-✅ Trifludimoxazin / Saflufenacil (Voraxor) + S-metolacloro 96% (Dual Gold) — 7 DAS
-✅ Metribuzin 48% (Sencorex) — latifoliadas
-✅ Flumioxazin 48% (Sumisoya) — PPO, 7 DAS
-✅ Piroxasulfone 85% (Yamato) — gramíneas y latifoliadas
-✅ Diflufenicán 50% (Brodal) — crucíferas, 15 DAS
+✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, 7 DAS
+✅ Trifludimoxazin / Saflufenacil (Voraxor) — PPO+PDS, amplio espectro, 7 DAS
+✅ Flumioxazin / Piroxasulfone (Fierce FMC) — PPO+VLCFA, 7 DAS
+✅ Flumioxazin / Acetoclor (Harness) — PPO+cloroacetamida, 7 DAS
+✅ Metribuzin / S-metolacloro (Boundary Syngenta) — FII+VLCFA
+✅ Sulfentrazone (Authority / Capaz) + S-metolacloro 96% (Dual Gold) — PPO+VLCFA, amplio espectro
+✅ Sulfentrazone (Authority / Capaz) + Piroxasulfone — PPO+VLCFA
+✅ Sulfentrazone (Authority / Capaz) + Metribuzin (Sencorex) — PPO+FII
+✅ Metribuzin 48% (Sencorex) — FII, latifoliadas
+✅ Sulfentrazone 50% (Authority / Capaz) — PPO, amplio espectro
+✅ Piroxasulfone 85% (Yamato) — VLCFA, gramíneas y latifoliadas
 
 💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de soja. La elección final depende de la maleza presente en el lote.
 
@@ -975,14 +978,17 @@ RESPUESTAS_GENERALES = {
     ("cebada", "pee"): None,  # usa la misma que trigo
     ("soja", "pee"): (
         "PEE EN SOJA\n\n"
-        "✅ Sulfentrazone 50% (Authority / Capaz) + S-metolacloro 96% (Dual Gold) — amplio espectro\n"
-        "✅ Flumioxazin 15% / Piroxasulfone 34,5% (Fierce FMC) — 7 DAS\n"
-        "✅ Flumioxazin 4,2% / S-metolacloro 84% (Apresa ADAMA) — 7 DAS\n"
-        "✅ Trifludimoxazin / Saflufenacil (Voraxor) + S-metolacloro 96% (Dual Gold) — 7 DAS\n"
-        "✅ Metribuzin 48% (Sencorex) — latifoliadas\n"
-        "✅ Flumioxazin 48% (Sumisoya) — PPO, 7 DAS\n"
-        "✅ Piroxasulfone 85% (Yamato) — gramíneas y latifoliadas\n"
-        "✅ Diflufenicán 50% (Brodal) — crucíferas, 15 DAS\n\n"
+        "✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, 7 DAS\n"
+        "✅ Trifludimoxazin / Saflufenacil (Voraxor) — PPO+PDS, amplio espectro, 7 DAS\n"
+        "✅ Flumioxazin / Piroxasulfone (Fierce FMC) — PPO+VLCFA, 7 DAS\n"
+        "✅ Flumioxazin / Acetoclor (Harness) — PPO+cloroacetamida, 7 DAS\n"
+        "✅ Metribuzin / S-metolacloro (Boundary Syngenta) — FII+VLCFA\n"
+        "✅ Sulfentrazone (Authority / Capaz) + S-metolacloro 96% (Dual Gold) — PPO+VLCFA, amplio espectro\n"
+        "✅ Sulfentrazone (Authority / Capaz) + Piroxasulfone — PPO+VLCFA\n"
+        "✅ Sulfentrazone (Authority / Capaz) + Metribuzin (Sencorex) — PPO+FII\n"
+        "✅ Metribuzin 48% (Sencorex) — FII, latifoliadas\n"
+        "✅ Sulfentrazone 50% (Authority / Capaz) — PPO, amplio espectro\n"
+        "✅ Piroxasulfone 85% (Yamato) — VLCFA, gramíneas y latifoliadas\n\n"
         "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de soja. "
         "La elección final depende de la maleza presente en el lote.\n\n"
         "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
