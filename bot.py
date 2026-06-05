@@ -910,14 +910,23 @@ SOJA: PEE — PRODUCTOS PRINCIPALES
 
 MAÍZ: PEE — PRODUCTOS PRINCIPALES
 
-✅ Atrazina 90% + S-metolacloro 96% (Dual Gold) — base clásica amplio espectro
+✅ Atrazina 90% + S-metolacloro 96% (Dual Gold) — amplio espectro
 ✅ Atrazina 90% + Piroxasulfone (Yamato) — latifoliadas + gramíneas
-✅ Acuron Pack (premezclado) — amplio espectro
-✅ Adengo (Isoxaflutole / Thiencarbazone) + S-metolacloro (Dual Gold) + Atrazina — amplio espectro
-✅ Piroxasulfone (Yamato) — gramíneas (raigrás)
-✅ Pendimetalín (Herbadox) — gramíneas (raigrás)
-✅ Flurocloridona (Rainbow) — crucíferas
-✅ Diflufenicán (Brodal) — crucíferas
+✅ Atrazina 90% + Biciclopirona 20% — amplio espectro
+✅ Amicarbazone (Dinamic) + S-metolacloro (Dual Gold) — amplio espectro
+✅ Mesotrione 48% (Callisto) + Piroxasulfone (Yamato) — amplio espectro
+✅ Isoxaflutole/Thiencarbazone (Adengo) + S-metolacloro (Dual Gold) + Atrazina — amplio espectro
+✅ Acuron Pack — premezclado amplio espectro
+✅ Zidua Pack (Piroxasulfone 85% 160-200 g + Saflufenacil 70% 35-45 g) — gramíneas + latifoliadas
+✅ Piroxasulfone 85% (Yamato) — gramíneas
+✅ Pendimetalín (Herbadox) — gramíneas
+✅ Saflufenacil 70% (Heat) — PPO, latifoliadas
+✅ Carfentrazone-etil (Shark) — PPO, latifoliadas
+✅ Flumioxazin (Sumisoya) — PPO, latifoliadas
+✅ Flurocloridona (Rainbow) — crucíferas y latifoliadas
+✅ Diflufenicán (Brodal) — crucíferas y latifoliadas
+✅ Terbutilazina (Terbine) — FII, latifoliadas
+✅ Atrazina (Gesaprim) — FII, amplio espectro
 
 💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de maíz. La elección final depende de la maleza presente en el lote.
 
@@ -925,16 +934,36 @@ MAÍZ: PEE — PRODUCTOS PRINCIPALES
 
 
 GIRASOL: PEE — PRODUCTOS PRINCIPALES
+⚠️ ATENCIÓN: NO usar Saflufenacil (Heat) en girasol — fitotóxico. El PPO válido en girasol es Carfentrazone (Shark) o Pyraflufen (Stagger).
 
-✅ Sulfentrazone 50% (Authority / Capaz) — amplio espectro
-✅ S-metolacloro 96% (Dual Gold) — gramíneas y algunas latifoliadas
-✅ Acetoclor (Harness) — gramíneas y algunas latifoliadas
-✅ Flurocloridona 25% (Rainbow) — crucíferas y latifoliadas
-✅ Diflufenicán 50% (Brodal) — crucíferas y latifoliadas
-✅ Sulfentrazone + S-metolacloro (Dual Gold) — mezcla amplio espectro
+✅ Carfentrazone-etil (Shark) — PPO contacto, latifoliadas
+✅ Pyraflufen-etil (Stagger) — PPO contacto, latifoliadas
+✅ Sulfentrazone 50% (Authority / Capaz) — PPO, amplio espectro
+✅ Sulfentrazone + S-metolacloro 96% (Dual Gold) — PPO+VLCFA, amplio espectro
+✅ Sulfentrazone + Acetoclor (Harness) — PPO+cloroacetamida
+✅ Piroxasulfone 85% (Yamato) — VLCFA, gramíneas
+✅ Pendimetalín (Herbadox) — microtúbulos, gramíneas
+✅ S-metolacloro 96% (Dual Gold) — VLCFA, gramíneas y algunas latifoliadas
+✅ Acetoclor (Harness) — cloroacetamida, gramíneas y algunas latifoliadas
+✅ Flurocloridona 25% (Rainbow) — PDS, crucíferas y latifoliadas
+✅ Diflufenicán 50% (Brodal) — PDS, crucíferas y latifoliadas
 ✅ Flurocloridona (Rainbow) + Diflufenicán (Brodal) — crucíferas con resistencia
 
-💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de girasol. La elección final depende de la maleza presente en el lote. Las opciones POE en girasol son muy limitadas — el PEE es el momento más importante.
+💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de girasol. Las opciones POE en girasol son muy limitadas — el PEE es el momento más importante.
+
+¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa.
+
+
+SORGO: PEE — PRODUCTOS PRINCIPALES
+
+✅ Flumioxazin (Sumisoya) — PPO, latifoliadas
+✅ Carfentrazone-etil (Shark) — PPO contacto, latifoliadas
+✅ Terbutilazina (Terbine) — FII, latifoliadas
+✅ Atrazina 90% — FII, amplio espectro
+✅ S-metolacloro 96% (Dual Gold) — gramíneas y latifoliadas ⚠️ semilla curada con Fluxofenim 96% (Concep III) obligatorio
+✅ Pendimetalín (Herbadox) — microtúbulos, gramíneas
+
+💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de sorgo. La elección final depende de la maleza presente en el lote.
 
 ¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa.
 
@@ -995,29 +1024,57 @@ RESPUESTAS_GENERALES = {
     ),
     ("maiz", "pee"): (
         "PEE EN MAÍZ\n\n"
-        "✅ Atrazina 90% + S-metolacloro 96% (Dual Gold) — base clásica amplio espectro\n"
+        "✅ Atrazina 90% + S-metolacloro 96% (Dual Gold) — amplio espectro\n"
         "✅ Atrazina 90% + Piroxasulfone (Yamato) — latifoliadas + gramíneas\n"
-        "✅ Acuron Pack (premezclado) — amplio espectro\n"
-        "✅ Adengo (Isoxaflutole / Thiencarbazone) + S-metolacloro (Dual Gold) + Atrazina — amplio espectro\n"
-        "✅ Piroxasulfone (Yamato) — gramíneas (raigrás)\n"
-        "✅ Pendimetalín (Herbadox) — gramíneas (raigrás)\n"
-        "✅ Flurocloridona (Rainbow) — crucíferas\n"
-        "✅ Diflufenicán (Brodal) — crucíferas\n\n"
+        "✅ Atrazina 90% + Biciclopirona 20% — amplio espectro\n"
+        "✅ Amicarbazone (Dinamic) + S-metolacloro (Dual Gold) — amplio espectro\n"
+        "✅ Mesotrione 48% (Callisto) + Piroxasulfone (Yamato) — amplio espectro\n"
+        "✅ Isoxaflutole/Thiencarbazone (Adengo) + S-metolacloro (Dual Gold) + Atrazina — amplio espectro\n"
+        "✅ Acuron Pack — premezclado amplio espectro\n"
+        "✅ Zidua Pack (Piroxasulfone 85% 160-200 g + Saflufenacil 70% 35-45 g) — gramíneas + latifoliadas\n"
+        "✅ Piroxasulfone 85% (Yamato) — gramíneas\n"
+        "✅ Pendimetalín (Herbadox) — gramíneas\n"
+        "✅ Saflufenacil 70% (Heat) — PPO, latifoliadas\n"
+        "✅ Carfentrazone-etil (Shark) — PPO, latifoliadas\n"
+        "✅ Flumioxazin (Sumisoya) — PPO, latifoliadas\n"
+        "✅ Flurocloridona (Rainbow) — crucíferas y latifoliadas\n"
+        "✅ Diflufenicán (Brodal) — crucíferas y latifoliadas\n"
+        "✅ Terbutilazina (Terbine) — FII, latifoliadas\n"
+        "✅ Atrazina (Gesaprim) — FII, amplio espectro\n\n"
         "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de maíz. "
         "La elección final depende de la maleza presente en el lote.\n\n"
         "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
     ),
     ("girasol", "pee"): (
         "PEE EN GIRASOL\n\n"
-        "✅ Sulfentrazone 50% (Authority / Capaz) — amplio espectro\n"
+        "⚠️ NO usar Saflufenacil (Heat) en girasol — fitotóxico.\n\n"
+        "✅ Carfentrazone-etil (Shark) — PPO contacto, latifoliadas\n"
+        "✅ Pyraflufen-etil (Stagger) — PPO contacto, latifoliadas\n"
+        "✅ Sulfentrazone 50% (Authority / Capaz) — PPO, amplio espectro\n"
+        "✅ Sulfentrazone + S-metolacloro 96% (Dual Gold) — PPO+VLCFA, amplio espectro\n"
+        "✅ Sulfentrazone + Acetoclor (Harness) — PPO+cloroacetamida\n"
+        "✅ Piroxasulfone 85% (Yamato) — VLCFA, gramíneas\n"
+        "✅ Pendimetalín (Herbadox) — microtúbulos, gramíneas\n"
         "✅ S-metolacloro 96% (Dual Gold) — gramíneas y algunas latifoliadas\n"
         "✅ Acetoclor (Harness) — gramíneas y algunas latifoliadas\n"
-        "✅ Flurocloridona 25% (Rainbow) — crucíferas y latifoliadas\n"
-        "✅ Diflufenicán 50% (Brodal) — crucíferas y latifoliadas\n"
-        "✅ Sulfentrazone + S-metolacloro (Dual Gold) — mezcla amplio espectro\n"
+        "✅ Flurocloridona 25% (Rainbow) — PDS, crucíferas y latifoliadas\n"
+        "✅ Diflufenicán 50% (Brodal) — PDS, crucíferas y latifoliadas\n"
         "✅ Flurocloridona (Rainbow) + Diflufenicán (Brodal) — crucíferas con resistencia\n\n"
         "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de girasol. "
         "Las opciones POE en girasol son muy limitadas — el PEE es el momento más importante.\n\n"
+        "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
+    ),
+    ("sorgo", "pee"): (
+        "PEE EN SORGO\n\n"
+        "✅ Flumioxazin (Sumisoya) — PPO, latifoliadas\n"
+        "✅ Carfentrazone-etil (Shark) — PPO contacto, latifoliadas\n"
+        "✅ Terbutilazina (Terbine) — FII, latifoliadas\n"
+        "✅ Atrazina 90% — FII, amplio espectro\n"
+        "✅ S-metolacloro 96% (Dual Gold) — gramíneas y latifoliadas\n"
+        "⚠️ S-metolacloro en sorgo requiere semilla curada con Fluxofenim 96% (Concep III). Sin antídoto es fitotóxico.\n"
+        "✅ Pendimetalín (Herbadox) — microtúbulos, gramíneas\n\n"
+        "💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de sorgo. "
+        "La elección final depende de la maleza presente en el lote.\n\n"
         "¿Qué maleza o malezas tenés en el lote? Con eso te doy una recomendación más precisa."
     ),
 }
@@ -1029,6 +1086,7 @@ CULTIVOS_ALIAS = {
     "soja": "soja", "soya": "soja",
     "maiz": "maiz", "maíz": "maiz",
     "girasol": "girasol",
+    "sorgo": "sorgo",
 }
 MOMENTOS_ALIAS = {
     "pee": "pee", "pre-emergencia": "pee", "preemergencia": "pee",
