@@ -34,6 +34,42 @@ COADYUVANTES_INFO = (
     "✅ ALL OK — Prevén / Correctivo — 400-600 cc/ha"
 )
 
+# --- INFO DE 2,4D ---
+INFO_2_4D = (
+    "📋 2,4D — FORMULACIONES Y DOSIS (Fuente: CINVARP / Ojos del Salado)\n\n"
+    "DOSIS POR EQUIVALENTE ÁCIDO:\n"
+    "✅ 360 g ia/ha — BAJA: malezas chicas, acompañando otros activos con buena eficacia POE\n"
+    "✅ 500 g ia/ha — NORMAL: uso general, óptimo para barbechos\n"
+    "⚠️ 750 g ia/ha — MODERADA: malezas fuera del tamaño óptimo, doble golpe\n"
+    "⚠️ 1150 g ia/ha — ALTA: malezas comprometidas. Respetar carencias en cultivos sensibles\n\n"
+    "CONVERSIÓN SEGÚN FORMULACIÓN:\n"
+    "✅ Éster 643 g/L (97 Sigma, Herbifen Advance): 500 g ia = 778 cc/ha\n"
+    "✅ Éster 590 g/L (Voleris, LV 89 Sigma, Tornado): 500 g ia = 847 cc/ha\n"
+    "✅ Sal DMA 500 g/L (60 Sigma): 500 g ia = 1000 cc/ha\n"
+    "✅ Sal Colina 456 g/L (Enlist, Empiric Fusión): 500 g ia = 1096 cc/ha\n\n"
+    "⚠️ Para biotipos resistentes usar SIEMPRE formulación éster — mayor eficacia sistémica"
+)
+
+# --- INFO DE GLIFOSATO ---
+INFO_GLIFOSATO = (
+    "📋 GLIFOSATO — FORMULACIONES Y DOSIS (Fuente: CINVARP / Ojos del Salado)\n\n"
+    "DOSIS POR EQUIVALENTE ÁCIDO:\n"
+    "✅ 500 g ia/ha — BAJA: dosis acompañante, la acción principal está en otros herbicidas\n"
+    "✅ 810 g ia/ha — NORMAL: uso general, óptimo para barbechos\n"
+    "⚠️ 1080 g ia/ha — MODERADA: malezas sensibles sobre tamaño óptimo. Tolerantes chicas con acompañantes\n"
+    "⚠️ 1350 g ia/ha — MODERADA A ALTA: malezas sensibles grandes. Tolerantes medianas con acompañantes\n"
+    "🔴 1650 g ia/ha — ALTA: malezas sensibles de tamaños comprometidos\n\n"
+    "CONVERSIÓN SEGÚN FORMULACIÓN:\n"
+    "✅ Sal Monoamónica 720 g/L (Control Max — Bayer): 810 g ia = 1,125 L/ha\n"
+    "✅ Sal Amónica 689 g/L (Max Sigma): 810 g ia = 1,177 L/ha\n"
+    "✅ Sal Potásica 575 g/L (RoundUp Top — Bayer): 810 g ia = 1,409 L/ha\n"
+    "✅ Sal Potásica 540 g/L (LT Platinum II, Power Plus II, Full II Sigma): 810 g ia = 1,500 L/ha\n"
+    "✅ Sal Potásica 506 g/L (Sulfosato — Syngenta): 810 g ia = 1,601 L/ha\n"
+    "✅ Sal Dimetilamina 480 g/L (Panzer Gold — Corteva): 810 g ia = 1,688 L/ha\n"
+    "✅ Sal Isopropilamina 445 g/L (Gold Sigma): 810 g ia = 1,820 L/ha\n\n"
+    "⚠️ Glifosato 48% referencia histórica: 2 L/ha = 890 g ia/ha — dosis NORMAL para barbechos"
+)
+
 KNOWLEDGE_BASE = """
 === REGLAS DEL SISTEMA ===
 
@@ -79,6 +115,45 @@ EJEMPLO INCORRECTO — NUNCA hacer esto:
 | Producto | Dosis |
 |---|---|
 
+=== 2,4D — FORMULACIONES Y DOSIS POR EQUIVALENTE ÁCIDO ===
+Fuente: CINVARP / Ojos del Salado — Ing. Agr. Mauro Mortarini MP 891
+
+DOSIS DE REFERENCIA POR g ia/ha:
+✅ 360 g ia/ha — BAJA: malezas chicas, acompañando otros activos con buena eficacia POE. Buscando selectividad en el cultivo
+✅ 500 g ia/ha — NORMAL: dosis de uso general, óptimo para barbechos. Adecuada para combinar con otros hormonales complementarios
+⚠️ 750 g ia/ha — MODERADA: tamaños fuera del óptimo sin llegar a comprometidos. Asociada a doble golpe. Respetar carencias en cultivos sensibles
+⚠️ 1150 g ia/ha — ALTA: tamaños comprometidos. Requiere tolerancia en cultivo o respetar carencias. Asociada a planteos secuenciales
+
+CONVERSIÓN SEGÚN FORMULACIÓN DISPONIBLE:
+✅ Éster etilhexílico 643 g/L (97 Sigma, Herbifen Advance — Atanor): 500 g ia = 778 cc/ha
+✅ Éster etilhexílico 590 g/L (Voleris — Syngenta, LV 89 Sigma, Tornado — UPL): 500 g ia = 847 cc/ha
+✅ Sal dimetilamina 500 g/L (60 Sigma): 500 g ia = 1000 cc/ha
+✅ Sal colina 456 g/L (Enlist — Corteva, Empiric Fusión): 500 g ia = 1096 cc/ha
+
+⚠️ Para barbecho con biotipos resistentes usar SIEMPRE formulación éster — mayor eficacia sistémica que sal amina o sal colina
+⚠️ La dosis "800 cc/ha éster 48%" referencia histórica equivale a ~500 g ia/ha — dosis NORMAL
+
+=== GLIFOSATO — FORMULACIONES Y DOSIS POR EQUIVALENTE ÁCIDO ===
+Fuente: CINVARP / Ojos del Salado — Ing. Agr. Mauro Mortarini MP 891
+
+DOSIS DE REFERENCIA POR g ia/ha:
+✅ 500 g ia/ha — BAJA: dosis acompañante. La acción principal está en otros herbicidas
+✅ 810 g ia/ha — NORMAL: uso general, óptimo para barbechos
+⚠️ 1080 g ia/ha — MODERADA: malezas sensibles sobre tamaño óptimo. Tolerantes chicas con acompañantes
+⚠️ 1350 g ia/ha — MODERADA A ALTA: malezas sensibles grandes. Tolerantes medianas con acompañantes
+🔴 1650 g ia/ha — ALTA: malezas sensibles de tamaños comprometidos
+
+CONVERSIÓN SEGÚN FORMULACIÓN DISPONIBLE:
+✅ Sal Monoamónica 720 g/L (Control Max — Bayer): 810 g ia = 1,125 L/ha
+✅ Sal Amónica 689 g/L (Max Sigma — Sigma): 810 g ia = 1,177 L/ha
+✅ Sal Potásica 575 g/L (RoundUp Top — Bayer): 810 g ia = 1,409 L/ha
+✅ Sal Potásica 540 g/L (LT Platinum II — Bayer, Power Plus II — Atanor, Full II Sigma): 810 g ia = 1,500 L/ha
+✅ Sal Potásica 506 g/L (Sulfosato — Syngenta): 810 g ia = 1,601 L/ha
+✅ Sal Dimetilamina 480 g/L (Panzer Gold — Corteva): 810 g ia = 1,688 L/ha
+✅ Sal Isopropilamina 445 g/L (Gold Sigma): 810 g ia = 1,820 L/ha
+
+⚠️ Glifosato 48% (sal isopropilamina 445 g/L) referencia histórica: 2 L/ha = 890 g ia/ha — dosis NORMAL para barbechos
+
 === ACEITES Y COADYUVANTES ===
 
 REGLA GENERAL: El coadyuvante lo determina el mecanismo de acción del herbicida principal, no el cultivo.
@@ -122,9 +197,9 @@ Producto (p.a.) — días mínimos antes de siembra siguiente:
 ✅ S-metolacloro 96% (Dual Gold): Maíz 0 / Soja 0 / Girasol 0 / Trigo 0
 ✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo 90d
 ✅ Clorimurón 25% (Classic): Soja 0 / Maíz 18m / Girasol 18m / Trigo 18m
-✅ Saflufenacil 70% (Heat): Soja 3d / Maíz 1d / Trigo 1d / Girasol 3d
-✅ Metsulfurón 60% (Ally/Errasin): Soja 60d / Maíz 60d / Girasol 60d
-✅ Flurocloridona 25% (Rainbow): Girasol 0 / Trigo 0 / Soja 18m / Maíz 18m
+✅ Saflufenacil 70% (Heat): Soja 3d / Maíz 1d / Trigo 1d / Girasol: NO usar en pre-siembra ni barbecho previo a girasol (marbete BASF)
+✅ Metsulfurón 60% (Ally/Errasin): Soja 60d / Maíz 60d / Girasol: NO usar en barbecho previo a girasol
+✅ Flurocloridona 25% (Rainbow): Girasol 0 / Trigo 0 / Maíz 0 / Soja: sin registro formal — en ensayos 30-40 días sin problemas (Gigón, Agroconsultas 2020)
 ✅ Diflufenicán 50% (Brodal): Trigo 0 / Girasol 0 / Soja 15d / Maíz 15d
 ✅ Halosulfurón metil 75% (Sempra): Maíz 0 / Soja 0 / Trigo NO / Girasol NO — Carencia 90 días cultivo siguiente no tolerante
 ✅ Imazapic 240 g/L (Pivot): Maíz CL 0 / Soja 0 / Girasol CL 0 — FITOTÓXICO en maíz convencional. Carencia 90 días.
@@ -289,6 +364,583 @@ MEZCLAS CON BUENOS RESULTADOS (uso antes de siembra):
 """
 
 KNOWLEDGE_BASE += """
+=== BARBECHO — ESTRATEGIAS POR MALEZA Y CULTIVO SIGUIENTE ===
+
+NOTAS GENERALES BARBECHO:
+⚠️ COADYUVANTES OBLIGATORIOS: Cletodim y graminicidas ACCasa requieren aceite vegetal o metilado 0,5-1% v/v SIEMPRE. PPO de contacto (Heat, Shark) requieren aceite vegetal 0,5% v/v. Glufosinato requiere surfactante no iónico 0,1% + sulfato de amonio 2 kg/ha. Ver sección COADYUVANTES.
+⚠️ 2,4D: usar formulación éster. Dosis 500 g ia/ha = dosis NORMAL para barbecho. Ver sección 2,4D para conversión según formulación.
+⚠️ GLIFOSATO: dosis 810 g ia/ha = dosis NORMAL para barbecho. Ver sección GLIFOSATO para conversión según formulación.
+⚠️ PPO DE CONTACTO — DOSIS POR TAMAÑO: Saflufenacil (Heat) 35 g/ha maleza chica / 40 g/ha maleza pasada de tamaño. Carfentrazone (Shark) 75 cc/ha maleza chica / 120 cc/ha maleza pasada de tamaño.
+⚠️ Heat NO usar en pre-siembra de girasol. Shark válido en todos los cultivos sin restricción.
+
+BARBECHO LARGO: aplicación abril-junio. Objetivo: pico 1 de emergencia otoñal.
+BARBECHO CORTO: aplicación agosto-septiembre. Objetivo: pico 2 de emergencia y presiembra inmediata.
+TRIGO: sin distinción largo/corto — siempre presiembra por calendario de siembra invernal.
+
+--- LOLIUM (RAIGRÁS) EN BARBECHO ---
+
+LOLIUM — BARBECHO LARGO — SOJA / MAÍZ (abril-junio):
+
+⚠️ MOMENTO: Aplicaciones en marzo-abril pierden eficacia a los 60-75 días si se usan solas. En abril sumar residual o usar doble golpe. Desde mayo la aplicación simple sostiene mejor el control.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ABRIL:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // Glufosinato 28% 2 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — doble golpe con residual
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — sin residual de suelo, agrega MOA
+
+MAYO-JUNIO:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — ante sospecha de resistencia ACCasa
+
+⚠️ RESISTENCIA ACCasa: Cletodim solo puede quedar entre 5-70% según biotipo. Ante sospecha usar mezcla triple o doble golpe.
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+⚠️ Los residuales actúan en suelo sobre semillas y plántulas antes de emerger. No eliminan maleza ya nacida. Combinar siempre con sistémico si hay plantas visibles.
+
+SOJA Y MAÍZ:
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad sostenida hasta 150 DDA. Sin restricción en soja ni maíz
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — buena residualidad hasta 90 DDA
+🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — desempeño similar como opción individual
+⚠️ Pyroxasulfone (Yamato) tiene restricción de 90 días antes de siembra de trigo. Sin restricción en soja ni maíz.
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+SOJA Y MAÍZ — ABRIL:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // Glufosinato 28% 2 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — doble golpe completo, máximo control
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — aplicación única con residual
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — una opción residual
+
+SOJA Y MAÍZ — MAYO-JUNIO:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+
+LOLIUM — BARBECHO LARGO — GIRASOL (abril-junio):
+
+⚠️ Atrazina fitotóxica en girasol — NO usar.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ABRIL:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // Glufosinato 28% 2 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — doble golpe con residual
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — sin residual de suelo, agrega MOA
+
+MAYO-JUNIO:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — ante sospecha de resistencia ACCasa
+
+⚠️ RESISTENCIA ACCasa: Ante sospecha usar mezcla triple o doble golpe.
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad. Sin restricción en girasol
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola
+🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — desempeño similar
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+ABRIL:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // Glufosinato 28% 2 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+MAYO-JUNIO:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+
+LOLIUM — BARBECHO — TRIGO (presiembra):
+
+⚠️ Pyroxasulfone (Yamato): 90 días de carencia antes de trigo. Verificar fechas antes de usar.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+SITUACIÓN 1 — 1-2 hojas, baja densidad:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glufosinato 28% 2 L/ha
+🥉 Paraquat 27,6% (Gramoxone) 2 L/ha
+
+SITUACIÓN 2 — 2-4 hojas, densidad media:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glifosato 810 g ia/ha + Haloxyfop 54% (Galant Max) 0,5 L/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 12%/Haloxyfop 6% (Gramini Elite) 1 L/ha
+
+SITUACIÓN 3 — más de 4 hojas o sospecha de resistencia ACCasa:
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha
+🥈 Glufosinato 28% 2 L/ha + Cletodim 24% (Select) 0,8 L/ha
+
+SITUACIÓN 4 — resistencia confirmada O maleza muy establecida (alta densidad / 5+ macollos) — Doble Golpe:
+🔁 1° Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha — 7 días después
+🔁 1° Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // 2° Glufosinato 28% 2 L/ha — 7 días después
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo/avena. Presiembra, sin restricción de carencia en trigo
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo
+🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ pyroxasulfone verificar 90 días de carencia antes de trigo
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Azugro (Bixlozona) — elimina nacida y deja residual específico para trigo
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha — sin residual, opción mínima
+
+
+LOLIUM — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+
+⚠️ MOMENTO: Agosto-septiembre es la ventana óptima. Control sostenido sin necesidad de doble golpe en la mayoría de los casos.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — ante sospecha de resistencia ACCasa
+🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+SOJA Y MAÍZ:
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — sin restricción en soja ni maíz
+🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha — sin restricción en soja ni maíz
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+
+LOLIUM — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+
+⚠️ Atrazina fitotóxica en girasol — NO usar.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha
+🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha
+🥈 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+
+--- CONYZA (RAMA NEGRA) EN BARBECHO ---
+
+CONYZA — BARBECHO LARGO — SOJA (abril-junio):
+
+⚠️ MOMENTO: Conyza tiene dos picos de emergencia — otoño (abril) y primavera (septiembre). Roseta menor a 10 cm responde mejor. Mayor a 10 cm requiere doble golpe.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — mejor control sostenido a 45 DDA sin paraquat
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — buena combinación hormonal
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — base mínima
+
+PPO de contacto como apoyo (agregar a cualquiera):
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior en control
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción en ningún cultivo
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + PPO // 2° Paraquat 27,6% (Gramoxone) 2 L/ha — 7-14 días después
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+⚠️ Atrazina — sin registro formal en barbecho a soja. No recomendar.
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — mejor residualidad sostenida a 120 DDA. Sin restricción en soja
+🥈 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha — registrado para barbecho de otoño a soja
+🥈 Atrazina 90% 2,25 L/ha — datos de campo muy buenos a 120 DDA. ⚠️ Verificar registro local antes de usar en barbecho a soja
+🥉 Finesse (Clorsulfurón + Metsulfurón) 15 g/ha — buena residualidad. ⚠️ 60 días carencia antes de soja
+🥉 Metsulfurón 60% (Ally) 7 g/ha — opción económica, algo menor persistencia a 120 DDA
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+
+CONYZA — BARBECHO LARGO — MAÍZ (abril-junio):
+
+OBJETIVO 1 — igual que soja
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha — combinación más potente, registrada en maíz
+🥈 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha — sin atrazina, buena residualidad
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — buena residualidad hasta 120 DDA
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+
+CONYZA — BARBECHO LARGO — GIRASOL (abril-junio):
+
+⚠️ Atrazina fitotóxica — NO usar. Biciclopirone sin registro en girasol — NO usar. Saflufenacil NO usar en pre-siembra girasol. Metsulfurón NO usar en barbecho previo a girasol.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — ⚠️ 45 días intervalo antes de siembra girasol
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha
+
+PPO de contacto como apoyo:
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — único PPO disponible en pre-siembra girasol
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en girasol
+🥈 Atrazina 90% 2,25 L/ha — ⚠️ 90 días de intervalo antes de siembra girasol. Solo en barbecho largo con siembra a más de 90 días
+🥉 Diflufenican 50% (Brodal) 250 cc/ha — 0 días intervalo en girasol. Menor residualidad que las anteriores
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Carfentrazone 40% (Shark) 75 cc/ha — ⚠️ verificar 45 días Lontrel
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Carfentrazone 40% (Shark) 75 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + residual + Shark // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+
+CONYZA — BARBECHO — TRIGO (presiembra):
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — 0 días intervalo en trigo
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — 0 días intervalo
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — 3-5 días intervalo
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Metsulfurón 60% (Ally/Errasin) 7-8 g/ha — 0 días intervalo en trigo. Buena residualidad para Conyza
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — buena residualidad hasta 120 DDA
+🥉 Diflufenican 50% (Brodal) 250 cc/ha — 15 días intervalo en trigo. Menor residualidad
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Metsulfurón 60% (Ally) 7-8 g/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha + Metsulfurón 60% (Ally) 7-8 g/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+
+CONYZA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+
+⚠️ MOMENTO: Segundo pico de emergencia. Plántulas pequeñas — mejor momento para control.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+SOJA:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha — registrado barbecho otoño a soja
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — ⚠️ verificar 45 días antes de siembra soja
+🥉 Voraxor (Trifludimoxazin/Saflufenacil) 0,1-0,15 L/ha — sin restricción en soja
+
+MAÍZ:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥈 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+SOJA:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — ⚠️ verificar 45 días
+
+MAÍZ:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+
+
+CONYZA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+
+⚠️ Pixxaro puede aplicarse hasta 0 días antes de siembra de girasol — ventaja clave en barbecho corto.
+⚠️ Saflufenacil, metsulfurón NO usar en pre-siembra girasol.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+🥇 Glifosato 810 g ia/ha + Pixxaro (Halauxifen metil + Fluroxipir) 400-500 cc/ha + aceite mineral 1% v/v — registrado específicamente para Conyza en pre-siembra girasol, sin restricción de intervalo (SENASA N° 40.386)
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — ⚠️ 7-15 días antes de siembra girasol
+🥉 Glifosato 810 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — ⚠️ 15-20 días antes de siembra girasol
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + Pixxaro 500 cc/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha — 7-14 días después
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en girasol
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en girasol
+🥉 Diflufenican 50% (Brodal) 250 cc/ha — 0 días intervalo en girasol. Menor residualidad
+
+⚠️ Atrazina — 90 días de intervalo. No alcanza en barbecho corto para siembra inmediata de girasol.
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + Pixxaro 400-500 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite mineral 1% v/v
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 7-15 días antes de siembra
+🥉 Glifosato 810 g ia/ha + Pixxaro 400-500 cc/ha + Diflufenican 50% (Brodal) 250 cc/ha + aceite mineral 1% v/v
+
+
+--- BRASSICA RAPA (NABÓN/NABO/MOSTACILLA) EN BARBECHO ---
+
+⚠️ IDENTIFICACIÓN: Brassica rapa (nabo/nabolza) flor AMARILLA, hojas amplexicaules. Raphanus sativus (nabón) flor VIOLÁCEA/ROSADA. Hirschfeldia incana (nabillo/mostacilla) flor AMARILLO PÁLIDO. Ver sección BRASICÁCEAS para resistencias confirmadas.
+⚠️ BIOTIPOS RESISTENTES: Con resistencia a ALS no usar sulfonilureas ni imidazolinonas. Con resistencia a glifosato agregar PPO quemante obligatorio. Con TRIPLE resistencia: doble golpe obligatorio con desecante.
+
+BRASSICA — BARBECHO LARGO — SOJA / MAÍZ (abril-junio):
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — 94% control a 45 DDA
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha
+
+PPO de contacto como apoyo (agregar a cualquiera):
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior en control
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción en ningún cultivo
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + PPO // 2° Paraquat 27,6% (Gramoxone) 2 L/ha — 7-14 días después
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+⚠️ Para Brassica los residuales más eficaces son DIFERENTES a los de Lolium. Pyroxasulfone pierde eficacia a largo plazo para Brassica (61% a 150 DDA). Flurocloridona y Terbutilazina+Diflufenican son los mejores.
+
+SOJA:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — 93-95% a 90 DDA en campo
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
+🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin registro formal en soja, en ensayos 30-40 días sin problemas. En barbecho largo el intervalo se cumple
+
+MAÍZ:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
+🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
+
+⚠️ Pyroxasulfone (Yamato) — NO es la mejor opción residual para Brassica a largo plazo.
+⚠️ Diflufenican solo — opción residual de menor eficacia que la mezcla con terbutilazina pero válida.
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+SOJA:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+
+PPO como apoyo: ✅ Heat 35-40 g/ha ✅ Shark 75-120 cc/ha
+
+MAÍZ:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+
+PPO como apoyo: ✅ Heat 35-40 g/ha ✅ Shark 75-120 cc/ha
+
+
+BRASSICA — BARBECHO LARGO — GIRASOL (abril-junio):
+
+⚠️ Biciclopirone sin registro en girasol — NO usar. Atrazina fitotóxica — NO usar. Heat NO usar en pre-siembra girasol. Flurocloridona es la estrella para Brassica en girasol.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — ⚠️ 45 días intervalo antes de siembra girasol
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — ⚠️ 15-20 días intervalo
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — ⚠️ 7-15 días intervalo
+
+PPO de contacto como apoyo:
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — único PPO disponible en pre-siembra girasol
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Shark 120 cc/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — estrella para Brassica en girasol. 96-97% a 150 DDA. Sin restricción
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia que la mezcla pero válido. 0 días intervalo girasol
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+ABRIL:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ verificar 45 días Lontrel
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+
+MAYO-JUNIO:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha
+
+
+BRASSICA — BARBECHO — TRIGO (presiembra):
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — 0 días intervalo en trigo
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — 0 días intervalo
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — 3-5 días intervalo
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + PPO // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — 0 días intervalo en trigo. Mejor opción residual para Brassica
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — ⚠️ Brodal 15 días intervalo
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia, 15 días intervalo
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+
+BRASSICA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+
+⚠️ Verificar intervalos de carencia con especial atención — la siembra es inmediata.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — ⚠️ Lontrel 45 días en soja. Solo si siembra está a más de 45 días
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — 15-20 días intervalo en soja
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — 7-15 días intervalo en soja
+
+PPO de contacto como apoyo:
+✅ Saflufenacil 70% (Heat) 35-40 g/ha — levemente superior
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — sin restricción en soja ni maíz
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + PPO // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+SOJA:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — sin restricción en soja
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — sin restricción
+🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar mínimo 30-40 días antes de siembra soja
+
+MAÍZ:
+🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha — sin restricción en maíz
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+SOJA:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Shark 75 cc/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja
+
+MAÍZ:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha + Shark 75 cc/ha
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
+
+
+BRASSICA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+
+⚠️ Biciclopirone sin registro — NO usar. Atrazina 90 días intervalo — NO alcanza. Heat NO usar. Flurocloridona es la estrella.
+
+OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
+
+ROSETA MENOR A 10 CM:
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha — ⚠️ 45 días intervalo en girasol
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha — ⚠️ 15-20 días intervalo
+🥉 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha — ⚠️ 7-15 días intervalo
+
+PPO de contacto como apoyo:
+✅ Carfentrazone 40% (Shark) 75-120 cc/ha — único PPO en pre-siembra girasol
+
+ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Shark 120 cc/ha // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
+OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
+
+🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en girasol
+🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
+🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia, 0 días intervalo girasol
+
+⚠️ Atrazina NO alcanza 90 días en barbecho corto a siembra inmediata de girasol.
+
+OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
+
+🥇 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ verificar 7-15 días antes de siembra
+🥈 Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha
+🥉 Glifosato 810 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ 15-20 días Banvel
+
+⚠️ Roseta mayor a 10 cm:
+🔁 1° Glifosato 810 g ia/ha + 2,4D 500 g ia/ha + Flurocloridona + Shark // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
+
 === SOJA ===
 
 SOJA: MALEZA GENERAL (No GMO)
@@ -1230,12 +1882,16 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(conversation_history[user_id]) > 10:
             conversation_history[user_id] = conversation_history[user_id][-10:]
 
-        # Detectar si la respuesta menciona coadyuvantes/aceite
-        trigger_words = [
-            "aceite", "coadyuvante", "surfactante", "sulfato de amonio",
-            "aceite vegetal", "aceite metilado", "aceite mineral"
+        # Detectar si la respuesta requiere botones informativos
+        # Opción B: detectar herbicidas que requieren coadyuvante, no solo la palabra "aceite"
+        HERBICIDAS_CON_COADYUVANTE = [
+            "cletodim", "haloxyfop", "propaquizafop", "quizalofop",
+            "saflufenacil", "heat", "carfentrazone", "shark", "flumioxazin",
+            "glufosinato", "piraflufen", "stagger"
         ]
-        needs_coady_button = any(w in assistant_message.lower() for w in trigger_words)
+        needs_coady_button = any(w in assistant_message.lower() for w in HERBICIDAS_CON_COADYUVANTE)
+        needs_2_4d_button = "2,4d" in assistant_message.lower() or "2,4 d" in assistant_message.lower()
+        needs_glifo_button = "glifosato" in assistant_message.lower()
 
         # Separar la línea de invitación del texto principal
         main_message = assistant_message
@@ -1243,19 +1899,32 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             parts = assistant_message.rsplit("💧 ¿Querés ver opciones", 1)
             main_message = parts[0].rstrip()
 
+        await update.message.reply_text(main_message)
+
+        # Construir botones según lo que aparece en la respuesta
+        buttons = []
         if needs_coady_button:
-            await update.message.reply_text(main_message)
-            keyboard = [[InlineKeyboardButton(
+            buttons.append([InlineKeyboardButton(
                 "💧 Ver opciones y dosis de coadyuvantes",
                 callback_data="show_coadyuvantes"
-            )]]
-            reply_markup = InlineKeyboardMarkup(keyboard)
+            )])
+        if needs_2_4d_button:
+            buttons.append([InlineKeyboardButton(
+                "📋 Ver formulaciones y dosis de 2,4D",
+                callback_data="show_2_4d"
+            )])
+        if needs_glifo_button:
+            buttons.append([InlineKeyboardButton(
+                "📋 Ver formulaciones y dosis de Glifosato",
+                callback_data="show_glifosato"
+            )])
+
+        if buttons:
+            reply_markup = InlineKeyboardMarkup(buttons)
             await update.message.reply_text(
-                "¿Querés ver opciones y dosis de coadyuvantes?",
+                "ℹ️ Información adicional disponible:",
                 reply_markup=reply_markup
             )
-        else:
-            await update.message.reply_text(main_message)
 
     except Exception as e:
         logger.error(f"Error completo: {type(e).__name__}: {e}", exc_info=True)
@@ -1263,12 +1932,16 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"❌ Error: {type(e).__name__}: {str(e)[:200]}"
         )
 
-# --- CALLBACK HANDLER — botón inline de coadyuvantes ---
+# --- CALLBACK HANDLER — botones inline ---
 async def handle_callback(update, context):
     query = update.callback_query
     await query.answer()
     if query.data == "show_coadyuvantes":
         await query.message.reply_text(COADYUVANTES_INFO)
+    elif query.data == "show_2_4d":
+        await query.message.reply_text(INFO_2_4D)
+    elif query.data == "show_glifosato":
+        await query.message.reply_text(INFO_GLIFOSATO)
 
 # --- MAIN ---
 def main():
