@@ -2841,30 +2841,6 @@ async def handle_callback(update, context):
         await responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo)
         return
 
-# --- ENMASCARAR LA FUNCIÓN FALTANTE ---
-async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
-chat_id = query.message.chat_id
-
-# Llamamos a la verdadera función que lee tu base de datos hardcodeada
-respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
-
-# Enviamos el mensaje largo de forma segura
-await send_long_message(context.bot, chat_id, respuesta)
-
-# --- FUNCIÓN QUE CONECTA LOS BOTONES CON LA RESPUESTA ---
-async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
-    chat_id = query.message.chat_id
-    
-    # Buscamos la recomendación en tu base de datos interna
-    respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
-    
-    # Si por algún motivo no encuentra coincidencia, que no explote
-    if not respuesta:
-        respuesta = "⚠️ No encontré una recomendación específica para esa combinación. Por favor, consultá con un asesor."
-        
-    # Le enviamos la respuesta larga al usuario
-    await send_long_message(context.bot, chat_id, respuesta)
-
 # --- MAIN ---
 def main():
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
