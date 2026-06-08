@@ -1762,8 +1762,181 @@ def detectar_consulta_general(texto):
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
 
+# --- FLUJO GUIADO BARBECHO ---
+
+# Keywords nivel 1 — disparan flujo directo
+BARBECHO_KEYWORDS_DIRECTAS = [
+    "barbecho", "presiembra", "pre-siembra", "pre siembra",
+    "barbeche", "barbechos"
+]
+
+# Keywords nivel 2 — disparan confirmación primero
+BARBECHO_KEYWORDS_CONTEXTUALES = [
+    "después de la cosecha", "despues de la cosecha",
+    "luego de cosechar", "luego de la cosecha",
+    "post cosecha", "postcosecha", "post-cosecha",
+    "antes de sembrar", "antes de la siembra",
+    "limpiar el lote", "limpiar lote",
+    "qué aplico antes", "que aplico antes",
+    "qué uso antes", "que uso antes",
+    "para limpiar antes", "entre cultivos",
+]
+
+RESPUESTA_OTRA_MALEZA = (
+    "⚠️ No tengo información específica para esa maleza en barbecho todavía.\n\n"
+    "Sin embargo, Lolium, Conyza y Brassica representan las principales malezas "
+    "problema en barbecho de cultivos extensivos.\n\n"
+    "🌱 Si tu maleza es una GRAMÍNEA — las opciones de Lolium/Raigrás pueden orientarte.\n"
+    "🌱 Si tu maleza es una LATIFOLIADA — las opciones de Conyza o Brassica son un buen punto de partida.\n\n"
+    "Consultá con tu asesor para ajustar la estrategia al biotipo específico."
+)
+
+def detectar_nivel_barbecho(texto):
+    """Retorna 1 (directo), 2 (contextual) o 0 (no es barbecho)."""
+    t = texto.lower()
+    for kw in BARBECHO_KEYWORDS_DIRECTAS:
+        if kw in t:
+            return 1
+    for kw in BARBECHO_KEYWORDS_CONTEXTUALES:
+        if kw in t:
+            return 2
+    return 0
+
+def get_barbecho_response(cultivo, maleza, momento, objetivo):
+    """Retorna la respuesta hardcodeada para la combinación dada."""
+    # Normalizar inputs
+    cultivo = cultivo.lower()
+    maleza = maleza.lower()
+    momento = momento.lower() if momento else ""
+    objetivo = objetivo.lower()
+
+    # Buscar en KNOWLEDGE_BASE la sección correspondiente
+    # El modelo va a buscar en la base con un prompt muy específico
+    return None  # señal para que se use la API con contexto filtrado
+
+def build_barbecho_prompt(cultivo, maleza, momento, objetivo):
+    """Construye el prompt específico para la API cuando no hay hardcoded."""
+    momento_texto = f"barbecho {momento}" if momento else "barbecho"
+    return (
+        f"Consulta sobre {momento_texto} para el cultivo de {cultivo}, "
+        f"maleza {maleza}, objetivo: {objetivo}. "
+        f"Respondé ÚNICAMENTE con la sección de BARBECHO correspondiente de la base de conocimiento."
+    )
+
+# Teclados inline para el flujo
+def kb_confirmar_barbecho():
+    return InlineKeyboardMarkup([[
+        InlineKeyboardButton("✅ Sí, es sobre barbecho", callback_data="barb_confirmar_si"),
+        InlineKeyboardButton("❌ No, otra consulta", callback_data="barb_confirmar_no"),
+    ]])
+
+def kb_cultivo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌱 Soja", callback_data="barb_cultivo_soja"),
+         InlineKeyboardButton("🌽 Maíz", callback_data="barb_cultivo_maiz")],
+        [InlineKeyboardButton("🌻 Girasol", callback_data="barb_cultivo_girasol"),
+         InlineKeyboardButton("🌾 Trigo/Cebada", callback_data="barb_cultivo_trigo")],
+    ])
+
+def kb_maleza():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Lolium/Raigrás", callback_data="barb_maleza_lolium")],
+        [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="barb_maleza_conyza")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="barb_maleza_brassica")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="barb_maleza_otra")],
+    ])
+
+def kb_momento():
+    return InlineKeyboardMarkup([[
+        InlineKeyboardButton("📅 Largo (abril-junio)", callback_data="barb_momento_largo"),
+        InlineKeyboardButton("📅 Corto (agosto-septiembre)", callback_data="barb_momento_corto"),
+    ]])
+
+def kb_objetivo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎯 Eliminar maleza ya nacida", callback_data="barb_obj_nacida")],
+        [InlineKeyboardButton("🛡️ Prevenir nuevos nacimientos (residual)", callback_data="barb_obj_residual")],
+        [InlineKeyboardButton("🎯+🛡️ Ambos objetivos", callback_data="barb_obj_ambos")],
+    ])
+
 # --- CLIENTE ANTHROPIC ---
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
+async def responder_barbecho_completo(update_or_query, context, cultivo, maleza, momento, objetivo):
+    """Genera y envía la respuesta final cuando tenemos todos los datos del flujo."""
+    
+    # Para trigo no hay distinción largo/corto
+    if cultivo == "trigo" and not momento:
+        momento = "presiembra"
+
+    # Caso especial: otra maleza
+    if maleza == "otra":
+        if hasattr(update_or_query, 'message'):
+            await update_or_query.message.reply_text(RESPUESTA_OTRA_MALEZA)
+        else:
+            await update_or_query.edit_message_text(RESPUESTA_OTRA_MALEZA)
+        return
+
+    # Construir prompt específico para la API
+    momento_texto = f"barbecho {momento}" if momento else "barbecho"
+    objetivo_texto = {
+        "nacida": "eliminar maleza ya nacida",
+        "residual": "prevenir nuevos nacimientos (residual)",
+        "ambos": "eliminar maleza nacida y prevenir nuevos nacimientos"
+    }.get(objetivo, objetivo)
+
+    prompt = (
+        f"Consulta de barbecho: cultivo {cultivo}, maleza {maleza}, "
+        f"{momento_texto}, objetivo: {objetivo_texto}. "
+        f"Buscá en la sección BARBECHO de la base de conocimiento la combinación exacta "
+        f"y respondé ÚNICAMENTE con esa información."
+    )
+
+    # Llamar a la API con contexto filtrado
+    chat_id = update_or_query.effective_chat.id if hasattr(update_or_query, 'effective_chat') else update_or_query.message.chat_id
+    await context.bot.send_chat_action(chat_id=chat_id, action="typing")
+
+    try:
+        response = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=3000,
+            system=KNOWLEDGE_BASE,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        respuesta = response.content[0].text
+
+        # Enviar respuesta
+        if hasattr(update_or_query, 'message'):
+            await update_or_query.message.reply_text(respuesta)
+        else:
+            await update_or_query.message.reply_text(respuesta)
+
+        # Verificar si necesita botones adicionales
+        t = respuesta.lower()
+        buttons = []
+        HERBICIDAS_CON_COADYUVANTE = [
+            "cletodim", "haloxyfop", "propaquizafop", "saflufenacil",
+            "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato"
+        ]
+        if any(w in t for w in HERBICIDAS_CON_COADYUVANTE):
+            buttons.append([InlineKeyboardButton("💧 Ver coadyuvantes", callback_data="show_coadyuvantes")])
+        if "2,4d" in t or "2,4 d" in t:
+            buttons.append([InlineKeyboardButton("📋 Ver formulaciones 2,4D", callback_data="show_2_4d")])
+        if "glifosato" in t:
+            buttons.append([InlineKeyboardButton("📋 Ver formulaciones Glifosato", callback_data="show_glifosato")])
+        if buttons:
+            await context.bot.send_message(
+                chat_id=chat_id,
+                text="ℹ️ Información adicional disponible:",
+                reply_markup=InlineKeyboardMarkup(buttons)
+            )
+
+        # Limpiar estado
+        context.user_data.clear()
+
+    except Exception as e:
+        logger.error(f"Error en responder_barbecho_completo: {e}")
+        await context.bot.send_message(chat_id=chat_id, text="❌ Hubo un error procesando la consulta. Intentá de nuevo.")
 
 # --- HISTORIAL DE CONVERSACION POR USUARIO ---
 conversation_history = {}
@@ -1854,7 +2027,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         action="typing"
     )
 
-    # Detectar consulta general y responder sin llamar a la API
+    # Detectar consulta general hardcodeada (PEE, etc.)
     respuesta_hardcodeada = detectar_consulta_general(user_message)
     if respuesta_hardcodeada:
         await update.message.reply_text(respuesta_hardcodeada)
@@ -1862,6 +2035,28 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "role": "assistant",
             "content": respuesta_hardcodeada
         })
+        return
+
+    # Detectar consulta de barbecho
+    nivel_barbecho = detectar_nivel_barbecho(user_message)
+    if nivel_barbecho == 1:
+        # Trigger directo — arrancar flujo sin confirmación
+        context.user_data['barbecho_estado'] = 'esperando_cultivo'
+        context.user_data['barbecho_mensaje_original'] = user_message
+        await update.message.reply_text(
+            "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
+            "¿Para qué cultivo es el barbecho?",
+            reply_markup=kb_cultivo()
+        )
+        return
+    elif nivel_barbecho == 2:
+        # Trigger contextual — confirmar primero
+        context.user_data['barbecho_estado'] = 'esperando_confirmacion'
+        context.user_data['barbecho_mensaje_original'] = user_message
+        await update.message.reply_text(
+            "¿Me estás consultando sobre manejo de malezas en barbecho o presiembra?",
+            reply_markup=kb_confirmar_barbecho()
+        )
         return
 
     try:
@@ -1932,16 +2127,169 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"❌ Error: {type(e).__name__}: {str(e)[:200]}"
         )
 
+async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
+    """Genera y envía la respuesta final del flujo de barbecho."""
+    if maleza == "otra":
+        respuesta = BARBECHO_OTRA_MALEZA
+    else:
+        respuesta = get_barbecho_respuesta(cultivo, maleza, momento, objetivo)
+
+    # Limpiar estado del flujo
+    context.user_data.clear()
+
+    # Enviar respuesta
+    await query.message.reply_text(respuesta)
+
+    # Disparar botones informativos si corresponde
+    buttons = []
+    txt = respuesta.lower()
+    HERBICIDAS_CON_COADYUVANTE = [
+        "cletodim", "haloxyfop", "propaquizafop", "saflufenacil",
+        "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato", "piraflufen"
+    ]
+    if any(w in txt for w in HERBICIDAS_CON_COADYUVANTE):
+        buttons.append([InlineKeyboardButton("💧 Ver opciones y dosis de coadyuvantes", callback_data="show_coadyuvantes")])
+    if "2,4d" in txt or "2,4 d" in txt:
+        buttons.append([InlineKeyboardButton("📋 Ver formulaciones y dosis de 2,4D", callback_data="show_2_4d")])
+    if "glifosato" in txt:
+        buttons.append([InlineKeyboardButton("📋 Ver formulaciones y dosis de Glifosato", callback_data="show_glifosato")])
+
+    if buttons:
+        await query.message.reply_text(
+            "ℹ️ Información adicional disponible:",
+            reply_markup=InlineKeyboardMarkup(buttons)
+        )
+
 # --- CALLBACK HANDLER — botones inline ---
 async def handle_callback(update, context):
     query = update.callback_query
     await query.answer()
-    if query.data == "show_coadyuvantes":
+    data = query.data
+
+    # Botones informativos
+    if data == "show_coadyuvantes":
         await query.message.reply_text(COADYUVANTES_INFO)
-    elif query.data == "show_2_4d":
+        return
+    elif data == "show_2_4d":
         await query.message.reply_text(INFO_2_4D)
-    elif query.data == "show_glifosato":
+        return
+    elif data == "show_glifosato":
         await query.message.reply_text(INFO_GLIFOSATO)
+        return
+
+    # Flujo barbecho — confirmación
+    if data == "barb_confirmar_si":
+        context.user_data['barbecho_estado'] = 'esperando_cultivo'
+        await query.edit_message_text(
+            "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
+            "¿Para qué cultivo es el barbecho?",
+            reply_markup=kb_cultivo()
+        )
+        return
+    elif data == "barb_confirmar_no":
+        context.user_data.clear()
+        await query.edit_message_text(
+            "Entendido. Haceme tu consulta y te ayudo 🌱"
+        )
+        return
+
+    # Flujo barbecho — cultivo
+    if data.startswith("barb_cultivo_"):
+        cultivo = data.replace("barb_cultivo_", "")
+        context.user_data['barbecho_cultivo'] = cultivo
+        context.user_data['barbecho_estado'] = 'esperando_maleza'
+
+        if cultivo == "trigo":
+            await query.edit_message_text(
+                f"Cultivo: Trigo/Cebada ✅\n\n¿Qué maleza querés controlar?",
+                reply_markup=kb_maleza()
+            )
+        else:
+            cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
+            await query.edit_message_text(
+                f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza querés controlar?",
+                reply_markup=kb_maleza()
+            )
+        return
+
+    # Flujo barbecho — maleza
+    if data.startswith("barb_maleza_"):
+        maleza = data.replace("barb_maleza_", "")
+        context.user_data['barbecho_maleza'] = maleza
+        cultivo = context.user_data.get('barbecho_cultivo', '')
+
+        if maleza == "otra":
+            context.user_data['barbecho_estado'] = 'completo'
+            await query.edit_message_text("Maleza: Otra ✅")
+            await responder_barbecho_completo(query, context, cultivo, "otra", None, None)
+            return
+
+        maleza_nombre = {
+            "lolium": "Lolium/Raigrás",
+            "conyza": "Rama Negra (Conyza)",
+            "brassica": "Crucíferas (Brassica/Nabón)"
+        }.get(maleza, maleza)
+
+        # Trigo no tiene distinción largo/corto
+        if cultivo == "trigo":
+            context.user_data['barbecho_momento'] = 'presiembra'
+            context.user_data['barbecho_estado'] = 'esperando_objetivo'
+            await query.edit_message_text(
+                f"Cultivo: Trigo/Cebada ✅\nMaleza: {maleza_nombre} ✅\n\n¿Qué objetivo buscás?",
+                reply_markup=kb_objetivo()
+            )
+        else:
+            context.user_data['barbecho_estado'] = 'esperando_momento'
+            cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
+            await query.edit_message_text(
+                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?",
+                reply_markup=kb_momento()
+            )
+        return
+
+    # Flujo barbecho — momento
+    if data.startswith("barb_momento_"):
+        momento = data.replace("barb_momento_", "")
+        context.user_data['barbecho_momento'] = momento
+        context.user_data['barbecho_estado'] = 'esperando_objetivo'
+
+        cultivo = context.user_data.get('barbecho_cultivo', '')
+        maleza = context.user_data.get('barbecho_maleza', '')
+        cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
+        maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)"}.get(momento, momento)
+
+        await query.edit_message_text(
+            f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué objetivo buscás?",
+            reply_markup=kb_objetivo()
+        )
+        return
+
+    # Flujo barbecho — objetivo (último paso)
+    if data.startswith("barb_obj_"):
+        objetivo = data.replace("barb_obj_", "")
+        context.user_data['barbecho_objetivo'] = objetivo
+        context.user_data['barbecho_estado'] = 'completo'
+
+        cultivo = context.user_data.get('barbecho_cultivo', '')
+        maleza = context.user_data.get('barbecho_maleza', '')
+        momento = context.user_data.get('barbecho_momento', '')
+
+        cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
+        maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
+        objetivo_nombre = {"nacida": "Eliminar maleza nacida", "residual": "Prevenir nuevos nacimientos", "ambos": "Ambos objetivos"}.get(objetivo, objetivo)
+
+        await query.edit_message_text(
+            f"Cultivo: {cultivo_nombre} ✅\n"
+            f"Maleza: {maleza_nombre} ✅\n"
+            f"Momento: Barbecho {momento_nombre} ✅\n"
+            f"Objetivo: {objetivo_nombre} ✅\n\n"
+            f"Buscando recomendación... 🔍"
+        )
+
+        await responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo)
+        return
 
 # --- MAIN ---
 def main():
