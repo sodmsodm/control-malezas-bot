@@ -1862,6 +1862,23 @@ def kb_objetivo():
 # --- CLIENTE ANTHROPIC ---
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
+async def send_long_message(bot, chat_id, text, max_length=4000):
+    """Divide y envía mensajes que superan el límite de Telegram (4096 chars)."""
+    if len(text) <= max_length:
+        await bot.send_message(chat_id=chat_id, text=text)
+        return
+    lines = text.split('\n')
+    chunk = ""
+    for line in lines:
+        if len(chunk) + len(line) + 1 > max_length:
+            if chunk:
+                await bot.send_message(chat_id=chat_id, text=chunk)
+            chunk = line
+        else:
+            chunk = chunk + '\n' + line if chunk else line
+    if chunk:
+        await bot.send_message(chat_id=chat_id, text=chunk)
+
 async def responder_barbecho_completo(update_or_query, context, cultivo, maleza, momento, objetivo):
     """Genera y envía la respuesta final hardcodeada del flujo de barbecho."""
 
@@ -1877,8 +1894,8 @@ async def responder_barbecho_completo(update_or_query, context, cultivo, maleza,
     else:
         respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
 
-    # Enviar respuesta
-    await context.bot.send_message(chat_id=chat_id, text=respuesta)
+    # Enviar respuesta dividida si es necesario
+    await send_long_message(context.bot, chat_id, respuesta)
 
     # Botones informativos automáticos
     t = respuesta.lower()
