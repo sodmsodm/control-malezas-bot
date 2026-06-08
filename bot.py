@@ -2843,13 +2843,13 @@ async def handle_callback(update, context):
 
 # --- ENMASCARAR LA FUNCIÓN FALTANTE ---
 async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
-    chat_id = query.message.chat_id
-    
-    # Llamamos a la verdadera función que lee tu base de datos hardcodeada
-    respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
-    
-    # Enviamos el mensaje largo de forma segura
-    await send_long_message(context.bot, chat_id, respuesta)
+chat_id = query.message.chat_id
+
+# Llamamos a la verdadera función que lee tu base de datos hardcodeada
+respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
+
+# Enviamos el mensaje largo de forma segura
+await send_long_message(context.bot, chat_id, respuesta)
 
 # --- FUNCIÓN QUE CONECTA LOS BOTONES CON LA RESPUESTA ---
 async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
