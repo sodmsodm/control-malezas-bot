@@ -1863,80 +1863,45 @@ def kb_objetivo():
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 async def responder_barbecho_completo(update_or_query, context, cultivo, maleza, momento, objetivo):
-    """Genera y envía la respuesta final cuando tenemos todos los datos del flujo."""
-    
+    """Genera y envía la respuesta final hardcodeada del flujo de barbecho."""
+
     # Para trigo no hay distinción largo/corto
     if cultivo == "trigo" and not momento:
         momento = "presiembra"
 
-    # Caso especial: otra maleza
+    chat_id = update_or_query.message.chat_id
+
+    # Obtener respuesta hardcodeada
     if maleza == "otra":
-        if hasattr(update_or_query, 'message'):
-            await update_or_query.message.reply_text(RESPUESTA_OTRA_MALEZA)
-        else:
-            await update_or_query.edit_message_text(RESPUESTA_OTRA_MALEZA)
-        return
+        respuesta = BARBECHO_OTRA_MALEZA
+    else:
+        respuesta = get_barbecho_respuesta(cultivo, maleza, momento, objetivo)
 
-    # Construir prompt específico para la API
-    momento_texto = f"barbecho {momento}" if momento else "barbecho"
-    objetivo_texto = {
-        "nacida": "eliminar maleza ya nacida",
-        "residual": "prevenir nuevos nacimientos (residual)",
-        "ambos": "eliminar maleza nacida y prevenir nuevos nacimientos"
-    }.get(objetivo, objetivo)
+    # Enviar respuesta
+    await context.bot.send_message(chat_id=chat_id, text=respuesta)
 
-    prompt = (
-        f"Consulta de barbecho: cultivo {cultivo}, maleza {maleza}, "
-        f"{momento_texto}, objetivo: {objetivo_texto}. "
-        f"Buscá en la sección BARBECHO de la base de conocimiento la combinación exacta "
-        f"y respondé ÚNICAMENTE con esa información."
-    )
-
-    # Llamar a la API con contexto filtrado
-    chat_id = update_or_query.effective_chat.id if hasattr(update_or_query, 'effective_chat') else update_or_query.message.chat_id
-    await context.bot.send_chat_action(chat_id=chat_id, action="typing")
-
-    try:
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=3000,
-            system=KNOWLEDGE_BASE,
-            messages=[{"role": "user", "content": prompt}]
+    # Botones informativos automáticos
+    t = respuesta.lower()
+    buttons = []
+    HERBICIDAS_CON_COADYUVANTE = [
+        "cletodim", "haloxyfop", "propaquizafop", "saflufenacil",
+        "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato"
+    ]
+    if any(w in t for w in HERBICIDAS_CON_COADYUVANTE):
+        buttons.append([InlineKeyboardButton("💧 Ver coadyuvantes", callback_data="show_coadyuvantes")])
+    if "2,4d" in t or "2,4 d" in t:
+        buttons.append([InlineKeyboardButton("📋 Ver formulaciones 2,4D", callback_data="show_2_4d")])
+    if "glifosato" in t:
+        buttons.append([InlineKeyboardButton("📋 Ver formulaciones Glifosato", callback_data="show_glifosato")])
+    if buttons:
+        await context.bot.send_message(
+            chat_id=chat_id,
+            text="ℹ️ Información adicional disponible:",
+            reply_markup=InlineKeyboardMarkup(buttons)
         )
-        respuesta = response.content[0].text
 
-        # Enviar respuesta
-        if hasattr(update_or_query, 'message'):
-            await update_or_query.message.reply_text(respuesta)
-        else:
-            await update_or_query.message.reply_text(respuesta)
-
-        # Verificar si necesita botones adicionales
-        t = respuesta.lower()
-        buttons = []
-        HERBICIDAS_CON_COADYUVANTE = [
-            "cletodim", "haloxyfop", "propaquizafop", "saflufenacil",
-            "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato"
-        ]
-        if any(w in t for w in HERBICIDAS_CON_COADYUVANTE):
-            buttons.append([InlineKeyboardButton("💧 Ver coadyuvantes", callback_data="show_coadyuvantes")])
-        if "2,4d" in t or "2,4 d" in t:
-            buttons.append([InlineKeyboardButton("📋 Ver formulaciones 2,4D", callback_data="show_2_4d")])
-        if "glifosato" in t:
-            buttons.append([InlineKeyboardButton("📋 Ver formulaciones Glifosato", callback_data="show_glifosato")])
-        if buttons:
-            await context.bot.send_message(
-                chat_id=chat_id,
-                text="ℹ️ Información adicional disponible:",
-                reply_markup=InlineKeyboardMarkup(buttons)
-            )
-
-        # Limpiar estado
-        context.user_data.clear()
-
-    except Exception as e:
-        logger.error(f"Error en responder_barbecho_completo: {e}")
-        await context.bot.send_message(chat_id=chat_id, text="❌ Hubo un error procesando la consulta. Intentá de nuevo.")
+    # Limpiar estado
+    context.user_data.clear()
 
 # --- HISTORIAL DE CONVERSACION POR USUARIO ---
 conversation_history = {}
@@ -2125,39 +2090,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         logger.error(f"Error completo: {type(e).__name__}: {e}", exc_info=True)
         await update.message.reply_text(
             f"❌ Error: {type(e).__name__}: {str(e)[:200]}"
-        )
-
-async def responder_barbecho_completo(query, context, cultivo, maleza, momento, objetivo):
-    """Genera y envía la respuesta final del flujo de barbecho."""
-    if maleza == "otra":
-        respuesta = BARBECHO_OTRA_MALEZA
-    else:
-        respuesta = get_barbecho_respuesta(cultivo, maleza, momento, objetivo)
-
-    # Limpiar estado del flujo
-    context.user_data.clear()
-
-    # Enviar respuesta
-    await query.message.reply_text(respuesta)
-
-    # Disparar botones informativos si corresponde
-    buttons = []
-    txt = respuesta.lower()
-    HERBICIDAS_CON_COADYUVANTE = [
-        "cletodim", "haloxyfop", "propaquizafop", "saflufenacil",
-        "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato", "piraflufen"
-    ]
-    if any(w in txt for w in HERBICIDAS_CON_COADYUVANTE):
-        buttons.append([InlineKeyboardButton("💧 Ver opciones y dosis de coadyuvantes", callback_data="show_coadyuvantes")])
-    if "2,4d" in txt or "2,4 d" in txt:
-        buttons.append([InlineKeyboardButton("📋 Ver formulaciones y dosis de 2,4D", callback_data="show_2_4d")])
-    if "glifosato" in txt:
-        buttons.append([InlineKeyboardButton("📋 Ver formulaciones y dosis de Glifosato", callback_data="show_glifosato")])
-
-    if buttons:
-        await query.message.reply_text(
-            "ℹ️ Información adicional disponible:",
-            reply_markup=InlineKeyboardMarkup(buttons)
         )
 
 # --- CALLBACK HANDLER — botones inline ---
