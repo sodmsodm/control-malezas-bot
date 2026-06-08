@@ -1873,9 +1873,9 @@ async def responder_barbecho_completo(update_or_query, context, cultivo, maleza,
 
     # Obtener respuesta hardcodeada
     if maleza == "otra":
-        respuesta = BARBECHO_OTRA_MALEZA
+        respuesta = RESPUESTA_OTRA_MALEZA
     else:
-        respuesta = get_barbecho_respuesta(cultivo, maleza, momento, objetivo)
+        respuesta = get_barbecho_response(cultivo, maleza, momento, objetivo)
 
     # Enviar respuesta
     await context.bot.send_message(chat_id=chat_id, text=respuesta)
