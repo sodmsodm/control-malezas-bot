@@ -1815,9 +1815,41 @@ MOMENTOS_ALIAS = {
     "pre emergencia": "pee",
 }
 
+# Principios activos y términos que indican consulta específica — no interceptar
+TERMINOS_CONSULTA_ESPECIFICA = [
+    "cletodim", "haloxifop", "glifosato", "glufosinato", "atrazina",
+    "metribuzin", "metribuzín", "s-metolacloro", "metolacloro",
+    "acetoclor", "pyroxasulfone", "piroxasulfone", "flumioxazin",
+    "saflufenacil", "carfentrazone", "diclosulam", "imazetapir",
+    "imazapic", "imazamox", "metsulfuron", "metsulfurón",
+    "tribenuron", "clorsulfuron", "fluroxipir", "dicamba",
+    "picloram", "picloran", "2,4d", "2,4 d", "mcpa",
+    "terbutilazina", "terbutrina", "flurocloridona", "diflufenican",
+    "diflufenicán", "bixlozona", "epyrifenacil", "trifluralina",
+    "pendimetalin", "pendimetalín", "aclonifen", "bicyclopyrone",
+    "biciclopirone", "isoxaflutole", "isoxaflutol", "tembotrione",
+    "sulcotrione", "mesotrione", "nicosulfuron", "nicosulfurón",
+    "rimsulfuron", "foramsulfuron", "topramezone", "select",
+    "yamato", "heat", "shark", "authority", "capaz", "flexstar",
+    "fomesafen", "lactofen", "acifluorfen", "clethodim",
+    # términos que indican pregunta puntual
+    "días antes", "dias antes", "cuántos días", "cuantos dias",
+    "intervalo", "carencia", "restricción", "restriccion",
+    "dosis", "cuánto", "cuanto", "cómo", "como aplicar",
+    "se puede mezclar", "puedo mezclar", "antagonismo",
+    "fitotoxic", "resistencia confirmada",
+]
+
 def detectar_consulta_general(texto):
     """Retorna la respuesta hardcodeada si el mensaje es una consulta general, o None si no lo es."""
     t = texto.lower().strip()
+
+    # Si la consulta contiene un principio activo específico o término puntual,
+    # no interceptar — dejar que la API responda con precisión
+    for termino in TERMINOS_CONSULTA_ESPECIFICA:
+        if termino in t:
+            return None
+
     cultivo_detectado = None
     momento_detectado = None
     for palabra, cultivo in CULTIVOS_ALIAS.items():
