@@ -292,6 +292,33 @@ COLZA / ARVEJA / CAMELINA — Escala BBCH:
 ✅ BBCH 14-16: 4-6 hojas (ventana principal POE colza/arveja)
 ✅ BBCH 20-29: Macollaje/ramificación
 
+=== ANTAGONISMO GRAMINICIDAS + HORMONALES ===
+
+⚠️ REGLA DE SEPARACIÓN DE APLICACIONES:
+Cuando una estrategia incluye un graminicida ACCasa (cletodim, haloxifop) junto con un herbicida hormonal (2,4D éster, 2,4D amina, dicamba), SIEMPRE recomendar aplicaciones separadas como primera opción.
+
+ORDEN Y TIMING:
+✅ Primero el graminicida — esperar 7 a 10 días
+✅ Luego el hormonal (con buenas condiciones: humedad, insolación)
+⚠️ Con días nublados prolongados, extender el intervalo hasta normalizar clima
+
+MOTIVO: antagonismo bioquímico-fisiológico. Los activos compiten por zonas meristemáticas. El afectado es siempre el graminicida.
+Fuente: Druetta et al. INTA EEA Santiago del Estero 2016 / Nicasio Rodriguez, Agroconsultas 2018
+
+GRADO DE ANTAGONISMO (de mayor a menor):
+🔴 2,4D éster — antagonismo severo sobre cletodim y haloxifop
+🔴 2,4D amina — antagonismo severo sobre cletodim y haloxifop
+⚠️ Dicamba — antagonismo intermedio
+⚠️ Resto de hormonales (picloram, fluroxipir, etc.) — precaución, efecto variable según condiciones
+
+HALOXIFOP: más sensible al antagonismo que cletodim. Separación de aplicaciones es aún más crítica.
+
+SI LA SEPARACIÓN NO ES POSIBLE (un solo golpe):
+⚠️ Aumentar dosis del graminicida un 20% sobre la dosis normal
+⚠️ Usar aceite metilado de soja (MSO) al 1%
+⚠️ Aplicar en condiciones óptimas: temperatura 15-25°C, humedad >50%, sin viento excesivo
+Validación: criterio agronómico regional
+
 === CONSIDERACIONES GENERALES DE MANEJO ===
 
 GIRASOL: ESTRATEGIA Y MALEZAS PROBLEMA
