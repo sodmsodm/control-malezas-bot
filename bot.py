@@ -246,7 +246,7 @@ Producto (p.a.) — días mínimos antes de siembra siguiente:
 ✅ Fomesafén 25% (Flex): Soja 0 / Maíz 12m / Girasol RIESGO / Trigo 18m
 ✅ Flumioxazin 48% (Sumisoya): Soja 7d / Maíz 30d / Girasol 30d / Trigo 30d
 ✅ S-metolacloro 96% (Dual Gold): Maíz 0 / Soja 0 / Girasol 0 / Trigo 0
-✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo 90d
+✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo PEE (LD sin restricción / LC 15d antes siembra) / Cebada 15d antes siembra — requiere lluvia ≥10 mm dentro de los 15 días post-aplicación para activarse
 ✅ Clorimurón 25% (Classic): Soja 0 / Maíz 18m / Girasol 18m / Trigo 18m
 ✅ Saflufenacil 70% (Heat): Soja 3d / Maíz 1d / Trigo 1d / Girasol: NO usar en pre-siembra ni barbecho previo a girasol (marbete BASF)
 ✅ Metsulfurón 60% (Ally/Errasin): Soja 60d / Maíz 60d / Girasol: NO usar en barbecho previo a girasol
@@ -454,7 +454,7 @@ SOJA Y MAÍZ:
 🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad sostenida hasta 150 DDA. Sin restricción en soja ni maíz
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — buena residualidad hasta 90 DDA
 🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — desempeño similar como opción individual
-⚠️ Pyroxasulfone (Yamato) tiene restricción de 90 días antes de siembra de trigo. Sin restricción en soja ni maíz.
+⚠️ Pyroxasulfone (Yamato): en trigo PEE sin restricción (LD) / 15d antes siembra (LC). En cebada 15d antes siembra. Requiere lluvia ≥10 mm dentro de los 15 días post-aplicación.
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -506,7 +506,7 @@ MAYO-JUNIO:
 
 LOLIUM — BARBECHO — TRIGO (presiembra):
 
-⚠️ Pyroxasulfone (Yamato): 90 días de carencia antes de trigo. Verificar fechas antes de usar.
+⚠️ Pyroxasulfone (Yamato): PEE en trigo sin restricción de días (LD) / 15d antes siembra (LC). Cebada: 15d antes siembra. Requiere lluvia ≥10 mm dentro de los 15 días post-aplicación para activarse.
 
 OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
 
@@ -532,7 +532,7 @@ OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 
 🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo/avena. Presiembra, sin restricción de carencia en trigo
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo
-🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ pyroxasulfone verificar 90 días de carencia antes de trigo
+🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ Yamato: PEE trigo sin restricción (LD) / 15d LC y cebada. Requiere lluvia ≥10 mm post-aplicación
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
