@@ -1853,8 +1853,148 @@ def detectar_consulta_general(texto):
             momento_detectado = momento
             break
     if cultivo_detectado and momento_detectado:
+        # Si es trigo/cebada PEE, ceder al flujo guiado
+        if cultivo_detectado in ("trigo", "cebada") and momento_detectado == "pee":
+            return None
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
+
+# --- FLUJO GUIADO PEE ---
+
+# Keywords que indican consulta PEE con cultivo trigo pero sin maleza u objetivo completos
+PEE_TRIGO_KEYWORDS = [
+    "pee trigo", "pee en trigo", "pee cebada", "pee en cebada",
+    "pre emergencia trigo", "preemergencia trigo",
+    "pre emergencia cebada", "preemergencia cebada",
+    "pre-emergencia trigo", "pre-emergencia cebada",
+]
+
+# Keywords de malezas para detección en consulta directa
+PEE_MALEZA_KEYWORDS = {
+    "raigras": "raigras", "raigrás": "raigras", "lolium": "raigras",
+    "conyza": "conyza", "rama negra": "conyza", "coniza": "conyza",
+    "cruciferas": "cruciferas", "crucíferas": "cruciferas",
+    "brassica": "cruciferas", "nabon": "cruciferas", "nabón": "cruciferas",
+}
+
+# Keywords de objetivo para detección en consulta directa
+PEE_OBJETIVO_KEYWORDS = {
+    "nacida": "nacida", "nacido": "nacida", "emergida": "nacida",
+    "emergido": "nacida", "ya nacio": "nacida", "ya nació": "nacida",
+    "residual": "residual", "residualidad": "residual",
+    "ambos": "ambos", "los dos": "ambos", "todo": "ambos",
+}
+
+def detectar_pee_guiado(texto):
+    """
+    Retorna:
+      - None si no es consulta PEE trigo
+      - dict con claves 'maleza' y/o 'objetivo' (pueden ser None) si es PEE trigo
+    """
+    t = texto.lower().strip()
+    es_pee_trigo = any(kw in t for kw in PEE_TRIGO_KEYWORDS)
+    if not es_pee_trigo:
+        return None
+    maleza = None
+    for kw, val in PEE_MALEZA_KEYWORDS.items():
+        if kw in t:
+            maleza = val
+            break
+    objetivo = None
+    for kw, val in PEE_OBJETIVO_KEYWORDS.items():
+        if kw in t:
+            objetivo = val
+            break
+    return {"maleza": maleza, "objetivo": objetivo}
+
+# --- Respuestas hardcodeadas PEE trigo raigrás ---
+
+def pee_trigo_raigras_residual():
+    return (
+        "TRIGO / CEBADA — RAIGRÁS — PEE RESIDUAL\n\n"
+        "Opciones para evitar nacimientos de raigrás:\n\n"
+        "✅ Piroxasulfone 85% (Yamato Top) 100-120 g/ha — VLCFA grupo K3\n"
+        "   Requiere ≥20mm lluvia dentro de los 15 días post-aplicación\n"
+        "   En labranza convencional: aplicar al menos 15 días antes de emergencia\n\n"
+        "✅ Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha suelo medio / 3 L/ha suelo pesado — microtúbulos grupo K1\n"
+        "   Semilla de trigo debe estar a ≥3 cm de profundidad y bien cubierta\n"
+        "   Regar si no llueven 15mm dentro de los 5 días post-aplicación\n\n"
+        "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
+        "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan raigrás ya nacido.\n"
+        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/PSI — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
+    )
+
+def pee_trigo_raigras_nacida():
+    return (
+        "TRIGO / CEBADA — RAIGRÁS — RESCATE SOBRE MALEZA NACIDA\n\n"
+        "⚠️ En PEE no hay opciones eficientes sobre raigrás ya nacido.\n"
+        "Como rescate para reducir competencia:\n\n"
+        "✅ Paraquat 27,6% (Gramoxone)\n"
+        "   2 L/ha en hojas / 2,5-3 L/ha en macollaje\n"
+        "   Contacto — quema parte aérea, puede rebrotar. No sistémico.\n\n"
+        "✅ Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Paraquat 27,6%\n"
+        "   2 L/ha en hojas / 2,5-3 L/ha en macollaje\n"
+        "   Suma acción sistémica al contacto\n\n"
+        "⚠️ Control parcial — no esperar resultado satisfactorio sobre plantas establecidas.\n\n"
+        "🔁 Una vez emergido el trigo (desde Z1.2) hay opciones POE reales:\n"
+        "   Pinoxaden (Axial), Clodinafop (Gizmo/Topick), Iodosulfurón+Mesosulfurón (Hussar Plus),\n"
+        "   Piroxulam (PowerFlex), Imazamox (Pulsar/Trigosol) en CL, Glufosinato en HB4"
+    )
+
+def pee_trigo_raigras_ambos():
+    return (
+        "TRIGO / CEBADA — RAIGRÁS — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "Estrategia: controlar lo nacido Y dejar residual para nuevos nacimientos.\n\n"
+        "✅ Paraquat 27,6% (Gramoxone) 2 L/ha (hojas) / 2,5-3 L/ha (macollaje)\n"
+        "   + Yamato Top 100-120 g/ha o Herbadox H2O 2-2,5 L/ha\n"
+        "   Aplicar en la misma pasada o inmediatamente después\n\n"
+        "✅ Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Paraquat 27,6% 2-3 L/ha\n"
+        "   + Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "⚠️ Aplicar residual siempre con lote sin cobertura verde activa.\n"
+        "⚠️ Azugro (Bixlozona) NO mezclar con glifosato de sal potásica.\n"
+        "⚠️ El rescate sobre nacida es parcial — complementar con POE del trigo desde Z1.2:\n"
+        "   Pinoxaden (Axial), Clodinafop (Gizmo/Topick), Hussar Plus, PowerFlex"
+    )
+
+async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
+    """Dispatcher de respuestas PEE guiadas."""
+    respuesta = None
+
+    if cultivo == "trigo":
+        if maleza == "raigras":
+            if objetivo == "residual":
+                respuesta = pee_trigo_raigras_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_trigo_raigras_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_trigo_raigras_ambos()
+
+    if respuesta is None:
+        respuesta = "⚠️ No tengo información específica para esa combinación todavía."
+
+    if es_callback:
+        await query_or_message.message.reply_text(respuesta)
+    else:
+        await query_or_message.reply_text(respuesta)
+    context.user_data.clear()
+
+# Teclados inline PEE
+
+def kb_pee_maleza_trigo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
+        [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="pee_maleza_conyza")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="pee_maleza_cruciferas")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
+    ])
+
+def kb_pee_objetivo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎯 Maleza ya nacida (rescate)", callback_data="pee_objetivo_nacida")],
+        [InlineKeyboardButton("🛡️ Residual (evitar nacimientos)", callback_data="pee_objetivo_residual")],
+        [InlineKeyboardButton("🎯+🛡️ Ambos", callback_data="pee_objetivo_ambos")],
+    ])
 
 # --- FLUJO GUIADO BARBECHO ---
 
@@ -2901,6 +3041,40 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         })
         return
 
+    # Detectar consulta PEE guiada
+    pee_info = detectar_pee_guiado(user_message)
+    if pee_info is not None:
+        maleza = pee_info.get("maleza")
+        objetivo = pee_info.get("objetivo")
+        # Si tiene todo — respuesta directa
+        if maleza and objetivo:
+            context.user_data['pee_cultivo'] = 'trigo'
+            context.user_data['pee_maleza'] = maleza
+            context.user_data['pee_objetivo'] = objetivo
+            await responder_pee_guiado(update.message, context, 'trigo', maleza, objetivo, es_callback=False)
+            return
+        # Si falta algo — arrancar flujo guiado
+        context.user_data['pee_estado'] = 'esperando_maleza'
+        context.user_data['pee_cultivo'] = 'trigo'
+        if maleza:
+            context.user_data['pee_maleza'] = maleza
+            context.user_data['pee_estado'] = 'esperando_objetivo'
+            await update.message.reply_text(
+                "Antes de responder, repasemos algunos parámetros para darte una recomendación ajustada a tu realidad 🌱\n\n"
+                f"Cultivo: Trigo/Cebada ✅\n"
+                f"Maleza: {maleza.capitalize()} ✅\n\n"
+                "¿Cuál es tu objetivo?",
+                reply_markup=kb_pee_objetivo()
+            )
+        else:
+            await update.message.reply_text(
+                "Antes de responder, repasemos algunos parámetros para darte una recomendación ajustada a tu realidad 🌱\n\n"
+                "Cultivo: Trigo/Cebada ✅\n\n"
+                "¿Qué maleza tenés en el lote?",
+                reply_markup=kb_pee_maleza_trigo()
+            )
+        return
+
     # Detectar consulta de barbecho
     nivel_barbecho = detectar_nivel_barbecho(user_message)
     if nivel_barbecho == 1:
@@ -3006,6 +3180,39 @@ async def handle_callback(update, context):
         return
     elif data == "show_glifosato":
         await query.message.reply_text(INFO_GLIFOSATO)
+        return
+
+    # Flujo PEE guiado — maleza
+    if data.startswith("pee_maleza_"):
+        maleza = data.replace("pee_maleza_", "")
+        if maleza == "otra":
+            context.user_data.clear()
+            await query.edit_message_text(
+                "⚠️ No tengo información específica para esa maleza en PEE de trigo todavía.\n\n"
+                "🌱 Si es una GRAMÍNEA — las opciones de Raigrás/Lolium pueden orientarte.\n"
+                "🌱 Si es una LATIFOLIADA — las opciones de Conyza o Crucíferas son un buen punto de partida.\n\n"
+                "Consultá con tu asesor para ajustar al biotipo específico."
+            )
+            return
+        context.user_data['pee_maleza'] = maleza
+        context.user_data['pee_estado'] = 'esperando_objetivo'
+        maleza_nombre = {"raigras": "Raigrás/Lolium", "conyza": "Rama Negra (Conyza)", "cruciferas": "Crucíferas"}.get(maleza, maleza)
+        await query.edit_message_text(
+            f"Maleza: {maleza_nombre} ✅\n\n¿Cuál es tu objetivo?",
+            reply_markup=kb_pee_objetivo()
+        )
+        return
+
+    # Flujo PEE guiado — objetivo
+    if data.startswith("pee_objetivo_"):
+        objetivo = data.replace("pee_objetivo_", "")
+        cultivo = context.user_data.get('pee_cultivo', 'trigo')
+        maleza = context.user_data.get('pee_maleza', '')
+        objetivo_nombre = {"nacida": "Maleza nacida (rescate)", "residual": "Residual", "ambos": "Ambos"}.get(objetivo, objetivo)
+        await query.edit_message_text(
+            f"Objetivo: {objetivo_nombre} ✅\n\nBuscando recomendación..."
+        )
+        await responder_pee_guiado(query, context, cultivo, maleza, objetivo, es_callback=True)
         return
 
     # Flujo barbecho — confirmación
