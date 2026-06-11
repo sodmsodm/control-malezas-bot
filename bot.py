@@ -2009,6 +2009,54 @@ def pee_trigo_conyza_ambos():
         "⚠️ No usar Metsulfurón en barbecho previo a girasol"
     )
 
+def pee_trigo_cruciferas_residual():
+    return (
+        "TRIGO / CEBADA — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
+        "Opciones para evitar nacimientos de crucíferas:\n\n"
+        "🥇 Flurocloridona 25% (Rainbow/Talis) 1-1,5 L/ha — PDS, mejor control de crucíferas\n"
+        "   ⚠️ No superar 1,5 L/ha en trigo — dosis mayores retrasaron emergencia del cultivo\n"
+        "   ⚠️ Respetar 30-40 días antes de soja siguiente\n\n"
+        "🥈 Diflufenican 50% (Brodal) 250-350 cc/ha — PDS\n"
+        "   Sin fitotoxicidad a ninguna dosis probada. Control algo inferior a flurocloridona.\n\n"
+        "🥈 Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA\n"
+        "   Controla Brassica Y raigrás en una sola aplicación. Requiere buena humedad.\n\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan crucíferas ya nacidas."
+    )
+
+def pee_trigo_cruciferas_nacida():
+    return (
+        "TRIGO / CEBADA — CRUCÍFERAS (Brassica/Nabón) — RESCATE SOBRE MALEZA NACIDA\n\n"
+        "Opciones de rescate antes de emergencia del trigo (hasta Z1.2):\n\n"
+        "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 35 g/ha\n"
+        "   + Starane Xtra (Fluroxipir) 0,5 L/ha + aceite vegetal 0,5% v/v\n"
+        "   Triple MoA — mejor control sobre plantas chicas\n\n"
+        "🥈 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Paraquat 27,6% (Gramoxone)\n"
+        "   2 L/ha planta chica / 2,5 L/ha planta grande + sulfato de amonio 2% v/v\n\n"
+        "🥉 Paraquat 27,6% (Gramoxone) 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   Contacto — puede rebrotar, sin acción sistémica\n\n"
+        "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3 del trigo\n"
+        "⚠️ Crucíferas son sensibles a auxínicos — plantas chicas responden bien\n\n"
+        "🔁 Una vez emergido el trigo (Z2.1+) opciones POE:\n"
+        "   2,4D, MCPA, Dicamba (Banvel), Bromoxinil (Bromotril),\n"
+        "   Flurocloridona 25% + Bromoxinil, Diflufenican + Bromoxinil"
+    )
+
+def pee_trigo_cruciferas_ambos():
+    return (
+        "TRIGO / CEBADA — CRUCÍFERAS (Brassica/Nabón) — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "Estrategia: controlar lo nacido Y dejar residual para nuevos nacimientos.\n\n"
+        "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 35 g/ha\n"
+        "   + Starane Xtra (Fluroxipir) 0,5 L/ha + aceite vegetal 0,5% v/v\n"
+        "   + Flurocloridona 25% (Rainbow) 1-1,5 L/ha o Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   + Diflufenican 50% (Brodal) 250-350 cc/ha como residual\n\n"
+        "🥉 Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   + Flurocloridona 25% (Rainbow) 1-1,5 L/ha\n\n"
+        "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3\n"
+        "⚠️ No superar 1,5 L/ha de flurocloridona en trigo\n"
+        "⚠️ Aplicar con lote sin cobertura verde activa"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2028,6 +2076,13 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_trigo_conyza_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_trigo_conyza_ambos()
+        elif maleza == "cruciferas":
+            if objetivo == "residual":
+                respuesta = pee_trigo_cruciferas_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_trigo_cruciferas_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_trigo_cruciferas_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
