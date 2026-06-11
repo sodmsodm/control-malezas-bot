@@ -1957,6 +1957,58 @@ def pee_trigo_raigras_ambos():
         "   Pinoxaden (Axial), Clodinafop (Gizmo/Topick), Hussar Plus, PowerFlex"
     )
 
+def pee_trigo_conyza_residual():
+    return (
+        "TRIGO / CEBADA — CONYZA (Rama Negra) — PEE RESIDUAL\n\n"
+        "Opciones para evitar nacimientos de conyza:\n\n"
+        "✅ Metsulfurón 60% (Ally/Errasin WP) 8-10 g/ha — ALS\n"
+        "   Residualidad moderada. No usar en barbecho previo a girasol.\n\n"
+        "✅ Finesse WG (Clorsulfurón 25% + Metsulfurón 25%) 12-15 g/ha — ALS doble MoA\n\n"
+        "✅ Terbutrina 50% (Igran) 1,2 L/ha — PSII\n\n"
+        "✅ Terbutilazina 75% (Gesatop 75) 1 kg/ha — PSII\n\n"
+        "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
+        "   Controla conyza Y raigrás. Requiere buena humedad al momento de aplicación.\n\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan conyza ya nacida.\n"
+        "⚠️ Conyza tiene dos picos de emergencia — otoño y primavera. Monitorear ambos momentos."
+    )
+
+def pee_trigo_conyza_nacida():
+    return (
+        "TRIGO / CEBADA — CONYZA (Rama Negra) — RESCATE SOBRE MALEZA NACIDA\n\n"
+        "Opciones de rescate antes de emergencia del trigo (hasta Z1.2):\n\n"
+        "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 35 g/ha + Starane Xtra (Fluroxipir) 0,5 L/ha\n"
+        "   + aceite vegetal 0,5% v/v — triple MoA, mejor control\n\n"
+        "🥈 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Starane Xtra (Fluroxipir) 0,5 L/ha\n"
+        "   + Paraquat 27,6% (Gramoxone) 2 L/ha roseta chica / 2,5 L/ha roseta grande\n"
+        "   + sulfato de amonio 2% v/v\n\n"
+        "🥉 Paraquat 27,6% (Gramoxone) 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   Contacto — puede rebrotar, sin acción sistémica\n\n"
+        "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3 del trigo\n"
+        "⚠️ Roseta mayor a 10 cm: doble golpe obligatorio. Eficacia cae significativamente con plantas grandes.\n"
+        "⚠️ Conyza tiene dos picos de emergencia — otoño y primavera. Controlar en roseta chica es clave.\n\n"
+        "🔁 Una vez emergido el trigo (Z2.1+) opciones POE:\n"
+        "   Metsulfurón + Dicamba (Banvel), 2,4D + Dicamba,\n"
+        "   Saflufenacil 70% (Heat) 25 g/ha SIN aceite + Metsulfurón,\n"
+        "   Carfentrazone 40% (Shark) + MCPA, Terbutrina 50% (Igran) + MCPA"
+    )
+
+def pee_trigo_conyza_ambos():
+    return (
+        "TRIGO / CEBADA — CONYZA (Rama Negra) — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "Estrategia: controlar lo nacido Y dejar residual para nuevos nacimientos.\n\n"
+        "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 35 g/ha\n"
+        "   + Starane Xtra (Fluroxipir) 0,5 L/ha + aceite vegetal 0,5% v/v\n"
+        "   + Metsulfurón 60% 8-10 g/ha o Terbutrina 50% 1,2 L/ha como residual\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   + Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "🥉 Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
+        "   + Metsulfurón 60% 8-10 g/ha o Terbutrina 50% 1,2 L/ha\n\n"
+        "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3\n"
+        "⚠️ Aplicar con lote sin cobertura verde activa\n"
+        "⚠️ Roseta mayor a 10 cm: sumar auxínico (2,4D o Dicamba) al quemante\n"
+        "⚠️ No usar Metsulfurón en barbecho previo a girasol"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -1969,6 +2021,13 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_trigo_raigras_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_trigo_raigras_ambos()
+        elif maleza == "conyza":
+            if objetivo == "residual":
+                respuesta = pee_trigo_conyza_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_trigo_conyza_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_trigo_conyza_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
