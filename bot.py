@@ -883,12 +883,12 @@ OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
 ABRIL:
-🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ verificar 45 días Lontrel
-🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha — ⚠️ verificar 45 días Lontrel
+🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
 
 MAYO-JUNIO:
-🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
 🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha
 
@@ -918,8 +918,8 @@ OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
-🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
-🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha
+🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
+🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
 
 ⚠️ Roseta mayor a 10 cm:
@@ -959,13 +959,13 @@ MAÍZ:
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
 SOJA:
-🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Shark 75 cc/ha
-🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha
+🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Heat 35-40 g/ha
+🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Heat 35-40 g/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja
 
 MAÍZ:
-🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha + Shark 75 cc/ha
-🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha
+🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha + Heat 35-40 g/ha
+🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Heat 35-40 g/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
 
 
@@ -1906,7 +1906,7 @@ def _lolium_soja_maiz_largo_nacida():
         "MAYO-JUNIO:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — ante sospecha resistencia ACCasa\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE\n"
         "⚠️ RESISTENCIA ACCasa: cletodim solo puede quedar entre 5-70% según biotipo."
     )
 
@@ -1932,7 +1932,7 @@ def _lolium_soja_maiz_largo_ambos(cultivo):
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_soja_maiz_corto_nacida():
@@ -1942,7 +1942,7 @@ def _lolium_soja_maiz_corto_nacida():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
         "🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_soja_maiz_corto_residual(cultivo):
@@ -1959,7 +1959,7 @@ def _lolium_soja_maiz_corto_ambos(cultivo):
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_girasol_largo_nacida():
@@ -1972,7 +1972,7 @@ def _lolium_girasol_largo_nacida():
         "MAYO-JUNIO:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_girasol_residual():
@@ -1996,7 +1996,7 @@ def _lolium_girasol_largo_ambos():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_girasol_corto_nacida():
@@ -2005,7 +2005,7 @@ def _lolium_girasol_corto_nacida():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
         "🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 def _lolium_girasol_corto_ambos():
@@ -2015,7 +2015,7 @@ def _lolium_girasol_corto_ambos():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE"
     )
 
 
@@ -2028,7 +2028,7 @@ def _doble_trigo_bn_ln():
         "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
         "GOLPE 1 — Graminicida primero:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas)\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + aceite vegetal 0,5%\n"
@@ -2061,7 +2061,7 @@ def _doble_trigo_bn_la():
         "GOLPE 1 — Graminicida + residual Lolium:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + aceite vegetal 0,5%\n"
@@ -2082,7 +2082,7 @@ def _doble_trigo_br_ln():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata sin problema"
     )
@@ -2109,7 +2109,7 @@ def _doble_trigo_br_la():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo"
@@ -2122,7 +2122,7 @@ def _doble_trigo_ba_ln():
         "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
         "GOLPE 1 — Graminicida primero:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas)\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
@@ -2159,7 +2159,7 @@ def _doble_trigo_ba_la():
         "GOLPE 1 — Graminicida + residual Lolium:\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas) + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
@@ -2224,7 +2224,7 @@ def _lolium_trigo_ambos():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Azugro (Bixlozona) FMC\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha — sin residual\n\n"
-        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE\n"
         "⚠️ Pyroxasulfone (Yamato): 90 días de carencia antes de trigo."
     )
 
@@ -2590,8 +2590,8 @@ def _brassica_trigo_residual():
 def _brassica_trigo_ambos():
     return (
         "BRASSICA — BARBECHO TRIGO — MALEZA NACIDA + RESIDUAL\n\n"
-        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha\n"
-        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha\n"
         "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n\n"
         "⚠️ Roseta mayor a 10 cm: doble golpe con Paraquat 27,6% (Gramoxone)\n"
         "⚠️ PPO requiere aceite vegetal 0,5% v/v"
