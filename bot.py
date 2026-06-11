@@ -2018,6 +2018,179 @@ def _lolium_girasol_corto_ambos():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v SIEMPRE"
     )
 
+
+# === DOBLE MALEZA: BRASSICA + LOLIUM × TRIGO ===
+
+def _doble_trigo_bn_ln():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — AMBAS NACIDAS\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — se recomienda estrategia en dos golpes por antagonismo\n\n"
+        "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
+        "GOLPE 1 — Graminicida primero:\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas)\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
+        "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Carfentrazone 40% (Shark) 75-120 cc/ha\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n\n"
+        "OPCIÓN B — UN SOLO GOLPE (cuando el timing no permite separar):\n"
+        "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + aceite metilado de soja 1%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Shark 75-120 cc/ha + aceite metilado de soja 1%"
+    )
+
+def _doble_trigo_bn_lr():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA NACIDA + LOLIUM RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — Brassica ya emergida, Lolium aún no nació\n\n"
+        "UN SOLO GOLPE — no hay antagonismo (sin graminicida foliar):\n\n"
+        "ELIMINAR BRASSICA + RESIDUAL LOLIUM:\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación"
+    )
+
+def _doble_trigo_bn_la():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA NACIDA + LOLIUM NACIDO Y RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — ambas nacidas + residual para Lolium\n\n"
+        "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
+        "GOLPE 1 — Graminicida + residual Lolium:\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
+        "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha\n\n"
+        "OPCIÓN B — UN SOLO GOLPE:\n"
+        "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Terbine 1,5 kg/ha + aceite metilado de soja 1%\n\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación"
+    )
+
+def _doble_trigo_br_ln():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA RESIDUAL + LOLIUM NACIDO\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — Lolium ya emergido, Brassica aún no nació\n\n"
+        "UN SOLO GOLPE — sin antagonismo (sin hormonal):\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n"
+        "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata sin problema"
+    )
+
+def _doble_trigo_br_lr():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — AMBAS RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — ninguna emergida, objetivo 100% residual\n\n"
+        "UN SOLO GOLPE — sin antagonismo:\n\n"
+        "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥈 Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
+        "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata\n"
+        "⚠️ Agregar glifosato si hay malezas anuales nacidas en el momento de aplicación"
+    )
+
+def _doble_trigo_br_la():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA RESIDUAL + LOLIUM NACIDO Y RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — Lolium nacido + prevenir nuevos nacimientos de ambas\n\n"
+        "UN SOLO GOLPE — sin antagonismo (sin hormonal):\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo"
+    )
+
+def _doble_trigo_ba_ln():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA NACIDA Y RESIDUAL + LOLIUM NACIDO\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — ambas nacidas + residual para Brassica\n\n"
+        "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
+        "GOLPE 1 — Graminicida primero:\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas)\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
+        "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
+        "OPCIÓN B — UN SOLO GOLPE:\n"
+        "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite metilado de soja 1%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Terbine 1,5 kg/ha + aceite metilado de soja 1%\n\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo trigo/cebada"
+    )
+
+def _doble_trigo_ba_lr():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — BRASSICA NACIDA Y RESIDUAL + LOLIUM RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — Brassica nacida + residual para ambas\n\n"
+        "UN SOLO GOLPE — sin antagonismo (sin graminicida foliar):\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo\n"
+        "⚠️ Opción 🥇 es una mezcla compleja — verificar compatibilidad física antes de aplicar"
+    )
+
+def _doble_trigo_ba_la():
+    return (
+        "BRASSICA + LOLIUM — BARBECHO TRIGO — AMBAS NACIDAS Y RESIDUAL\n\n"
+        "⚠️ DOS MALEZAS PROBLEMA — máxima complejidad, ambas nacidas + residual para ambas\n\n"
+        "OPCIÓN A — DOS GOLPES (recomendada):\n\n"
+        "GOLPE 1 — Graminicida + residual Lolium:\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,6 L/ha (1-2 hojas) / 0,8 L/ha (2-4 hojas) + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
+        "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
+        "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
+        "OPCIÓN B — UN SOLO GOLPE:\n"
+        "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbine 1,5 kg/ha + aceite metilado de soja 1%\n\n"
+        "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
+        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo trigo/cebada\n"
+        "⚠️ Opción B es una mezcla de tanque muy compleja — verificar compatibilidad física antes de aplicar"
+    )
+
+def get_doble_trigo_respuesta(b_obj, l_obj):
+    """Dispatcher para combinaciones Brassica + Lolium en trigo."""
+    mapping = {
+        ("nacida",   "nacida"):   _doble_trigo_bn_ln,
+        ("nacida",   "residual"): _doble_trigo_bn_lr,
+        ("nacida",   "ambos"):    _doble_trigo_bn_la,
+        ("residual", "nacida"):   _doble_trigo_br_ln,
+        ("residual", "residual"): _doble_trigo_br_lr,
+        ("residual", "ambos"):    _doble_trigo_br_la,
+        ("ambos",    "nacida"):   _doble_trigo_ba_ln,
+        ("ambos",    "residual"): _doble_trigo_ba_lr,
+        ("ambos",    "ambos"):    _doble_trigo_ba_la,
+    }
+    fn = mapping.get((b_obj, l_obj))
+    return fn() if fn else None
+
 def _lolium_trigo_nacida():
     return (
         "LOLIUM — BARBECHO TRIGO — ELIMINAR MALEZA YA NACIDA\n\n"
@@ -2537,7 +2710,22 @@ def kb_maleza():
         [InlineKeyboardButton("🌿 Lolium/Raigrás", callback_data="barb_maleza_lolium")],
         [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="barb_maleza_conyza")],
         [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="barb_maleza_brassica")],
+        [InlineKeyboardButton("🌿+🌿 Raigrás + Crucíferas", callback_data="barb_maleza_doble")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="barb_maleza_otra")],
+    ])
+
+def kb_brassica_obj():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎯 Eliminar Brassica nacida", callback_data="barb_dobj_b_nacida")],
+        [InlineKeyboardButton("🛡️ Residual Brassica", callback_data="barb_dobj_b_residual")],
+        [InlineKeyboardButton("🎯+🛡️ Ambos para Brassica", callback_data="barb_dobj_b_ambos")],
+    ])
+
+def kb_lolium_obj():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🎯 Eliminar Raigrás nacido", callback_data="barb_dobj_l_nacida")],
+        [InlineKeyboardButton("🛡️ Residual Raigrás", callback_data="barb_dobj_l_residual")],
+        [InlineKeyboardButton("🎯+🛡️ Ambos para Raigrás", callback_data="barb_dobj_l_ambos")],
     ])
 
 def kb_momento():
@@ -2867,6 +3055,22 @@ async def handle_callback(update, context):
             await responder_barbecho_completo(query, context, cultivo, "otra", None, None)
             return
 
+        if maleza == "doble":
+            if cultivo != "trigo":
+                await query.edit_message_text(
+                    "Cultivo: " + {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo) +
+                    " ✅\n\nRaigrás + Crucíferas simultáneas — por ahora solo disponible para Trigo/Cebada.\n"
+                    "Podés consultar cada maleza por separado usando el flujo anterior."
+                )
+                context.user_data.clear()
+                return
+            context.user_data['barbecho_estado'] = 'esperando_brassica_obj'
+            await query.edit_message_text(
+                "Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\n\n¿Qué necesitás para las Crucíferas/Nabo?",
+                reply_markup=kb_brassica_obj()
+            )
+            return
+
         maleza_nombre = {
             "lolium": "Lolium/Raigrás",
             "conyza": "Rama Negra (Conyza)",
@@ -2888,6 +3092,38 @@ async def handle_callback(update, context):
                 f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?",
                 reply_markup=kb_momento()
             )
+        return
+
+    # Flujo barbecho — doble maleza: objetivo Brassica
+    if data.startswith("barb_dobj_b_"):
+        b_obj = data.replace("barb_dobj_b_", "")
+        context.user_data['barbecho_doble_b_obj'] = b_obj
+        context.user_data['barbecho_estado'] = 'esperando_lolium_obj'
+        b_nombre = {"nacida": "Eliminar nacida", "residual": "Residual", "ambos": "Ambos"}.get(b_obj, b_obj)
+        await query.edit_message_text(
+            f"Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\nCrucíferas: {b_nombre} ✅\n\n¿Y para el Raigrás?",
+            reply_markup=kb_lolium_obj()
+        )
+        return
+
+    # Flujo barbecho — doble maleza: objetivo Lolium → respuesta final
+    if data.startswith("barb_dobj_l_"):
+        l_obj = data.replace("barb_dobj_l_", "")
+        b_obj = context.user_data.get('barbecho_doble_b_obj', 'nacida')
+        context.user_data['barbecho_estado'] = 'completo'
+        b_nombre = {"nacida": "Eliminar nacida", "residual": "Residual", "ambos": "Ambos"}.get(b_obj, b_obj)
+        l_nombre = {"nacida": "Eliminar nacido", "residual": "Residual", "ambos": "Ambos"}.get(l_obj, l_obj)
+        await query.edit_message_text(
+            f"Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\n"
+            f"Crucíferas: {b_nombre} ✅\nRaigrás: {l_nombre} ✅\n\nBuscando estrategia..."
+        )
+        respuesta = get_doble_trigo_respuesta(b_obj, l_obj)
+        if respuesta:
+            await send_long_message(query._bot, query.message.chat_id, respuesta)
+        else:
+            await send_long_message(query._bot, query.message.chat_id,
+                "No tengo una respuesta específica para esa combinación. Consultá cada maleza por separado.")
+        context.user_data.clear()
         return
 
     # Flujo barbecho — momento
