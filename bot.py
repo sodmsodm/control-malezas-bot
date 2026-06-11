@@ -232,7 +232,7 @@ Producto (p.a.) — días mínimos antes de siembra siguiente:
 ✅ Fomesafén 25% (Flex): Soja 0 / Maíz 12m / Girasol RIESGO / Trigo 18m
 ✅ Flumioxazin 48% (Sumisoya): Soja 7d / Maíz 30d / Girasol 30d / Trigo 30d
 ✅ S-metolacloro 96% (Dual Gold): Maíz 0 / Soja 0 / Girasol 0 / Trigo 0
-✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo PEE (LD sin restricción / LC 15d antes siembra) / Cebada 15d antes siembra — requiere lluvia ≥10 mm dentro de los 15 días post-aplicación para activarse
+✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo PEE (LD sin restricción / LC 15d antes siembra) / Cebada 15d antes siembra — requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse
 ✅ Clorimurón 25% (Classic): Soja 0 / Maíz 18m / Girasol 18m / Trigo 18m
 ✅ Saflufenacil 70% (Heat): Soja 3d / Maíz 1d / Trigo 1d / Girasol: NO usar en pre-siembra ni barbecho previo a girasol (marbete BASF)
 ✅ Metsulfurón 60% (Ally/Errasin): Soja 60d / Maíz 60d / Girasol: NO usar en barbecho previo a girasol
@@ -467,7 +467,7 @@ SOJA Y MAÍZ:
 🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad sostenida hasta 150 DDA. Sin restricción en soja ni maíz
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — buena residualidad hasta 90 DDA
 🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — desempeño similar como opción individual
-⚠️ Pyroxasulfone (Yamato): en trigo PEE sin restricción (LD) / 15d antes siembra (LC). En cebada 15d antes siembra. Requiere lluvia ≥10 mm dentro de los 15 días post-aplicación.
+⚠️ Pyroxasulfone (Yamato): en trigo PEE sin restricción (LD) / 15d antes siembra (LC). En cebada 15d antes siembra. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación.
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -519,7 +519,7 @@ MAYO-JUNIO:
 
 LOLIUM — BARBECHO — TRIGO (presiembra):
 
-⚠️ Pyroxasulfone (Yamato): PEE en trigo sin restricción de días (LD) / 15d antes siembra (LC). Cebada: 15d antes siembra. Requiere lluvia ≥10 mm dentro de los 15 días post-aplicación para activarse.
+⚠️ Pyroxasulfone (Yamato): PEE en trigo sin restricción de días (LD) / 15d antes siembra (LC). Cebada: 15d antes siembra. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse.
 
 OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
 
@@ -544,7 +544,7 @@ OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 
 🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo/avena. Presiembra, sin restricción de carencia en trigo
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo
-🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ Yamato: PEE trigo sin restricción (LD) / 15d LC y cebada. Requiere lluvia ≥10 mm post-aplicación
+🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ Yamato: PEE trigo sin restricción (LD) / 15d LC y cebada. Requiere lluvia ≥20 mm post-aplicación
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -1583,20 +1583,25 @@ CONTROL + RESIDUAL Alta infestación — solo funcionan más del 80%:
 TRIGO / CEBADA: PEE — PRODUCTOS PRINCIPALES
 ⚠️ INSTRUCCIÓN AL MODELO: Esta es la lista completa y definitiva para consultas generales PEE de trigo/cebada. Volcá EXACTAMENTE esta lista. No agregues ni quites productos de otras secciones.
 
-✅ Piroxasulfone 85% (Yamato TOP) — gramíneas (raigrás y otras)
-✅ Pendimetalín (Satellite / Herbadox) — gramíneas
-✅ Flumioxazin (Flumyzin / Sumyzin / Gemmit TOP / Sumisoya) — latifoliadas, hasta 10 DAS
-✅ Trifludimoxazin / Saflufenacil (Voraxor) — PPO+PDS, amplio espectro, hasta 10 DAS
+PEE (después de siembra, antes de emergencia del cultivo):
+✅ Piroxasulfone 85% (Yamato TOP) 100-120 g/ha — VLCFA, gramíneas. Requiere ≥20mm lluvia en 15 días. Cebada: solo PSI (15 DAS)
+✅ Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha — microtúbulos, gramíneas. Semilla trigo a ≥3 cm
+✅ Mateno Plus (Flufenacet + Diflufenican + Aclonifen) 2-2,25 L/ha — triple MoA grupos 15+12+32, raigrás + crucíferas
 ✅ Carfentrazone-etil (Shark) — PPO, latifoliadas
-✅ Saflufenacil 70% (Heat) — PPO, latifoliadas
+✅ Saflufenacil 70% (Heat) — PPO, latifoliadas. SIN aceite desde Z1.2-Z1.3
 ✅ Pyraflufen-etil (Stagger) — PPO, latifoliadas
-✅ Terbutrina (Igran) — FII, latifoliadas invernales
-✅ Terbutilazina (Koritsu / Teliron 50 SC) — FII, latifoliadas
-✅ Flurocloridona (Talis / Rainbow) — PDS, crucíferas y latifoliadas
-✅ Diflufenicán (Brodal) — PDS, crucíferas y latifoliadas
-✅ Metsulfurón metil (Ally / Errasin WP) — ALS, latifoliadas
-✅ Clorsulfurón + Metsulfurón (Finesse) — ALS, latifoliadas
-✅ Auxinas/hormonales (2,4D, Dicamba, MCPA, Fluroxipir, Picloram y mezclas) — según maleza objetivo y estadio del cultivo
+✅ Terbutrina 50% (Igran) 1,2 L/ha — PSII, latifoliadas invernales
+✅ Terbutilazina 75% (Gesatop 75) 1 kg/ha — PSII, latifoliadas
+✅ Flurocloridona 25% (Rainbow/Talis) 1-1,5 L/ha — PDS, crucíferas. No superar 1,5 L/ha en trigo
+✅ Diflufenicán 50% (Brodal) 250-350 cc/ha — PDS, crucíferas y latifoliadas
+✅ Metsulfurón 60% (Ally/Errasin WP) 8-10 g/ha — ALS, latifoliadas. NO usar previo a girasol
+✅ Clorsulfurón + Metsulfurón (Finesse WG) 12-15 g/ha — ALS doble MoA, latifoliadas
+✅ Auxinas/hormonales (2,4D, Dicamba, MCPA, Fluroxipir, Picloram y mezclas) — según maleza y estadio cultivo
+
+PSI / Barbecho Corto (antes de siembra):
+✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, hasta 10 DAS antes siembra
+✅ Trifludimoxazin/Saflufenacil (Voraxor) 100-200 cc/ha — PPO+PDS, barbecho químico, hasta 7 DAS
+✅ Azugro (Bixlozona) 1,2-1,5 L/ha — grupo 13, raigrás. Hasta 14 DAS trigo / 60 DAS cebada. Incompatible con glifosato sal potásica
 
 💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de trigo y cebada. La elección final depende de la maleza presente en el lote y las resistencias confirmadas en la zona.
 
@@ -2304,7 +2309,7 @@ def _doble_trigo_bn_lr():
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
         "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
         "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación"
     )
 
 def _doble_trigo_bn_la():
@@ -2325,7 +2330,7 @@ def _doble_trigo_bn_la():
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Terbine 1,5 kg/ha + aceite metilado de soja 1%\n\n"
         "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación"
     )
 
 def _doble_trigo_br_ln():
@@ -2349,7 +2354,7 @@ def _doble_trigo_br_lr():
         "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata\n"
         "⚠️ Agregar glifosato si hay malezas anuales nacidas en el momento de aplicación"
@@ -2364,7 +2369,7 @@ def _doble_trigo_br_la():
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo"
     )
@@ -2399,7 +2404,7 @@ def _doble_trigo_ba_lr():
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
         "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
         "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo\n"
         "⚠️ Opción 🥇 es una mezcla compleja — verificar compatibilidad física antes de aplicar"
@@ -2424,7 +2429,7 @@ def _doble_trigo_ba_la():
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbine 1,5 kg/ha + aceite metilado de soja 1%\n\n"
         "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n"
-        "⚠️ Yamato requiere lluvia ≥10 mm dentro de los 15 días post-aplicación\n"
+        "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo trigo/cebada\n"
         "⚠️ Opción B es una mezcla de tanque muy compleja — verificar compatibilidad física antes de aplicar"
     )
