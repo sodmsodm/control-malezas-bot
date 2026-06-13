@@ -1915,6 +1915,8 @@ PEE_MALEZA_KEYWORDS_SOJA = {
 # Keywords de malezas para detección en consulta directa (maíz)
 PEE_MALEZA_KEYWORDS_MAIZ = {
     "raigras": "raigras", "raigrás": "raigras", "lolium": "raigras",
+    "amaranthus": "amaranthus", "yuyo colorado": "amaranthus",
+    "yuyo": "amaranthus", "palmeri": "amaranthus", "hybridus": "amaranthus", "quitensis": "amaranthus",
 }
 
 # Keywords de objetivo para detección en consulta directa
@@ -2357,6 +2359,52 @@ def pee_maiz_raigras_ambos():
         "   + Piroxasulfone (Yamato) o Pendimetalín (Herbadox) como residual"
     )
 
+def pee_maiz_amaranthus_residual():
+    return (
+        "MAÍZ — AMARANTHUS SPP. (Yuyo Colorado) — PEE RESIDUAL\n\n"
+        "✅ Atrazina 90% 1,8-2,2 kg/ha (Gesaprim) — FII\n"
+        "✅ Terbutilazina 75% 1,3-1,5 kg/ha (Terbine) — FII\n"
+        "✅ S-metolacloro 96% 0,8-1,6 L/ha (Dual Gold) — VLCFA\n"
+        "✅ Acetoclor 90% 2-3 L/ha (Harness) — VLCFA\n"
+        "✅ Pendimetalín 45,6% 2,1-3,6 L/ha (Satellite) — microtúbulos\n\n"
+        "🥇 Acuron Pack: Biciclopirona (Acuron Uno) 800-1000 ml/ha + S-metolacloro (Dual Gold) 850-1000 ml/ha\n"
+        "   según textura — HPPD+VLCFA, controla yuyo colorado\n"
+        "🥇 Adengo (Thiencarbazone+Isoxaflutol) 300-400 cc/ha + Atrazina — ALS+HPPD\n"
+        "🥇 Zidua Pack: Saflufenacil 70% (Heat) 45 g/ha + Piroxasulfone 85% 200 g/ha + aceite — PPO+VLCFA\n"
+        "✅ Bicep Pack Gold: Atrazina + S-metolacloro\n\n"
+        "⚠️ Biciclopirona: máximo una aplicación por campaña (Acuron Pack o Acuron Uno solo)\n"
+        "⚠️ Zidua Pack: aplicar antes de emergencia del maíz. Si el maíz está cerca de emerger o ya\n"
+        "   emergido, usar Adengo 280 cc/ha en su lugar — riesgo de fitotoxicidad por contacto de Heat\n"
+        "⚠️ Todos requieren aplicación antes de emergencia de malezas — sin efecto sobre yuyo colorado ya nacido"
+    )
+
+def pee_maiz_amaranthus_nacida():
+    return (
+        "MAÍZ — AMARANTHUS SPP. (Yuyo Colorado) — RESCATE SOBRE MALEZA NACIDA\n\n"
+        "🔁 El control sobre nacida se da en POE selectivo del cultivo (V1-V8 según producto):\n\n"
+        "🥇 Mesotrione 48% (Callisto) — V2-V6, sobre maleza <5cm\n"
+        "🥇 Topramezone 33,6% (Convey) — V1-V7\n"
+        "✅ Tembotrione 42% (Laudis) — V3-V6\n"
+        "✅ Tolpyralate 40% (Brucia) — V3-V6\n"
+        "✅ Combinaciones con Atrazina + 2,4D / Picloram / Mesotrione / Topramezone / Tolpyralate / Tembotrione\n"
+        "   — HPPD+FII potencian control\n\n"
+        "✅ Maíz Enlist: Glufosinato 28% 2-3 L/ha hasta V2-V4, 2,4D 1,5-2 L/ha hasta V8\n\n"
+        "⚠️ Maleza <5cm — eficacia cae con plantas grandes\n"
+        "⚠️ Evitar aplicación en estrés hídrico/térmico"
+    )
+
+def pee_maiz_amaranthus_ambos():
+    return (
+        "MAÍZ — AMARANTHUS SPP. (Yuyo Colorado) — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "🥇 Acuron Pack (residual PEE) — si después escapa algo, completar con Mesotrione (Callisto)\n"
+        "   o Topramezone (Convey) en POE V2-V6\n\n"
+        "🥇 Adengo + Atrazina (residual PEE) — mismo seguimiento POE si reescapa\n\n"
+        "🥇 Zidua Pack (residual PEE, antes de emergencia del maíz) — seguimiento POE igual\n\n"
+        "⚠️ Biciclopirona: solo una vez por campaña — si se usó en PEE (Acuron Pack), no repetir\n"
+        "   HPPD residual en POE; Mesotrione/Topramezone como rescate POE son compatibles\n"
+        "⚠️ Zidua Pack: si el maíz está cerca de emerger o ya emergido, usar Adengo en su lugar"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2427,6 +2475,13 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_maiz_raigras_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_maiz_raigras_ambos()
+        elif maleza == "amaranthus":
+            if objetivo == "residual":
+                respuesta = pee_maiz_amaranthus_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_maiz_amaranthus_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_maiz_amaranthus_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
@@ -2461,6 +2516,7 @@ def kb_pee_maleza_soja():
 def kb_pee_maleza_maiz():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
+        [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="pee_maleza_amaranthus")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
     ])
 
