@@ -2493,6 +2493,41 @@ def pee_girasol_general_ambos():
         "🚫 NO usar en girasol: saflufenacil, fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas"
     )
 
+def pee_girasol_cruciferas_residual():
+    return (
+        "GIRASOL — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
+        "🥇 Flurocloridona 25% (Rainbow) 1,5-4 L/ha + Diflufenicán 50% (Brodal) 0,3 L/ha\n"
+        "   Combinación recomendada, especialmente ante sospecha de resistencia\n\n"
+        "✅ Flurocloridona 25% (Rainbow) 1,5-4 L/ha sola\n"
+        "✅ Diflufenicán 50% (Brodal) 0,3 L/ha solo\n\n"
+        "🚫 NO usar en girasol: saflufenacil, metsulfurón, fomesafén, biciclopirona"
+    )
+
+def pee_girasol_cruciferas_nacida():
+    return (
+        "GIRASOL — CRUCÍFERAS (Brassica/Nabón) — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "⚠️ Opciones limitadas — no ideales pero con algo de actividad sobre crucíferas chicas:\n\n"
+        "✅ Carfentrazone 40% (Shark) 50-75 cc/ha — PPO, contacto\n"
+        "✅ Fluroxipir (Starane Xtra) — auxínico, actividad en plantas chicas\n\n"
+        "⚠️ Control parcial — no esperar resultado completo sobre plantas establecidas\n"
+        "⚠️ Aplicar con crucíferas en roseta chica para mejor respuesta\n\n"
+        "✅ Girasoles CL: Imazapir 80% (Clearsol DF) V2-V4 / (Imazapir+Imazamox) (Clearsol Plus II) V2-V4\n"
+        "   — mejor opción disponible en CL\n\n"
+        "🔁 Para crucíferas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "   Glifosato + 2,4D (20 DAS mínimo), Glifosato + Dicamba (45 DAS mínimo)"
+    )
+
+def pee_girasol_cruciferas_ambos():
+    return (
+        "GIRASOL — CRUCÍFERAS (Brassica/Nabón) — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "🥇 Flurocloridona 25% (Rainbow) + Diflufenicán 50% (Brodal) como residual\n"
+        "   + Carfentrazone 40% (Shark) 50-75 cc/ha o Fluroxipir (Starane Xtra) sobre nacida\n\n"
+        "⚠️ Control sobre nacida es parcial — priorizar el residual en PEE\n"
+        "⚠️ Girasol convencional/no-CL: si hay crucíferas establecidas, el control debió lograrse en Barbecho Corto/PSI\n\n"
+        "✅ Girasoles CL: Flurocloridona+Diflufenicán (residual PEE) — seguimiento POE con Clearsol si reescapa\n\n"
+        "🚫 NO usar en girasol: saflufenacil, metsulfurón, fomesafén, biciclopirona"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2580,6 +2615,13 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_girasol_general_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_girasol_general_ambos()
+        elif maleza == "cruciferas":
+            if objetivo == "residual":
+                respuesta = pee_girasol_cruciferas_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_girasol_cruciferas_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_girasol_cruciferas_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
