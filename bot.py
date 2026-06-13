@@ -1865,7 +1865,7 @@ def detectar_consulta_general(texto):
             break
     if cultivo_detectado and momento_detectado:
         # Si es trigo/cebada PEE, ceder al flujo guiado
-        if cultivo_detectado in ("trigo", "cebada", "soja") and momento_detectado == "pee":
+        if cultivo_detectado in ("trigo", "cebada", "soja", "maiz", "maíz") and momento_detectado == "pee":
             return None
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
@@ -1883,6 +1883,13 @@ PEE_TRIGO_KEYWORDS = [
 PEE_SOJA_KEYWORDS = [
     "pee soja", "pee en soja",
     "pre emergencia soja", "preemergencia soja", "pre-emergencia soja",
+]
+
+PEE_MAIZ_KEYWORDS = [
+    "pee maiz", "pee maíz", "pee en maiz", "pee en maíz",
+    "pre emergencia maiz", "pre emergencia maíz",
+    "preemergencia maiz", "preemergencia maíz",
+    "pre-emergencia maiz", "pre-emergencia maíz",
 ]
 
 # Keywords de malezas para detección en consulta directa (trigo)
@@ -1903,6 +1910,11 @@ PEE_MALEZA_KEYWORDS_SOJA = {
     "parietaria": "parietaria",
     "cebollin": "cebollin", "cebollín": "cebollin", "cyperus": "cebollin",
     "conyza": "conyza", "rama negra": "conyza", "coniza": "conyza",
+}
+
+# Keywords de malezas para detección en consulta directa (maíz)
+PEE_MALEZA_KEYWORDS_MAIZ = {
+    "raigras": "raigras", "raigrás": "raigras", "lolium": "raigras",
 }
 
 # Keywords de objetivo para detección en consulta directa
@@ -1928,6 +1940,9 @@ def detectar_pee_guiado(texto):
     elif any(kw in t for kw in PEE_SOJA_KEYWORDS):
         cultivo = "soja"
         maleza_keywords = PEE_MALEZA_KEYWORDS_SOJA
+    elif any(kw in t for kw in PEE_MAIZ_KEYWORDS):
+        cultivo = "maiz"
+        maleza_keywords = PEE_MALEZA_KEYWORDS_MAIZ
     else:
         return None
     maleza = None
@@ -2304,6 +2319,44 @@ def pee_soja_conyza_ambos():
         "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir"
     )
 
+def pee_maiz_raigras_residual():
+    return (
+        "MAÍZ — RAIGRÁS — PEE RESIDUAL\n\n"
+        "✅ Piroxasulfone 85% (Yamato) — gramíneas\n"
+        "✅ Pendimetalín (Herbadox) — gramíneas\n"
+        "✅ S-metolacloro 96% (Dual Gold) — VLCFA, gramíneas anuales de semilla\n\n"
+        "⚠️ Residual moderado. El control principal de raigrás en maíz se logra ANTES de siembra\n"
+        "   con graminicidas ACCasa — ver Barbecho Corto/PSI:\n"
+        "   Glifosato + Cletodim 24% (Select) 0,7-1 L/ha, mínimo 10 DAS (cuanto más, mejor)"
+    )
+
+def pee_maiz_raigras_nacida():
+    return (
+        "MAÍZ — RAIGRÁS — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa (FOPs/DIMs) son FITOTÓXICOS\n"
+        "   en maíz convencional y RR — NUNCA aplicar en PEE/POE de estos biotipos.\n\n"
+        "⚠️ Maíz convencional/RR: sin opciones selectivas de rescate sobre raigrás nacido en PEE.\n"
+        "   El control principal debió lograrse antes de siembra (Barbecho Corto/PSI con ACCasa, mínimo 10 DAS).\n\n"
+        "🔁 Rescate escaso y parcial — solo si el maíz aún no emergió:\n"
+        "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v — quema de contacto sobre raigrás chico\n"
+        "⚠️ Aplicar antes de la emergencia del maíz. Control parcial, puede rebrotar.\n\n"
+        "✅ Maíz Enlist (única excepción real): Haloxyfop 54% (Galant Max) o Glufosinato 28% 1,8-2 L/ha\n"
+        "   hasta V6 — el maíz Enlist tolera ACCasa"
+    )
+
+def pee_maiz_raigras_ambos():
+    return (
+        "MAÍZ — RAIGRÁS — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa son FITOTÓXICOS en maíz convencional y RR.\n\n"
+        "⚠️ Maíz convencional/RR: si hay raigrás nacido al momento de PEE, no hay combinación\n"
+        "   residual+rescate selectiva posible. La estrategia debió aplicarse en Barbecho Corto/PSI.\n\n"
+        "🔁 Rescate parcial (solo si el maíz aún no emergió) + residual:\n"
+        "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v\n"
+        "   + Piroxasulfone 85% (Yamato) o Pendimetalín (Herbadox) como residual\n\n"
+        "✅ Maíz Enlist: Haloxyfop 54% (Galant Max) o Glufosinato 28% 1,8-2 L/ha hasta V6 (rescate)\n"
+        "   + Piroxasulfone (Yamato) o Pendimetalín (Herbadox) como residual"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2366,6 +2419,14 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_soja_conyza_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_soja_conyza_ambos()
+    elif cultivo == "maiz":
+        if maleza == "raigras":
+            if objetivo == "residual":
+                respuesta = pee_maiz_raigras_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_maiz_raigras_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_maiz_raigras_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
@@ -2394,6 +2455,12 @@ def kb_pee_maleza_soja():
         [InlineKeyboardButton("🌿 Parietaria", callback_data="pee_maleza_parietaria")],
         [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="pee_maleza_cebollin")],
         [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="pee_maleza_conyza")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
+    ])
+
+def kb_pee_maleza_maiz():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
     ])
 
@@ -3455,8 +3522,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         cultivo = pee_info.get("cultivo")
         maleza = pee_info.get("maleza")
         objetivo = pee_info.get("objetivo")
-        cultivo_nombre = "Trigo/Cebada" if cultivo == "trigo" else "Soja"
-        kb_maleza = kb_pee_maleza_trigo() if cultivo == "trigo" else kb_pee_maleza_soja()
+        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz"}.get(cultivo, cultivo)
+        if cultivo == "trigo":
+            kb_maleza = kb_pee_maleza_trigo()
+        elif cultivo == "maiz":
+            kb_maleza = kb_pee_maleza_maiz()
+        else:
+            kb_maleza = kb_pee_maleza_soja()
         # Si tiene todo — respuesta directa
         if maleza and objetivo:
             context.user_data['pee_cultivo'] = cultivo
@@ -3598,12 +3670,17 @@ async def handle_callback(update, context):
         maleza = data.replace("pee_maleza_", "")
         cultivo = context.user_data.get('pee_cultivo', 'trigo')
         if maleza == "otra":
-            cultivo_nombre = "trigo/cebada" if cultivo == "trigo" else "soja"
+            cultivo_nombre = {"trigo": "trigo/cebada", "maiz": "maíz"}.get(cultivo, "soja")
             context.user_data.clear()
             if cultivo == "trigo":
                 orientacion = (
                     "🌱 Si es una GRAMÍNEA — las opciones de Raigrás/Lolium pueden orientarte.\n"
                     "🌱 Si es una LATIFOLIADA — las opciones de Conyza o Crucíferas son un buen punto de partida.\n\n"
+                )
+            elif cultivo == "maiz":
+                orientacion = (
+                    "🌱 Si es una GRAMÍNEA — las opciones de Raigrás pueden orientarte, pero recordá\n"
+                    "   la restricción crítica de ACCasa en maíz convencional/RR.\n\n"
                 )
             else:
                 orientacion = (
