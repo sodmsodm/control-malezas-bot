@@ -1369,10 +1369,12 @@ ANTES DE SIEMBRA:
 
 PEE:
 ✅ Metsulfurón (Ally)
-✅ Flumioxazin (Sumisoya) 10 DAS
 ✅ Terbutrina (Igran)
 ✅ Terbutilazina (Terbine)
-✅ Voraxor
+
+PSI / Barbecho Corto:
+✅ Flumioxazin (Sumisoya) 10 DAS
+✅ Voraxor 7 DAS
 
 POST-EMERGENCIA Z2.1-Z3.0:
 ✅ Metsulfurón (Errasin WP/Ally) + Dicamba (Banvel)
@@ -1395,7 +1397,9 @@ ANTES DE SIEMBRA:
 PEE:
 ✅ Flurocloridona (Rainbow)
 ✅ Diflufenicán (Brodal)
-✅ Flumioxazin (Sumisoya)
+
+PSI / Barbecho Corto:
+✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA ESTADO DE HOJAS (Z1.2+):
 ✅ Bromoxinil 34,6% (Bromotril) — desde Z1.2. Crucíferas en plántula.
@@ -1442,6 +1446,8 @@ SITUACIÓN 4 — Resistencia probable — Doble Golpe:
 PEE:
 ✅ Piroxasulfone (Yamato Top)
 ✅ Pendimetalín (Herbadox)
+
+PSI / Barbecho Corto:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA:
@@ -1859,14 +1865,14 @@ def detectar_consulta_general(texto):
             break
     if cultivo_detectado and momento_detectado:
         # Si es trigo/cebada PEE, ceder al flujo guiado
-        if cultivo_detectado in ("trigo", "cebada") and momento_detectado == "pee":
+        if cultivo_detectado in ("trigo", "cebada", "soja") and momento_detectado == "pee":
             return None
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
 
 # --- FLUJO GUIADO PEE ---
 
-# Keywords que indican consulta PEE con cultivo trigo pero sin maleza u objetivo completos
+# Keywords que indican consulta PEE con cultivo trigo/soja pero sin maleza u objetivo completos
 PEE_TRIGO_KEYWORDS = [
     "pee trigo", "pee en trigo", "pee cebada", "pee en cebada",
     "pre emergencia trigo", "preemergencia trigo",
@@ -1874,12 +1880,29 @@ PEE_TRIGO_KEYWORDS = [
     "pre-emergencia trigo", "pre-emergencia cebada",
 ]
 
-# Keywords de malezas para detección en consulta directa
-PEE_MALEZA_KEYWORDS = {
+PEE_SOJA_KEYWORDS = [
+    "pee soja", "pee en soja",
+    "pre emergencia soja", "preemergencia soja", "pre-emergencia soja",
+]
+
+# Keywords de malezas para detección en consulta directa (trigo)
+PEE_MALEZA_KEYWORDS_TRIGO = {
     "raigras": "raigras", "raigrás": "raigras", "lolium": "raigras",
     "conyza": "conyza", "rama negra": "conyza", "coniza": "conyza",
     "cruciferas": "cruciferas", "crucíferas": "cruciferas",
     "brassica": "cruciferas", "nabon": "cruciferas", "nabón": "cruciferas",
+}
+
+# Keywords de malezas para detección en consulta directa (soja)
+PEE_MALEZA_KEYWORDS_SOJA = {
+    "amaranthus": "amaranthus", "yuyo colorado": "amaranthus",
+    "yuyo": "amaranthus", "palmeri": "amaranthus", "hybridus": "amaranthus",
+    "cruciferas": "cruciferas", "crucíferas": "cruciferas",
+    "brassica": "cruciferas", "nabon": "cruciferas", "nabón": "cruciferas",
+    "commelina": "commelina", "santa lucia": "commelina", "santa lucía": "commelina",
+    "parietaria": "parietaria",
+    "cebollin": "cebollin", "cebollín": "cebollin", "cyperus": "cebollin",
+    "conyza": "conyza", "rama negra": "conyza", "coniza": "conyza",
 }
 
 # Keywords de objetivo para detección en consulta directa
@@ -1893,15 +1916,22 @@ PEE_OBJETIVO_KEYWORDS = {
 def detectar_pee_guiado(texto):
     """
     Retorna:
-      - None si no es consulta PEE trigo
-      - dict con claves 'maleza' y/o 'objetivo' (pueden ser None) si es PEE trigo
+      - None si no es consulta PEE trigo/soja
+      - dict con claves 'cultivo', 'maleza' y/o 'objetivo' (pueden ser None)
     """
     t = texto.lower().strip()
-    es_pee_trigo = any(kw in t for kw in PEE_TRIGO_KEYWORDS)
-    if not es_pee_trigo:
+    cultivo = None
+    maleza_keywords = None
+    if any(kw in t for kw in PEE_TRIGO_KEYWORDS):
+        cultivo = "trigo"
+        maleza_keywords = PEE_MALEZA_KEYWORDS_TRIGO
+    elif any(kw in t for kw in PEE_SOJA_KEYWORDS):
+        cultivo = "soja"
+        maleza_keywords = PEE_MALEZA_KEYWORDS_SOJA
+    else:
         return None
     maleza = None
-    for kw, val in PEE_MALEZA_KEYWORDS.items():
+    for kw, val in maleza_keywords.items():
         if kw in t:
             maleza = val
             break
@@ -1910,7 +1940,7 @@ def detectar_pee_guiado(texto):
         if kw in t:
             objetivo = val
             break
-    return {"maleza": maleza, "objetivo": objetivo}
+    return {"cultivo": cultivo, "maleza": maleza, "objetivo": objetivo}
 
 # --- Respuestas hardcodeadas PEE trigo raigrás ---
 
@@ -2062,6 +2092,218 @@ def pee_trigo_cruciferas_ambos():
         "⚠️ Aplicar con lote sin cobertura verde activa"
     )
 
+def pee_soja_amaranthus_residual():
+    return (
+        "SOJA — AMARANTHUS SPP. (Yuyo Colorado) — PEE RESIDUAL\n\n"
+        "Opciones para evitar nacimientos de yuyo colorado:\n\n"
+        "🥇 Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha + S-metolacloro 96% (Dual Gold) 1,1-1,3 L/ha\n"
+        "   VLCFA+PPO, doble espectro, estándar de la zona\n\n"
+        "🥈 Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha — 7 DAS, PPO+VLCFA\n"
+        "🥈 Sulfentrazone 50% 0,4-0,5 L/ha + Metribuzin 48% (Sencorex) 0,8-1 L/ha — PPO+PSII\n\n"
+        "🥉 Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha + S-metolacloro 96% 1,1-1,3 L/ha — 7 DAS\n\n"
+        "🥉 Sulfentrazone 50% 0,4-0,5 L/ha + Clomazone 36% 1,75-2 L/ha — amplio espectro\n"
+        "🥉 Sulfentrazone 50% 0,4-0,5 L/ha + Imazetapir 10% 0,8-1 L/ha — ⚠️ ALS, ver advertencia abajo\n\n"
+        "⚠️ Evitar ALS solo (Imazetapir, Cloransulam) — Amaranthus con resistencia ALS confirmada en la zona\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan yuyo colorado ya nacido."
+    )
+
+def pee_soja_amaranthus_nacida():
+    return (
+        "SOJA — AMARANTHUS SPP. (Yuyo Colorado) — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "⚠️ Sin hormonales en PEE (después de siembra) — fitotoxicidad en soja recién emergida.\n"
+        "Opciones de rescate hasta ~5 cm de altura:\n\n"
+        "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 40 g/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Epirefenacil 5,5% (Empera) 600 cc/ha\n\n"
+        "⚠️ Sobre 5 cm — eficacia cae fuerte. Doble golpe:\n"
+        "   1° Glifosato + PPO (sin hormonal) // 2° Glufosinato 28% 2,5 L/ha o Paraquat 27,6% 1,5-2,5 L/ha\n"
+        "⚠️ Para mayor eficacia sobre nacida combinando con 2,4D (Glifosato+2,4D+Heat/Shark) — ver Barbecho Corto/PSI, respetando carencia 7-15 días antes de siembra\n\n"
+        "🔁 POE selectivo según biotipo (soja ya emergida):\n"
+        "✅ Soja RR (resistente solo a glifosato): Fomesafén 25% (Flex) 1-1,5 L/ha, Lactofén 24% (Cobra) 0,6-0,8 L/ha, Benazolín 50% 0,6-1 L/ha\n"
+        "✅ Soja Enlist (tolera glifosato + glufosinato + 2,4D Enlist): Glifosato 1080 g ia/ha + Glufosinato 28% 2-3 L/ha + 2,4D Enlist (colina) 30% e.a. 1,5-2 L/ha hasta V4-V6.\n"
+        "   También Glufosinato solo o 2,4D Enlist solo hasta R2\n"
+        "⚠️ Soja convencional: sin POE selectivo — todo el control debe darse antes de emergencia"
+    )
+
+def pee_soja_amaranthus_ambos():
+    return (
+        "SOJA — AMARANTHUS SPP. (Yuyo Colorado) — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "Estrategia: controlar lo nacido (sin hormonal en PEE) Y dejar residual para nuevos nacimientos.\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 40 g/ha\n"
+        "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha + S-metolacloro 96% (Dual Gold) 1,1-1,3 L/ha\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "   + Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha\n\n"
+        "⚠️ Sobre 5 cm: doble golpe antes del residual\n"
+        "⚠️ Evitar ALS solo en el residual — resistencia confirmada\n"
+        "⚠️ Para mayor eficacia sobre nacida con 2,4D — ver Barbecho Corto/PSI"
+    )
+
+def pee_soja_cruciferas_residual():
+    return (
+        "SOJA — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
+        "Opciones para evitar nacimientos de crucíferas:\n\n"
+        "✅ Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha + S-metolacloro 96% (Dual Gold) 1,5 L/ha\n"
+        "✅ Metribuzin 48% (Sencorex) 0,8 kg/ha a 1,5 L/ha — según ensayo/situación\n"
+        "✅ Piroxasulfone 85% (Yamato) 160-200 g/ha\n"
+        "✅ (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n"
+        "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Clomazone 36% 1,75-2 L/ha — amplio espectro\n"
+        "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Imazetapir 10% 0,8-1 L/ha\n\n"
+        "⚠️ PSI (con restricción de días, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "   Flumioxazin 48% 0,1-0,15 L/ha — 7 DAS\n"
+        "   Diflufenicán 50% 0,3 L/ha — 15 DAS\n"
+        "   Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha — 7 DAS\n"
+        "   Sulfentrazone 50%/Diflufenican 50% 0,3/0,3 L/ha — 15 DAS\n"
+        "   Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS\n\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan crucíferas ya nacidas."
+    )
+
+def pee_soja_cruciferas_nacida():
+    return (
+        "SOJA — CRUCÍFERAS (Brassica/Nabón) — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "⚠️ Sin hormonales en PEE (después de siembra) — fitotoxicidad en soja recién emergida.\n"
+        "Opciones de rescate sin hormonal:\n\n"
+        "✅ Glifosato + Saflufenacil 70% (Heat) 35-40 g/ha\n"
+        "✅ Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "✅ Glifosato + Piraflufen 200 cc/ha\n"
+        "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
+        "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
+        "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/PSI\n"
+        "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/PSI\n\n"
+        "🔁 POE selectivo según biotipo (soja ya emergida):\n"
+        "✅ Soja RR/no-OGM: Fomesafén 25% 1-1,5 L/ha, Aciflurfén 24% 1-1,5 L/ha, Lactofén 24% 0,6-0,8 L/ha,\n"
+        "   Fomesafén + Benazolín 50% 0,6 L/ha, Bentazón 60% 1,5 L/ha\n"
+        "✅ Soja Enlist: Glufosinato 28% 2-3 L/ha hasta V4-V6, 2,4D Enlist (colina) 30% e.a. 1,5-2 L/ha hasta R2\n"
+        "⚠️ Soja convencional: sin POE selectivo — todo el control debe darse antes de emergencia"
+    )
+
+def pee_soja_cruciferas_ambos():
+    return (
+        "SOJA — CRUCÍFERAS (Brassica/Nabón) — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "Estrategia: controlar lo nacido (sin hormonal en PEE) Y dejar residual para nuevos nacimientos.\n\n"
+        "🥇 Glifosato + Saflufenacil 70% (Heat) 35-40 g/ha\n"
+        "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha o Metribuzin 48% (Sencorex) 0,8 kg/ha\n\n"
+        "🥈 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "   + (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n\n"
+        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Corto/PSI"
+    )
+
+def pee_soja_commelina_general():
+    return (
+        "SOJA — COMMELINA ERECTA (Flor de Santa Lucía) — PEE\n\n"
+        "⚠️ Commelina se controla principalmente con hormonal (2,4D), que requiere carencia antes de siembra.\n"
+        "En PEE (después de siembra, soja convencional/RR) no hay opciones residuales ni de rescate efectivas para esta maleza.\n\n"
+        "🔁 El control real se da en PSI/Barbecho Corto — ver esa sección. Opciones allí:\n"
+        "   Glifosato + 2,4D + Saflufenacil 70% (Heat) 40 g/ha\n"
+        "   Glifosato + 2,4D + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "   Glifosato + 2,4D + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
+        "   Glifosato + 2,4D + Flumioxazin 48% (Sumisoya) 150 cc/ha\n"
+        "   Glifosato + 2,4D + Imazetapir 10% (Pivot) 0,8-1 L/ha\n"
+        "   Glifosato + 2,4D + Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha\n"
+        "   Glifosato + 2,4D + Metribuzin 48% (Sencorex) 0,8-1 L/ha\n"
+        "   Glifosato + 2,4D + Amicarbazone 70% (Dinamic) 0,4 kg/ha — hasta 45 DAS\n"
+        "   Doble golpe: 1° Glifosato + 2,4D // 2° Paraquat 27,6% (Gramoxone) 2-3 L/ha\n\n"
+        "⚠️ Soja resistente a glifosato (RR/RR2): sin opciones efectivas en POE — el control debe lograrse antes de siembra\n\n"
+        "✅ EXCEPCIÓN — Soja Enlist (tolera glifosato + glufosinato + 2,4D Enlist):\n"
+        "   Esta combinación SÍ puede usarse en PEE sobre soja Enlist ya emergida, hasta V4-V6:\n"
+        "   Glifosato + Glufosinato 28% + 2,4D Enlist (colina) 30% e.a. 1,5-2 L/ha\n"
+        "   o Glufosinato 28% 2-2,5 L/ha + 2,4D Enlist 30% e.a. 1,5-2 L/ha\n"
+        "   ⚠️ Agregar sulfato de amonio 1,5-2 L/ha en mezclas con glufosinato"
+    )
+
+def pee_soja_parietaria_residual():
+    return (
+        "SOJA — PARIETARIA — PEE RESIDUAL\n\n"
+        "✅ Metribuzin 48% (Sencorex) 0,8-1 L/ha\n"
+        "✅ Prometrina 48% (Gesagard) 1,5-2 L/ha\n"
+        "✅ Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS, ver Barbecho Corto/PSI\n"
+        "⚠️ Atrazina 90% 0,5 kg/ha — hasta 30 DAS. Verificar registro/rotación en tu zona,\n"
+        "   uso reportado en fuente 2025 pero con antecedentes de restricción en soja\n\n"
+        "⚠️ Parietaria tiene control limitado en general — ningún producto da control total"
+    )
+
+def pee_soja_parietaria_nacida():
+    return (
+        "SOJA — PARIETARIA — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "✅ Paraquat 27,6% (Gramoxone) 1,5-2,5 L/ha + Metribuzin 48% (Sencorex) 0,8-1 L/ha\n"
+        "✅ Paraquat 27,6% 1,5-2,5 L/ha + Prometrina 48% (Gesagard) 1,5-2 L/ha\n"
+        "✅ Paraquat 27,6% 1,5-2,5 L/ha + Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS\n"
+        "✅ Glifosato 1260 g.e.a./ha + Epirefenacil 5,5% (Empera) 600 cc/ha\n\n"
+        "⚠️ Rescate parcial sobre cultivo emergido (sin opciones POE efectivas):\n"
+        "   Glifosato >1360 g.e.a./ha + sulfato de amonio + aceite → controles de hasta 60% solamente\n"
+        "⚠️ Paraquat siempre + sulfato de amonio 2% v/v para mejorar cobertura"
+    )
+
+def pee_soja_parietaria_ambos():
+    return (
+        "SOJA — PARIETARIA — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "✅ Paraquat 27,6% (Gramoxone) 1,5-2,5 L/ha + Atrazina 90% 0,5 kg/ha — hasta 30 DAS\n"
+        "   (residual + rescate en una pasada)\n"
+        "✅ Paraquat 27,6% 1,5-2,5 L/ha + Flumioxazin 48% (Sumisoya) 0,1-0,15 L/ha — 7 DAS\n\n"
+        "⚠️ Estas combinaciones cumplen ambos roles: Paraquat ataca lo nacido, el acompañante deja residual\n"
+        "⚠️ Atrazina: verificar registro/rotación en tu zona\n"
+        "⚠️ Parietaria sigue siendo de control parcial — monitorear y repetir si reaparece"
+    )
+
+def pee_soja_cebollin_residual():
+    return (
+        "SOJA — CEBOLLÍN (Cyperus rotundus) — PEE\n\n"
+        "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja del cebollín, control parcial + algo de residualidad\n"
+        "⚠️ Carencia 90 días — verificar tolerancia de la variedad de soja y restricción para el cultivo siguiente en la rotación\n\n"
+        "🔁 La opción realmente eficaz es Halosulfurón (Sempra) — pero requiere mínimo 10 DAS, ver Barbecho Corto/PSI:\n"
+        "   Halosulfurón metil 75% (Sempra) 100-150 g/ha solo, o 30-50 g/ha + Glifosato 48% 2,5 L/ha\n\n"
+        "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
+    )
+
+def pee_soja_cebollin_nacida():
+    return (
+        "SOJA — CEBOLLÍN (Cyperus rotundus) — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "✅ Glifosato ≥2000 g.e.a./ha solo — sobre cebollín en activo crecimiento (6-8 hojas), control parcial\n"
+        "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja, control parcial\n\n"
+        "⚠️ Ninguna opción PEE da control completo sobre cebollín nacido.\n"
+        "   Para mejor resultado, ver Barbecho Corto/PSI con Sempra (mínimo 10 DAS, cebollín ~15cm)\n"
+        "⚠️ Carencia Pivot 90 días si se usa\n"
+        "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
+    )
+
+def pee_soja_conyza_residual():
+    return (
+        "SOJA — CONYZA (Rama Negra) — PEE RESIDUAL\n\n"
+        "✅ (Imazetapir/Saflufenacil) 0,140 kg/ha — Optill\n"
+        "✅ (Metribuzín/S-metolacloro) 2-2,5 L/ha — Boundary\n"
+        "✅ (Metribuzín/Sulfentrazone) 1-1,4 kg/ha — Capaz MTZ\n"
+        "✅ (Metribuzín/Pendimetalín) 3,5 L/ha — Tripzin\n"
+        "✅ (Sulfentrazone/S-metolacloro) 1,8-2,5 L/ha — Capaz Elite\n\n"
+        "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan conyza ya nacida.\n\n"
+        "🔁 PSI (con DAS, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "   Metsulfurón, Clorimurón, Diclosulam (Spider), Texaro, Fierce, Zidua, Alana, Pledge, entre otros"
+    )
+
+def pee_soja_conyza_nacida():
+    return (
+        "SOJA — CONYZA (Rama Negra) — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Texaro (Diclosulam/Halauxifen) 43 g/ha + aceite metilado (Uptake Plus) 0,5% v/v\n"
+        "   Dato de campo: buen desempeño en PEE sobre conyza nacida\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Starane Xtra (Fluroxipir) 0,5 L/ha\n"
+        "   + aceite vegetal 0,5% v/v\n\n"
+        "🥉 Glifosato 1080 g ia/ha + Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n\n"
+        "⚠️ Heat lleva aceite vegetal obligatorio\n"
+        "⚠️ Texaro: marbete posiciona como presiembra/7DAS — dato de campo indica buen desempeño también en PEE\n"
+        "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir\n\n"
+        "🔁 POE posterior si reescapa: Clorimurón (Classic) 40g, Diclosulam (Spider) 15-20g, Cloransulam (Pacto) 30-50g\n"
+        "✅ Soja Enlist: 2,4D Enlist 1,5-2 L/ha o Glufosinato 1,8-2 L/ha hasta R2"
+    )
+
+def pee_soja_conyza_ambos():
+    return (
+        "SOJA — CONYZA (Rama Negra) — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Texaro (Diclosulam/Halauxifen) 43 g/ha + aceite metilado (Uptake Plus) 0,5% v/v\n"
+        "   + (Imazetapir/Saflufenacil) 0,140 kg/ha (Optill) o (Metribuzín/S-metolacloro) 2-2,5 L/ha (Boundary) como residual\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Starane Xtra 0,5 L/ha + aceite vegetal 0,5% v/v\n"
+        "   + (Sulfentrazone/S-metolacloro) 1,8-2,5 L/ha (Capaz Elite) como residual\n\n"
+        "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2088,6 +2330,42 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_trigo_cruciferas_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_trigo_cruciferas_ambos()
+    elif cultivo == "soja":
+        if maleza == "amaranthus":
+            if objetivo == "residual":
+                respuesta = pee_soja_amaranthus_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_soja_amaranthus_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_soja_amaranthus_ambos()
+        elif maleza == "cruciferas":
+            if objetivo == "residual":
+                respuesta = pee_soja_cruciferas_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_soja_cruciferas_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_soja_cruciferas_ambos()
+        elif maleza == "commelina":
+            respuesta = pee_soja_commelina_general()
+        elif maleza == "parietaria":
+            if objetivo == "residual":
+                respuesta = pee_soja_parietaria_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_soja_parietaria_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_soja_parietaria_ambos()
+        elif maleza == "cebollin":
+            if objetivo == "nacida":
+                respuesta = pee_soja_cebollin_nacida()
+            else:
+                respuesta = pee_soja_cebollin_residual()
+        elif maleza == "conyza":
+            if objetivo == "residual":
+                respuesta = pee_soja_conyza_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_soja_conyza_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_soja_conyza_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
@@ -2105,6 +2383,17 @@ def kb_pee_maleza_trigo():
         [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
         [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="pee_maleza_conyza")],
         [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="pee_maleza_cruciferas")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
+    ])
+
+def kb_pee_maleza_soja():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="pee_maleza_amaranthus")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="pee_maleza_cruciferas")],
+        [InlineKeyboardButton("🌿 Flor de Santa Lucía (Commelina)", callback_data="pee_maleza_commelina")],
+        [InlineKeyboardButton("🌿 Parietaria", callback_data="pee_maleza_parietaria")],
+        [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="pee_maleza_cebollin")],
+        [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="pee_maleza_conyza")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
     ])
 
@@ -3163,24 +3452,27 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Detectar consulta PEE guiada
     pee_info = detectar_pee_guiado(user_message)
     if pee_info is not None:
+        cultivo = pee_info.get("cultivo")
         maleza = pee_info.get("maleza")
         objetivo = pee_info.get("objetivo")
+        cultivo_nombre = "Trigo/Cebada" if cultivo == "trigo" else "Soja"
+        kb_maleza = kb_pee_maleza_trigo() if cultivo == "trigo" else kb_pee_maleza_soja()
         # Si tiene todo — respuesta directa
         if maleza and objetivo:
-            context.user_data['pee_cultivo'] = 'trigo'
+            context.user_data['pee_cultivo'] = cultivo
             context.user_data['pee_maleza'] = maleza
             context.user_data['pee_objetivo'] = objetivo
-            await responder_pee_guiado(update.message, context, 'trigo', maleza, objetivo, es_callback=False)
+            await responder_pee_guiado(update.message, context, cultivo, maleza, objetivo, es_callback=False)
             return
         # Si falta algo — arrancar flujo guiado
         context.user_data['pee_estado'] = 'esperando_maleza'
-        context.user_data['pee_cultivo'] = 'trigo'
+        context.user_data['pee_cultivo'] = cultivo
         if maleza:
             context.user_data['pee_maleza'] = maleza
             context.user_data['pee_estado'] = 'esperando_objetivo'
             await update.message.reply_text(
                 "Antes de responder, repasemos algunos parámetros para darte una recomendación ajustada a tu realidad 🌱\n\n"
-                f"Cultivo: Trigo/Cebada ✅\n"
+                f"Cultivo: {cultivo_nombre} ✅\n"
                 f"Maleza: {maleza.capitalize()} ✅\n\n"
                 "¿Cuál es tu objetivo?",
                 reply_markup=kb_pee_objetivo()
@@ -3188,9 +3480,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         else:
             await update.message.reply_text(
                 "Antes de responder, repasemos algunos parámetros para darte una recomendación ajustada a tu realidad 🌱\n\n"
-                "Cultivo: Trigo/Cebada ✅\n\n"
+                f"Cultivo: {cultivo_nombre} ✅\n\n"
                 "¿Qué maleza tenés en el lote?",
-                reply_markup=kb_pee_maleza_trigo()
+                reply_markup=kb_maleza
             )
         return
 
@@ -3304,18 +3596,31 @@ async def handle_callback(update, context):
     # Flujo PEE guiado — maleza
     if data.startswith("pee_maleza_"):
         maleza = data.replace("pee_maleza_", "")
+        cultivo = context.user_data.get('pee_cultivo', 'trigo')
         if maleza == "otra":
+            cultivo_nombre = "trigo/cebada" if cultivo == "trigo" else "soja"
             context.user_data.clear()
+            if cultivo == "trigo":
+                orientacion = (
+                    "🌱 Si es una GRAMÍNEA — las opciones de Raigrás/Lolium pueden orientarte.\n"
+                    "🌱 Si es una LATIFOLIADA — las opciones de Conyza o Crucíferas son un buen punto de partida.\n\n"
+                )
+            else:
+                orientacion = (
+                    "🌱 Si es una LATIFOLIADA — las opciones de Yuyo Colorado pueden orientarte como punto de partida.\n\n"
+                )
             await query.edit_message_text(
-                "⚠️ No tengo información específica para esa maleza en PEE de trigo todavía.\n\n"
-                "🌱 Si es una GRAMÍNEA — las opciones de Raigrás/Lolium pueden orientarte.\n"
-                "🌱 Si es una LATIFOLIADA — las opciones de Conyza o Crucíferas son un buen punto de partida.\n\n"
+                f"⚠️ No tengo información específica para esa maleza en PEE de {cultivo_nombre} todavía.\n\n"
+                f"{orientacion}"
                 "Consultá con tu asesor para ajustar al biotipo específico."
             )
             return
         context.user_data['pee_maleza'] = maleza
         context.user_data['pee_estado'] = 'esperando_objetivo'
-        maleza_nombre = {"raigras": "Raigrás/Lolium", "conyza": "Rama Negra (Conyza)", "cruciferas": "Crucíferas"}.get(maleza, maleza)
+        maleza_nombre = {
+            "raigras": "Raigrás/Lolium", "conyza": "Rama Negra (Conyza)", "cruciferas": "Crucíferas",
+            "amaranthus": "Yuyo Colorado (Amaranthus)", "commelina": "Flor de Santa Lucía (Commelina)", "parietaria": "Parietaria", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)"
+        }.get(maleza, maleza)
         await query.edit_message_text(
             f"Maleza: {maleza_nombre} ✅\n\n¿Cuál es tu objetivo?",
             reply_markup=kb_pee_objetivo()
