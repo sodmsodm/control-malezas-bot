@@ -1865,7 +1865,7 @@ def detectar_consulta_general(texto):
             break
     if cultivo_detectado and momento_detectado:
         # Si es trigo/cebada PEE, ceder al flujo guiado
-        if cultivo_detectado in ("trigo", "cebada", "soja", "maiz", "maíz") and momento_detectado == "pee":
+        if cultivo_detectado in ("trigo", "cebada", "soja", "maiz", "maíz", "girasol") and momento_detectado == "pee":
             return None
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
@@ -1883,6 +1883,11 @@ PEE_TRIGO_KEYWORDS = [
 PEE_SOJA_KEYWORDS = [
     "pee soja", "pee en soja",
     "pre emergencia soja", "preemergencia soja", "pre-emergencia soja",
+]
+
+PEE_GIRASOL_KEYWORDS = [
+    "pee girasol", "pee en girasol",
+    "pre emergencia girasol", "preemergencia girasol", "pre-emergencia girasol",
 ]
 
 PEE_MAIZ_KEYWORDS = [
@@ -1917,9 +1922,16 @@ PEE_MALEZA_KEYWORDS_MAIZ = {
     "raigras": "raigras", "raigrás": "raigras", "lolium": "raigras",
     "amaranthus": "amaranthus", "yuyo colorado": "amaranthus",
     "yuyo": "amaranthus", "palmeri": "amaranthus", "hybridus": "amaranthus", "quitensis": "amaranthus",
+    "cebollin": "cebollin", "cebollín": "cebollin", "cyperus": "cebollin",
 }
 
-# Keywords de objetivo para detección en consulta directa
+# Keywords de malezas para detección en consulta directa (girasol)
+PEE_MALEZA_KEYWORDS_GIRASOL = {
+    "general": "general", "latifoliada": "general", "latifoliadas": "general",
+    "cebollin": "cebollin", "cebollín": "cebollin", "cyperus": "cebollin",
+    "cruciferas": "cruciferas", "crucíferas": "cruciferas",
+    "brassica": "cruciferas", "nabon": "cruciferas", "nabón": "cruciferas",
+}
 PEE_OBJETIVO_KEYWORDS = {
     "nacida": "nacida", "nacido": "nacida", "emergida": "nacida",
     "emergido": "nacida", "ya nacio": "nacida", "ya nació": "nacida",
@@ -1945,6 +1957,9 @@ def detectar_pee_guiado(texto):
     elif any(kw in t for kw in PEE_MAIZ_KEYWORDS):
         cultivo = "maiz"
         maleza_keywords = PEE_MALEZA_KEYWORDS_MAIZ
+    elif any(kw in t for kw in PEE_GIRASOL_KEYWORDS):
+        cultivo = "girasol"
+        maleza_keywords = PEE_MALEZA_KEYWORDS_GIRASOL
     else:
         return None
     maleza = None
@@ -2405,6 +2420,79 @@ def pee_maiz_amaranthus_ambos():
         "⚠️ Zidua Pack: si el maíz está cerca de emerger o ya emergido, usar Adengo en su lugar"
     )
 
+def pee_maiz_cebollin_general():
+    return (
+        "MAÍZ — CEBOLLÍN (Cyperus rotundus) — PEE\n\n"
+        "⚠️ Cebollín no tiene opciones residuales en PEE de maíz. El control se da en POE selectivo según biotipo:\n\n"
+        "✅ Maíz convencional:\n"
+        "   Halosulfurón metil 75% (Sempra) 100-150 g/ha — sin restricción de estadio, aplicar con cebollín ~15cm\n"
+        "   ⚠️ Coadyuvante obligatorio: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral.\n\n"
+        "✅ Maíz RR/RG:\n"
+        "   Halosulfurón metil 75% (Sempra) 30-50 g/ha + Glifosato 48% 2,5 L/ha\n"
+        "   o Glifosato 48% 3 L/ha + Clorimurón 25% (Classic) 60-80 g/ha\n\n"
+        "✅ Maíz CL (Clearfield):\n"
+        "   Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja del cebollín\n"
+        "   o Halosulfurón metil 75% (Sempra) 100-150 g/ha — ambas opciones válidas\n"
+        "   ⚠️ Pivot FITOTÓXICO en maíz convencional — exclusivo Clearfield\n"
+        "   ⚠️ Coadyuvante obligatorio: surfactante no iónico. NO aceite mineral."
+    )
+
+def pee_girasol_general_residual():
+    return (
+        "GIRASOL — MALEZA GENERAL — PEE RESIDUAL\n\n"
+        "Productos solos:\n"
+        "✅ Sulfentrazone 50% (Authority/Capaz) 300-400 cc/ha\n"
+        "✅ Prometrina 50% (Gesagard) 1-2 L/ha\n"
+        "✅ S-metolacloro 96% (Dual Gold) 0,8-1 L/ha\n"
+        "✅ Acetoclor 90% (Harness) 2-3 L/ha\n"
+        "✅ Trifluralina 60% (Adama Essentials) 1-2 L/ha\n"
+        "✅ Diflufenicán 50% (Brodal) 0,3 L/ha\n"
+        "✅ Flurocloridona 25% (Rainbow) 1,5-4 L/ha\n"
+        "✅ Piroxasulfone 85% (Yamato) 160 g/ha — validado a campo\n\n"
+        "Mezclas principales:\n"
+        "✅ (Sulfentrazone/S-metolacloro) 0,4/1 L/ha\n"
+        "✅ (Sulfentrazone/Acetoclor) 0,4/2 L/ha\n"
+        "✅ (Sulfentrazone/Diflufenicán) 0,3/0,3 L/ha\n"
+        "✅ (Flurocloridona/S-metolacloro) 3/1 L/ha\n"
+        "✅ (Flurocloridona/Acetoclor) 3/2 L/ha\n"
+        "✅ (Diflufenicán/S-metolacloro) 0,3/1 L/ha\n"
+        "✅ (Diflufenicán/Acetoclor) 0,3/2 L/ha\n"
+        "✅ (Diflufenicán/Prometrina) 0,3/2 L/ha\n"
+        "✅ (Flurocloridona/Sulfentrazone/S-metolacloro) 0,8/0,3/1 L/ha\n"
+        "✅ (Prometrina/Sulfentrazone/S-metolacloro) 1,5/0,3/1 L/ha\n\n"
+        "⚠️ PSI (con DAS) — ver Barbecho Corto/PSI: Flumioxazin 48% (Sumisoya) 50-100 cc/ha — 20-30 DAS\n\n"
+        "🚫 NO usar en girasol: saflufenacil (Heat), fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas\n\n"
+        "✅ Solo Girasoles Clearfield: Imazapir 80% (Clearsol DF) 100 g/ha"
+    )
+
+def pee_girasol_general_nacida():
+    return (
+        "GIRASOL — MALEZA GENERAL — RESCATE SOBRE MALEZA NACIDA (PEE)\n\n"
+        "⚠️ En PEE de girasol no hay rescate eficiente sobre latifoliadas nacidas.\n"
+        "El control sobre nacida se da en POE muy limitado:\n\n"
+        "✅ Aclonifén 60% (Prodigio) 1-1,5 L/ha + Aceite — latifoliadas SOLO menor a 2 cm. Ventana muy estrecha.\n"
+        "   ⚠️ NO mezclar Prodigio con graminicidas\n"
+        "✅ Benazolín 50% (Dasen) 0,3 L/ha — latifoliadas\n"
+        "✅ ACCasa (gramíneas): Haloxyfop (Galant Max), Propaquizafop (Agil), Cletodim (Select)\n\n"
+        "✅ Girasoles CL: Clearsol DF (Imazapir) 100 g/ha + Aceite (DASH) 200 cc/ha V2-V4\n"
+        "   + Graminicida si hace falta\n\n"
+        "⚠️ Para latifoliadas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "   Glifosato + 2,4D (20 DAS), Dicamba (30 DAS), Fluroxipir/Halauxifén (1 DAS)"
+    )
+
+def pee_girasol_general_ambos():
+    return (
+        "GIRASOL — MALEZA GENERAL — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
+        "✅ Cualquiera de las opciones residuales (ver celda Residual) en PEE\n"
+        "🔁 + seguimiento POE según maleza y biotipo:\n"
+        "   Aclonifén (Prodigio) 1-1,5 L/ha sobre latifoliadas <2 cm\n"
+        "   Benazolín 50% (Dasen) 0,3 L/ha\n"
+        "   ACCasa sobre gramíneas (Galant Max, Agil, Select)\n"
+        "   Girasoles CL: Clearsol DF + Graminicida si hace falta\n\n"
+        "⚠️ Girasol convencional tiene POE muy limitado para latifoliadas — el control preventivo en PEE es crítico\n"
+        "🚫 NO usar en girasol: saflufenacil, fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2482,6 +2570,16 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_maiz_amaranthus_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_maiz_amaranthus_ambos()
+        elif maleza == "cebollin":
+            respuesta = pee_maiz_cebollin_general()
+    elif cultivo == "girasol":
+        if maleza == "general":
+            if objetivo == "residual":
+                respuesta = pee_girasol_general_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_girasol_general_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_girasol_general_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
@@ -2517,6 +2615,15 @@ def kb_pee_maleza_maiz():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
         [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="pee_maleza_amaranthus")],
+        [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="pee_maleza_cebollin")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
+    ])
+
+def kb_pee_maleza_girasol():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Maleza General / Latifoliadas", callback_data="pee_maleza_general")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="pee_maleza_cruciferas")],
+        [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="pee_maleza_cebollin")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
     ])
 
@@ -3578,11 +3685,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         cultivo = pee_info.get("cultivo")
         maleza = pee_info.get("maleza")
         objetivo = pee_info.get("objetivo")
-        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz"}.get(cultivo, cultivo)
+        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
         if cultivo == "trigo":
             kb_maleza = kb_pee_maleza_trigo()
         elif cultivo == "maiz":
             kb_maleza = kb_pee_maleza_maiz()
+        elif cultivo == "girasol":
+            kb_maleza = kb_pee_maleza_girasol()
         else:
             kb_maleza = kb_pee_maleza_soja()
         # Si tiene todo — respuesta directa
@@ -3726,7 +3835,7 @@ async def handle_callback(update, context):
         maleza = data.replace("pee_maleza_", "")
         cultivo = context.user_data.get('pee_cultivo', 'trigo')
         if maleza == "otra":
-            cultivo_nombre = {"trigo": "trigo/cebada", "maiz": "maíz"}.get(cultivo, "soja")
+            cultivo_nombre = {"trigo": "trigo/cebada", "maiz": "maíz", "girasol": "girasol"}.get(cultivo, "soja")
             context.user_data.clear()
             if cultivo == "trigo":
                 orientacion = (
@@ -3737,6 +3846,11 @@ async def handle_callback(update, context):
                 orientacion = (
                     "🌱 Si es una GRAMÍNEA — las opciones de Raigrás pueden orientarte, pero recordá\n"
                     "   la restricción crítica de ACCasa en maíz convencional/RR.\n\n"
+                )
+            elif cultivo == "girasol":
+                orientacion = (
+                    "🌱 Para latifoliadas en general — las opciones de Maleza General pueden orientarte.\n"
+                    "🌱 Recordá que las opciones POE en girasol son muy limitadas — el control preventivo en PEE es clave.\n\n"
                 )
             else:
                 orientacion = (
@@ -3752,7 +3866,7 @@ async def handle_callback(update, context):
         context.user_data['pee_estado'] = 'esperando_objetivo'
         maleza_nombre = {
             "raigras": "Raigrás/Lolium", "conyza": "Rama Negra (Conyza)", "cruciferas": "Crucíferas",
-            "amaranthus": "Yuyo Colorado (Amaranthus)", "commelina": "Flor de Santa Lucía (Commelina)", "parietaria": "Parietaria", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)"
+            "amaranthus": "Yuyo Colorado (Amaranthus)", "commelina": "Flor de Santa Lucía (Commelina)", "parietaria": "Parietaria", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)", "general": "Maleza General/Latifoliadas"
         }.get(maleza, maleza)
         await query.edit_message_text(
             f"Maleza: {maleza_nombre} ✅\n\n¿Cuál es tu objetivo?",
