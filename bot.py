@@ -2753,6 +2753,294 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
         await query_or_message.reply_text(respuesta)
     context.user_data.clear()
 
+
+# --- FLUJO GUIADO POE MAÍZ ---
+
+POE_MAIZ_KEYWORDS = [
+    "poe maiz", "poe maíz", "poe en maiz", "poe en maíz",
+    "post emergencia maiz", "post emergencia maíz",
+    "postemergencia maiz", "postemergencia maíz",
+    "post-emergencia maiz", "post-emergencia maíz",
+    "postemer maiz", "postemer maíz",
+]
+
+POE_MAIZ_BIOTIPO_KEYWORDS = {
+    "convencional": "convencional", "conv": "convencional",
+    "rr": "rr", "roundup ready": "rr",
+    "cl": "cl", "clearfield": "cl",
+    "enlist": "enlist",
+}
+
+def detectar_poe_maiz_guiado(texto):
+    t = texto.lower().strip()
+    if not any(kw in t for kw in POE_MAIZ_KEYWORDS):
+        return None
+    biotipo = None
+    for kw, val in POE_MAIZ_BIOTIPO_KEYWORDS.items():
+        if kw in t:
+            biotipo = val
+            break
+    maleza = None
+    for kw, val in PEE_MALEZA_KEYWORDS_MAIZ.items():
+        if kw in t:
+            maleza = val
+            break
+    if not maleza:
+        if "conyza" in t or "rama negra" in t or "coniza" in t:
+            maleza = "conyza"
+    return {"biotipo": biotipo, "maleza": maleza}
+
+def kb_poe_maiz_biotipo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌽 Convencional", callback_data="poe_maiz_biotipo_convencional")],
+        [InlineKeyboardButton("🌽 RR (Roundup Ready)", callback_data="poe_maiz_biotipo_rr")],
+        [InlineKeyboardButton("🌽 CL (Clearfield)", callback_data="poe_maiz_biotipo_cl")],
+        [InlineKeyboardButton("🌽 Enlist", callback_data="poe_maiz_biotipo_enlist")],
+    ])
+
+def kb_poe_maiz_maleza():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="poe_maiz_maleza_raigras")],
+        [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="poe_maiz_maleza_amaranthus")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="poe_maiz_maleza_cruciferas")],
+        [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="poe_maiz_maleza_cebollin")],
+        [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="poe_maiz_maleza_conyza")],
+        [InlineKeyboardButton("❓ Otra maleza", callback_data="poe_maiz_maleza_otra")],
+    ])
+
+def poe_maiz_raigras_conv_rr():
+    return (
+        "MAÍZ CONVENCIONAL / RR — RAIGRÁS — POE\n\n"
+        "🚨 Sin opciones selectivas disponibles.\n\n"
+        "⚠️ ACCasa (cletodim, haloxyfop) son FITOTÓXICOS en maíz convencional y RR.\n"
+        "   NUNCA aplicar en POE de estos biotipos.\n\n"
+        "El control debió lograrse en barbecho o presiembra:\n"
+        "✅ Glifosato + Cletodim 24% (Select) 0,7-1 L/ha — mínimo 10 DAS antes de siembra"
+    )
+
+def poe_maiz_raigras_cl():
+    return (
+        "MAÍZ CL (Clearfield) — RAIGRÁS — POE\n\n"
+        "⚠️ Sin opciones selectivas con buena eficacia sobre raigrás en CL.\n"
+        "   Onduty no controla Lolium — no figura en marbete.\n\n"
+        "El control debió lograrse en barbecho o presiembra:\n"
+        "✅ Glifosato + Cletodim 24% (Select) 0,7-1 L/ha — mínimo 10 DAS antes de siembra"
+    )
+
+def poe_maiz_raigras_enlist():
+    return (
+        "MAÍZ ENLIST — RAIGRÁS — POE\n\n"
+        "🥇 Haloxyfop 54% (Galant Max) 0,08-0,15 L/ha — ACCasa, el maíz Enlist tolera\n"
+        "   ⚠️ Coadyuvante: aceite vegetal o metilado 0,5-1% v/v obligatorio\n\n"
+        "🥈 Glufosinato de amonio 28% (Lifeline) 1,8-2 L/ha — hasta V6\n"
+        "   ⚠️ Coadyuvante: surfactante no iónico 0,1% + sulfato de amonio 2 kg/ha\n\n"
+        "⚠️ Estas opciones son EXCLUSIVAS de maíz Enlist — no usar en convencional ni RR"
+    )
+
+def poe_maiz_amaranthus_conv_rr():
+    return (
+        "MAÍZ CONVENCIONAL / RR — AMARANTHUS (Yuyo Colorado) — POE\n\n"
+        "🥇 Mesotrione 48% (Callisto) 0,3 L/ha + Atrazina 90% 1,8 kg/ha — V2-V6\n"
+        "🥇 Topramezone 33,6% (Convey) 0,08-0,1 L/ha + Atrazina 90% 1,8 kg/ha — V1-V7\n"
+        "   Maleza hasta 5 cm — eficacia cae con plantas grandes\n\n"
+        "🥈 Tembotrione 42% (Laudis) + Atrazina 90% 1,8 kg/ha — V3-V6\n"
+        "🥈 Tolpyralate 40% (Brucia) 0,075-0,125 L/ha + Atrazina 90% 1,8 kg/ha — desde V3\n\n"
+        "🥉 2,4D + Atrazina 90% 1,8 kg/ha — V2-V8\n"
+        "   ⚠️ 2,4D puede generar leve fitotoxicidad en maíz — evitar en estrés\n\n"
+        "⚠️ HPPD siempre con Atrazina para sinergizar — no aplicar solos\n"
+        "⚠️ Aplicar con maleza chica y sin estrés hídrico/térmico"
+    )
+
+def poe_maiz_amaranthus_cl():
+    return (
+        "MAÍZ CL (Clearfield) — AMARANTHUS (Yuyo Colorado) — POE\n\n"
+        "🥇 Onduty (Imazapic+Imazapir) 114 g/ha — hasta 10ª hoja de yuyo colorado\n"
+        "   ⚠️ Maíz CL no debe superar 6ª hoja al aplicar\n"
+        "   ⚠️ Con resistencia ALS confirmada: Onduty pierde eficacia\n"
+        "   ⚠️ No mezclar con organofosforados ni otros ALS\n\n"
+        "🥇 Onduty + Atrazina 90% 1,1 kg/ha — para Amaranthus resistente a ALS hasta 1° par hojas\n\n"
+        "🥈 Mesotrione 48% (Callisto) + Atrazina 90% 1,8 kg/ha — V2-V6\n"
+        "🥈 Topramezone 33,6% (Convey) + Atrazina 90% 1,8 kg/ha — V1-V7\n\n"
+        "🥉 Tembotrione (Laudis) + Atrazina — V3-V6\n"
+        "🥉 Tolpyralate (Brucia) + Atrazina — desde V3\n\n"
+        "⚠️ HPPD siempre con Atrazina para sinergizar"
+    )
+
+def poe_maiz_amaranthus_enlist():
+    return (
+        "MAÍZ ENLIST — AMARANTHUS (Yuyo Colorado) — POE\n\n"
+        "🥇 Glifosato + 2,4D sal colina (Enlist) 1,5-2,5 L/ha + Glufosinato 28% 1,8-2 L/ha — V1-V6\n\n"
+        "🥈 2,4D sal colina (Enlist) 1,5-2,5 L/ha ± Atrazina 90% 1,8 kg/ha — hasta V8\n\n"
+        "🥉 Glufosinato 28% (Lifeline) 1,8-2 L/ha — hasta V6\n\n"
+        "⚠️ 2,4D Enlist: respetar ventana V1-V8\n"
+        "⚠️ Coadyuvante glufosinato: surfactante no iónico 0,1% + sulfato de amonio 2 kg/ha"
+    )
+
+def poe_maiz_cruciferas_conv_rr():
+    return (
+        "MAÍZ CONVENCIONAL / RR — CRUCÍFERAS (Brassica/Nabón) — POE\n\n"
+        "🥇 Mesotrione 48% (Callisto) 0,3 L/ha + Atrazina 90% 1,8 kg/ha — V2-V6\n"
+        "   Excelente sobre crucíferas pequeñas\n"
+        "🥇 Topramezone 33,6% (Convey) 0,08-0,1 L/ha + Atrazina 90% 1,8 kg/ha — V1-V7\n\n"
+        "🥈 Tembotrione 42% (Laudis) + Atrazina 90% 1,8 kg/ha — V3-V6\n"
+        "🥈 Tolpyralate 40% (Brucia) + Atrazina 90% 1,8 kg/ha — desde V3\n\n"
+        "🥉 MCPA 28% 1,5 L/ha + Atrazina 90% 1,8 kg/ha — V2-V8\n"
+        "🥉 Picloram (Tordón) 0,1-0,15 L/ha + Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "⚠️ HPPD siempre con Atrazina para sinergizar\n"
+        "⚠️ Aplicar con crucíferas en roseta chica — eficacia cae rápido con tamaño"
+    )
+
+def poe_maiz_cruciferas_cl():
+    return (
+        "MAÍZ CL (Clearfield) — CRUCÍFERAS (Brassica/Nabón) — POE\n\n"
+        "🥇 Onduty (Imazapic+Imazapir) 114 g/ha — Nabo hasta 4ª hoja verdadera\n"
+        "   ⚠️ Maíz CL no debe superar 6ª hoja al aplicar\n"
+        "   ⚠️ Con resistencia ALS en Brassica — perder eficacia, caer a opciones abajo\n\n"
+        "🥈 Mesotrione 48% (Callisto) + Atrazina 90% 1,8 kg/ha — V2-V6\n"
+        "🥈 Topramezone 33,6% (Convey) + Atrazina 90% 1,8 kg/ha — V1-V7\n\n"
+        "🥉 MCPA 28% 1,5 L/ha + Atrazina 90% 1,8 kg/ha — V2-V8\n"
+        "🥉 Picloram (Tordón) + Atrazina — V2-V8\n\n"
+        "⚠️ HPPD siempre con Atrazina para sinergizar"
+    )
+
+def poe_maiz_cruciferas_enlist():
+    return (
+        "MAÍZ ENLIST — CRUCÍFERAS (Brassica/Nabón) — POE\n\n"
+        "🥇 Glifosato + 2,4D sal colina (Enlist) 1,5-2,5 L/ha + Glufosinato 28% 1,8-2 L/ha — V1-V6\n\n"
+        "🥈 2,4D sal colina (Enlist) 1,5-2,5 L/ha ± Atrazina 90% 1,8 kg/ha — hasta V8\n\n"
+        "🥉 Glufosinato 28% (Lifeline) 1,8-2 L/ha — hasta V6\n\n"
+        "⚠️ 2,4D Enlist: respetar ventana V1-V8"
+    )
+
+def poe_maiz_cebollin_conv():
+    return (
+        "MAÍZ CONVENCIONAL — CEBOLLÍN (Cyperus rotundus) — POE\n\n"
+        "🥇 Halosulfurón metil 75% (Sempra) 100-150 g/ha\n"
+        "   Aplicar con cebollín a ~15 cm de altura, en activo crecimiento\n"
+        "   ⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
+    )
+
+def poe_maiz_cebollin_rr():
+    return (
+        "MAÍZ RR — CEBOLLÍN (Cyperus rotundus) — POE\n\n"
+        "🥇 Halosulfurón metil 75% (Sempra) 30-50 g/ha + Glifosato 48% 2,5 L/ha\n"
+        "   Aplicar con cebollín a ~15 cm, en activo crecimiento\n\n"
+        "🥈 Glifosato 48% 3 L/ha + Clorimurón 25% (Classic) 60-80 g/ha\n\n"
+        "⚠️ Coadyuvante Sempra: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
+    )
+
+def poe_maiz_cebollin_cl():
+    return (
+        "MAÍZ CL (Clearfield) — CEBOLLÍN (Cyperus rotundus) — POE\n\n"
+        "🥇 Halosulfurón metil 75% (Sempra) 100-150 g/ha\n"
+        "   Aplicar con cebollín a ~15 cm, en activo crecimiento\n\n"
+        "🥈 Onduty (Imazapic+Imazapir) 114 g/ha — cebollín hasta 7ª hoja\n"
+        "   ⚠️ Maíz CL no debe superar 6ª hoja al aplicar\n\n"
+        "⚠️ Coadyuvante Sempra: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral.\n"
+        "⚠️ No mezclar Onduty con organofosforados"
+    )
+
+def poe_maiz_cebollin_enlist():
+    return (
+        "MAÍZ ENLIST — CEBOLLÍN (Cyperus rotundus) — POE\n\n"
+        "🥇 Halosulfurón metil 75% (Sempra) 30-50 g/ha + Glifosato 48% 2,5 L/ha\n"
+        "   Aplicar con cebollín a ~15 cm, en activo crecimiento\n\n"
+        "🥈 Glifosato 48% 3 L/ha + Clorimurón 25% (Classic) 60-80 g/ha\n\n"
+        "⚠️ Coadyuvante Sempra: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
+    )
+
+def poe_maiz_conyza_conv_rr():
+    return (
+        "MAÍZ CONVENCIONAL / RR — CONYZA (Rama Negra) — POE\n\n"
+        "⚠️ Aplicar con roseta chica (<10 cm) — eficacia cae fuerte con plantas grandes.\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Picloram 27,7% (Tordón) 0,1-0,15 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Dicamba 57,7% 0,15-0,2 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "🥉 Glifosato 1080 g ia/ha + Clopyralid 47,5% (Lontrel) 0,1-0,15 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "⚠️ Alternativa (último recurso):\n"
+        "   Glifosato 1080 g ia/ha + 2,4D ± Atrazina — V2-V8\n"
+        "   ⚠️ 2,4D puede causar fitotoxicidad en maíz — evitar si hay otra opción\n\n"
+        "⚠️ Atrazina suma residualidad y amplía espectro — recomendada en todas las opciones"
+    )
+
+def poe_maiz_conyza_cl():
+    return (
+        "MAÍZ CL (Clearfield) — CONYZA (Rama Negra) — POE\n\n"
+        "⚠️ Onduty no controla Conyza — no figura en marbete.\n"
+        "   Usar las mismas opciones que convencional/RR:\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Picloram 27,7% (Tordón) 0,1-0,15 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "🥈 Glifosato 1080 g ia/ha + Dicamba 57,7% 0,15-0,2 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "🥉 Glifosato 1080 g ia/ha + Clopyralid 47,5% (Lontrel) 0,1-0,15 L/ha ± Atrazina 90% 1,8 kg/ha — V2-V8\n\n"
+        "⚠️ Alternativa (último recurso):\n"
+        "   Glifosato + 2,4D ± Atrazina — ⚠️ fitotoxicidad posible en maíz\n\n"
+        "⚠️ Aplicar con roseta chica (<10 cm)"
+    )
+
+def poe_maiz_conyza_enlist():
+    return (
+        "MAÍZ ENLIST — CONYZA (Rama Negra) — POE\n\n"
+        "🥇 Glifosato 1080 g ia/ha + 2,4D sal colina (Enlist) 1,5-2,5 L/ha + Glufosinato 28% 1,8-2 L/ha — V1-V6\n\n"
+        "🥈 2,4D sal colina (Enlist) 1,5-2,5 L/ha ± Atrazina 90% 1,8 kg/ha — hasta V8\n\n"
+        "🥉 Glufosinato 28% (Lifeline) 1,8-2 L/ha — hasta V6\n\n"
+        "⚠️ 2,4D Enlist: respetar ventana V1-V8\n"
+        "⚠️ Aplicar con roseta chica — eficacia cae con plantas grandes"
+    )
+
+async def responder_poe_maiz(query_or_message, context, biotipo, maleza, es_callback=True):
+    """Dispatcher POE maíz."""
+    respuesta = None
+    if maleza == "raigras":
+        if biotipo in ["convencional", "rr"]:
+            respuesta = poe_maiz_raigras_conv_rr()
+        elif biotipo == "cl":
+            respuesta = poe_maiz_raigras_cl()
+        elif biotipo == "enlist":
+            respuesta = poe_maiz_raigras_enlist()
+    elif maleza == "amaranthus":
+        if biotipo in ["convencional", "rr"]:
+            respuesta = poe_maiz_amaranthus_conv_rr()
+        elif biotipo == "cl":
+            respuesta = poe_maiz_amaranthus_cl()
+        elif biotipo == "enlist":
+            respuesta = poe_maiz_amaranthus_enlist()
+    elif maleza == "cruciferas":
+        if biotipo in ["convencional", "rr"]:
+            respuesta = poe_maiz_cruciferas_conv_rr()
+        elif biotipo == "cl":
+            respuesta = poe_maiz_cruciferas_cl()
+        elif biotipo == "enlist":
+            respuesta = poe_maiz_cruciferas_enlist()
+    elif maleza == "cebollin":
+        if biotipo == "convencional":
+            respuesta = poe_maiz_cebollin_conv()
+        elif biotipo == "rr":
+            respuesta = poe_maiz_cebollin_rr()
+        elif biotipo == "cl":
+            respuesta = poe_maiz_cebollin_cl()
+        elif biotipo == "enlist":
+            respuesta = poe_maiz_cebollin_enlist()
+    elif maleza == "conyza":
+        if biotipo in ["convencional", "rr"]:
+            respuesta = poe_maiz_conyza_conv_rr()
+        elif biotipo == "cl":
+            respuesta = poe_maiz_conyza_cl()
+        elif biotipo == "enlist":
+            respuesta = poe_maiz_conyza_enlist()
+    elif maleza == "otra":
+        bname = {"convencional": "convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
+        respuesta = (
+            f"⚠️ No tengo información específica para esa maleza en POE de maíz {bname} todavía.\n\n"
+            "🌱 Si es una GRAMÍNEA — recordá que ACCasa es fitotóxico en convencional y RR.\n"
+            "🌱 Si es una LATIFOLIADA — los HPPD + Atrazina son el punto de partida en convencional/RR.\n\n"
+            "Consultá con tu asesor para ajustar al caso específico."
+        )
+    if respuesta is None:
+        respuesta = "⚠️ No tengo información específica para esa combinación todavía."
+    if es_callback:
+        await query_or_message.message.reply_text(respuesta)
+    else:
+        await query_or_message.reply_text(respuesta)
+    context.user_data.clear()
+
 # Teclados inline PEE
 
 def kb_pee_maleza_trigo():
@@ -3899,6 +4187,32 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
         return
 
+    # Detectar consulta POE maíz guiada
+    poe_maiz_info = detectar_poe_maiz_guiado(user_message)
+    if poe_maiz_info is not None:
+        biotipo = poe_maiz_info.get("biotipo")
+        maleza = poe_maiz_info.get("maleza")
+        if biotipo and maleza:
+            context.user_data['poe_maiz_biotipo'] = biotipo
+            context.user_data['poe_maiz_maleza'] = maleza
+            await responder_poe_maiz(update.message, context, biotipo, maleza, es_callback=False)
+            return
+        context.user_data['poe_maiz_estado'] = 'esperando_biotipo'
+        if biotipo:
+            context.user_data['poe_maiz_biotipo'] = biotipo
+            context.user_data['poe_maiz_estado'] = 'esperando_maleza'
+            bname = {"convencional": "Convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
+            await update.message.reply_text(
+                f"Cultivo: Maíz ✅\nBiotipo: {bname} ✅\n\n¿Qué maleza tenés en el lote?",
+                reply_markup=kb_poe_maiz_maleza()
+            )
+        else:
+            await update.message.reply_text(
+                "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
+                reply_markup=kb_poe_maiz_biotipo()
+            )
+        return
+
     # Detectar consulta de barbecho
     nivel_barbecho = detectar_nivel_barbecho(user_message)
     if nivel_barbecho == 1:
@@ -4060,6 +4374,42 @@ async def handle_callback(update, context):
             f"Objetivo: {objetivo_nombre} ✅\n\nBuscando recomendación..."
         )
         await responder_pee_guiado(query, context, cultivo, maleza, objetivo, es_callback=True)
+        return
+
+    # Flujo POE maíz — biotipo
+    if data.startswith("poe_maiz_biotipo_"):
+        biotipo = data.replace("poe_maiz_biotipo_", "")
+        context.user_data['poe_maiz_biotipo'] = biotipo
+        context.user_data['poe_maiz_estado'] = 'esperando_maleza'
+        bname = {"convencional": "Convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
+        await query.edit_message_text(
+            f"Biotipo: {bname} ✅\n\n¿Qué maleza tenés en el lote?",
+            reply_markup=kb_poe_maiz_maleza()
+        )
+        return
+
+    # Flujo POE maíz — maleza
+    if data.startswith("poe_maiz_maleza_"):
+        maleza = data.replace("poe_maiz_maleza_", "")
+        biotipo = context.user_data.get('poe_maiz_biotipo', 'convencional')
+        bname = {"convencional": "Convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
+        if maleza == "otra":
+            context.user_data.clear()
+            await query.edit_message_text(
+                f"⚠️ No tengo información específica para esa maleza en POE de maíz {bname} todavía.\n\n"
+                "🌱 Si es una GRAMÍNEA — recordá que ACCasa es fitotóxico en convencional y RR.\n"
+                "🌱 Si es una LATIFOLIADA — los HPPD + Atrazina son el punto de partida en convencional/RR.\n\n"
+                "Consultá con tu asesor para ajustar al caso específico."
+            )
+            return
+        maleza_nombre = {
+            "raigras": "Raigrás/Lolium", "amaranthus": "Yuyo Colorado (Amaranthus)",
+            "cruciferas": "Crucíferas", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)"
+        }.get(maleza, maleza)
+        await query.edit_message_text(
+            f"Biotipo: {bname} ✅\nMaleza: {maleza_nombre} ✅\n\nBuscando recomendación..."
+        )
+        await responder_poe_maiz(query, context, biotipo, maleza, es_callback=True)
         return
 
     # Flujo barbecho — confirmación
