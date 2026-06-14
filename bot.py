@@ -3974,7 +3974,7 @@ def kb_objetivo():
 # --- CLIENTE GEMINI ---
 genai.configure(api_key=GEMINI_API_KEY)
 gemini_model = genai.GenerativeModel(
-    model_name="gemini-1.5-pro",
+    model_name="gemini-2.0-flash",
     generation_config={"temperature": 0, "max_output_tokens": 3000},
     system_instruction=KNOWLEDGE_BASE
 )
