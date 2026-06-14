@@ -1949,29 +1949,42 @@ PEE_OBJETIVO_KEYWORDS = {
 def detectar_pee_guiado(texto):
     """
     Retorna:
-      - None si no es consulta PEE trigo/soja
+      - None si no es consulta PEE
       - dict con claves 'cultivo', 'maleza' y/o 'objetivo' (pueden ser None)
+    Detecta cultivo y momento PEE por separado (orden libre en el texto).
     """
     t = texto.lower().strip()
+
+    # Detectar momento PEE (orden libre)
+    es_pee = any(kw in t for kw in MOMENTOS_ALIAS if MOMENTOS_ALIAS[kw] == "pee")
+    if not es_pee:
+        return None
+
+    # Detectar cultivo (orden libre)
     cultivo = None
     maleza_keywords = None
-    if any(kw in t for kw in PEE_TRIGO_KEYWORDS):
-        cultivo = "trigo"
-        maleza_keywords = PEE_MALEZA_KEYWORDS_TRIGO
-    elif any(kw in t for kw in PEE_SOJA_KEYWORDS):
-        cultivo = "soja"
-        maleza_keywords = PEE_MALEZA_KEYWORDS_SOJA
-    elif any(kw in t for kw in PEE_MAIZ_KEYWORDS):
-        cultivo = "maiz"
-        maleza_keywords = PEE_MALEZA_KEYWORDS_MAIZ
-    elif any(kw in t for kw in PEE_GIRASOL_KEYWORDS):
-        cultivo = "girasol"
-        maleza_keywords = PEE_MALEZA_KEYWORDS_GIRASOL
-    elif any(kw in t for kw in PEE_SORGO_KEYWORDS):
-        cultivo = "sorgo"
-        maleza_keywords = {}
-    else:
+    for palabra, cult in CULTIVOS_ALIAS.items():
+        if palabra in t:
+            if cult in ("trigo", "cebada"):
+                cultivo = "trigo"
+                maleza_keywords = PEE_MALEZA_KEYWORDS_TRIGO
+            elif cult == "soja":
+                cultivo = "soja"
+                maleza_keywords = PEE_MALEZA_KEYWORDS_SOJA
+            elif cult in ("maiz", "maíz"):
+                cultivo = "maiz"
+                maleza_keywords = PEE_MALEZA_KEYWORDS_MAIZ
+            elif cult == "girasol":
+                cultivo = "girasol"
+                maleza_keywords = PEE_MALEZA_KEYWORDS_GIRASOL
+            elif cult == "sorgo":
+                cultivo = "sorgo"
+                maleza_keywords = {}
+            break
+
+    if not cultivo:
         return None
+
     maleza = None
     for kw, val in maleza_keywords.items():
         if kw in t:
