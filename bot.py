@@ -1865,7 +1865,7 @@ def detectar_consulta_general(texto):
             break
     if cultivo_detectado and momento_detectado:
         # Si es trigo/cebada PEE, ceder al flujo guiado
-        if cultivo_detectado in ("trigo", "cebada", "soja", "maiz", "maíz", "girasol") and momento_detectado == "pee":
+        if cultivo_detectado in ("trigo", "cebada", "soja", "maiz", "maíz", "girasol", "sorgo") and momento_detectado == "pee":
             return None
         return RESPUESTAS_GENERALES.get((cultivo_detectado, momento_detectado))
     return None
@@ -1888,6 +1888,11 @@ PEE_SOJA_KEYWORDS = [
 PEE_GIRASOL_KEYWORDS = [
     "pee girasol", "pee en girasol",
     "pre emergencia girasol", "preemergencia girasol", "pre-emergencia girasol",
+]
+
+PEE_SORGO_KEYWORDS = [
+    "pee sorgo", "pee en sorgo",
+    "pre emergencia sorgo", "preemergencia sorgo", "pre-emergencia sorgo",
 ]
 
 PEE_MAIZ_KEYWORDS = [
@@ -1923,6 +1928,8 @@ PEE_MALEZA_KEYWORDS_MAIZ = {
     "amaranthus": "amaranthus", "yuyo colorado": "amaranthus",
     "yuyo": "amaranthus", "palmeri": "amaranthus", "hybridus": "amaranthus", "quitensis": "amaranthus",
     "cebollin": "cebollin", "cebollín": "cebollin", "cyperus": "cebollin",
+    "cruciferas": "cruciferas", "crucíferas": "cruciferas",
+    "brassica": "cruciferas", "nabon": "cruciferas", "nabón": "cruciferas",
 }
 
 # Keywords de malezas para detección en consulta directa (girasol)
@@ -1960,6 +1967,9 @@ def detectar_pee_guiado(texto):
     elif any(kw in t for kw in PEE_GIRASOL_KEYWORDS):
         cultivo = "girasol"
         maleza_keywords = PEE_MALEZA_KEYWORDS_GIRASOL
+    elif any(kw in t for kw in PEE_SORGO_KEYWORDS):
+        cultivo = "sorgo"
+        maleza_keywords = {}
     else:
         return None
     maleza = None
@@ -2528,6 +2538,101 @@ def pee_girasol_cruciferas_ambos():
         "🚫 NO usar en girasol: saflufenacil, metsulfurón, fomesafén, biciclopirona"
     )
 
+def pee_maiz_cruciferas_residual():
+    return (
+        "MAÍZ — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
+        "✅ Atrazina 90% (Gesaprim) — FII\n"
+        "✅ Terbutilazina 75% (Terbine) — FII\n"
+        "✅ Flurocloridona 25% (Rainbow) — PDS\n"
+        "✅ Diflufenicán 50% (Brodal) — PDS\n"
+        "✅ Piroxasulfone 85% (Yamato) — VLCFA\n\n"
+        "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Corto/PSI"
+    )
+
+def pee_maiz_cruciferas_nacida():
+    return (
+        "MAÍZ — CRUCÍFERAS (Brassica/Nabón) — RESCATE SOBRE MALEZA NACIDA (POE)\n\n"
+        "🥇 Mesotrione 48% (Callisto) + Atrazina 90% 1 kg/ha — V2-V6, excelente sobre crucíferas pequeñas\n"
+        "🥇 Topramezone 33,6% (Convey) + Atrazina 1 kg/ha — V1-V7\n"
+        "✅ Tembotrione 42% (Laudis) + Atrazina 1 kg/ha — V3-V6\n"
+        "✅ Tolpyralate 40% (Brucia) + Atrazina 1 kg/ha — V3-V6\n"
+        "✅ MCPA 28% 1,5 L/ha + Atrazina 90% 1 kg/ha — base clásica\n"
+        "✅ Tordon (Picloram) 27,7% 150 cc/ha — maíces RR, POE V2-V8\n\n"
+        "✅ Maíz Enlist: Glufosinato 28% 1,8-2 L/ha V1-V8 o 2,4D Enlist (sal colina) hasta V8,\n"
+        "   o combinación Glufosinato + 2,4D Enlist\n\n"
+        "⚠️ HPPD siempre con Atrazina o Terbutilazina para sinergizar"
+    )
+
+def pee_maiz_cruciferas_ambos():
+    return (
+        "MAÍZ — CRUCÍFERAS (Brassica/Nabón) — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "🥇 Atrazina o Terbutilazina o Flurocloridona o Diflufenicán como residual en PEE\n"
+        "🔁 + Mesotrione/Topramezone + Atrazina en POE V2-V6 si reescapa\n\n"
+        "✅ Maíz Enlist: residual PEE + Glufosinato 28% o 2,4D Enlist en POE si reescapa\n\n"
+        "⚠️ HPPD siempre con Atrazina o Terbutilazina para sinergizar"
+    )
+
+def pee_girasol_cebollin_general():
+    return (
+        "GIRASOL — CEBOLLÍN (Cyperus rotundus) — PEE\n\n"
+        "PEE (reduce emergencia — NO elimina tubérculos):\n"
+        "✅ S-metolacloro 96% (Dual Gold)\n"
+        "✅ Acetoclor 90% (Harness)\n\n"
+        "🔁 POE según biotipo:\n\n"
+        "✅ Girasoles CL Plus: Clearsol II Plus Pack (Imazamox 70% + Imazapir 80%)\n"
+        "   Entre 3a y 7a hoja del cebollín\n"
+        "   ⚠️ SOLO en híbridos Clearfield PLUS — daña girasoles CL no Plus o convencionales\n"
+        "   ⚠️ No aplicar con estrés hídrico/térmico. No usar organofosforados en mezcla.\n\n"
+        "✅ Girasoles CL (no Plus): Clearsol DF (Imazapir solo) V2-V4 — menor espectro\n\n"
+        "⚠️ Girasoles convencionales: sin opciones POE — el control es en barbecho\n"
+        "   (Glifosato ≥2000 g.e.a./ha) y PEE únicamente"
+    )
+
+def pee_sorgo_residual():
+    return (
+        "SORGO — PEE RESIDUAL\n\n"
+        "✅ Atrazina 90% 1-2 kg/ha (Gesaprim) — FII\n"
+        "✅ Terbutilazina 75% 1 kg/ha (Terbine) — FII\n"
+        "✅ Pendimetalín 33% 2,5-4,5 L/ha (Herbadox) — microtúbulos\n"
+        "✅ S-metolacloro 96% 0,9-1,3 L/ha (Dual Gold) — VLCFA\n"
+        "   ⚠️ OBLIGATORIO semilla curada con Fluxofenim 96% (Concep III) — sin Concep III causa fitotoxicidad severa\n"
+        "✅ Atrazina 90% 1-2 kg/ha + S-metolacloro 96% 0,9-1,3 L/ha — FII+VLCFA ⚠️ Concep III obligatorio\n"
+        "✅ Terbutilazina 75% 1 kg/ha + S-metolacloro 96% 0,9-1,3 L/ha ⚠️ Concep III obligatorio\n"
+        "✅ (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n"
+        "✅ Atrazina 90% + (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n\n"
+        "⚠️ PSI (con DAS): Flumioxazin 48% (Sumisoya) 0,15 L/ha — 20-30 DAS, ver Barbecho Corto/PSI"
+    )
+
+def pee_sorgo_nacida():
+    return (
+        "SORGO — RESCATE SOBRE MALEZA NACIDA (POE)\n\n"
+        "Latifoliadas:\n"
+        "✅ Bromoxinil 34,6% 0,8-1 L/ha — V2-V4\n"
+        "✅ Atrazina 90% 1-2 kg/ha — V2-V4\n"
+        "✅ Bentazon 60% 1,2-1,6 L/ha — V2-V8\n"
+        "✅ 2,4D / MCPA — V4-V8\n"
+        "✅ Picloram / Clopyralid — V4-V8, aplicación dirigida con caño de bajada\n"
+        "✅ Atrazina 90% + Hormonal — mezcla V4-V8\n"
+        "✅ Pendimetalín 33% 2,5-4,5 L/ha — V3-V4, maleza no emergida\n"
+        "✅ (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n\n"
+        "Gramíneas:\n"
+        "✅ Cletodim 24% 0,7-1 L/ha o 36% 0,5-0,7 L/ha — 20 DAS, solo gramíneas\n"
+        "✅ Haloxyfop 54% 0,25-0,35 L/ha — 20 DAS, solo gramíneas\n"
+        "⚠️ ACCasa FITOTÓXICO en sorgo convencional — verificar biotipo antes de aplicar"
+    )
+
+def pee_sorgo_ambos():
+    return (
+        "SORGO — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
+        "🥇 Atrazina 90% + S-metolacloro 96% (residual PEE ⚠️ Concep III obligatorio)\n"
+        "   + Bromoxinil o Bentazon en POE si reescapa latifoliada\n\n"
+        "🥇 Terbutilazina 75% + S-metolacloro 96% (residual PEE ⚠️ Concep III obligatorio)\n"
+        "   + 2,4D/MCPA en POE V4-V8 si reescapa\n\n"
+        "✅ Pendimetalín (residual PEE) + Cletodim/Haloxyfop en POE si hay gramíneas (20 DAS)\n\n"
+        "⚠️ S-metolacloro: SIEMPRE con semilla curada Concep III — sin esto, fitotoxicidad severa\n"
+        "⚠️ ACCasa: FITOTÓXICO en sorgo convencional"
+    )
+
 async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objetivo, es_callback=True):
     """Dispatcher de respuestas PEE guiadas."""
     respuesta = None
@@ -2607,6 +2712,13 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_maiz_amaranthus_ambos()
         elif maleza == "cebollin":
             respuesta = pee_maiz_cebollin_general()
+        elif maleza == "cruciferas":
+            if objetivo == "residual":
+                respuesta = pee_maiz_cruciferas_residual()
+            elif objetivo == "nacida":
+                respuesta = pee_maiz_cruciferas_nacida()
+            elif objetivo == "ambos":
+                respuesta = pee_maiz_cruciferas_ambos()
     elif cultivo == "girasol":
         if maleza == "general":
             if objetivo == "residual":
@@ -2622,6 +2734,15 @@ async def responder_pee_guiado(query_or_message, context, cultivo, maleza, objet
                 respuesta = pee_girasol_cruciferas_nacida()
             elif objetivo == "ambos":
                 respuesta = pee_girasol_cruciferas_ambos()
+        elif maleza == "cebollin":
+            respuesta = pee_girasol_cebollin_general()
+    elif cultivo == "sorgo":
+        if objetivo == "residual":
+            respuesta = pee_sorgo_residual()
+        elif objetivo == "nacida":
+            respuesta = pee_sorgo_nacida()
+        elif objetivo == "ambos":
+            respuesta = pee_sorgo_ambos()
 
     if respuesta is None:
         respuesta = "⚠️ No tengo información específica para esa combinación todavía."
@@ -2657,6 +2778,7 @@ def kb_pee_maleza_maiz():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="pee_maleza_raigras")],
         [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="pee_maleza_amaranthus")],
+        [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="pee_maleza_cruciferas")],
         [InlineKeyboardButton("🌿 Cebollín (Cyperus)", callback_data="pee_maleza_cebollin")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="pee_maleza_otra")],
     ])
@@ -3727,7 +3849,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         cultivo = pee_info.get("cultivo")
         maleza = pee_info.get("maleza")
         objetivo = pee_info.get("objetivo")
-        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
+        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "sorgo": "Sorgo"}.get(cultivo, cultivo)
         if cultivo == "trigo":
             kb_maleza = kb_pee_maleza_trigo()
         elif cultivo == "maiz":
@@ -3742,6 +3864,18 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             context.user_data['pee_maleza'] = maleza
             context.user_data['pee_objetivo'] = objetivo
             await responder_pee_guiado(update.message, context, cultivo, maleza, objetivo, es_callback=False)
+            return
+        # Sorgo — va directo a objetivo sin preguntar maleza
+        if cultivo == "sorgo" and not objetivo:
+            context.user_data['pee_cultivo'] = 'sorgo'
+            context.user_data['pee_maleza'] = 'general'
+            context.user_data['pee_estado'] = 'esperando_objetivo'
+            await update.message.reply_text(
+                "Antes de responder, repasemos algunos parámetros para darte una recomendación ajustada a tu realidad 🌱\n\n"
+                "Cultivo: Sorgo ✅\n\n"
+                "¿Cuál es tu objetivo?",
+                reply_markup=kb_pee_objetivo()
+            )
             return
         # Si falta algo — arrancar flujo guiado
         context.user_data['pee_estado'] = 'esperando_maleza'
