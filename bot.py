@@ -2786,7 +2786,14 @@ POE_MAIZ_BIOTIPO_KEYWORDS = {
 
 def detectar_poe_maiz_guiado(texto):
     t = texto.lower().strip()
-    if not any(kw in t for kw in POE_MAIZ_KEYWORDS):
+    # Detectar momento POE (orden libre)
+    POE_MOMENTOS = ["poe", "post-emergencia", "postemergencia", "post emergencia", "postemer"]
+    es_poe = any(kw in t for kw in POE_MOMENTOS)
+    if not es_poe:
+        return None
+    # Detectar cultivo maíz (orden libre)
+    es_maiz = any(kw in t for kw in ["maiz", "maíz", "maice", "maíce"])
+    if not es_maiz:
         return None
     biotipo = None
     for kw, val in POE_MAIZ_BIOTIPO_KEYWORDS.items():
