@@ -3741,27 +3741,6 @@ async def responder_barbecho_completo(update_or_query, context, cultivo, maleza,
             reply_markup=InlineKeyboardMarkup(buttons)
         )
 
-    # Botones de continuación cronológica
-    CULTIVO_EMOJI = {"soja": "🌱", "maiz": "🌽", "girasol": "🌻", "trigo": "🌾"}
-    CULTIVO_NOMBRE = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}
-    seguimiento_buttons = []
-    if cultivo in CULTIVO_NOMBRE:
-        emoji = CULTIVO_EMOJI.get(cultivo, "🌿")
-        nombre = CULTIVO_NOMBRE.get(cultivo)
-        seguimiento_buttons.append([InlineKeyboardButton(
-            f"{emoji} Ver PEE en {nombre}",
-            callback_data=f"ir_pee_{cultivo}"
-        )])
-    seguimiento_buttons.append([InlineKeyboardButton(
-        "📋 Nueva consulta",
-        callback_data="nueva_consulta"
-    )])
-    await context.bot.send_message(
-        chat_id=chat_id,
-        text="¿Qué hacemos ahora?",
-        reply_markup=InlineKeyboardMarkup(seguimiento_buttons)
-    )
-
     # Limpiar estado
     context.user_data.clear()
 
@@ -3942,33 +3921,11 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
-    # Contador de turnos libres (máximo 2 repreguntas)
-    turno_libre = context.user_data.get('turno_libre', 0)
-    context.user_data['turno_libre'] = turno_libre + 1
-
-    # System prompt según turno
-    if turno_libre >= 2:
-        system_prompt = (
-            KNOWLEDGE_BASE +
-            "\n\nINSTRUCCIÓN ADICIONAL — MODO CIERRE: El usuario ya recibió recomendaciones concretas. "
-            "Podés responder preguntas conceptuales o aclaratorias breves, pero NO des dosis, "
-            "productos ni recomendaciones técnicas nuevas. No hagas preguntas de seguimiento. "
-            "Si el usuario necesita una nueva recomendación técnica, indicale que use el botón "
-            "'Nueva consulta' o escriba /nuevo."
-        )
-    else:
-        system_prompt = (
-            KNOWLEDGE_BASE +
-            "\n\nINSTRUCCIÓN ADICIONAL: NO hagas preguntas abiertas al final de tu respuesta. "
-            "Terminá siempre con la información técnica. El sistema agrega automáticamente "
-            "las opciones de seguimiento."
-        )
-
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
             max_tokens=3000,
-            system=system_prompt,
+            system=KNOWLEDGE_BASE,
             messages=conversation_history[user_id]
         )
 
@@ -3983,6 +3940,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             conversation_history[user_id] = conversation_history[user_id][-10:]
 
         # Detectar si la respuesta requiere botones informativos
+        # Opción B: detectar herbicidas que requieren coadyuvante, no solo la palabra "aceite"
         HERBICIDAS_CON_COADYUVANTE = [
             "cletodim", "haloxyfop", "propaquizafop", "quizalofop",
             "saflufenacil", "heat", "carfentrazone", "shark", "flumioxazin",
@@ -3992,7 +3950,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         needs_2_4d_button = "2,4d" in assistant_message.lower() or "2,4 d" in assistant_message.lower()
         needs_glifo_button = "glifosato" in assistant_message.lower()
 
-        # Separar línea de invitación del texto principal
+        # Separar la línea de invitación del texto principal
         main_message = assistant_message
         if "💧 ¿Querés ver opciones" in assistant_message:
             parts = assistant_message.rsplit("💧 ¿Querés ver opciones", 1)
@@ -4000,7 +3958,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         await update.message.reply_text(main_message)
 
-        # Botones informativos
+        # Construir botones según lo que aparece en la respuesta
         buttons = []
         if needs_coady_button:
             buttons.append([InlineKeyboardButton(
@@ -4019,18 +3977,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )])
 
         if buttons:
+            reply_markup = InlineKeyboardMarkup(buttons)
             await update.message.reply_text(
                 "ℹ️ Información adicional disponible:",
-                reply_markup=InlineKeyboardMarkup(buttons)
-            )
-
-        # Botón de cierre a partir del segundo turno libre
-        if turno_libre >= 1:
-            await update.message.reply_text(
-                "¿Qué hacemos ahora?",
-                reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton("📋 Nueva consulta", callback_data="nueva_consulta")
-                ]])
+                reply_markup=reply_markup
             )
 
     except Exception as e:
@@ -4038,7 +3988,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
             f"❌ Error: {type(e).__name__}: {str(e)[:200]}"
         )
-
 
 # --- CALLBACK HANDLER — botones inline ---
 async def handle_callback(update, context):
@@ -4055,35 +4004,6 @@ async def handle_callback(update, context):
         return
     elif data == "show_glifosato":
         await query.message.reply_text(INFO_GLIFOSATO)
-        return
-    elif data == "nueva_consulta":
-        context.user_data.clear()
-        conversation_history[query.from_user.id] = []
-        await query.message.reply_text(
-            "🔄 Listo, empezamos de nuevo.\n\n"
-            "Podés preguntarme sobre herbicidas, dosis, momentos de aplicación, "
-            "o escribir <b>barbecho</b> para el flujo guiado.",
-            parse_mode="HTML"
-        )
-        return
-    elif data.startswith("ir_pee_"):
-        cultivo = data.replace("ir_pee_", "")
-        context.user_data.clear()
-        context.user_data['pee_estado'] = 'esperando_maleza'
-        context.user_data['pee_cultivo'] = cultivo
-        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "sorgo": "Sorgo"}.get(cultivo, cultivo)
-        if cultivo == "trigo":
-            kb_maleza = kb_pee_maleza_trigo()
-        elif cultivo == "maiz":
-            kb_maleza = kb_pee_maleza_maiz()
-        elif cultivo == "girasol":
-            kb_maleza = kb_pee_maleza_girasol()
-        else:
-            kb_maleza = kb_pee_maleza_soja()
-        await query.message.reply_text(
-            f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza tenés en el lote?",
-            reply_markup=kb_maleza
-        )
         return
 
     # Flujo PEE guiado — maleza
@@ -4253,9 +4173,9 @@ async def handle_callback(update, context):
         )
         respuesta = get_doble_trigo_respuesta(b_obj, l_obj)
         if respuesta:
-            await send_long_message(query._bot, query.message.chat_id, respuesta)
+            await send_long_message(context.bot, query.message.chat_id, respuesta)
         else:
-            await send_long_message(query._bot, query.message.chat_id,
+            await send_long_message(context.bot, query.message.chat_id,
                 "No tengo una respuesta específica para esa combinación. Consultá cada maleza por separado.")
         context.user_data.clear()
         return
