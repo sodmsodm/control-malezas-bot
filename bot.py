@@ -1,13 +1,13 @@
 import os
 import logging
-import anthropic
+import google.generativeai as genai
 from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, CommandHandler, filters, CallbackQueryHandler
 
 # --- CONFIGURACION ---
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # --- ADMIN Y MONITOREO ---
 ADMIN_USER_ID = 1146686012  # Simon — unico autorizado para /stats
@@ -3971,8 +3971,13 @@ def kb_objetivo():
         [InlineKeyboardButton("🎯+🛡️ Ambos objetivos", callback_data="barb_obj_ambos")],
     ])
 
-# --- CLIENTE ANTHROPIC ---
-client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+# --- CLIENTE GEMINI ---
+genai.configure(api_key=GEMINI_API_KEY)
+gemini_model = genai.GenerativeModel(
+    model_name="gemini-1.5-pro",
+    generation_config={"temperature": 0, "max_output_tokens": 3000},
+    system_instruction=KNOWLEDGE_BASE
+)
 
 async def send_long_message(bot, chat_id, text, max_length=4000):
     """Divide y envía mensajes que superan el límite de Telegram (4096 chars)."""
@@ -4236,14 +4241,17 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     try:
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=3000,
-            system=KNOWLEDGE_BASE,
-            messages=conversation_history[user_id]
-        )
+        # Convertir historial al formato de Gemini
+        gemini_history = []
+        for msg in conversation_history[user_id][:-1]:  # todo menos el último
+            role = "user" if msg["role"] == "user" else "model"
+            gemini_history.append({"role": role, "parts": [msg["content"]]})
 
-        assistant_message = response.content[0].text
+        chat = gemini_model.start_chat(history=gemini_history)
+        last_message = conversation_history[user_id][-1]["content"]
+        response = chat.send_message(last_message)
+
+        assistant_message = response.text
 
         conversation_history[user_id].append({
             "role": "assistant",
