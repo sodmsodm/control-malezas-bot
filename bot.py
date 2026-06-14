@@ -4260,7 +4260,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             model="claude-sonnet-4-6",
             max_tokens=3000,
             system=KNOWLEDGE_BASE,
-            messages=conversation_history[user_id]
+            messages=[{"role": "user", "content": user_message}]
         )
 
         assistant_message = response.content[0].text
