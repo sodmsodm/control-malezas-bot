@@ -4479,13 +4479,22 @@ async def handle_callback(update, context):
         context.user_data.pop('cultivo_solo', None)
 
         if data == "momento_barbecho":
-            # Arrancar flujo de barbecho con cultivo y maleza pre-cargados
-            context.user_data['barbecho_estado'] = 'esperando_cultivo'
-            await query.message.reply_text(
-                "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
-                "¿Para qué cultivo es el barbecho?",
-                reply_markup=kb_cultivo()
-            )
+            context.user_data['barbecho_estado'] = 'esperando_maleza'
+            if cultivo:
+                # Cultivo ya conocido — saltear pregunta de cultivo
+                cultivo_barb = {"soja": "soja", "maiz": "maiz", "girasol": "girasol", "trigo": "trigo"}.get(cultivo, cultivo)
+                context.user_data['barbecho_cultivo'] = cultivo_barb
+                await query.message.reply_text(
+                    "¿Qué maleza querés controlar?",
+                    reply_markup=kb_maleza()
+                )
+            else:
+                context.user_data['barbecho_estado'] = 'esperando_cultivo'
+                await query.message.reply_text(
+                    "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
+                    "¿Para qué cultivo es el barbecho?",
+                    reply_markup=kb_cultivo()
+                )
         elif data == "momento_pee":
             # Inyectar cultivo y maleza al flujo PEE
             context.user_data['pee_cultivo'] = cultivo
@@ -4516,8 +4525,19 @@ async def handle_callback(update, context):
                     reply_markup=kb_poe_maiz_biotipo()
                 )
             else:
-                # Para otros cultivos POE — mandar a la API con cultivo+maleza+poe
-                texto_api = f"herbicidas para {maleza} en {cultivo} en POE post-emergencia"
+                if cultivo and maleza:
+                    texto_api = f"herbicidas para {maleza} en {cultivo} en POE post-emergencia"
+                elif cultivo:
+                    texto_api = f"herbicidas POE post-emergencia en {cultivo}"
+                else:
+                    await query.message.reply_text("¿POE de qué cultivo?", reply_markup=InlineKeyboardMarkup([
+                        [InlineKeyboardButton("🌱 Soja", callback_data="cultivo_poe_soja")],
+                        [InlineKeyboardButton("🌽 Maíz", callback_data="cultivo_poe_maiz")],
+                        [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_poe_girasol")],
+                        [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_poe_trigo")],
+                        [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_poe_sorgo")],
+                    ]))
+                    return
                 response = client.messages.create(
                     model="claude-sonnet-4-6",
                     max_tokens=3000,
