@@ -2784,6 +2784,70 @@ POE_MAIZ_BIOTIPO_KEYWORDS = {
     "enlist": "enlist",
 }
 
+def detectar_cultivo_maleza_sin_momento(texto):
+    """
+    Detecta consultas con cultivo + maleza conocida pero SIN momento explícito.
+    Retorna dict {'cultivo': ..., 'maleza': ...} o None.
+    """
+    t = texto.lower().strip()
+
+    # Si tiene momento explícito, no interceptar — otros detectores lo manejan
+    MOMENTOS_EXPLICITOS = [
+        "pee", "pre-emergencia", "preemergencia", "pre emergencia",
+        "poe", "post-emergencia", "postemergencia", "post emergencia",
+        "barbecho", "presiembra", "pre-siembra", "pre siembra",
+        "psi", "pre-siembra incorporado"
+    ]
+    if any(m in t for m in MOMENTOS_EXPLICITOS):
+        return None
+
+    # Detectar cultivo
+    cultivo = None
+    for palabra, cult in CULTIVOS_ALIAS.items():
+        if palabra in t:
+            if cult in ("trigo", "cebada"):
+                cultivo = "trigo"
+            elif cult == "soja":
+                cultivo = "soja"
+            elif cult in ("maiz", "maíz"):
+                cultivo = "maiz"
+            elif cult == "girasol":
+                cultivo = "girasol"
+            elif cult == "sorgo":
+                cultivo = "sorgo"
+            break
+
+    if not cultivo:
+        return None
+
+    # Detectar maleza según cultivo
+    maleza_map = {
+        "trigo": PEE_MALEZA_KEYWORDS_TRIGO,
+        "soja": PEE_MALEZA_KEYWORDS_SOJA,
+        "maiz": PEE_MALEZA_KEYWORDS_MAIZ,
+        "girasol": PEE_MALEZA_KEYWORDS_GIRASOL,
+        "sorgo": {},
+    }
+    maleza = None
+    for kw, val in maleza_map.get(cultivo, {}).items():
+        if kw in t:
+            maleza = val
+            break
+
+    if not maleza:
+        return None
+
+    return {"cultivo": cultivo, "maleza": maleza}
+
+
+def kb_momento_manejo():
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("🌱 Barbecho / Presiembra", callback_data="momento_barbecho")],
+        [InlineKeyboardButton("🌾 PEE (Pre-emergencia del cultivo)", callback_data="momento_pee")],
+        [InlineKeyboardButton("🌿 POE (Post-emergencia del cultivo)", callback_data="momento_poe")],
+    ])
+
+
 def detectar_poe_maiz_guiado(texto):
     t = texto.lower().strip()
     # Detectar momento POE (orden libre)
@@ -4255,6 +4319,19 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
+    # Detectar cultivo + maleza conocida sin momento — preguntar momento
+    cm_info = detectar_cultivo_maleza_sin_momento(user_message)
+    if cm_info is not None:
+        context.user_data['cm_cultivo'] = cm_info['cultivo']
+        context.user_data['cm_maleza'] = cm_info['maleza']
+        cultivo_nombre = {"trigo": "Trigo/Cebada", "soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "sorgo": "Sorgo"}.get(cm_info['cultivo'], cm_info['cultivo'])
+        maleza_nombre = cm_info['maleza'].replace("_", " ").capitalize()
+        await update.message.reply_text(
+            f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿En qué momento de manejo estás?",
+            reply_markup=kb_momento_manejo()
+        )
+        return
+
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
@@ -4338,6 +4415,62 @@ async def handle_callback(update, context):
         return
     elif data == "show_glifosato":
         await query.message.reply_text(INFO_GLIFOSATO)
+        return
+
+    # Selección de momento (cultivo+maleza detectados sin momento)
+    if data in ("momento_barbecho", "momento_pee", "momento_poe"):
+        cultivo = context.user_data.get('cm_cultivo')
+        maleza = context.user_data.get('cm_maleza')
+        context.user_data.pop('cm_cultivo', None)
+        context.user_data.pop('cm_maleza', None)
+
+        if data == "momento_barbecho":
+            # Arrancar flujo de barbecho con cultivo y maleza pre-cargados
+            context.user_data['barbecho_estado'] = 'esperando_cultivo'
+            await query.message.reply_text(
+                "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
+                "¿Para qué cultivo es el barbecho?",
+                reply_markup=kb_cultivo()
+            )
+        elif data == "momento_pee":
+            # Inyectar cultivo y maleza al flujo PEE
+            context.user_data['pee_cultivo'] = cultivo
+            if maleza:
+                context.user_data['pee_maleza'] = maleza
+                await query.message.reply_text(
+                    f"Cultivo: {cultivo} ✅\nMaleza: {maleza} ✅\n\n¿Cuál es el objetivo?",
+                    reply_markup=kb_pee_objetivo()
+                )
+            else:
+                kb_maleza = {
+                    "trigo": kb_pee_maleza_trigo,
+                    "soja": kb_pee_maleza_soja,
+                    "maiz": kb_pee_maleza_maiz,
+                    "girasol": kb_pee_maleza_girasol,
+                }.get(cultivo, kb_pee_maleza_soja)
+                await query.message.reply_text(
+                    "¿Qué maleza tenés en el lote?",
+                    reply_markup=kb_maleza()
+                )
+        elif data == "momento_poe":
+            if cultivo == "maiz":
+                context.user_data['poe_maiz_estado'] = 'esperando_biotipo'
+                if maleza:
+                    context.user_data['poe_maiz_maleza'] = maleza
+                await query.message.reply_text(
+                    "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
+                    reply_markup=kb_poe_maiz_biotipo()
+                )
+            else:
+                # Para otros cultivos POE — mandar a la API con cultivo+maleza+poe
+                texto_api = f"herbicidas para {maleza} en {cultivo} en POE post-emergencia"
+                response = client.messages.create(
+                    model="claude-sonnet-4-6",
+                    max_tokens=3000,
+                    system=KNOWLEDGE_BASE,
+                    messages=[{"role": "user", "content": texto_api}]
+                )
+                await query.message.reply_text(response.content[0].text)
         return
 
     # Flujo PEE guiado — maleza
