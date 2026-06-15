@@ -4107,7 +4107,7 @@ def kb_maleza():
         [InlineKeyboardButton("🌿 Lolium/Raigrás", callback_data="barb_maleza_lolium")],
         [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="barb_maleza_conyza")],
         [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="barb_maleza_brassica")],
-        [InlineKeyboardButton("🌿+🌿 Raigrás + Crucíferas", callback_data="barb_maleza_doble")],
+        [InlineKeyboardButton("🌿 Raigrás + 🌿 Crucíferas", callback_data="barb_maleza_doble")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="barb_maleza_otra")],
     ])
 
