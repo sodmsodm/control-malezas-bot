@@ -4641,7 +4641,7 @@ async def handle_callback(update, context):
                 orientacion = (
                     "🌱 Si es una LATIFOLIADA — las opciones de Yuyo Colorado pueden orientarte como punto de partida.\n\n"
                 )
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"⚠️ No tengo información específica para esa maleza en PEE de {cultivo_nombre} todavía.\n\n"
                 f"{orientacion}"
                 "Consultá con tu asesor para ajustar al biotipo específico."
@@ -4653,7 +4653,7 @@ async def handle_callback(update, context):
             "raigras": "Raigrás/Lolium", "conyza": "Rama Negra (Conyza)", "cruciferas": "Crucíferas",
             "amaranthus": "Yuyo Colorado (Amaranthus)", "commelina": "Flor de Santa Lucía (Commelina)", "parietaria": "Parietaria", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)", "general": "Maleza General/Latifoliadas"
         }.get(maleza, maleza)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Maleza: {maleza_nombre} ✅\n\n¿Cuál es tu objetivo?",
             reply_markup=kb_pee_objetivo()
         )
@@ -4665,7 +4665,7 @@ async def handle_callback(update, context):
         cultivo = context.user_data.get('pee_cultivo', 'trigo')
         maleza = context.user_data.get('pee_maleza', '')
         objetivo_nombre = {"nacida": "Maleza nacida (rescate)", "residual": "Residual", "ambos": "Ambos"}.get(objetivo, objetivo)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Objetivo: {objetivo_nombre} ✅\n\nBuscando recomendación..."
         )
         await responder_pee_guiado(query, context, cultivo, maleza, objetivo, es_callback=True)
@@ -4677,7 +4677,7 @@ async def handle_callback(update, context):
         context.user_data['poe_maiz_biotipo'] = biotipo
         context.user_data['poe_maiz_estado'] = 'esperando_maleza'
         bname = {"convencional": "Convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Biotipo: {bname} ✅\n\n¿Qué maleza tenés en el lote?",
             reply_markup=kb_poe_maiz_maleza()
         )
@@ -4690,7 +4690,7 @@ async def handle_callback(update, context):
         bname = {"convencional": "Convencional", "rr": "RR", "cl": "CL", "enlist": "Enlist"}.get(biotipo, biotipo)
         if maleza == "otra":
             context.user_data.clear()
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"⚠️ No tengo información específica para esa maleza en POE de maíz {bname} todavía.\n\n"
                 "🌱 Si es una GRAMÍNEA — recordá que ACCasa es fitotóxico en convencional y RR.\n"
                 "🌱 Si es una LATIFOLIADA — los HPPD + Atrazina son el punto de partida en convencional/RR.\n\n"
@@ -4701,7 +4701,7 @@ async def handle_callback(update, context):
             "raigras": "Raigrás/Lolium", "amaranthus": "Yuyo Colorado (Amaranthus)",
             "cruciferas": "Crucíferas", "cebollin": "Cebollín (Cyperus)", "conyza": "Rama Negra (Conyza)"
         }.get(maleza, maleza)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Biotipo: {bname} ✅\nMaleza: {maleza_nombre} ✅\n\nBuscando recomendación..."
         )
         await responder_poe_maiz(query, context, biotipo, maleza, es_callback=True)
@@ -4710,7 +4710,7 @@ async def handle_callback(update, context):
     # Flujo barbecho — confirmación
     if data == "barb_confirmar_si":
         context.user_data['barbecho_estado'] = 'esperando_cultivo'
-        await query.edit_message_text(
+        await query.message.reply_text(
             "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
             "¿Para qué cultivo es el barbecho?",
             reply_markup=kb_cultivo()
@@ -4718,7 +4718,7 @@ async def handle_callback(update, context):
         return
     elif data == "barb_confirmar_no":
         context.user_data.clear()
-        await query.edit_message_text(
+        await query.message.reply_text(
             "Entendido. Haceme tu consulta y te ayudo 🌱"
         )
         return
@@ -4730,13 +4730,13 @@ async def handle_callback(update, context):
         context.user_data['barbecho_estado'] = 'esperando_maleza'
 
         if cultivo == "trigo":
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"Cultivo: Trigo/Cebada ✅\n\n¿Qué maleza querés controlar?",
                 reply_markup=kb_maleza()
             )
         else:
             cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza querés controlar?",
                 reply_markup=kb_maleza()
             )
@@ -4750,13 +4750,13 @@ async def handle_callback(update, context):
 
         if maleza == "otra":
             context.user_data['barbecho_estado'] = 'completo'
-            await query.edit_message_text("Maleza: Otra ✅")
+            await query.message.reply_text("Maleza: Otra ✅")
             await responder_barbecho_completo(query, context, cultivo, "otra", None, None)
             return
 
         if maleza == "doble":
             if cultivo != "trigo":
-                await query.edit_message_text(
+                await query.message.reply_text(
                     "Cultivo: " + {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo) +
                     " ✅\n\nRaigrás + Crucíferas simultáneas — por ahora solo disponible para Trigo/Cebada.\n"
                     "Podés consultar cada maleza por separado usando el flujo anterior."
@@ -4764,7 +4764,7 @@ async def handle_callback(update, context):
                 context.user_data.clear()
                 return
             context.user_data['barbecho_estado'] = 'esperando_brassica_obj'
-            await query.edit_message_text(
+            await query.message.reply_text(
                 "Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\n\n¿Qué necesitás para las Crucíferas/Nabo?",
                 reply_markup=kb_brassica_obj()
             )
@@ -4780,14 +4780,14 @@ async def handle_callback(update, context):
         if cultivo == "trigo":
             context.user_data['barbecho_momento'] = 'presiembra'
             context.user_data['barbecho_estado'] = 'esperando_objetivo'
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"Cultivo: Trigo/Cebada ✅\nMaleza: {maleza_nombre} ✅\n\n¿Qué objetivo buscás?",
                 reply_markup=kb_objetivo()
             )
         else:
             context.user_data['barbecho_estado'] = 'esperando_momento'
             cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
-            await query.edit_message_text(
+            await query.message.reply_text(
                 f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?",
                 reply_markup=kb_momento()
             )
@@ -4799,7 +4799,7 @@ async def handle_callback(update, context):
         context.user_data['barbecho_doble_b_obj'] = b_obj
         context.user_data['barbecho_estado'] = 'esperando_lolium_obj'
         b_nombre = {"nacida": "Eliminar nacida", "residual": "Residual", "ambos": "Ambos"}.get(b_obj, b_obj)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\nCrucíferas: {b_nombre} ✅\n\n¿Y para el Raigrás?",
             reply_markup=kb_lolium_obj()
         )
@@ -4812,7 +4812,7 @@ async def handle_callback(update, context):
         context.user_data['barbecho_estado'] = 'completo'
         b_nombre = {"nacida": "Eliminar nacida", "residual": "Residual", "ambos": "Ambos"}.get(b_obj, b_obj)
         l_nombre = {"nacida": "Eliminar nacido", "residual": "Residual", "ambos": "Ambos"}.get(l_obj, l_obj)
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Cultivo: Trigo/Cebada ✅\nMalezas: Raigrás + Crucíferas ✅\n"
             f"Crucíferas: {b_nombre} ✅\nRaigrás: {l_nombre} ✅\n\nBuscando estrategia..."
         )
@@ -4837,7 +4837,7 @@ async def handle_callback(update, context):
         maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
         momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)"}.get(momento, momento)
 
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué objetivo buscás?",
             reply_markup=kb_objetivo()
         )
@@ -4858,7 +4858,7 @@ async def handle_callback(update, context):
         momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
         objetivo_nombre = {"nacida": "Eliminar maleza nacida", "residual": "Prevenir nuevos nacimientos", "ambos": "Ambos objetivos"}.get(objetivo, objetivo)
 
-        await query.edit_message_text(
+        await query.message.reply_text(
             f"Cultivo: {cultivo_nombre} ✅\n"
             f"Maleza: {maleza_nombre} ✅\n"
             f"Momento: Barbecho {momento_nombre} ✅\n"
