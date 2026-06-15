@@ -4332,6 +4332,59 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return
 
+    # Detectar POE sin cultivo — preguntar cultivo con botones
+    t_lower = user_message.lower().strip()
+    POE_MOMENTOS = ["poe", "post-emergencia", "postemergencia", "post emergencia", "postemer"]
+    PEE_MOMENTOS_SOLOS = ["pee", "pre-emergencia", "preemergencia", "pre emergencia"]
+    CULTIVOS_KEYS = ["soja", "soya", "maiz", "maíz", "trigo", "cebada", "girasol", "sorgo"]
+
+    # Detectar POE sin cultivo — preguntar cultivo con botones
+    if any(kw in t_lower for kw in POE_MOMENTOS) and not any(kw in t_lower for kw in CULTIVOS_KEYS):
+        context.user_data['momento_pendiente'] = 'poe'
+        await update.message.reply_text(
+            "¿POE de qué cultivo?",
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🌱 Soja", callback_data="cultivo_poe_soja")],
+                [InlineKeyboardButton("🌽 Maíz", callback_data="cultivo_poe_maiz")],
+                [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_poe_girasol")],
+                [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_poe_trigo")],
+                [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_poe_sorgo")],
+                [InlineKeyboardButton("❓ Otro", callback_data="cultivo_poe_otro")],
+            ])
+        )
+        return
+
+    # Detectar PEE sin cultivo — preguntar cultivo con botones
+    if any(kw in t_lower for kw in PEE_MOMENTOS_SOLOS) and not any(kw in t_lower for kw in CULTIVOS_KEYS):
+        context.user_data['momento_pendiente'] = 'pee'
+        await update.message.reply_text(
+            "¿PEE de qué cultivo?",
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🌱 Soja", callback_data="cultivo_pee_soja")],
+                [InlineKeyboardButton("🌽 Maíz", callback_data="cultivo_pee_maiz")],
+                [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_pee_girasol")],
+                [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_pee_trigo")],
+                [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_pee_sorgo")],
+                [InlineKeyboardButton("❓ Otro", callback_data="cultivo_pee_otro")],
+            ])
+        )
+        return
+
+    # Detectar cultivo solo sin momento ni maleza — preguntar momento con botones
+    MOMENTOS_KEYS = ["pee", "pre-emergencia", "preemergencia", "poe", "post-emergencia",
+                     "postemergencia", "barbecho", "presiembra", "pre-siembra"]
+    tiene_momento = any(kw in t_lower for kw in MOMENTOS_KEYS)
+    cultivo_detectado = next((v for k, v in CULTIVOS_ALIAS.items() if k in t_lower), None)
+    if cultivo_detectado and not tiene_momento and len(t_lower.split()) <= 3:
+        cultivo_nombre = {"trigo": "Trigo/Cebada", "cebada": "Trigo/Cebada", "soja": "Soja",
+                          "maiz": "Maíz", "girasol": "Girasol", "sorgo": "Sorgo"}.get(cultivo_detectado, cultivo_detectado)
+        context.user_data['cultivo_solo'] = cultivo_detectado
+        await update.message.reply_text(
+            f"Cultivo: {cultivo_nombre} ✅\n\n¿En qué momento de manejo estás?",
+            reply_markup=kb_momento_manejo()
+        )
+        return
+
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
@@ -4419,10 +4472,11 @@ async def handle_callback(update, context):
 
     # Selección de momento (cultivo+maleza detectados sin momento)
     if data in ("momento_barbecho", "momento_pee", "momento_poe"):
-        cultivo = context.user_data.get('cm_cultivo')
+        cultivo = context.user_data.get('cm_cultivo') or context.user_data.get('cultivo_solo')
         maleza = context.user_data.get('cm_maleza')
         context.user_data.pop('cm_cultivo', None)
         context.user_data.pop('cm_maleza', None)
+        context.user_data.pop('cultivo_solo', None)
 
         if data == "momento_barbecho":
             # Arrancar flujo de barbecho con cultivo y maleza pre-cargados
@@ -4471,6 +4525,74 @@ async def handle_callback(update, context):
                     messages=[{"role": "user", "content": texto_api}]
                 )
                 await query.message.reply_text(response.content[0].text)
+        return
+
+    # Cultivo seleccionado desde "PEE sin cultivo"
+    if data.startswith("cultivo_pee_"):
+        cultivo_elegido = data.replace("cultivo_pee_", "")
+        context.user_data.pop('momento_pendiente', None)
+        if cultivo_elegido == "otro":
+            await query.message.reply_text(
+                "Para cultivos como Colza, Arveja o Camelina escribí tu consulta directamente con cultivo + maleza + PEE."
+            )
+            return
+        cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol",
+                          "trigo": "Trigo/Cebada", "sorgo": "Sorgo"}.get(cultivo_elegido, cultivo_elegido)
+        context.user_data['pee_cultivo'] = cultivo_elegido
+        if cultivo_elegido == "trigo":
+            kb_maleza = kb_pee_maleza_trigo()
+        elif cultivo_elegido == "maiz":
+            kb_maleza = kb_pee_maleza_maiz()
+        elif cultivo_elegido == "girasol":
+            kb_maleza = kb_pee_maleza_girasol()
+        elif cultivo_elegido == "sorgo":
+            # Sorgo va directo a objetivo
+            await query.message.reply_text(
+                f"Cultivo: {cultivo_nombre} ✅\n\n¿Cuál es el objetivo?",
+                reply_markup=kb_pee_objetivo()
+            )
+            return
+        else:
+            kb_maleza = kb_pee_maleza_soja()
+        await query.message.reply_text(
+            f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza tenés en el lote?",
+            reply_markup=kb_maleza
+        )
+        return
+
+    # Cultivo seleccionado desde "POE sin cultivo"
+    if data.startswith("cultivo_poe_"):
+        cultivo_elegido = data.replace("cultivo_poe_", "")
+        context.user_data.pop('momento_pendiente', None)
+        if cultivo_elegido == "otro":
+            await query.message.reply_text(
+                "Para cultivos como Colza, Arveja o Camelina escribí tu consulta directamente con cultivo + maleza + POE."
+            )
+            return
+        if cultivo_elegido == "maiz":
+            context.user_data['poe_maiz_estado'] = 'esperando_biotipo'
+            await query.message.reply_text(
+                "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
+                reply_markup=kb_poe_maiz_biotipo()
+            )
+        else:
+            cultivo_nombre = {"soja": "Soja", "girasol": "Girasol", "trigo": "Trigo/Cebada", "sorgo": "Sorgo"}.get(cultivo_elegido, cultivo_elegido)
+            context.user_data['cm_cultivo'] = cultivo_elegido
+            await query.message.reply_text(
+                f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza querés controlar?",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🌿 Especificá la maleza escribiéndola", callback_data="poe_maleza_texto")]
+                ])
+            )
+            # Para soja/girasol/trigo/sorgo POE — mandar a la API con cultivo+POE
+            texto_api = f"herbicidas POE post-emergencia en {cultivo_elegido}"
+            response = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=3000,
+                system=KNOWLEDGE_BASE,
+                messages=[{"role": "user", "content": texto_api}]
+            )
+            await query.message.reply_text(response.content[0].text)
         return
 
     # Flujo PEE guiado — maleza
