@@ -438,7 +438,7 @@ NOTAS GENERALES BARBECHO:
 ⚠️ Heat NO usar en pre-siembra de girasol. Shark válido en todos los cultivos sin restricción.
 
 BARBECHO LARGO: aplicación abril-junio. Objetivo: pico 1 de emergencia otoñal.
-BARBECHO CORTO: aplicación agosto-septiembre. Objetivo: pico 2 de emergencia y presiembra inmediata.
+BARBECHO INTERMEDIO: aplicación agosto-septiembre. Objetivo: pico 2 de emergencia y presiembra inmediata.
 TRIGO: sin distinción largo/corto — siempre presiembra por calendario de siembra invernal.
 
 --- LOLIUM (RAIGRÁS) EN BARBECHO ---
@@ -553,7 +553,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha — sin residual, opción mínima
 
 
-LOLIUM — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+LOLIUM — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ MOMENTO: Agosto-septiembre es la ventana óptima. Control sostenido sin necesidad de doble golpe en la mayoría de los casos.
 
@@ -577,7 +577,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
 
 
-LOLIUM — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+LOLIUM — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Atrazina fitotóxica en girasol — NO usar.
 
@@ -730,7 +730,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🔁 1° Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
 
 
-CONYZA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+CONYZA — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ MOMENTO: Segundo pico de emergencia. Plántulas pequeñas — mejor momento para control.
 
@@ -772,7 +772,7 @@ MAÍZ:
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
 
 
-CONYZA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+CONYZA — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Pixxaro puede aplicarse hasta 0 días antes de siembra de girasol — ventaja clave en barbecho corto.
 ⚠️ Saflufenacil, metsulfurón NO usar en pre-siembra girasol.
@@ -926,7 +926,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🔁 1° Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
 
 
-BRASSICA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+BRASSICA — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ Verificar intervalos de carencia con especial atención — la siembra es inmediata.
 
@@ -969,7 +969,7 @@ MAÍZ:
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
 
 
-BRASSICA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+BRASSICA — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Biciclopirone sin registro — NO usar. Atrazina 90 días intervalo — NO alcanza. Heat NO usar. Flurocloridona es la estrella.
 
@@ -1372,7 +1372,7 @@ PEE:
 ✅ Terbutrina (Igran)
 ✅ Terbutilazina (Terbine)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 ✅ Voraxor 7 DAS
 
@@ -1398,7 +1398,7 @@ PEE:
 ✅ Flurocloridona (Rainbow)
 ✅ Diflufenicán (Brodal)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA ESTADO DE HOJAS (Z1.2+):
@@ -1447,7 +1447,7 @@ PEE:
 ✅ Piroxasulfone (Yamato Top)
 ✅ Pendimetalín (Herbadox)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA:
@@ -1604,7 +1604,7 @@ PEE (después de siembra, antes de emergencia del cultivo):
 ✅ Clorsulfurón + Metsulfurón (Finesse WG) 12-15 g/ha — ALS doble MoA, latifoliadas
 ✅ Auxinas/hormonales (2,4D, Dicamba, MCPA, Fluroxipir, Picloram y mezclas) — según maleza y estadio cultivo
 
-PSI / Barbecho Corto (antes de siembra):
+PSI / Barbecho Intermedio (antes de siembra):
 ✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, hasta 10 DAS antes siembra
 ✅ Trifludimoxazin/Saflufenacil (Voraxor) 100-200 cc/ha — PPO+PDS, barbecho químico, hasta 7 DAS
 ✅ Azugro (Bixlozona) 1,2-1,5 L/ha — grupo 13, raigrás. Hasta 14 DAS trigo / 60 DAS cebada. Incompatible con glifosato sal potásica
@@ -2012,7 +2012,7 @@ def pee_trigo_raigras_residual():
         "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
         "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan raigrás ya nacido.\n"
-        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/PSI — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
+        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Intermedio/PSI — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
     )
 
 def pee_trigo_raigras_nacida():
@@ -2172,7 +2172,7 @@ def pee_soja_amaranthus_nacida():
         "🥉 Glifosato 1080 g ia/ha + Epirefenacil 5,5% (Empera) 600 cc/ha\n\n"
         "⚠️ Sobre 5 cm — eficacia cae fuerte. Doble golpe:\n"
         "   1° Glifosato + PPO (sin hormonal) // 2° Glufosinato 28% 2,5 L/ha o Paraquat 27,6% 1,5-2,5 L/ha\n"
-        "⚠️ Para mayor eficacia sobre nacida combinando con 2,4D (Glifosato+2,4D+Heat/Shark) — ver Barbecho Corto/PSI, respetando carencia 7-15 días antes de siembra\n\n"
+        "⚠️ Para mayor eficacia sobre nacida combinando con 2,4D (Glifosato+2,4D+Heat/Shark) — ver Barbecho Intermedio/PSI, respetando carencia 7-15 días antes de siembra\n\n"
         "🔁 POE selectivo según biotipo (soja ya emergida):\n"
         "✅ Soja RR (resistente solo a glifosato): Fomesafén 25% (Flex) 1-1,5 L/ha, Lactofén 24% (Cobra) 0,6-0,8 L/ha, Benazolín 50% 0,6-1 L/ha\n"
         "✅ Soja Enlist (tolera glifosato + glufosinato + 2,4D Enlist): Glifosato 1080 g ia/ha + Glufosinato 28% 2-3 L/ha + 2,4D Enlist (colina) 30% e.a. 1,5-2 L/ha hasta V4-V6.\n"
@@ -2190,7 +2190,7 @@ def pee_soja_amaranthus_ambos():
         "   + Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha\n\n"
         "⚠️ Sobre 5 cm: doble golpe antes del residual\n"
         "⚠️ Evitar ALS solo en el residual — resistencia confirmada\n"
-        "⚠️ Para mayor eficacia sobre nacida con 2,4D — ver Barbecho Corto/PSI"
+        "⚠️ Para mayor eficacia sobre nacida con 2,4D — ver Barbecho Intermedio/PSI"
     )
 
 def pee_soja_cruciferas_residual():
@@ -2203,7 +2203,7 @@ def pee_soja_cruciferas_residual():
         "✅ (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Clomazone 36% 1,75-2 L/ha — amplio espectro\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Imazetapir 10% 0,8-1 L/ha\n\n"
-        "⚠️ PSI (con restricción de días, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "⚠️ PSI (con restricción de días, antes de siembra) — ver Barbecho Intermedio/PSI:\n"
         "   Flumioxazin 48% 0,1-0,15 L/ha — 7 DAS\n"
         "   Diflufenicán 50% 0,3 L/ha — 15 DAS\n"
         "   Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha — 7 DAS\n"
@@ -2222,8 +2222,8 @@ def pee_soja_cruciferas_nacida():
         "✅ Glifosato + Piraflufen 200 cc/ha\n"
         "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
         "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
-        "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/PSI\n"
-        "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/PSI\n\n"
+        "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Intermedio/PSI\n"
+        "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Intermedio/PSI\n\n"
         "🔁 POE selectivo según biotipo (soja ya emergida):\n"
         "✅ Soja RR/no-OGM: Fomesafén 25% 1-1,5 L/ha, Aciflurfén 24% 1-1,5 L/ha, Lactofén 24% 0,6-0,8 L/ha,\n"
         "   Fomesafén + Benazolín 50% 0,6 L/ha, Bentazón 60% 1,5 L/ha\n"
@@ -2239,7 +2239,7 @@ def pee_soja_cruciferas_ambos():
         "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha o Metribuzin 48% (Sencorex) 0,8 kg/ha\n\n"
         "🥈 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   + (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n\n"
-        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Corto/PSI"
+        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Intermedio/PSI"
     )
 
 def pee_soja_commelina_general():
@@ -2247,7 +2247,7 @@ def pee_soja_commelina_general():
         "SOJA — COMMELINA ERECTA (Flor de Santa Lucía) — PEE\n\n"
         "⚠️ Commelina se controla principalmente con hormonal (2,4D), que requiere carencia antes de siembra.\n"
         "En PEE (después de siembra, soja convencional/RR) no hay opciones residuales ni de rescate efectivas para esta maleza.\n\n"
-        "🔁 El control real se da en PSI/Barbecho Corto — ver esa sección. Opciones allí:\n"
+        "🔁 El control real se da en PSI/Barbecho Intermedio — ver esa sección. Opciones allí:\n"
         "   Glifosato + 2,4D + Saflufenacil 70% (Heat) 40 g/ha\n"
         "   Glifosato + 2,4D + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   Glifosato + 2,4D + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
@@ -2270,7 +2270,7 @@ def pee_soja_parietaria_residual():
         "SOJA — PARIETARIA — PEE RESIDUAL\n\n"
         "✅ Metribuzin 48% (Sencorex) 0,8-1 L/ha\n"
         "✅ Prometrina 48% (Gesagard) 1,5-2 L/ha\n"
-        "✅ Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS, ver Barbecho Corto/PSI\n"
+        "✅ Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS, ver Barbecho Intermedio/PSI\n"
         "⚠️ Atrazina 90% 0,5 kg/ha — hasta 30 DAS. Verificar registro/rotación en tu zona,\n"
         "   uso reportado en fuente 2025 pero con antecedentes de restricción en soja\n\n"
         "⚠️ Parietaria tiene control limitado en general — ningún producto da control total"
@@ -2304,7 +2304,7 @@ def pee_soja_cebollin_residual():
         "SOJA — CEBOLLÍN (Cyperus rotundus) — PEE\n\n"
         "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja del cebollín, control parcial + algo de residualidad\n"
         "⚠️ Carencia 90 días — verificar tolerancia de la variedad de soja y restricción para el cultivo siguiente en la rotación\n\n"
-        "🔁 La opción realmente eficaz es Halosulfurón (Sempra) — pero requiere mínimo 10 DAS, ver Barbecho Corto/PSI:\n"
+        "🔁 La opción realmente eficaz es Halosulfurón (Sempra) — pero requiere mínimo 10 DAS, ver Barbecho Intermedio/PSI:\n"
         "   Halosulfurón metil 75% (Sempra) 100-150 g/ha solo, o 30-50 g/ha + Glifosato 48% 2,5 L/ha\n\n"
         "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
     )
@@ -2315,7 +2315,7 @@ def pee_soja_cebollin_nacida():
         "✅ Glifosato ≥2000 g.e.a./ha solo — sobre cebollín en activo crecimiento (6-8 hojas), control parcial\n"
         "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja, control parcial\n\n"
         "⚠️ Ninguna opción PEE da control completo sobre cebollín nacido.\n"
-        "   Para mejor resultado, ver Barbecho Corto/PSI con Sempra (mínimo 10 DAS, cebollín ~15cm)\n"
+        "   Para mejor resultado, ver Barbecho Intermedio/PSI con Sempra (mínimo 10 DAS, cebollín ~15cm)\n"
         "⚠️ Carencia Pivot 90 días si se usa\n"
         "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
     )
@@ -2330,7 +2330,7 @@ def pee_soja_conyza_residual():
         "✅ (Sulfentrazone/S-metolacloro) 1,8-2,5 L/ha — Capaz Elite\n\n"
         "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan conyza ya nacida.\n\n"
-        "🔁 PSI (con DAS, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "🔁 PSI (con DAS, antes de siembra) — ver Barbecho Intermedio/PSI:\n"
         "   Metsulfurón, Clorimurón, Diclosulam (Spider), Texaro, Fierce, Zidua, Alana, Pledge, entre otros"
     )
 
@@ -2366,7 +2366,7 @@ def pee_maiz_raigras_residual():
         "✅ Pendimetalín (Herbadox) — gramíneas\n"
         "✅ S-metolacloro 96% (Dual Gold) — VLCFA, gramíneas anuales de semilla\n\n"
         "⚠️ Residual moderado. El control principal de raigrás en maíz se logra ANTES de siembra\n"
-        "   con graminicidas ACCasa — ver Barbecho Corto/PSI:\n"
+        "   con graminicidas ACCasa — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + Cletodim 24% (Select) 0,7-1 L/ha, mínimo 10 DAS (cuanto más, mejor)"
     )
 
@@ -2376,7 +2376,7 @@ def pee_maiz_raigras_nacida():
         "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa (FOPs/DIMs) son FITOTÓXICOS\n"
         "   en maíz convencional y RR — NUNCA aplicar en PEE/POE de estos biotipos.\n\n"
         "⚠️ Maíz convencional/RR: sin opciones selectivas de rescate sobre raigrás nacido en PEE.\n"
-        "   El control principal debió lograrse antes de siembra (Barbecho Corto/PSI con ACCasa, mínimo 10 DAS).\n\n"
+        "   El control principal debió lograrse antes de siembra (Barbecho Intermedio/PSI con ACCasa, mínimo 10 DAS).\n\n"
         "🔁 Rescate escaso y parcial — solo si el maíz aún no emergió:\n"
         "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v — quema de contacto sobre raigrás chico\n"
         "⚠️ Aplicar antes de la emergencia del maíz. Control parcial, puede rebrotar.\n\n"
@@ -2389,7 +2389,7 @@ def pee_maiz_raigras_ambos():
         "MAÍZ — RAIGRÁS — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
         "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa son FITOTÓXICOS en maíz convencional y RR.\n\n"
         "⚠️ Maíz convencional/RR: si hay raigrás nacido al momento de PEE, no hay combinación\n"
-        "   residual+rescate selectiva posible. La estrategia debió aplicarse en Barbecho Corto/PSI.\n\n"
+        "   residual+rescate selectiva posible. La estrategia debió aplicarse en Barbecho Intermedio/PSI.\n\n"
         "🔁 Rescate parcial (solo si el maíz aún no emergió) + residual:\n"
         "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v\n"
         "   + Piroxasulfone 85% (Yamato) o Pendimetalín (Herbadox) como residual\n\n"
@@ -2483,7 +2483,7 @@ def pee_girasol_general_residual():
         "✅ (Diflufenicán/Prometrina) 0,3/2 L/ha\n"
         "✅ (Flurocloridona/Sulfentrazone/S-metolacloro) 0,8/0,3/1 L/ha\n"
         "✅ (Prometrina/Sulfentrazone/S-metolacloro) 1,5/0,3/1 L/ha\n\n"
-        "⚠️ PSI (con DAS) — ver Barbecho Corto/PSI: Flumioxazin 48% (Sumisoya) 50-100 cc/ha — 20-30 DAS\n\n"
+        "⚠️ PSI (con DAS) — ver Barbecho Intermedio/PSI: Flumioxazin 48% (Sumisoya) 50-100 cc/ha — 20-30 DAS\n\n"
         "🚫 NO usar en girasol: saflufenacil (Heat), fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas\n\n"
         "✅ Solo Girasoles Clearfield: Imazapir 80% (Clearsol DF) 100 g/ha"
     )
@@ -2499,7 +2499,7 @@ def pee_girasol_general_nacida():
         "✅ ACCasa (gramíneas): Haloxyfop (Galant Max), Propaquizafop (Agil), Cletodim (Select)\n\n"
         "✅ Girasoles CL: Clearsol DF (Imazapir) 100 g/ha + Aceite (DASH) 200 cc/ha V2-V4\n"
         "   + Graminicida si hace falta\n\n"
-        "⚠️ Para latifoliadas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "⚠️ Para latifoliadas nacidas antes de siembra — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + 2,4D (20 DAS), Dicamba (30 DAS), Fluroxipir/Halauxifén (1 DAS)"
     )
 
@@ -2536,7 +2536,7 @@ def pee_girasol_cruciferas_nacida():
         "⚠️ Aplicar con crucíferas en roseta chica para mejor respuesta\n\n"
         "✅ Girasoles CL: Imazapir 80% (Clearsol DF) V2-V4 / (Imazapir+Imazamox) (Clearsol Plus II) V2-V4\n"
         "   — mejor opción disponible en CL\n\n"
-        "🔁 Para crucíferas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "🔁 Para crucíferas nacidas antes de siembra — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + 2,4D (20 DAS mínimo), Glifosato + Dicamba (45 DAS mínimo)"
     )
 
@@ -2546,7 +2546,7 @@ def pee_girasol_cruciferas_ambos():
         "🥇 Flurocloridona 25% (Rainbow) + Diflufenicán 50% (Brodal) como residual\n"
         "   + Carfentrazone 40% (Shark) 50-75 cc/ha o Fluroxipir (Starane Xtra) sobre nacida\n\n"
         "⚠️ Control sobre nacida es parcial — priorizar el residual en PEE\n"
-        "⚠️ Girasol convencional/no-CL: si hay crucíferas establecidas, el control debió lograrse en Barbecho Corto/PSI\n\n"
+        "⚠️ Girasol convencional/no-CL: si hay crucíferas establecidas, el control debió lograrse en Barbecho Intermedio/PSI\n\n"
         "✅ Girasoles CL: Flurocloridona+Diflufenicán (residual PEE) — seguimiento POE con Clearsol si reescapa\n\n"
         "🚫 NO usar en girasol: saflufenacil, metsulfurón, fomesafén, biciclopirona"
     )
@@ -2559,7 +2559,7 @@ def pee_maiz_cruciferas_residual():
         "✅ Flurocloridona 25% (Rainbow) — PDS\n"
         "✅ Diflufenicán 50% (Brodal) — PDS\n"
         "✅ Piroxasulfone 85% (Yamato) — VLCFA\n\n"
-        "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Corto/PSI"
+        "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Intermedio/PSI"
     )
 
 def pee_maiz_cruciferas_nacida():
@@ -2613,7 +2613,7 @@ def pee_sorgo_residual():
         "✅ Terbutilazina 75% 1 kg/ha + S-metolacloro 96% 0,9-1,3 L/ha ⚠️ Concep III obligatorio\n"
         "✅ (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n"
         "✅ Atrazina 90% + (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n\n"
-        "⚠️ PSI (con DAS): Flumioxazin 48% (Sumisoya) 0,15 L/ha — 20-30 DAS, ver Barbecho Corto/PSI"
+        "⚠️ PSI (con DAS): Flumioxazin 48% (Sumisoya) 0,15 L/ha — 20-30 DAS, ver Barbecho Intermedio/PSI"
     )
 
 def pee_sorgo_nacida():
@@ -3251,7 +3251,7 @@ def _lolium_soja_maiz_largo_ambos(cultivo):
 
 def _lolium_soja_maiz_corto_nacida():
     return (
-        "LOLIUM — BARBECHO CORTO — ELIMINAR MALEZA YA NACIDA\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Agosto-septiembre es la ventana óptima. Control sostenido sin doble golpe en la mayoría de los casos.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
@@ -3261,7 +3261,7 @@ def _lolium_soja_maiz_corto_nacida():
 
 def _lolium_soja_maiz_corto_residual(cultivo):
     return (
-        "LOLIUM — BARBECHO CORTO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha"
@@ -3269,7 +3269,7 @@ def _lolium_soja_maiz_corto_residual(cultivo):
 
 def _lolium_soja_maiz_corto_ambos(cultivo):
     return (
-        "LOLIUM — BARBECHO CORTO — MALEZA NACIDA + RESIDUAL\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
@@ -3315,7 +3315,7 @@ def _lolium_girasol_largo_ambos():
 
 def _lolium_girasol_corto_nacida():
     return (
-        "LOLIUM — BARBECHO CORTO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
         "🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas\n\n"
@@ -3324,7 +3324,7 @@ def _lolium_girasol_corto_nacida():
 
 def _lolium_girasol_corto_ambos():
     return (
-        "LOLIUM — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "⚠️ Atrazina fitotóxica en girasol — NO usar.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
@@ -3600,7 +3600,7 @@ def _conyza_largo_ambos(cultivo):
 
 def _conyza_corto_nacida():
     return (
-        "CONYZA — BARBECHO CORTO — ELIMINAR MALEZA YA NACIDA\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Segundo pico de emergencia. Plántulas pequeñas — mejor momento para control.\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha\n"
@@ -3613,14 +3613,14 @@ def _conyza_corto_nacida():
 def _conyza_corto_residual(cultivo):
     if cultivo == "soja":
         return (
-            "CONYZA — BARBECHO CORTO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha — ⚠️ verificar 45 días antes de siembra soja\n"
             "🥉 Voraxor (Trifludimoxazin/Saflufenacil) 0,1-0,15 L/ha"
         )
     else:
         return (
-            "CONYZA — BARBECHO CORTO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha"
@@ -3629,7 +3629,7 @@ def _conyza_corto_residual(cultivo):
 def _conyza_corto_ambos(cultivo):
     if cultivo == "soja":
         return (
-            "CONYZA — BARBECHO CORTO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — ⚠️ verificar 45 días\n\n"
@@ -3638,7 +3638,7 @@ def _conyza_corto_ambos(cultivo):
         )
     else:
         return (
-            "CONYZA — BARBECHO CORTO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
@@ -3679,7 +3679,7 @@ def _conyza_girasol_largo_ambos():
 
 def _conyza_girasol_corto_nacida():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Pixxaro puede aplicarse hasta 0 días antes de siembra de girasol.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Pixxaro (Halauxifen + Fluroxipir) 400-500 cc/ha + aceite mineral 1% v/v — SENASA N° 40.386\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha — ⚠️ 7-15 días antes de siembra\n"
@@ -3689,7 +3689,7 @@ def _conyza_girasol_corto_nacida():
 
 def _conyza_girasol_corto_residual():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "⚠️ Atrazina (90 días) no alcanza en barbecho corto. Saflufenacil NO usar en girasol.\n\n"
         "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en girasol\n"
         "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
@@ -3698,7 +3698,7 @@ def _conyza_girasol_corto_residual():
 
 def _conyza_girasol_corto_ambos():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + Pixxaro 400-500 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite mineral 1% v/v\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ 7-15 días antes de siembra\n"
         "🥉 Glifosato 1080 g ia/ha + Pixxaro 400-500 cc/ha + Diflufenican 50% (Brodal) 250 cc/ha + aceite mineral 1% v/v\n\n"
@@ -3797,14 +3797,14 @@ def _brassica_corto_nacida():
 def _brassica_corto_residual(cultivo):
     if cultivo == "soja":
         return (
-            "BRASSICA — BARBECHO CORTO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja"
         )
     else:
         return (
-            "BRASSICA — BARBECHO CORTO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz"
@@ -3813,7 +3813,7 @@ def _brassica_corto_residual(cultivo):
 def _brassica_corto_ambos(cultivo):
     if cultivo == "soja":
         return (
-            "BRASSICA — BARBECHO CORTO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Shark 75 cc/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ 30-40 días antes de soja\n\n"
@@ -3822,7 +3822,7 @@ def _brassica_corto_ambos(cultivo):
         )
     else:
         return (
-            "BRASSICA — BARBECHO CORTO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha + Shark 75 cc/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
@@ -3872,7 +3872,7 @@ def _brassica_girasol_corto_nacida():
 
 def _brassica_girasol_corto_ambos():
     return (
-        "BRASSICA — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "BRASSICA — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ 7-15 días antes de siembra\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha\n\n"
@@ -4044,8 +4044,8 @@ def kb_lolium_obj():
 
 def kb_momento():
     return InlineKeyboardMarkup([[
-        InlineKeyboardButton("📅 Largo (abril-junio)", callback_data="barb_momento_largo"),
-        InlineKeyboardButton("📅 Corto (agosto-septiembre)", callback_data="barb_momento_corto"),
+        InlineKeyboardButton("📅 Barbecho Largo", callback_data="barb_momento_largo"),
+        InlineKeyboardButton("📅 Barbecho Intermedio", callback_data="barb_momento_corto"),
     ]])
 
 def kb_objetivo():
@@ -4789,7 +4789,7 @@ async def handle_callback(update, context):
             context.user_data['barbecho_estado'] = 'esperando_momento'
             cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
             await query.edit_message_text(
-                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?",
+                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?\n📅 Barbecho Largo: abril-junio\n📅 Barbecho Intermedio: agosto-septiembre",
                 reply_markup=kb_momento()
             )
         return
@@ -4836,7 +4836,7 @@ async def handle_callback(update, context):
         maleza = context.user_data.get('barbecho_maleza', '')
         cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
         maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
-        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)"}.get(momento, momento)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Intermedio (agosto-septiembre)"}.get(momento, momento)
 
         await query.edit_message_text(
             f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué objetivo buscás?",
@@ -4856,7 +4856,7 @@ async def handle_callback(update, context):
 
         cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
         maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
-        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Intermedio (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
         objetivo_nombre = {"nacida": "Eliminar maleza nacida", "residual": "Prevenir nuevos nacimientos", "ambos": "Ambos objetivos"}.get(objetivo, objetivo)
 
         await query.edit_message_text(
@@ -5286,7 +5286,7 @@ NOTAS GENERALES BARBECHO:
 ⚠️ Heat NO usar en pre-siembra de girasol. Shark válido en todos los cultivos sin restricción.
 
 BARBECHO LARGO: aplicación abril-junio. Objetivo: pico 1 de emergencia otoñal.
-BARBECHO CORTO: aplicación agosto-septiembre. Objetivo: pico 2 de emergencia y presiembra inmediata.
+BARBECHO INTERMEDIO: aplicación agosto-septiembre. Objetivo: pico 2 de emergencia y presiembra inmediata.
 TRIGO: sin distinción largo/corto — siempre presiembra por calendario de siembra invernal.
 
 --- LOLIUM (RAIGRÁS) EN BARBECHO ---
@@ -5401,7 +5401,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha — sin residual, opción mínima
 
 
-LOLIUM — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+LOLIUM — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ MOMENTO: Agosto-septiembre es la ventana óptima. Control sostenido sin necesidad de doble golpe en la mayoría de los casos.
 
@@ -5425,7 +5425,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha
 
 
-LOLIUM — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+LOLIUM — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Atrazina fitotóxica en girasol — NO usar.
 
@@ -5578,7 +5578,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🔁 1° Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
 
 
-CONYZA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+CONYZA — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ MOMENTO: Segundo pico de emergencia. Plántulas pequeñas — mejor momento para control.
 
@@ -5620,7 +5620,7 @@ MAÍZ:
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha
 
 
-CONYZA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+CONYZA — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Pixxaro puede aplicarse hasta 0 días antes de siembra de girasol — ventaja clave en barbecho corto.
 ⚠️ Saflufenacil, metsulfurón NO usar en pre-siembra girasol.
@@ -5774,7 +5774,7 @@ OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 🔁 1° Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
 
 
-BRASSICA — BARBECHO CORTO — SOJA / MAÍZ (agosto-septiembre):
+BRASSICA — BARBECHO INTERMEDIO — SOJA / MAÍZ (agosto-septiembre):
 
 ⚠️ Verificar intervalos de carencia con especial atención — la siembra es inmediata.
 
@@ -5817,7 +5817,7 @@ MAÍZ:
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
 
 
-BRASSICA — BARBECHO CORTO — GIRASOL (agosto-septiembre):
+BRASSICA — BARBECHO INTERMEDIO — GIRASOL (agosto-septiembre):
 
 ⚠️ Biciclopirone sin registro — NO usar. Atrazina 90 días intervalo — NO alcanza. Heat NO usar. Flurocloridona es la estrella.
 
@@ -6220,7 +6220,7 @@ PEE:
 ✅ Terbutrina (Igran)
 ✅ Terbutilazina (Terbine)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 ✅ Voraxor 7 DAS
 
@@ -6246,7 +6246,7 @@ PEE:
 ✅ Flurocloridona (Rainbow)
 ✅ Diflufenicán (Brodal)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA ESTADO DE HOJAS (Z1.2+):
@@ -6295,7 +6295,7 @@ PEE:
 ✅ Piroxasulfone (Yamato Top)
 ✅ Pendimetalín (Herbadox)
 
-PSI / Barbecho Corto:
+PSI / Barbecho Intermedio:
 ✅ Flumioxazin (Sumisoya) 10 DAS
 
 POST-EMERGENCIA:
@@ -6452,7 +6452,7 @@ PEE (después de siembra, antes de emergencia del cultivo):
 ✅ Clorsulfurón + Metsulfurón (Finesse WG) 12-15 g/ha — ALS doble MoA, latifoliadas
 ✅ Auxinas/hormonales (2,4D, Dicamba, MCPA, Fluroxipir, Picloram y mezclas) — según maleza y estadio cultivo
 
-PSI / Barbecho Corto (antes de siembra):
+PSI / Barbecho Intermedio (antes de siembra):
 ✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, hasta 10 DAS antes siembra
 ✅ Trifludimoxazin/Saflufenacil (Voraxor) 100-200 cc/ha — PPO+PDS, barbecho químico, hasta 7 DAS
 ✅ Azugro (Bixlozona) 1,2-1,5 L/ha — grupo 13, raigrás. Hasta 14 DAS trigo / 60 DAS cebada. Incompatible con glifosato sal potásica
@@ -6860,7 +6860,7 @@ def pee_trigo_raigras_residual():
         "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
         "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan raigrás ya nacido.\n"
-        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/PSI — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
+        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Intermedio/PSI — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
     )
 
 def pee_trigo_raigras_nacida():
@@ -7020,7 +7020,7 @@ def pee_soja_amaranthus_nacida():
         "🥉 Glifosato 1080 g ia/ha + Epirefenacil 5,5% (Empera) 600 cc/ha\n\n"
         "⚠️ Sobre 5 cm — eficacia cae fuerte. Doble golpe:\n"
         "   1° Glifosato + PPO (sin hormonal) // 2° Glufosinato 28% 2,5 L/ha o Paraquat 27,6% 1,5-2,5 L/ha\n"
-        "⚠️ Para mayor eficacia sobre nacida combinando con 2,4D (Glifosato+2,4D+Heat/Shark) — ver Barbecho Corto/PSI, respetando carencia 7-15 días antes de siembra\n\n"
+        "⚠️ Para mayor eficacia sobre nacida combinando con 2,4D (Glifosato+2,4D+Heat/Shark) — ver Barbecho Intermedio/PSI, respetando carencia 7-15 días antes de siembra\n\n"
         "🔁 POE selectivo según biotipo (soja ya emergida):\n"
         "✅ Soja RR (resistente solo a glifosato): Fomesafén 25% (Flex) 1-1,5 L/ha, Lactofén 24% (Cobra) 0,6-0,8 L/ha, Benazolín 50% 0,6-1 L/ha\n"
         "✅ Soja Enlist (tolera glifosato + glufosinato + 2,4D Enlist): Glifosato 1080 g ia/ha + Glufosinato 28% 2-3 L/ha + 2,4D Enlist (colina) 30% e.a. 1,5-2 L/ha hasta V4-V6.\n"
@@ -7038,7 +7038,7 @@ def pee_soja_amaranthus_ambos():
         "   + Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha\n\n"
         "⚠️ Sobre 5 cm: doble golpe antes del residual\n"
         "⚠️ Evitar ALS solo en el residual — resistencia confirmada\n"
-        "⚠️ Para mayor eficacia sobre nacida con 2,4D — ver Barbecho Corto/PSI"
+        "⚠️ Para mayor eficacia sobre nacida con 2,4D — ver Barbecho Intermedio/PSI"
     )
 
 def pee_soja_cruciferas_residual():
@@ -7051,7 +7051,7 @@ def pee_soja_cruciferas_residual():
         "✅ (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Clomazone 36% 1,75-2 L/ha — amplio espectro\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Imazetapir 10% 0,8-1 L/ha\n\n"
-        "⚠️ PSI (con restricción de días, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "⚠️ PSI (con restricción de días, antes de siembra) — ver Barbecho Intermedio/PSI:\n"
         "   Flumioxazin 48% 0,1-0,15 L/ha — 7 DAS\n"
         "   Diflufenicán 50% 0,3 L/ha — 15 DAS\n"
         "   Flumioxazin 15%/Piroxasulfone 34,5% (Fierce FMC) 0,5 L/ha — 7 DAS\n"
@@ -7070,8 +7070,8 @@ def pee_soja_cruciferas_nacida():
         "✅ Glifosato + Piraflufen 200 cc/ha\n"
         "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
         "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
-        "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/PSI\n"
-        "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/PSI\n\n"
+        "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Intermedio/PSI\n"
+        "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Intermedio/PSI\n\n"
         "🔁 POE selectivo según biotipo (soja ya emergida):\n"
         "✅ Soja RR/no-OGM: Fomesafén 25% 1-1,5 L/ha, Aciflurfén 24% 1-1,5 L/ha, Lactofén 24% 0,6-0,8 L/ha,\n"
         "   Fomesafén + Benazolín 50% 0,6 L/ha, Bentazón 60% 1,5 L/ha\n"
@@ -7087,7 +7087,7 @@ def pee_soja_cruciferas_ambos():
         "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha o Metribuzin 48% (Sencorex) 0,8 kg/ha\n\n"
         "🥈 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   + (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n\n"
-        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Corto/PSI"
+        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Intermedio/PSI"
     )
 
 def pee_soja_commelina_general():
@@ -7095,7 +7095,7 @@ def pee_soja_commelina_general():
         "SOJA — COMMELINA ERECTA (Flor de Santa Lucía) — PEE\n\n"
         "⚠️ Commelina se controla principalmente con hormonal (2,4D), que requiere carencia antes de siembra.\n"
         "En PEE (después de siembra, soja convencional/RR) no hay opciones residuales ni de rescate efectivas para esta maleza.\n\n"
-        "🔁 El control real se da en PSI/Barbecho Corto — ver esa sección. Opciones allí:\n"
+        "🔁 El control real se da en PSI/Barbecho Intermedio — ver esa sección. Opciones allí:\n"
         "   Glifosato + 2,4D + Saflufenacil 70% (Heat) 40 g/ha\n"
         "   Glifosato + 2,4D + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   Glifosato + 2,4D + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
@@ -7118,7 +7118,7 @@ def pee_soja_parietaria_residual():
         "SOJA — PARIETARIA — PEE RESIDUAL\n\n"
         "✅ Metribuzin 48% (Sencorex) 0,8-1 L/ha\n"
         "✅ Prometrina 48% (Gesagard) 1,5-2 L/ha\n"
-        "✅ Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS, ver Barbecho Corto/PSI\n"
+        "✅ Trifludimoxazin/Saflufenacil (Voraxor) 0,1-0,2 L/ha — 7 DAS, ver Barbecho Intermedio/PSI\n"
         "⚠️ Atrazina 90% 0,5 kg/ha — hasta 30 DAS. Verificar registro/rotación en tu zona,\n"
         "   uso reportado en fuente 2025 pero con antecedentes de restricción en soja\n\n"
         "⚠️ Parietaria tiene control limitado en general — ningún producto da control total"
@@ -7152,7 +7152,7 @@ def pee_soja_cebollin_residual():
         "SOJA — CEBOLLÍN (Cyperus rotundus) — PEE\n\n"
         "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja del cebollín, control parcial + algo de residualidad\n"
         "⚠️ Carencia 90 días — verificar tolerancia de la variedad de soja y restricción para el cultivo siguiente en la rotación\n\n"
-        "🔁 La opción realmente eficaz es Halosulfurón (Sempra) — pero requiere mínimo 10 DAS, ver Barbecho Corto/PSI:\n"
+        "🔁 La opción realmente eficaz es Halosulfurón (Sempra) — pero requiere mínimo 10 DAS, ver Barbecho Intermedio/PSI:\n"
         "   Halosulfurón metil 75% (Sempra) 100-150 g/ha solo, o 30-50 g/ha + Glifosato 48% 2,5 L/ha\n\n"
         "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
     )
@@ -7163,7 +7163,7 @@ def pee_soja_cebollin_nacida():
         "✅ Glifosato ≥2000 g.e.a./ha solo — sobre cebollín en activo crecimiento (6-8 hojas), control parcial\n"
         "✅ Imazapic 240 g/L (Pivot) 1 L/ha — hasta 4ª hoja, control parcial\n\n"
         "⚠️ Ninguna opción PEE da control completo sobre cebollín nacido.\n"
-        "   Para mejor resultado, ver Barbecho Corto/PSI con Sempra (mínimo 10 DAS, cebollín ~15cm)\n"
+        "   Para mejor resultado, ver Barbecho Intermedio/PSI con Sempra (mínimo 10 DAS, cebollín ~15cm)\n"
         "⚠️ Carencia Pivot 90 días si se usa\n"
         "⚠️ Coadyuvante: surfactante no iónico 0,1-0,2% v/v. NO aceite mineral."
     )
@@ -7178,7 +7178,7 @@ def pee_soja_conyza_residual():
         "✅ (Sulfentrazone/S-metolacloro) 1,8-2,5 L/ha — Capaz Elite\n\n"
         "⚠️ Regiones con biotipos resistentes a EPSPS y ALS — verificar antes de elegir\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan conyza ya nacida.\n\n"
-        "🔁 PSI (con DAS, antes de siembra) — ver Barbecho Corto/PSI:\n"
+        "🔁 PSI (con DAS, antes de siembra) — ver Barbecho Intermedio/PSI:\n"
         "   Metsulfurón, Clorimurón, Diclosulam (Spider), Texaro, Fierce, Zidua, Alana, Pledge, entre otros"
     )
 
@@ -7214,7 +7214,7 @@ def pee_maiz_raigras_residual():
         "✅ Pendimetalín (Herbadox) — gramíneas\n"
         "✅ S-metolacloro 96% (Dual Gold) — VLCFA, gramíneas anuales de semilla\n\n"
         "⚠️ Residual moderado. El control principal de raigrás en maíz se logra ANTES de siembra\n"
-        "   con graminicidas ACCasa — ver Barbecho Corto/PSI:\n"
+        "   con graminicidas ACCasa — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + Cletodim 24% (Select) 0,7-1 L/ha, mínimo 10 DAS (cuanto más, mejor)"
     )
 
@@ -7224,7 +7224,7 @@ def pee_maiz_raigras_nacida():
         "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa (FOPs/DIMs) son FITOTÓXICOS\n"
         "   en maíz convencional y RR — NUNCA aplicar en PEE/POE de estos biotipos.\n\n"
         "⚠️ Maíz convencional/RR: sin opciones selectivas de rescate sobre raigrás nacido en PEE.\n"
-        "   El control principal debió lograrse antes de siembra (Barbecho Corto/PSI con ACCasa, mínimo 10 DAS).\n\n"
+        "   El control principal debió lograrse antes de siembra (Barbecho Intermedio/PSI con ACCasa, mínimo 10 DAS).\n\n"
         "🔁 Rescate escaso y parcial — solo si el maíz aún no emergió:\n"
         "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v — quema de contacto sobre raigrás chico\n"
         "⚠️ Aplicar antes de la emergencia del maíz. Control parcial, puede rebrotar.\n\n"
@@ -7237,7 +7237,7 @@ def pee_maiz_raigras_ambos():
         "MAÍZ — RAIGRÁS — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
         "🚨 ADVERTENCIA CRÍTICA: Cletodim y todos los ACCasa son FITOTÓXICOS en maíz convencional y RR.\n\n"
         "⚠️ Maíz convencional/RR: si hay raigrás nacido al momento de PEE, no hay combinación\n"
-        "   residual+rescate selectiva posible. La estrategia debió aplicarse en Barbecho Corto/PSI.\n\n"
+        "   residual+rescate selectiva posible. La estrategia debió aplicarse en Barbecho Intermedio/PSI.\n\n"
         "🔁 Rescate parcial (solo si el maíz aún no emergió) + residual:\n"
         "✅ Paraquat 27,6% (Gramoxone) 2 L/ha + sulfato de amonio 2% v/v\n"
         "   + Piroxasulfone 85% (Yamato) o Pendimetalín (Herbadox) como residual\n\n"
@@ -7331,7 +7331,7 @@ def pee_girasol_general_residual():
         "✅ (Diflufenicán/Prometrina) 0,3/2 L/ha\n"
         "✅ (Flurocloridona/Sulfentrazone/S-metolacloro) 0,8/0,3/1 L/ha\n"
         "✅ (Prometrina/Sulfentrazone/S-metolacloro) 1,5/0,3/1 L/ha\n\n"
-        "⚠️ PSI (con DAS) — ver Barbecho Corto/PSI: Flumioxazin 48% (Sumisoya) 50-100 cc/ha — 20-30 DAS\n\n"
+        "⚠️ PSI (con DAS) — ver Barbecho Intermedio/PSI: Flumioxazin 48% (Sumisoya) 50-100 cc/ha — 20-30 DAS\n\n"
         "🚫 NO usar en girasol: saflufenacil (Heat), fomesafén, biciclopirona, topramezone, diclosulam, sulfonilureas\n\n"
         "✅ Solo Girasoles Clearfield: Imazapir 80% (Clearsol DF) 100 g/ha"
     )
@@ -7347,7 +7347,7 @@ def pee_girasol_general_nacida():
         "✅ ACCasa (gramíneas): Haloxyfop (Galant Max), Propaquizafop (Agil), Cletodim (Select)\n\n"
         "✅ Girasoles CL: Clearsol DF (Imazapir) 100 g/ha + Aceite (DASH) 200 cc/ha V2-V4\n"
         "   + Graminicida si hace falta\n\n"
-        "⚠️ Para latifoliadas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "⚠️ Para latifoliadas nacidas antes de siembra — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + 2,4D (20 DAS), Dicamba (30 DAS), Fluroxipir/Halauxifén (1 DAS)"
     )
 
@@ -7384,7 +7384,7 @@ def pee_girasol_cruciferas_nacida():
         "⚠️ Aplicar con crucíferas en roseta chica para mejor respuesta\n\n"
         "✅ Girasoles CL: Imazapir 80% (Clearsol DF) V2-V4 / (Imazapir+Imazamox) (Clearsol Plus II) V2-V4\n"
         "   — mejor opción disponible en CL\n\n"
-        "🔁 Para crucíferas nacidas antes de siembra — ver Barbecho Corto/PSI:\n"
+        "🔁 Para crucíferas nacidas antes de siembra — ver Barbecho Intermedio/PSI:\n"
         "   Glifosato + 2,4D (20 DAS mínimo), Glifosato + Dicamba (45 DAS mínimo)"
     )
 
@@ -7394,7 +7394,7 @@ def pee_girasol_cruciferas_ambos():
         "🥇 Flurocloridona 25% (Rainbow) + Diflufenicán 50% (Brodal) como residual\n"
         "   + Carfentrazone 40% (Shark) 50-75 cc/ha o Fluroxipir (Starane Xtra) sobre nacida\n\n"
         "⚠️ Control sobre nacida es parcial — priorizar el residual en PEE\n"
-        "⚠️ Girasol convencional/no-CL: si hay crucíferas establecidas, el control debió lograrse en Barbecho Corto/PSI\n\n"
+        "⚠️ Girasol convencional/no-CL: si hay crucíferas establecidas, el control debió lograrse en Barbecho Intermedio/PSI\n\n"
         "✅ Girasoles CL: Flurocloridona+Diflufenicán (residual PEE) — seguimiento POE con Clearsol si reescapa\n\n"
         "🚫 NO usar en girasol: saflufenacil, metsulfurón, fomesafén, biciclopirona"
     )
@@ -7407,7 +7407,7 @@ def pee_maiz_cruciferas_residual():
         "✅ Flurocloridona 25% (Rainbow) — PDS\n"
         "✅ Diflufenicán 50% (Brodal) — PDS\n"
         "✅ Piroxasulfone 85% (Yamato) — VLCFA\n\n"
-        "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Corto/PSI"
+        "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Intermedio/PSI"
     )
 
 def pee_maiz_cruciferas_nacida():
@@ -7461,7 +7461,7 @@ def pee_sorgo_residual():
         "✅ Terbutilazina 75% 1 kg/ha + S-metolacloro 96% 0,9-1,3 L/ha ⚠️ Concep III obligatorio\n"
         "✅ (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n"
         "✅ Atrazina 90% + (Imazapic/Imazapir) 0,2-0,3 L/ha — solo Sorgos tolerantes a imidazolinonas\n\n"
-        "⚠️ PSI (con DAS): Flumioxazin 48% (Sumisoya) 0,15 L/ha — 20-30 DAS, ver Barbecho Corto/PSI"
+        "⚠️ PSI (con DAS): Flumioxazin 48% (Sumisoya) 0,15 L/ha — 20-30 DAS, ver Barbecho Intermedio/PSI"
     )
 
 def pee_sorgo_nacida():
@@ -8099,7 +8099,7 @@ def _lolium_soja_maiz_largo_ambos(cultivo):
 
 def _lolium_soja_maiz_corto_nacida():
     return (
-        "LOLIUM — BARBECHO CORTO — ELIMINAR MALEZA YA NACIDA\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Agosto-septiembre es la ventana óptima. Control sostenido sin doble golpe en la mayoría de los casos.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
@@ -8109,7 +8109,7 @@ def _lolium_soja_maiz_corto_nacida():
 
 def _lolium_soja_maiz_corto_residual(cultivo):
     return (
-        "LOLIUM — BARBECHO CORTO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha"
@@ -8117,7 +8117,7 @@ def _lolium_soja_maiz_corto_residual(cultivo):
 
 def _lolium_soja_maiz_corto_ambos(cultivo):
     return (
-        "LOLIUM — BARBECHO CORTO — MALEZA NACIDA + RESIDUAL\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
@@ -8163,7 +8163,7 @@ def _lolium_girasol_largo_ambos():
 
 def _lolium_girasol_corto_nacida():
     return (
-        "LOLIUM — BARBECHO CORTO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha\n"
         "🥉 Glufosinato 28% 2 L/ha — para poblaciones resistentes confirmadas\n\n"
@@ -8172,7 +8172,7 @@ def _lolium_girasol_corto_nacida():
 
 def _lolium_girasol_corto_ambos():
     return (
-        "LOLIUM — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "LOLIUM — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "⚠️ Atrazina fitotóxica en girasol — NO usar.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
@@ -8448,7 +8448,7 @@ def _conyza_largo_ambos(cultivo):
 
 def _conyza_corto_nacida():
     return (
-        "CONYZA — BARBECHO CORTO — ELIMINAR MALEZA YA NACIDA\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Segundo pico de emergencia. Plántulas pequeñas — mejor momento para control.\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha\n"
@@ -8461,14 +8461,14 @@ def _conyza_corto_nacida():
 def _conyza_corto_residual(cultivo):
     if cultivo == "soja":
         return (
-            "CONYZA — BARBECHO CORTO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha — ⚠️ verificar 45 días antes de siembra soja\n"
             "🥉 Voraxor (Trifludimoxazin/Saflufenacil) 0,1-0,15 L/ha"
         )
     else:
         return (
-            "CONYZA — BARBECHO CORTO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha"
@@ -8477,7 +8477,7 @@ def _conyza_corto_residual(cultivo):
 def _conyza_corto_ambos(cultivo):
     if cultivo == "soja":
         return (
-            "CONYZA — BARBECHO CORTO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — ⚠️ verificar 45 días\n\n"
@@ -8486,7 +8486,7 @@ def _conyza_corto_ambos(cultivo):
         )
     else:
         return (
-            "CONYZA — BARBECHO CORTO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
+            "CONYZA — BARBECHO INTERMEDIO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
@@ -8527,7 +8527,7 @@ def _conyza_girasol_largo_ambos():
 
 def _conyza_girasol_corto_nacida():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — ELIMINAR MALEZA YA NACIDA\n\n"
         "⚠️ Pixxaro puede aplicarse hasta 0 días antes de siembra de girasol.\n\n"
         "🥇 Glifosato 1080 g ia/ha + Pixxaro (Halauxifen + Fluroxipir) 400-500 cc/ha + aceite mineral 1% v/v — SENASA N° 40.386\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha — ⚠️ 7-15 días antes de siembra\n"
@@ -8537,7 +8537,7 @@ def _conyza_girasol_corto_nacida():
 
 def _conyza_girasol_corto_residual():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "⚠️ Atrazina (90 días) no alcanza en barbecho corto. Saflufenacil NO usar en girasol.\n\n"
         "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en girasol\n"
         "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
@@ -8546,7 +8546,7 @@ def _conyza_girasol_corto_residual():
 
 def _conyza_girasol_corto_ambos():
     return (
-        "CONYZA — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "CONYZA — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + Pixxaro 400-500 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite mineral 1% v/v\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ 7-15 días antes de siembra\n"
         "🥉 Glifosato 1080 g ia/ha + Pixxaro 400-500 cc/ha + Diflufenican 50% (Brodal) 250 cc/ha + aceite mineral 1% v/v\n\n"
@@ -8645,14 +8645,14 @@ def _brassica_corto_nacida():
 def _brassica_corto_residual(cultivo):
     if cultivo == "soja":
         return (
-            "BRASSICA — BARBECHO CORTO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja"
         )
     else:
         return (
-            "BRASSICA — BARBECHO CORTO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz"
@@ -8661,7 +8661,7 @@ def _brassica_corto_residual(cultivo):
 def _brassica_corto_ambos(cultivo):
     if cultivo == "soja":
         return (
-            "BRASSICA — BARBECHO CORTO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — SOJA — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Shark 75 cc/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ 30-40 días antes de soja\n\n"
@@ -8670,7 +8670,7 @@ def _brassica_corto_ambos(cultivo):
         )
     else:
         return (
-            "BRASSICA — BARBECHO CORTO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
+            "BRASSICA — BARBECHO INTERMEDIO — MAÍZ — MALEZA NACIDA + RESIDUAL\n\n"
             "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha + Shark 75 cc/ha\n"
             "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
             "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
@@ -8720,7 +8720,7 @@ def _brassica_girasol_corto_nacida():
 
 def _brassica_girasol_corto_ambos():
     return (
-        "BRASSICA — BARBECHO CORTO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
+        "BRASSICA — BARBECHO INTERMEDIO — GIRASOL — MALEZA NACIDA + RESIDUAL\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha — ⚠️ 7-15 días antes de siembra\n"
         "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha + Shark 75 cc/ha\n"
         "🥉 Glifosato 1080 g ia/ha + Dicamba 48% (Banvel) 200 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Shark 75 cc/ha\n\n"
@@ -8892,8 +8892,8 @@ def kb_lolium_obj():
 
 def kb_momento():
     return InlineKeyboardMarkup([[
-        InlineKeyboardButton("📅 Largo (abril-junio)", callback_data="barb_momento_largo"),
-        InlineKeyboardButton("📅 Corto (agosto-septiembre)", callback_data="barb_momento_corto"),
+        InlineKeyboardButton("📅 Barbecho Largo", callback_data="barb_momento_largo"),
+        InlineKeyboardButton("📅 Barbecho Intermedio", callback_data="barb_momento_corto"),
     ]])
 
 def kb_objetivo():
@@ -9637,7 +9637,7 @@ async def handle_callback(update, context):
             context.user_data['barbecho_estado'] = 'esperando_momento'
             cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
             await query.edit_message_text(
-                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?",
+                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?\n📅 Barbecho Largo: abril-junio\n📅 Barbecho Intermedio: agosto-septiembre",
                 reply_markup=kb_momento()
             )
         return
@@ -9684,7 +9684,7 @@ async def handle_callback(update, context):
         maleza = context.user_data.get('barbecho_maleza', '')
         cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
         maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
-        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)"}.get(momento, momento)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Intermedio (agosto-septiembre)"}.get(momento, momento)
 
         await query.edit_message_text(
             f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué objetivo buscás?",
@@ -9704,7 +9704,7 @@ async def handle_callback(update, context):
 
         cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo, cultivo)
         maleza_nombre = {"lolium": "Lolium/Raigrás", "conyza": "Rama Negra (Conyza)", "brassica": "Crucíferas (Brassica/Nabón)"}.get(maleza, maleza)
-        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Corto (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
+        momento_nombre = {"largo": "Largo (abril-junio)", "corto": "Intermedio (agosto-septiembre)", "presiembra": "Presiembra"}.get(momento, momento)
         objetivo_nombre = {"nacida": "Eliminar maleza nacida", "residual": "Prevenir nuevos nacimientos", "ambos": "Ambos objetivos"}.get(objetivo, objetivo)
 
         await query.edit_message_text(
