@@ -2873,7 +2873,8 @@ def detectar_cultivo_maleza_sin_momento(texto):
 
 def kb_momento_manejo():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("🌱 Barbecho / Presiembra", callback_data="momento_barbecho")],
+        [InlineKeyboardButton("📅 Barbecho Largo (abril-junio)", callback_data="momento_barb_largo")],
+        [InlineKeyboardButton("📅 Barbecho Corto / Presiembra (ago-sep)", callback_data="momento_barb_corto")],
         [InlineKeyboardButton("🌾 PEE (Pre-emergencia del cultivo)", callback_data="momento_pee")],
         [InlineKeyboardButton("🌿 POE (Post-emergencia del cultivo)", callback_data="momento_poe")],
     ])
@@ -4554,7 +4555,7 @@ async def handle_callback(update, context):
         return
 
     # Selección de momento (cultivo+maleza detectados sin momento)
-    if data in ("momento_barbecho", "momento_pee", "momento_poe"):
+    if data in ("momento_barb_largo", "momento_barb_corto", "momento_pee", "momento_poe"):
         cultivo = context.user_data.get('cm_cultivo') or context.user_data.get('cultivo_solo')
         maleza = context.user_data.get('cm_maleza')
         logger.info(f"[CALLBACK] data={data} cultivo={cultivo} maleza={maleza} user_data={dict(context.user_data)}")
@@ -4562,20 +4563,22 @@ async def handle_callback(update, context):
         context.user_data.pop('cm_maleza', None)
         context.user_data.pop('cultivo_solo', None)
 
-        if data == "momento_barbecho":
+        if data in ("momento_barb_largo", "momento_barb_corto"):
+            momento_barb = "largo" if data == "momento_barb_largo" else "corto"
             context.user_data['barbecho_estado'] = 'esperando_maleza'
+            context.user_data['barbecho_momento'] = momento_barb
             if cultivo:
-                # Cultivo ya conocido — saltear pregunta de cultivo
                 cultivo_barb = {"soja": "soja", "maiz": "maiz", "girasol": "girasol", "trigo": "trigo"}.get(cultivo, cultivo)
                 context.user_data['barbecho_cultivo'] = cultivo_barb
+                cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol", "trigo": "Trigo/Cebada"}.get(cultivo_barb, cultivo_barb)
+                momento_nombre = "Largo (abril-junio)" if momento_barb == "largo" else "Corto / Presiembra (ago-sep)"
                 await query.message.reply_text(
-                    "¿Qué maleza querés controlar?",
+                    f"Cultivo: {cultivo_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué maleza querés controlar?",
                     reply_markup=kb_maleza()
                 )
             else:
                 context.user_data['barbecho_estado'] = 'esperando_cultivo'
                 await query.message.reply_text(
-                    "Antes de comenzar, dejame hacer algunas consultas para darte la mejor recomendación 🌱\n\n"
                     "¿Para qué cultivo es el barbecho?",
                     reply_markup=kb_cultivo()
                 )
@@ -4869,12 +4872,21 @@ async def handle_callback(update, context):
                 reply_markup=kb_objetivo()
             )
         else:
-            context.user_data['barbecho_estado'] = 'esperando_momento'
             cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo)
-            await query.edit_message_text(
-                f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?\n📅 Barbecho Largo: abril-junio\n📅 Barbecho Intermedio: agosto-septiembre",
-                reply_markup=kb_momento()
-            )
+            momento_ya = context.user_data.get('barbecho_momento')
+            if momento_ya:
+                context.user_data['barbecho_estado'] = 'esperando_objetivo'
+                momento_nombre = "Largo (abril-junio)" if momento_ya == "largo" else "Corto / Presiembra (ago-sep)"
+                await query.edit_message_text(
+                    f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\nMomento: Barbecho {momento_nombre} ✅\n\n¿Qué objetivo buscás?",
+                    reply_markup=kb_objetivo()
+                )
+            else:
+                context.user_data['barbecho_estado'] = 'esperando_momento'
+                await query.edit_message_text(
+                    f"Cultivo: {cultivo_nombre} ✅\nMaleza: {maleza_nombre} ✅\n\n¿Cuándo pensás aplicar?\n📅 Barbecho Largo: abril-junio\n📅 Barbecho Corto/Presiembra: agosto-septiembre",
+                    reply_markup=kb_momento()
+                )
         return
 
     # Flujo barbecho — doble maleza: objetivo Brassica
