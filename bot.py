@@ -2214,10 +2214,10 @@ def pee_soja_cruciferas_residual():
     return (
         "SOJA — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
         "Opciones para evitar nacimientos de crucíferas:\n\n"
-        "✅ Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha + S-metolacloro 96% (Dual Gold) 1,5 L/ha\n"
-        "✅ Metribuzin 48% (Sencorex) 0,8 kg/ha a 1,5 L/ha — según ensayo/situación\n"
+        "🥇 Metribuzin 48% (Sencorex) 1-1,5 L/ha + S-metolacloro 96% (Dual Gold) 1,5 L/ha — 90% control a 60 DDA (Gigón, Agroconsultas). Dato de ensayo — crucíferas no figuran en marbete como maleza target\n"
+        "🥈 (Fomesafén 11,9%/S-metolacloro 51,8%) (EDDUS) 2,5-3 L/ha — 87% a 60 DDA (Gigón)\n"
+        "🥉 Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha + S-metolacloro 96% (Dual Gold) 1,5 L/ha\n"
         "✅ Piroxasulfone 85% (Yamato) 160-200 g/ha\n"
-        "✅ (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Clomazone 36% 1,75-2 L/ha — amplio espectro\n"
         "✅ Sulfentrazone 50% 0,4-0,5 L/ha + Imazetapir 10% 0,8-1 L/ha\n\n"
         "⚠️ PSI (con restricción de días, antes de siembra — Barbecho Corto/Presiembra):\n"
@@ -2240,6 +2240,9 @@ def pee_soja_cruciferas_nacida():
         "✅ Glifosato + Piraflufen 200 cc/ha\n"
         "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
         "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
+        "⚠️ ANTAGONISMO — Glifosato potásico (sal K) + Fomesafén en AGUA DURA (>300-400 ppm):\n"
+        "   Daño en soja hasta 5% a 15 DDA. Agregar ALL OK 300 cc/ha o sulfato de amonio para mitigar.\n"
+        "   En agua blanda el daño es mínimo (1,5%) y no requiere corrección. (Gigón, Agroconsultas)\n\n"
         "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/Presiembra\n"
         "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/Presiembra\n\n"
         "🔁 POE selectivo según biotipo (soja ya emergida):\n"
@@ -2254,10 +2257,12 @@ def pee_soja_cruciferas_ambos():
         "SOJA — CRUCÍFERAS (Brassica/Nabón) — RESIDUAL + RESCATE SOBRE NACIDA (PEE)\n\n"
         "Estrategia: controlar lo nacido (sin hormonal en PEE) Y dejar residual para nuevos nacimientos.\n\n"
         "🥇 Glifosato + Saflufenacil 70% (Heat) 35-40 g/ha\n"
-        "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha o Metribuzin 48% (Sencorex) 0,8 kg/ha\n\n"
-        "🥈 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
-        "   + (Fomesafén 11,9%/S-metolacloro 51,8%) 2,5 L/ha\n\n"
-        "⚠️ Para mayor eficacia sobre nacida con hormonal — ver Barbecho Corto/Presiembra"
+        "   + Metribuzin 48% (Sencorex) 1-1,5 L/ha + S-metolacloro 96% (Dual Gold) 1,5 L/ha\n\n"
+        "🥈 Glifosato + Saflufenacil 70% (Heat) 35-40 g/ha\n"
+        "   + (Fomesafén 11,9%/S-metolacloro 51,8%) (EDDUS) 2,5-3 L/ha\n\n"
+        "🥉 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
+        "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha\n\n"
+        "⚠️ Glifosato potásico + Fomesafén en agua dura (>300-400 ppm): agregar ALL OK 300 cc/ha\n"
     )
 
 def pee_soja_commelina_general():
@@ -2585,11 +2590,14 @@ def pee_maiz_cruciferas_residual():
         "MAÍZ — CRUCÍFERAS (Brassica/Nabón) — PEE RESIDUAL\n\n"
         "✅ Atrazina 90% (Gesaprim) — FII\n"
         "✅ Terbutilazina 75% (Terbine) — FII\n"
+        "✅ Metribuzin 48% (Sencorex) 0,5-0,8 L/ha — FII. Buena acción sobre crucíferas pequeñas\n"
         "✅ Amicarbazone 70% (Dinamic) 0,4-0,7 kg/ha — FII. También con acción POE temprana\n"
         "✅ Flurocloridona 25% (Rainbow) — PDS\n"
         "✅ Diflufenicán 50% (Brodal) 0,2-0,3 L/ha — PDS, 15 DAS\n"
         "✅ Piroxasulfone 85% (Yamato) — VLCFA\n"
+        "✅ Biciclopirona (Acuron Uno) — HPPD. Máximo 1 aplicación por campaña\n"
         "✅ Linurón 50% (Linurón 50 FW) 2-3 L/ha — FII\n\n"
+        "⚠️ Adengo (Thiencarbazone/Isoxaflutol): control inicial aceptable (~83% a 12 DDA) pero caída marcada a 50 DDA (~55%). No recomendado como opción principal para crucíferas — pérdida de residualidad. (Gigón, Agroconsultas)\n"
         "⚠️ Flumioxazin 48% (Sumisoya): PSI — 7-10 DAS antes de siembra, ver Barbecho Corto/Presiembra"
     )
 
@@ -2604,7 +2612,8 @@ def pee_maiz_cruciferas_nacida():
         "✅ Tordon (Picloram) 27,7% 150 cc/ha — maíces RR, POE V2-V8\n\n"
         "✅ Maíz Enlist: Glufosinato 28% 1,8-2 L/ha V1-V8 o 2,4D Enlist (sal colina) hasta V8,\n"
         "   o combinación Glufosinato + 2,4D Enlist\n\n"
-        "⚠️ HPPD siempre con Atrazina o Terbutilazina para sinergizar"
+        "⚠️ HPPD siempre con Atrazina o Terbutilazina para sinergizar\n"
+        "⚠️ Adengo + Atrazina: control inicial ~83% a 12 DDA pero cae a ~55% a 50 DDA — no recomendado como primera opción en crucíferas. (Gigón, Agroconsultas)"
     )
 
 def pee_maiz_cruciferas_ambos():
