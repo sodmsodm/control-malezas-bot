@@ -1827,6 +1827,7 @@ CULTIVOS_ALIAS = {
     "maiz": "maiz", "maíz": "maiz",
     "girasol": "girasol",
     "sorgo": "sorgo",
+    "alfalfa": "alfalfa", "pastura": "alfalfa", "pasturas": "alfalfa",
 }
 MOMENTOS_ALIAS = {
     "pee": "pee", "pre-emergencia": "pee", "preemergencia": "pee",
@@ -4004,7 +4005,94 @@ def _brassica_trigo_ambos():
         "⚠️ Sumyzin T Max: semilla trigo ≥4 cm, NO suelos livianos, ≥20mm lluvia"
     )
 
-# ─── AMARANTHUS (YUYO COLORADO) ───────────────────────────────────────────────
+# ─── ALFALFA ──────────────────────────────────────────────────────────────────
+
+def _alfalfa_barbecho():
+    return (
+        "ALFALFA — BARBECHO / PRESIEMBRA\n\n"
+        "Herbicidas de acción total:\n"
+        "✅ Glifosato 1080 g ia/ha — estándar\n"
+        "✅ Glufosinato de amonio 28% (Empera/Finale) 2 L/ha — para biotipos RR\n"
+        "✅ Paraquat 27,6% (Gramoxone) 2 L/ha — quema rápida\n\n"
+        "Herbicidas postemergentes de malezas (agregar a glifosato):\n"
+        "✅ Fluroxipir (Starane Xtra) 400-500 cc/ha — crucíferas, cardos\n"
+        "✅ Carfentrazone 40% (Shark) 50-75 cc/ha — PPO de contacto\n\n"
+        "Residual (presiembra):\n"
+        "✅ Flumetsulam 12% (Preside) 300-500 cc/ha — crucíferas, rama negra, capiquí\n\n"
+        "⚠️ Fuente: INTA (Montoya), marbetes SENASA"
+    )
+
+def _alfalfa_pee():
+    return (
+        "ALFALFA — PEE (VENTANA PREEMERGENTE)\n\n"
+        "🥇 Flumetsulam 12% (Preside) 400-600 cc/ha\n"
+        "   Malezas: crucíferas, rama negra (Conyza), capiquí\n"
+        "   Usar dosis máxima en manzanilla, nabón, rábano o cuando se quiere mayor residualidad\n"
+        "   ⚠️ Posible fitotoxicidad al acompañante gramíneo (avena) — reduce producción\n\n"
+        "Mezcla para ampliar espectro (también PEE o POE temprana):\n"
+        "✅ Flumetsulam 12% 300-400 cc/ha + 2,4-DB éster (2,4-DB Sigma) 1-1,5 L/ha\n"
+        "   Amplía control a cardos, yuyo colorado, sanguinaria\n"
+        "   ⚠️ NO mezclar con MCPA si hay alfalfa en la mezcla\n"
+        "   ⚠️ NO usar si hay trébol rojo en la pastura\n\n"
+        "⚠️ Para control óptimo el suelo necesita humedad adecuada post-aplicación\n"
+        "⚠️ Fuente: Preside SENASA 32.110 (Corteva), INTA (Montoya)"
+    )
+
+def _alfalfa_poe_implantacion():
+    return (
+        "ALFALFA — POE EN IMPLANTACIÓN\n\n"
+        "⚠️ Aplicar desde 2-3 trifolios de leguminosas. Malezas pequeñas (3-6 hojas o rosetas ≤10 cm).\n"
+        "⚠️ 15 días entre aplicación y primer pastoreo o corte (marbete Preside)\n\n"
+        "LATIFOLIADAS GENERALES:\n"
+        "🥇 Flumetsulam 12% (Preside) 200-250 cc/ha + coadyuvante no iónico 0,15%\n"
+        "   Crucíferas, rama negra, capiquí, manzanilla, mostacilla\n"
+        "🥈 Flumetsulam 12% 150-200 cc/ha + Diflufenican 50% (Brodal) 100 cc/ha\n"
+        "   Amplía a: algodonosa, linaria, viola, ortiga mansa, borraja, lengua de vaca\n"
+        "   ⚠️ Diflufenican: posible clorosis leve en alfalfa (síntoma transitorio)\n"
+        "🥉 Flumetsulam 12% 150-200 cc/ha + Bromoxinil 24% (Bromotril) 700 cc/ha\n"
+        "   Amplía a: poligonáceas, senecio\n\n"
+        "CARDOS + LATIFOLIADAS:\n"
+        "✅ 2,4-DB éster (2,4-DB Sigma) 1-1,5 L/ha — cardos, crucíferas, yuyo colorado, sanguinaria\n"
+        "   Aplicar con plantas pequeñas o en 3ª hoja trifoliada / rebrote de pastoreo\n"
+        "   ⚠️ Carencia forraje: 20 días. NO en floración\n"
+        "✅ Cloroimurón 75% (Clorimuron 75 Max) 7-10 g/ha — rama negra, crucíferas, ortiga mansa, cardos\n"
+        "   ⚠️ Fitotoxicidad en avena acompañante — menor crecimiento de alfalfa en implantación\n"
+        "   ⚠️ Carencia pasturas: 30 días antes de pastoreo. NO sorgo, girasol, arroz ni maní en 9 meses\n\n"
+        "GRAMÍNEAS (en alfalfa pura):\n"
+        "✅ Cletodim 24% (Select) 300-500 cc/ha — pasto puna, sorgo de Alepo, gramón\n"
+        "✅ Haloxifop 12% 500-700 cc/ha — ídem\n"
+        "✅ Propaquizafop 10% 750 cc/ha — ídem\n"
+        "   ACCase — solo en alfalfa pura. Todos requieren aceite vegetal o metilado\n\n"
+        "PRIMAVERA (malezas estivales, alfalfa pura):\n"
+        "✅ Imazetapir 10,59% 600 cc/ha — roseta, pasto cuaresma, chloris, cardo ruso, lecheron, roseta francesa\n"
+        "   Solo en primavera, alfalfa pura\n\n"
+        "⚠️ Fuente: INTA (Montoya), marbetes Preside SENASA 32.110, 2,4-DB SENASA 38.806, Clorimuron SENASA 38.863, Diflufenican SENASA 40.427, Bromotril SENASA 30.009"
+    )
+
+def _alfalfa_poe_establecida():
+    return (
+        "ALFALFA ESTABLECIDA — POE (POST-IMPLANTACIÓN)\n\n"
+        "GRAMÍNEAS (sorgo de Alepo, pasto puna, gramón):\n"
+        "🥇 Cletodim 24% (Select) 300-500 cc/ha — alfalfa pura\n"
+        "🥈 Haloxifop 12% 500-700 cc/ha — alfalfa pura\n"
+        "🥉 Propaquizafop 10% 750 cc/ha — alfalfa pura\n"
+        "   ⚠️ ACCase — NO en pasturas con gramíneas forrajeras (fitotóxico al acompañante)\n"
+        "   ⚠️ Todos requieren aceite vegetal o metilado 0,5-1% v/v\n\n"
+        "LATIFOLIADAS (rebrote o malezas nuevas):\n"
+        "✅ 2,4-DB éster 1-1,5 L/ha — cardos en roseta, crucíferas, yuyo colorado\n"
+        "   Aplicar cuando alfalfa rebrota de pastoreo o corte, plantas pequeñas\n"
+        "   ⚠️ NO en floración. Carencia forraje 20 días\n"
+        "✅ Flumetsulam 12% (Preside) 200-250 cc/ha + no iónico — crucíferas, rama negra\n"
+        "   ⚠️ 15 días antes de pastoreo o corte\n\n"
+        "ALFALFA RR (variedades resistentes a glifosato):\n"
+        "✅ Glifosato 1200-3000 g ia/ha — cuscuta y malezas sensibles\n"
+        "   Se recomienda mezclar con otro MOA para ampliar espectro y mitigar resistencia\n\n"
+        "⚠️ Fuente: INTA (Montoya), marbetes SENASA"
+    )
+
+# ─── FIN ALFALFA ───────────────────────────────────────────────────────────────
+
+
 
 def _amaranthus_soja_maiz_largo_nacida():
     return (
@@ -4277,6 +4365,7 @@ def kb_cultivo():
          InlineKeyboardButton("🌽 Maíz", callback_data="barb_cultivo_maiz")],
         [InlineKeyboardButton("🌻 Girasol", callback_data="barb_cultivo_girasol"),
          InlineKeyboardButton("🌾 Trigo/Cebada", callback_data="barb_cultivo_trigo")],
+        [InlineKeyboardButton("🌿 Alfalfa/Pasturas", callback_data="barb_cultivo_alfalfa")],
     ])
 
 def kb_maleza():
@@ -4610,6 +4699,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_poe_girasol")],
                 [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_poe_trigo")],
                 [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_poe_sorgo")],
+                [InlineKeyboardButton("🌿 Alfalfa/Pasturas", callback_data="cultivo_poe_alfalfa")],
                 [InlineKeyboardButton("❓ Otro", callback_data="cultivo_poe_otro")],
             ])
         )
@@ -4626,6 +4716,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_pee_girasol")],
                 [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_pee_trigo")],
                 [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_pee_sorgo")],
+                [InlineKeyboardButton("🌿 Alfalfa/Pasturas", callback_data="cultivo_pee_alfalfa")],
                 [InlineKeyboardButton("❓ Otro", callback_data="cultivo_pee_otro")],
             ])
         )
@@ -4762,6 +4853,9 @@ async def handle_callback(update, context):
         elif data == "momento_pee":
             # Inyectar cultivo y maleza al flujo PEE
             context.user_data['pee_cultivo'] = cultivo
+            if cultivo == "alfalfa":
+                await query.message.reply_text(_alfalfa_pee())
+                return
             if maleza:
                 context.user_data['pee_maleza'] = maleza
                 await query.message.reply_text(
@@ -4780,6 +4874,15 @@ async def handle_callback(update, context):
                     reply_markup=kb_maleza_fn()
                 )
         elif data == "momento_poe":
+            if cultivo == "alfalfa":
+                await query.message.reply_text(
+                    "¿En qué etapa está la alfalfa?",
+                    reply_markup=InlineKeyboardMarkup([
+                        [InlineKeyboardButton("🌱 En implantación", callback_data="alfalfa_poe_implantacion")],
+                        [InlineKeyboardButton("🌿 Establecida (ya pastorea/corta)", callback_data="alfalfa_poe_establecida")],
+                    ])
+                )
+                return
             if cultivo == "maiz":
                 context.user_data['poe_maiz_estado'] = 'esperando_biotipo'
                 if maleza:
@@ -4800,6 +4903,7 @@ async def handle_callback(update, context):
                         [InlineKeyboardButton("🌻 Girasol", callback_data="cultivo_poe_girasol")],
                         [InlineKeyboardButton("🌾 Trigo / Cebada", callback_data="cultivo_poe_trigo")],
                         [InlineKeyboardButton("🌿 Sorgo", callback_data="cultivo_poe_sorgo")],
+                        [InlineKeyboardButton("🌿 Alfalfa/Pasturas", callback_data="cultivo_poe_alfalfa")],
                     ]))
                     return
                 response = client.messages.create(
@@ -4819,6 +4923,9 @@ async def handle_callback(update, context):
             await query.message.reply_text(
                 "Para cultivos como Colza, Arveja o Camelina escribí tu consulta directamente con cultivo + maleza + PEE."
             )
+            return
+        if cultivo_elegido == "alfalfa":
+            await query.message.reply_text(_alfalfa_pee())
             return
         cultivo_nombre = {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol",
                           "trigo": "Trigo/Cebada", "sorgo": "Sorgo"}.get(cultivo_elegido, cultivo_elegido)
@@ -4851,6 +4958,15 @@ async def handle_callback(update, context):
         if cultivo_elegido == "otro":
             await query.message.reply_text(
                 "Para cultivos como Colza, Arveja o Camelina escribí tu consulta directamente con cultivo + maleza + POE."
+            )
+            return
+        if cultivo_elegido == "alfalfa":
+            await query.message.reply_text(
+                "¿En qué etapa está la alfalfa?",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🌱 En implantación", callback_data="alfalfa_poe_implantacion")],
+                    [InlineKeyboardButton("🌿 Establecida (ya pastorea/corta)", callback_data="alfalfa_poe_establecida")],
+                ])
             )
             return
         if cultivo_elegido == "maiz":
@@ -4993,6 +5109,12 @@ async def handle_callback(update, context):
         context.user_data['barbecho_cultivo'] = cultivo
         context.user_data['barbecho_estado'] = 'esperando_maleza'
 
+        if cultivo == "alfalfa":
+            context.user_data.clear()
+            await query.edit_message_text("Cultivo: Alfalfa/Pasturas ✅")
+            await query.message.reply_text(_alfalfa_barbecho())
+            return
+
         if cultivo == "trigo":
             await query.edit_message_text(
                 f"Cultivo: Trigo/Cebada ✅\n\n¿Qué maleza querés controlar?",
@@ -5007,6 +5129,14 @@ async def handle_callback(update, context):
         return
 
     # Flujo barbecho — maleza
+    if data == "alfalfa_poe_implantacion":
+        await query.message.reply_text(_alfalfa_poe_implantacion())
+        return
+
+    if data == "alfalfa_poe_establecida":
+        await query.message.reply_text(_alfalfa_poe_establecida())
+        return
+
     if data.startswith("barb_maleza_"):
         maleza = data.replace("barb_maleza_", "")
         context.user_data['barbecho_maleza'] = maleza
