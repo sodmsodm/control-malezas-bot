@@ -3259,8 +3259,8 @@ def _lolium_soja_maiz_largo_nacida():
         "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha // Glufosinato 28% 2 L/ha + Terbutilazina 50% (Terbine/Gesatop) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — doble golpe con residual\n"
         "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — agrega MOA, sin residual de suelo\n\n"
         "MAYO-JUNIO:\n"
-        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n"
-        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — ante sospecha resistencia ACCasa\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Epyrifenacil 5,5% (Empera) 600-800 cc/ha — triple MOA, máxima eficacia en matas (Gigón, Agroconsultas 2025)\n"
+        "🥈 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha\n\n"
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada SIEMPRE\n"
         "⚠️ RESISTENCIA ACCasa: cletodim solo puede quedar entre 5-70% según biotipo."
     )
@@ -4004,6 +4004,152 @@ def _brassica_trigo_ambos():
         "⚠️ Sumyzin T Max: semilla trigo ≥4 cm, NO suelos livianos, ≥20mm lluvia"
     )
 
+# ─── AMARANTHUS (YUYO COLORADO) ───────────────────────────────────────────────
+
+def _amaranthus_soja_maiz_largo_nacida():
+    return (
+        "AMARANTHUS — BARBECHO LARGO — ELIMINAR YUYO COLORADO NACIDO\n\n"
+        "⚠️ Glifosato solo: <20% control a 45 DDA en biotipos resistentes. Necesita mezcla con PPO obligatoriamente.\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + 2,4D 750 g ia/ha\n\n"
+        "⚠️ PPO requiere aceite vegetal o metilado 0,5% v/v\n"
+        "⚠️ Empera 600 cc/ha es mínima dosis eficaz; 800 cc/ha para plantas de 5-10 cm (Gigón, Agroconsultas 2025)\n"
+        "⚠️ Amaranthus resistente: evaluar rotación de MOA — resistencia PPO en aumento"
+    )
+
+def _amaranthus_soja_maiz_largo_residual(cultivo):
+    soja_extra = (
+        "\n✅ Metribuzin 48% (Sencorex) 500-700 cc/ha — SOLO soja RR/STS, excelente residual Amaranthus\n"
+        "✅ Flumioxazin 48% (Sumisoya) 100 cc/ha — residual corto, mejor en mezcla"
+    ) if cultivo == "soja" else (
+        "\n✅ Atrazina 90% 1,5-2 kg/ha + Biciclopirone 20% (Acuron Uno) 0,75 L/ha — mejor opción residual maíz\n"
+        "✅ Atrazina 90% 2 kg/ha — residual solo, cubre Amaranthus"
+    )
+    return (
+        "AMARANTHUS — BARBECHO LARGO — PREVENIR NACIMIENTOS (RESIDUAL)\n\n"
+        "🥇 Sulfentrazone 50% (Authority/Capaz) 300-350 cc/ha — PPO, excelente residual Amaranthus\n"
+        "🥈 Flumioxazin 48% (Sumisoya) 100 cc/ha — residual corto, rotar MOA\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha — VLCFA, complementa PPO"
+        + soja_extra + "\n\n"
+        "⚠️ Residuales actúan sobre semillas. No controlan plantas ya emergidas."
+    )
+
+def _amaranthus_soja_maiz_largo_ambos(cultivo):
+    soja_extra = (
+        "\n🥈 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Metribuzin 48% (Sencorex) 500 cc/ha — SOLO soja RR/STS"
+    ) if cultivo == "soja" else (
+        "\n🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Atrazina 90% 1,5 kg/ha"
+    )
+    return (
+        "AMARANTHUS — BARBECHO LARGO — YUYO NACIDO + RESIDUAL\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Sulfentrazone 50% (Authority/Capaz) 300 cc/ha"
+        + soja_extra + "\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
+        "⚠️ Authority/Capaz: 0 días intervalo en soja y maíz"
+    )
+
+def _amaranthus_soja_maiz_corto_nacida():
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — ELIMINAR YUYO COLORADO NACIDO\n\n"
+        "⚠️ Agosto-octubre: segunda oleada de emergencia. Controlar antes de siembra.\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha — mejor sostenimiento a 45 DDA\n"
+        "🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + 2,4D 750 g ia/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
+        "⚠️ Glifosato solo: ineficaz en biotipos resistentes"
+    )
+
+def _amaranthus_soja_maiz_corto_residual(cultivo):
+    soja_extra = (
+        "\n✅ Metribuzin 48% (Sencorex) 500-700 cc/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — SOLO soja RR/STS"
+    ) if cultivo == "soja" else (
+        "\n✅ Biciclopirone 20% (Acuron Uno) 0,75 L/ha + Atrazina 90% 1 kg/ha — excelente para maíz"
+    )
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — PREVENIR NACIMIENTOS (RESIDUAL)\n\n"
+        "🥇 Sulfentrazone 50% (Authority/Capaz) 300-350 cc/ha — sin restricción en soja y maíz\n"
+        "🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥉 Flumioxazin 48% (Sumisoya) 100 cc/ha — PSI mezcla, residual corto"
+        + soja_extra + "\n\n"
+        "⚠️ Voraxor (Trifludimoxazin/Saflufenacil): sin registro para Amaranthus como maleza objetivo principal"
+    )
+
+def _amaranthus_soja_maiz_corto_ambos(cultivo):
+    soja_extra = (
+        "\n🥈 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Metribuzin 48% (Sencorex) 500 cc/ha — SOLO soja RR/STS"
+    ) if cultivo == "soja" else (
+        "\n🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Atrazina 90% 1,5 kg/ha"
+    )
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — YUYO NACIDO + RESIDUAL\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Sulfentrazone 50% (Authority/Capaz) 300 cc/ha"
+        + soja_extra + "\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
+        "⚠️ 2,4D: respetar 7-15 días antes de siembra soja"
+    )
+
+def _amaranthus_girasol_largo_nacida():
+    return (
+        "AMARANTHUS — BARBECHO LARGO — GIRASOL — ELIMINAR YUYO NACIDO\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + 2,4D 750 g ia/ha — ⚠️ 7-15 días antes de siembra\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
+        "⚠️ Saflufenacil (Heat): NO usar en presiembra inmediata de girasol (sin registro)"
+    )
+
+def _amaranthus_girasol_largo_residual():
+    return (
+        "AMARANTHUS — BARBECHO LARGO — GIRASOL — RESIDUAL\n\n"
+        "🥇 Sulfentrazone 50% (Authority/Capaz) 300-350 cc/ha — 0 días intervalo en girasol\n"
+        "🥈 Flurocloridona 25% (Rainbow) 1,5 L/ha — 0 días intervalo en girasol, buen perfil Amaranthus\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha\n\n"
+        "⚠️ Atrazina: 90 días en girasol — no usar en barbecho corto\n"
+        "⚠️ Metribuzin: NO en girasol"
+    )
+
+def _amaranthus_girasol_largo_ambos():
+    return (
+        "AMARANTHUS — BARBECHO LARGO — GIRASOL — YUYO NACIDO + RESIDUAL\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Sulfentrazone 50% (Authority/Capaz) 300 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — ⚠️ Heat sin registro PSI girasol\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v"
+    )
+
+def _amaranthus_girasol_corto_nacida():
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — GIRASOL — ELIMINAR YUYO NACIDO\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha — ⚠️ 7-15 días antes de siembra girasol\n"
+        "🥉 Glifosato 1080 g ia/ha — solo en biotipos susceptibles\n\n"
+        "⚠️ Saflufenacil (Heat): NO usar en presiembra girasol\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v"
+    )
+
+def _amaranthus_girasol_corto_residual():
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — GIRASOL — RESIDUAL\n\n"
+        "🥇 Sulfentrazone 50% (Authority/Capaz) 300-350 cc/ha — 0 días intervalo en girasol\n"
+        "🥈 Flurocloridona 25% (Rainbow) 1,5 L/ha — 0 días intervalo en girasol\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha\n\n"
+        "⚠️ Saflufenacil (Heat), Flumioxazin (Sumisoya): NO usar en presiembra girasol\n"
+        "⚠️ Atrazina: 90 días — no alcanza para siembra inmediata"
+    )
+
+def _amaranthus_girasol_corto_ambos():
+    return (
+        "AMARANTHUS — BARBECHO CORTO/PRESIEMBRA — GIRASOL — YUYO NACIDO + RESIDUAL\n\n"
+        "🥇 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Sulfentrazone 50% (Authority/Capaz) 300 cc/ha\n"
+        "🥈 Glifosato 1080 g ia/ha + Epyrifenacil 5,5% (Empera) 800 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n"
+        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Sulfentrazone 50% (Authority/Capaz) 300 cc/ha — ⚠️ 7-15 días antes de siembra\n\n"
+        "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
+        "⚠️ Saflufenacil (Heat), Flumioxazin: NO usar en presiembra girasol"
+    )
+
 def get_barbecho_response(cultivo, maleza, momento, objetivo):
     """Retorna la respuesta hardcodeada para la combinación dada."""
     cultivo = cultivo.lower().strip()
@@ -4086,6 +4232,27 @@ def get_barbecho_response(cultivo, maleza, momento, objetivo):
             elif objetivo == "residual": return _brassica_trigo_residual()
             else: return _brassica_trigo_ambos()
 
+    # AMARANTHUS
+    elif maleza == "amaranthus":
+        if cultivo in ["soja", "maiz"]:
+            if momento == "largo":
+                if objetivo == "nacida": return _amaranthus_soja_maiz_largo_nacida()
+                elif objetivo == "residual": return _amaranthus_soja_maiz_largo_residual(cultivo)
+                else: return _amaranthus_soja_maiz_largo_ambos(cultivo)
+            else:
+                if objetivo == "nacida": return _amaranthus_soja_maiz_corto_nacida()
+                elif objetivo == "residual": return _amaranthus_soja_maiz_corto_residual(cultivo)
+                else: return _amaranthus_soja_maiz_corto_ambos(cultivo)
+        elif cultivo == "girasol":
+            if momento == "largo":
+                if objetivo == "nacida": return _amaranthus_girasol_largo_nacida()
+                elif objetivo == "residual": return _amaranthus_girasol_largo_residual()
+                else: return _amaranthus_girasol_largo_ambos()
+            else:
+                if objetivo == "nacida": return _amaranthus_girasol_corto_nacida()
+                elif objetivo == "residual": return _amaranthus_girasol_corto_residual()
+                else: return _amaranthus_girasol_corto_ambos()
+
     return "⚠️ No encontré información para esa combinación. Intentá reformular la consulta o escribí /nuevo para empezar de nuevo."
 
 def build_barbecho_prompt(cultivo, maleza, momento, objetivo):
@@ -4118,6 +4285,7 @@ def kb_maleza():
         [InlineKeyboardButton("🌿 Rama Negra (Conyza)", callback_data="barb_maleza_conyza")],
         [InlineKeyboardButton("🌿 Crucíferas (Brassica/Nabón)", callback_data="barb_maleza_brassica")],
         [InlineKeyboardButton("🌿 Raigrás + 🌿 Crucíferas", callback_data="barb_maleza_doble")],
+        [InlineKeyboardButton("🌿 Yuyo Colorado (Amaranthus)", callback_data="barb_maleza_amaranthus")],
         [InlineKeyboardButton("❓ Otra maleza", callback_data="barb_maleza_otra")],
     ])
 
@@ -4869,7 +5037,8 @@ async def handle_callback(update, context):
         maleza_nombre = {
             "lolium": "Lolium/Raigrás",
             "conyza": "Rama Negra (Conyza)",
-            "brassica": "Crucíferas (Brassica/Nabón)"
+            "brassica": "Crucíferas (Brassica/Nabón)",
+            "amaranthus": "Yuyo Colorado (Amaranthus)"
         }.get(maleza, maleza)
 
         # Trigo no tiene distinción largo/corto
