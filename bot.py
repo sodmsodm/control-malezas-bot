@@ -542,7 +542,7 @@ SITUACIÓN 4 — resistencia confirmada O maleza muy establecida (alta densidad 
 
 OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 
-🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo/avena. Presiembra, sin restricción de carencia en trigo
+🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo. PSI hasta 14 DAS trigo / ⚠️ sin registro en cebada — si se usa, respetar 30-60 DAS
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo
 🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Pendimetalín (Herbadox/Satellite) — ⚠️ Yamato: PEE trigo sin restricción (LD) / 15d LC y cebada. Requiere lluvia ≥20 mm post-aplicación
 
@@ -1622,7 +1622,7 @@ PEE (después de siembra, antes de emergencia del cultivo):
 PSI / Barbecho Intermedio (antes de siembra):
 ✅ Flumioxazin 48% (Sumisoya) — PPO, latifoliadas, hasta 10 DAS antes siembra
 ✅ Trifludimoxazin/Saflufenacil (Voraxor) 100-200 cc/ha — PPO+PDS, barbecho químico, hasta 7 DAS
-✅ Azugro (Bixlozona) 1,2-1,5 L/ha — grupo 13, raigrás. Hasta 14 DAS trigo / 60 DAS cebada. Incompatible con glifosato sal potásica
+✅ Azugro (Bixlozona) 1,2-1,5 L/ha — grupo 13, raigrás. Hasta 14 DAS trigo / 30-60 DAS cebada (sin registro formal en cebada — mayor intervalo por precaución). Incompatible con glifosato sal potásica
 
 💡 Estos son los productos de mayor uso y mejor desempeño general en PEE de trigo y cebada. La elección final depende de la maleza presente en el lote y las resistencias confirmadas en la zona.
 
@@ -2026,15 +2026,16 @@ def pee_trigo_raigras_residual():
         "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
         "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
         "🌾 EN CEBADA:\n"
-        "⚠️ Pyroxasulfone NO se puede aplicar en PEE de cebada. Como máximo 10-15 días antes de siembra (PSI), con riesgo si hay lluvias entre aplicación y emergencia.\n\n"
-        "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — mejor opción PEE en cebada\n"
-        "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
-        "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha suelo medio / 3 L/ha suelo pesado — opción de última instancia\n"
-        "   ⚠️ Eficacia limitada sobre raigrás residual — no es la mejor opción para esta maleza\n"
+        "⚠️ Pyroxasulfone (Yamato) NO se puede aplicar en PEE de cebada. Como máximo PSI 10-15 DAS, con riesgo si llueve entre aplicación y emergencia.\n"
+        "⚠️ Mateno Plus NO tiene registro en cebada — solo en trigo (marbete Bayer).\n\n"
+        "Las opciones PEE residuales en cebada son muy limitadas:\n"
+        "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha suelo medio / 3 L/ha suelo pesado\n"
+        "   ⚠️ Eficacia limitada sobre raigrás — no es la mejor opción pero es la disponible con registro\n"
         "   Semilla debe estar a ≥3 cm de profundidad y bien cubierta\n"
         "   Regar si no llueven 15mm dentro de los 5 días post-aplicación\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan raigrás ya nacido.\n"
-        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/Presiembra — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
+        "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/Presiembra\n"
+        "   Azugro (Bixlozona) 1,2-1,5 L/ha — hasta 14 DAS en trigo / ⚠️ sin registro en cebada (30-60 DAS si se usa)"
     )
 
 def pee_trigo_raigras_nacida():
@@ -2065,10 +2066,10 @@ def pee_trigo_raigras_ambos():
         "✅ Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Paraquat 27,6% 2-3 L/ha\n"
         "   + Mateno Plus 2-2,25 L/ha como residual\n\n"
         "🌾 EN CEBADA:\n"
-        "⚠️ Yamato NO va en PEE de cebada. Usar Mateno Plus o Pendimetalín como residual.\n"
-        "✅ Paraquat 27,6% (Gramoxone) 2-3 L/ha + Mateno Plus 2-2,25 L/ha\n"
+        "⚠️ Yamato NO va en PEE de cebada. Mateno Plus NO tiene registro en cebada.\n"
+        "Las opciones residuales PEE en cebada son muy limitadas:\n"
         "🥉 Paraquat 27,6% (Gramoxone) 2-3 L/ha + Pendimetalín 45,5% (Herbadox H2O) 2,5-3 L/ha\n"
-        "   ⚠️ Pendimetalín tiene eficacia limitada sobre raigrás — opción de última instancia\n\n"
+        "   ⚠️ Pendimetalín tiene eficacia limitada sobre raigrás — única opción con registro en PEE\n\n"
         "⚠️ Aplicar residual siempre con lote sin cobertura verde activa.\n"
         "⚠️ Azugro (Bixlozona) NO mezclar con glifosato de sal potásica.\n"
         "⚠️ El rescate sobre nacida es parcial — complementar con POE desde Z1.2:\n"
@@ -3588,7 +3589,8 @@ def _lolium_trigo_nacida():
 def _lolium_trigo_residual():
     return (
         "LOLIUM — BARBECHO TRIGO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
-        "🥇 Azugro (Bixlozona) FMC — residual específico para Lolium en trigo. Sin restricción\n"
+        "🥇 Azugro (Bixlozona) FMC 1,2-1,5 L/ha — residual específico Lolium. PSI hasta 14 DAS trigo\n"
+        "   ⚠️ Sin registro en cebada — si se usa off-label, respetar 30-60 DAS\n"
         "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo\n"
         "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha — sin restricción en LD; LC y cebada: 15 días. Requiere ≥20mm\n"
         "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha — semilla trigo a ≥3 cm\n\n"
