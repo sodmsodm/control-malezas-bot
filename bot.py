@@ -3283,9 +3283,9 @@ def _lolium_soja_maiz_largo_residual(cultivo):
     return (
         "LOLIUM — BARBECHO LARGO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "⚠️ Los residuales actúan sobre semillas y plántulas antes de emerger. No eliminan maleza ya nacida.\n\n"
-        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad hasta 150 DDA\n"
-        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola\n"
-        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
+        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad sostenida: 83% a 150 DDA (Gigón 2024)\n"
+        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — eficaz pero con caída: 53% a 150 DDA (Gigón 2024)\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha — opción sin terbutilazina\n\n"
         "⚠️ Pyroxasulfone (Yamato): sin restricción en soja ni maíz. 90 días carencia antes de trigo."
     )
 
@@ -3317,9 +3317,9 @@ def _lolium_soja_maiz_corto_nacida():
 def _lolium_soja_maiz_corto_residual(cultivo):
     base = (
         "LOLIUM — BARBECHO CORTO/PRESIEMBRA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
-        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
+        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mayor residualidad sostenida (Gigón 2024)\n"
         "🥈 Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
-        "🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha\n\n"
+        "🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — eficaz pero con caída a partir de 90 DDA (Gigón 2024)\n\n"
         "PSI inmediato (quema + residual corto):\n"
         "✅ Voraxor (Trifludimoxazin/Saflufenacil) 100-150 cc/ha + Glifosato — 7 DAS (15 DAS en suelos alcalinos o arenosos)\n"
         "✅ Flumioxazin 48% (Sumisoya) 50-100 cc/ha + Glifosato — PSI en mezcla"
@@ -3355,9 +3355,9 @@ def _lolium_girasol_residual():
     return (
         "LOLIUM — BARBECHO — GIRASOL — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "⚠️ Atrazina fitotóxica en girasol — NO usar.\n\n"
-        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
-        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola\n"
-        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha"
+        "🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mayor residualidad sostenida (Gigón 2024)\n"
+        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — eficaz pero con caída a partir de 90 DDA (Gigón 2024)\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha"
     )
 
 def _lolium_girasol_largo_ambos():
@@ -3591,9 +3591,9 @@ def _lolium_trigo_residual():
         "LOLIUM — BARBECHO TRIGO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "🥇 Azugro (Bixlozona) FMC 1,2-1,5 L/ha — residual específico Lolium. PSI hasta 14 DAS trigo\n"
         "   ⚠️ Sin registro en cebada — si se usa off-label, respetar 30-60 DAS\n"
-        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — sin restricción en trigo\n"
-        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha — sin restricción en LD; LC y cebada: 15 días. Requiere ≥20mm\n"
-        "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha — semilla trigo a ≥3 cm\n\n"
+        "🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha — eficaz pero con caída a partir de 90 DDA (Gigón 2024)\n"
+        "🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha — sin restricción en LD; LC: 15 días. ⚠️ NO en PEE cebada\n"
+        "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha — semilla trigo a ≥3 cm. ⚠️ Eficacia limitada sobre raigrás\n\n"
         "PSI trigo con doble MOA (Fotosistema II + PPO):\n"
         "✅ Sumyzin T Max (Terbutilazina/Flumioxazin) 1,5 L/ha — 10-15 DAS, semilla ≥4 cm, ≥20mm lluvia, NO suelos livianos\n"
         "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE maleza + cultivo, trigo y raigrás/crucíferas"
