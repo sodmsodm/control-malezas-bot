@@ -4256,6 +4256,9 @@ def get_barbecho_response(cultivo, maleza, momento, objetivo):
     maleza = maleza.lower().strip()
     momento = momento.lower().strip() if momento else ""
     objetivo = objetivo.lower().strip()
+    # Cebada usa las mismas respuestas que trigo en barbecho
+    if cultivo == "cebada":
+        cultivo = "trigo"
 
     # LOLIUM
     if maleza == "lolium":
@@ -4440,8 +4443,8 @@ async def send_long_message(bot, chat_id, text, max_length=4000):
 async def responder_barbecho_completo(update_or_query, context, cultivo, maleza, momento, objetivo):
     """Genera y envía la respuesta final hardcodeada del flujo de barbecho."""
 
-    # Para trigo no hay distinción largo/corto
-    if cultivo == "trigo" and not momento:
+    # Para trigo/cebada no hay distinción largo/corto
+    if cultivo in ("trigo", "cebada") and not momento:
         momento = "presiembra"
 
     chat_id = update_or_query.message.chat_id
