@@ -232,7 +232,7 @@ Producto (p.a.) — días mínimos antes de siembra siguiente:
 ✅ Fomesafén 25% (Flex): Soja 0 / Maíz 12m / Girasol RIESGO / Trigo 18m
 ✅ Flumioxazin 48% (Sumisoya): Soja 7d / Maíz 30d / Girasol 30d / Trigo 30d
 ✅ S-metolacloro 96% (Dual Gold): Maíz 0 / Soja 0 / Girasol 0 / Trigo 0
-✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo PEE (LD sin restricción / LC 15d antes siembra) / Cebada 15d antes siembra — requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse
+✅ Piroxasulfone 85% (Yamato): Soja 0 / Maíz 0 / Trigo PEE (LD sin restricción / LC 15d antes siembra) / Cebada: NO en PEE — máximo PSI 10-15 DAS con riesgo si llueve antes de emergencia — requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse
 ✅ Clorimurón 25% (Classic): Soja 0 / Maíz 18m / Girasol 18m / Trigo 18m
 ✅ Saflufenacil 70% (Heat): Soja 3d / Maíz 1d / Trigo 1d / Girasol: NO usar en pre-siembra ni barbecho previo a girasol (marbete BASF)
 ✅ Metsulfurón 60% (Ally/Errasin): Soja 60d / Maíz 60d / Girasol: NO usar en barbecho previo a girasol
@@ -467,7 +467,7 @@ SOJA Y MAÍZ:
 🥇 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — mejor residualidad sostenida hasta 150 DDA. Sin restricción en soja ni maíz
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha sola — buena residualidad hasta 90 DDA
 🥉 Pyroxasulfone 85% (Yamato) 210 cc/ha ó Terbutilazina 50% (Terbine) 1,5 kg/ha — desempeño similar como opción individual
-⚠️ Pyroxasulfone (Yamato): en trigo PEE sin restricción (LD) / 15d antes siembra (LC). En cebada 15d antes siembra. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación.
+⚠️ Pyroxasulfone (Yamato): en trigo PEE sin restricción (LD) / 15d antes siembra (LC). En cebada: NO en PEE — máximo PSI 10-15 DAS con riesgo si llueve antes de emergencia. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación.
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -519,7 +519,7 @@ MAYO-JUNIO:
 
 LOLIUM — BARBECHO — TRIGO (presiembra):
 
-⚠️ Pyroxasulfone (Yamato): PEE en trigo sin restricción de días (LD) / 15d antes siembra (LC). Cebada: 15d antes siembra. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse.
+⚠️ Pyroxasulfone (Yamato): PEE en trigo sin restricción de días (LD) / 15d antes siembra (LC). Cebada: NO en PEE — máximo PSI 10-15 DAS con riesgo si llueve entre aplicación y emergencia. Requiere lluvia ≥20 mm dentro de los 15 días post-aplicación para activarse.
 
 OBJETIVO 1 — ELIMINAR MALEZA YA NACIDA:
 
@@ -2019,14 +2019,20 @@ def pee_trigo_raigras_residual():
     return (
         "TRIGO / CEBADA — RAIGRÁS — PEE RESIDUAL\n\n"
         "Opciones para evitar nacimientos de raigrás:\n\n"
+        "🌾 EN TRIGO:\n"
         "✅ Piroxasulfone 85% (Yamato Top) 100-120 g/ha — VLCFA grupo K3\n"
         "   Requiere ≥20mm lluvia dentro de los 15 días post-aplicación\n"
         "   En labranza convencional: aplicar al menos 15 días antes de emergencia\n\n"
-        "✅ Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha suelo medio / 3 L/ha suelo pesado — microtúbulos grupo K1\n"
-        "   Semilla de trigo debe estar a ≥3 cm de profundidad y bien cubierta\n"
-        "   Regar si no llueven 15mm dentro de los 5 días post-aplicación\n\n"
         "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
         "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
+        "🌾 EN CEBADA:\n"
+        "⚠️ Pyroxasulfone NO se puede aplicar en PEE de cebada. Como máximo 10-15 días antes de siembra (PSI), con riesgo si hay lluvias entre aplicación y emergencia.\n\n"
+        "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — mejor opción PEE en cebada\n"
+        "   Controla raigrás Y crucíferas. Requiere buena humedad al momento de aplicación\n\n"
+        "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha suelo medio / 3 L/ha suelo pesado — opción de última instancia\n"
+        "   ⚠️ Eficacia limitada sobre raigrás residual — no es la mejor opción para esta maleza\n"
+        "   Semilla debe estar a ≥3 cm de profundidad y bien cubierta\n"
+        "   Regar si no llueven 15mm dentro de los 5 días post-aplicación\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan raigrás ya nacido.\n"
         "⚠️ Para PSI (antes de siembra): ver opciones de Barbecho Corto/Presiembra — Azugro (Bixlozona) 1,2-1,5 L/ha hasta 14 DAS"
     )
@@ -2052,14 +2058,20 @@ def pee_trigo_raigras_ambos():
     return (
         "TRIGO / CEBADA — RAIGRÁS — RESIDUAL + RESCATE SOBRE NACIDA\n\n"
         "Estrategia: controlar lo nacido Y dejar residual para nuevos nacimientos.\n\n"
+        "🌾 EN TRIGO:\n"
         "✅ Paraquat 27,6% (Gramoxone) 2 L/ha (hojas) / 2,5-3 L/ha (macollaje)\n"
-        "   + Yamato Top 100-120 g/ha o Herbadox H2O 2-2,5 L/ha\n"
+        "   + Yamato Top 100-120 g/ha como residual\n"
         "   Aplicar en la misma pasada o inmediatamente después\n\n"
         "✅ Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Paraquat 27,6% 2-3 L/ha\n"
         "   + Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "🌾 EN CEBADA:\n"
+        "⚠️ Yamato NO va en PEE de cebada. Usar Mateno Plus o Pendimetalín como residual.\n"
+        "✅ Paraquat 27,6% (Gramoxone) 2-3 L/ha + Mateno Plus 2-2,25 L/ha\n"
+        "🥉 Paraquat 27,6% (Gramoxone) 2-3 L/ha + Pendimetalín 45,5% (Herbadox H2O) 2,5-3 L/ha\n"
+        "   ⚠️ Pendimetalín tiene eficacia limitada sobre raigrás — opción de última instancia\n\n"
         "⚠️ Aplicar residual siempre con lote sin cobertura verde activa.\n"
         "⚠️ Azugro (Bixlozona) NO mezclar con glifosato de sal potásica.\n"
-        "⚠️ El rescate sobre nacida es parcial — complementar con POE del trigo desde Z1.2:\n"
+        "⚠️ El rescate sobre nacida es parcial — complementar con POE desde Z1.2:\n"
         "   Pinoxaden (Axial), Clodinafop (Gizmo/Topick), Hussar Plus, PowerFlex"
     )
 
