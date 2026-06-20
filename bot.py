@@ -2141,7 +2141,8 @@ def pee_trigo_cruciferas_residual():
         "🥈 Diflufenican 50% (Brodal) 250-350 cc/ha — PDS\n"
         "   Sin fitotoxicidad a ninguna dosis probada. Control algo inferior a flurocloridona.\n\n"
         "🥈 Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA\n"
-        "   Controla Brassica Y raigrás en una sola aplicación. Requiere buena humedad.\n\n"
+        "   Controla Brassica Y raigrás en una sola aplicación. Requiere buena humedad.\n"
+        "   ⚠️ Sin registro en cebada — solo trigo (marbete Bayer).\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan crucíferas ya nacidas."
     )
 
@@ -2169,7 +2170,8 @@ def pee_trigo_cruciferas_ambos():
         "Estrategia: controlar lo nacido Y dejar residual para nuevos nacimientos.\n\n"
         "🥇 Glifosato 480 g/L (1080 g ia/ha) 3 L/ha + Saflufenacil 70% (Heat) 35 g/ha\n"
         "   + Starane Xtra (Fluroxipir) 0,5 L/ha + aceite vegetal 0,5% v/v\n"
-        "   + Flurocloridona 25% (Rainbow) 1-1,5 L/ha o Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "   + Flurocloridona 25% (Rainbow) 1-1,5 L/ha o Mateno Plus 2-2,25 L/ha como residual\n"
+        "   ⚠️ Mateno Plus sin registro en cebada — solo trigo (marbete Bayer).\n\n"
         "🥈 Glifosato 1080 g ia/ha + Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
         "   + Diflufenican 50% (Brodal) 250-350 cc/ha como residual\n\n"
         "🥉 Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
