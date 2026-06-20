@@ -2901,8 +2901,8 @@ def detectar_cultivo_maleza_sin_momento(texto):
 
 def kb_momento_manejo():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("📅 Barbecho Largo (abril-junio)", callback_data="momento_barb_largo")],
-        [InlineKeyboardButton("📅 Barbecho Corto / Presiembra (ago-sep)", callback_data="momento_barb_corto")],
+        [InlineKeyboardButton("📅 Barbecho Largo", callback_data="momento_barb_largo")],
+        [InlineKeyboardButton("📅 Barbecho Corto / Presiembra", callback_data="momento_barb_corto")],
         [InlineKeyboardButton("🌾 PEE (Pre-emergencia del cultivo)", callback_data="momento_pee")],
         [InlineKeyboardButton("🌿 POE (Post-emergencia del cultivo)", callback_data="momento_poe")],
     ])
@@ -4000,14 +4000,15 @@ def _brassica_trigo_nacida():
 
 def _brassica_trigo_residual():
     return (
-        "BRASSICA — BARBECHO TRIGO — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
-        "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — 0 días en trigo\n"
-        "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — ⚠️ Brodal 15 días\n"
-        "🥉 Pyroxasulfone 85% (Yamato) 120 g/ha — LD sin restricción; LC 15 días. Requiere ≥20mm\n"
+        "BRASSICA — BARBECHO TRIGO/CEBADA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
+        "🥇 Flurocloridona 25% (Rainbow/Talis) 1,5 L/ha — mejor residualidad a largo plazo (Gigón 2024)\n"
+        "   ⚠️ No superar 1,5 L/ha en trigo. Respetar 30-40 días antes de soja siguiente.\n\n"
+        "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — muy estable a 150 DDA (Gigón 2024)\n\n"
         "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "PSI doble MOA:\n"
-        "✅ Sumyzin T Max (Terbutilazina/Flumioxazin) 1,5 L/ha — 10-15 DAS, semilla ≥4 cm, ≥20mm, NO suelos livianos\n"
-        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE cultivo+maleza, cubre raigrás y crucíferas"
+        "➕ Opción mixta (Brassica + raigrás en una sola aplicación):\n"
+        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — triple MoA, requiere buena humedad\n"
+        "   ⚠️ Solo trigo (marbete Bayer). En cebada: sin registro formal — uso posible en barbecho largo/corto y PSI hasta 7 DAS máximo, con riesgo de fitotoxicidad si llueve entre aplicación y emergencia.\n\n"
+        "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan crucíferas ya nacidas."
     )
 
 def _brassica_trigo_ambos():
