@@ -3493,7 +3493,13 @@ def _doble_trigo_br_la():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
-        "⚠️ Flurocloridona (Rainbow): 0 días intervalo"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo\n"
+        "ℹ️ Residual Lolium: Pyroxasulfone. Residual Brassica: Flurocloridona / Terbutilazina+Diflufenican\n\n"
+        "➕ Alternativa simplificada (Lolium nacido + residual ambas):\n"
+        "✅ Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha\n"
+        "   Cleto+Glifo atacan Lolium nacido. Mateno cubre residual Lolium Y Brassica en una sola aplicación.\n"
+        "   ⚠️ Solo trigo (marbete Bayer). En cebada: sin registro formal — PSI hasta 7 DAS máximo, riesgo fitotoxicidad.\n"
+        "   ⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v"
     )
 
 def _doble_trigo_ba_ln():
@@ -5249,6 +5255,25 @@ async def handle_callback(update, context):
         else:
             await send_long_message(context.bot, query.message.chat_id,
                 "No tengo una respuesta específica para esa combinación. Consultá cada maleza por separado.")
+        # Botones informativos automáticos
+        t = respuesta.lower() if respuesta else ""
+        buttons = []
+        HERBICIDAS_CON_COADYUVANTE = [
+            "cletodim", "haloxifop", "haloxyfop", "propaquizafop", "saflufenacil",
+            "heat", "carfentrazone", "shark", "flumioxazin", "glufosinato"
+        ]
+        if any(w in t for w in HERBICIDAS_CON_COADYUVANTE):
+            buttons.append([InlineKeyboardButton("💧 Ver coadyuvantes", callback_data="show_coadyuvantes")])
+        if "2,4d" in t or "2,4 d" in t:
+            buttons.append([InlineKeyboardButton("📋 Ver formulaciones 2,4D", callback_data="show_2_4d")])
+        if "glifosato" in t:
+            buttons.append([InlineKeyboardButton("📋 Ver formulaciones Glifosato", callback_data="show_glifosato")])
+        if buttons:
+            await context.bot.send_message(
+                chat_id=query.message.chat_id,
+                text="ℹ️ Información adicional disponible:",
+                reply_markup=InlineKeyboardMarkup(buttons)
+            )
         context.user_data.clear()
         return
 
