@@ -2089,7 +2089,8 @@ def pee_trigo_conyza_residual():
         "✅ Terbutrina 50% (Igran) 1,2 L/ha — PSII\n\n"
         "✅ Terbutilazina 75% (Gesatop 75) 1 kg/ha — PSII\n\n"
         "✅ Mateno Plus (Flufenacet 120 + Diflufenican 30 + Aclonifen 450 g/L) 2-2,25 L/ha — triple MoA grupos 15+12+32\n"
-        "   Controla conyza Y raigrás. Requiere buena humedad al momento de aplicación.\n\n"
+        "   Controla conyza Y raigrás. Requiere buena humedad al momento de aplicación.\n"
+        "      ⚠️ Sin registro en cebada — solo trigo (marbete Bayer).\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan conyza ya nacida.\n"
         "⚠️ Conyza tiene dos picos de emergencia — otoño y primavera. Monitorear ambos momentos."
     )
@@ -2122,7 +2123,8 @@ def pee_trigo_conyza_ambos():
         "   + Starane Xtra (Fluroxipir) 0,5 L/ha + aceite vegetal 0,5% v/v\n"
         "   + Metsulfurón 60% 8-10 g/ha o Terbutrina 50% 1,2 L/ha como residual\n\n"
         "🥈 Glifosato 1080 g ia/ha + Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
-        "   + Mateno Plus 2-2,25 L/ha como residual\n\n"
+        "   + Mateno Plus 2-2,25 L/ha como residual\n"
+        "   ⚠️ Mateno Plus sin registro en cebada — solo trigo (marbete Bayer).\n\n"
         "🥉 Paraquat 27,6% 2-2,5 L/ha + sulfato de amonio 2% v/v\n"
         "   + Metsulfurón 60% 8-10 g/ha o Terbutrina 50% 1,2 L/ha\n\n"
         "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3\n"
@@ -3607,7 +3609,8 @@ def _lolium_trigo_residual():
         "🥉 Pendimetalín 45,5% (Herbadox H2O) 2-2,5 L/ha — semilla trigo a ≥3 cm. ⚠️ Eficacia limitada sobre raigrás\n\n"
         "PSI trigo con doble MOA (Fotosistema II + PPO):\n"
         "✅ Sumyzin T Max (Terbutilazina/Flumioxazin) 1,5 L/ha — 10-15 DAS, semilla ≥4 cm, ≥20mm lluvia, NO suelos livianos\n"
-        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE maleza + cultivo, trigo y raigrás/crucíferas"
+        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE maleza + cultivo, trigo y raigrás/crucíferas\n"
+        "   ⚠️ Sin registro en cebada — solo trigo (marbete Bayer)."
     )
 
 def _lolium_trigo_ambos():
@@ -4025,7 +4028,8 @@ def _brassica_trigo_ambos():
         "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n\n"
         "PSI doble MOA (sobre lote limpio o en mezcla si maleza <30% cobertura):\n"
         "✅ Sumyzin T Max (Terbutilazina/Flumioxazin) 1,5 L/ha + Glifosato — 10-15 DAS\n"
-        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE cultivo+maleza\n\n"
+        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE cultivo+maleza\n"
+        "   ⚠️ Sin registro en cebada — solo trigo (marbete Bayer).\n\n"
         "⚠️ Roseta mayor a 10 cm: doble golpe con Paraquat 27,6% (Gramoxone)\n"
         "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
         "⚠️ Sumyzin T Max: semilla trigo ≥4 cm, NO suelos livianos, ≥20mm lluvia"
