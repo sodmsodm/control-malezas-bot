@@ -3412,8 +3412,8 @@ def _doble_trigo_bn_ln():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
-        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + aceite vegetal 0,5%\n"
-        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Carfentrazone 40% (Shark) 75-120 cc/ha\n"
+        "🥇 2,4D 750 g ia/ha + Saflufenacil 70% (Heat) 35-40 g/ha + aceite vegetal 0,5%\n"
+        "🥈 2,4D 750 g ia/ha + Carfentrazone 40% (Shark) 75-120 cc/ha\n"
         "⚠️ PPO obligatorio ante sospecha o confirmación de resistencia a glifosato en Brassica\n\n"
         "OPCIÓN B — UN SOLO GOLPE (cuando el timing no permite separar):\n"
         "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
@@ -3445,8 +3445,8 @@ def _doble_trigo_bn_la():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO sobre Brassica:\n"
-        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + aceite vegetal 0,5%\n"
-        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha\n\n"
+        "🥇 2,4D 750 g ia/ha + Heat 35-40 g/ha + aceite vegetal 0,5%\n"
+        "🥈 2,4D 750 g ia/ha + Shark 75-120 cc/ha\n\n"
         "OPCIÓN B — UN SOLO GOLPE:\n"
         "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
@@ -3512,9 +3512,9 @@ def _doble_trigo_ba_ln():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
-        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
-        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
-        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
+        "🥇 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
+        "🥈 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
         "OPCIÓN B — UN SOLO GOLPE:\n"
         "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite metilado de soja 1%\n"
@@ -3549,9 +3549,9 @@ def _doble_trigo_ba_la():
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n\n"
         "Esperar 7-10 días con buenas condiciones (humedad, insolación)\n\n"
         "GOLPE 2 — Hormonal + PPO + residual Brassica:\n"
-        "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
-        "🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
-        "🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
+        "🥇 2,4D 750 g ia/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + aceite vegetal 0,5%\n"
+        "🥈 2,4D 750 g ia/ha + Heat 35-40 g/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + aceite vegetal 0,5%\n"
+        "🥉 2,4D 750 g ia/ha + Shark 75-120 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha\n\n"
         "OPCIÓN B — UN SOLO GOLPE:\n"
         "⚠️ Dosis de cletodim aumentada 20% por antagonismo con 2,4D\n\n"
         "🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Cletodim 24% (Select) 1,0 L/ha + Heat 35-40 g/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Yamato 210 cc/ha + aceite metilado de soja 1%\n"
@@ -5178,7 +5178,7 @@ async def handle_callback(update, context):
             return
 
         if maleza == "doble":
-            if cultivo not in ("trigo", "cebada"):
+            if cultivo != "trigo":
                 await query.edit_message_text(
                     "Cultivo: " + {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo) +
                     " ✅\n\nRaigrás + Crucíferas simultáneas — por ahora solo disponible para Trigo/Cebada.\n"
