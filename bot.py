@@ -5178,7 +5178,7 @@ async def handle_callback(update, context):
             return
 
         if maleza == "doble":
-            if cultivo != "trigo":
+            if cultivo not in ("trigo", "cebada"):
                 await query.edit_message_text(
                     "Cultivo: " + {"soja": "Soja", "maiz": "Maíz", "girasol": "Girasol"}.get(cultivo, cultivo) +
                     " ✅\n\nRaigrás + Crucíferas simultáneas — por ahora solo disponible para Trigo/Cebada.\n"
