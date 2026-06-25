@@ -830,14 +830,17 @@ SOJA:
 🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — 93-95% a 90 DDA en campo
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
 🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin registro formal en soja, en ensayos 30-40 días sin problemas. En barbecho largo el intervalo se cumple
+➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS soja. Opción para biotipos resistentes a PDS/ALS. (Corteva Argentina)
 
 MAÍZ:
 🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
 🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz
+➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS maíz. Opción para biotipos resistentes a PDS/ALS. (Corteva Argentina)
 
 ⚠️ Pyroxasulfone (Yamato) — NO es la mejor opción residual para Brassica a largo plazo.
 ⚠️ Diflufenican solo — opción residual de menor eficacia que la mezcla con terbutilazina pero válida.
+⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación.
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -879,6 +882,8 @@ OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA
 🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
 🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia que la mezcla pero válido. 0 días intervalo girasol
+➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS girasol. Opción para biotipos resistentes a PDS/ALS. (Corteva Argentina)
+⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
@@ -912,16 +917,20 @@ ROSETA MAYOR A 10 CM — Doble Golpe obligatorio:
 OBJETIVO 2 — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL):
 
 🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — 0 días intervalo en trigo. Mejor opción residual para Brassica
-🥈 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — ⚠️ Brodal 15 días intervalo
-🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha
-🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia, 15 días intervalo
+🥈 Gallery SC (Isoxaben) 250 cc/ha — MOA K1 (inhibidor síntesis celulosa), 70-90 días residual. Especial para crucíferas con resistencia múltiple a ALS/glifosato/PDS. Hasta día de siembra. (Viento Sur 2026 / Corteva Argentina)
+🥉 Terbutilazina 50% (Terbine/Gesatop/Koritsu) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — ⚠️ Brodal 15 días intervalo
+➕ Terbutilazina 50% (Terbine) 1,5 kg/ha — solo, menor eficacia
+➕ Diflufenican 50% (Brodal) 250 cc/ha — menor eficacia, 15 días intervalo
+➕ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — triple MoA, controla Brassica Y raigrás. ⚠️ Solo trigo (sin registro cebada)
+➕ Voraxor (Trifludimoxazin/Saflufenacil) 200 cc/ha — residual corto-medio, buena eficacia inicial sobre Brassica. Hasta 7 DAS. (Viento Sur 2026)
+⚠️ Gallery y Voraxor no controlan crucíferas ya nacidas — solo residual sobre semillas en germinación
 
 OBJETIVO 3 — ELIMINAR MALEZA NACIDA + PREVENIR NUEVOS NACIMIENTOS:
 
 🥇 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Clopyralid 75% (Lontrel) 150 cc/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
 🥈 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Flurocloridona 25% (Rainbow) 1,5 L/ha + Heat 35-40 g/ha
 🥉 Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha
-
+➕ Gallery SC 250 cc/ha o Voraxor 200 cc/ha — aplicar solo sobre lote limpio o como segunda aplicación post-quema
 ⚠️ Roseta mayor a 10 cm:
 🔁 1° Glifosato 1080 g ia/ha + 2,4D 750 g ia/ha + residual // 2° Paraquat 27,6% (Gramoxone) 2 L/ha
 
@@ -1601,6 +1610,17 @@ CONTROL + RESIDUAL Alta infestación — solo funcionan más del 80%:
 
 === PRODUCTOS PRINCIPALES POR CULTIVO Y MOMENTO — USAR EN CONSULTAS GENERALES SIN MALEZA ===
 
+TRIGO / CEBADA — POE CRUCÍFERAS (Brassica/Nabón):
+Desde Z1.2 del cultivo. Controlan plantas ya nacidas. No tienen residualidad significativa a dosis POE.
+
+🥇 2,4D 750 g ia/ha + MCPA — hormonales, estándar sobre crucíferas chicas
+🥈 Bromoxinil 24% (Bromotril) 1,5 L/ha — PPO contacto, buena selectividad en trigo/cebada
+🥈 Flurocloridona 25% (Rainbow) 600 cc/ha + Bromoxinil 24% (Bromotril) 1,5 L/ha — ⚠️ media dosis flurocloridona para evitar fitotoxicidad en cultivo. Sin residualidad significativa a esta dosis (Viento Sur 2026)
+🥉 Metribuzin 48% SC (Sencorex) 400 cc/ha — ⚠️ dosis reducida POE para evitar fitotoxicidad. Control moderado, sin residualidad. (Viento Sur 2026)
+🥉 Diflufenican 50% (Brodal) + Bromoxinil 24% (Bromotril)
+✅ Saflufenacil 70% (Heat) 25 g/ha — mezclable con cualquier hormonal desde Z1.2. SIN aceite en estado de hojas.
+⚠️ Plantas grandes (roseta >10cm) responden peor — priorizar control temprano
+
 TRIGO / CEBADA: PEE — PRODUCTOS PRINCIPALES
 ⚠️ INSTRUCCIÓN AL MODELO: Esta es la lista completa y definitiva para consultas generales PEE de trigo/cebada. Volcá EXACTAMENTE esta lista. No agregues ni quites productos de otras secciones.
 
@@ -2162,8 +2182,11 @@ def pee_trigo_cruciferas_nacida():
         "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3 del trigo\n"
         "⚠️ Crucíferas son sensibles a auxínicos — plantas chicas responden bien\n\n"
         "🔁 Una vez emergido el trigo (Z2.1+) opciones POE:\n"
-        "   2,4D, MCPA, Dicamba (Banvel), Bromoxinil (Bromotril),\n"
-        "   Flurocloridona 25% + Bromoxinil, Diflufenican + Bromoxinil"
+        "   ✅ 2,4D, MCPA, Dicamba (Banvel), Bromoxinil 24% (Bromotril) 1,5 L/ha\n"
+        "   ✅ Flurocloridona 25% (Rainbow) 600 cc/ha + Bromoxinil — ⚠️ media dosis para evitar fitotoxicidad en cultivo\n"
+        "   ✅ Metribuzin 48% SC (Sencorex) 400 cc/ha — ⚠️ dosis reducida POE, control moderado (Viento Sur 2026)\n"
+        "   ✅ Diflufenican + Bromoxinil\n"
+        "   ✅ Saflufenacil 70% (Heat) 25 g/ha + hormonal — SIN aceite desde Z1.2"
     )
 
 def pee_trigo_cruciferas_ambos():
@@ -2180,7 +2203,13 @@ def pee_trigo_cruciferas_ambos():
         "   + Flurocloridona 25% (Rainbow) 1-1,5 L/ha\n\n"
         "⚠️ Heat lleva aceite vegetal obligatorio antes de Z1.2 — SIN aceite desde Z1.2-Z1.3\n"
         "⚠️ No superar 1,5 L/ha de flurocloridona en trigo\n"
-        "⚠️ Aplicar con lote sin cobertura verde activa"
+        "⚠️ Aplicar con lote sin cobertura verde activa\n\n"
+        "🔁 Una vez emergido el trigo (Z2.1+) opciones POE:\n"
+        "   ✅ 2,4D, MCPA, Dicamba (Banvel), Bromoxinil 24% (Bromotril) 1,5 L/ha\n"
+        "   ✅ Flurocloridona 25% (Rainbow) 600 cc/ha + Bromoxinil — ⚠️ media dosis para evitar fitotoxicidad en cultivo\n"
+        "   ✅ Metribuzin 48% SC (Sencorex) 400 cc/ha — ⚠️ dosis reducida POE, control moderado (Viento Sur 2026)\n"
+        "   ✅ Diflufenican + Bromoxinil\n"
+        "   ✅ Saflufenacil 70% (Heat) 25 g/ha + hormonal — SIN aceite desde Z1.2"
     )
 
 def pee_soja_amaranthus_residual():
@@ -3861,7 +3890,9 @@ def _brassica_largo_residual(cultivo):
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha — 93-95% a 90 DDA\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — 96% a 150 DDA\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin registro formal en soja, en barbecho largo el intervalo se cumple\n"
-            "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia"
+            "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia\n"
+            "➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS soja. Opción para biotipos con resistencia múltiple. (Corteva Argentina)\n"
+            "⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación"
         )
     else:
         return (
@@ -3869,7 +3900,9 @@ def _brassica_largo_residual(cultivo):
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
             "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz\n"
-            "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia"
+            "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia\n"
+            "➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS maíz. Opción para biotipos con resistencia múltiple. (Corteva Argentina)\n"
+            "⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación"
         )
 
 def _brassica_largo_ambos(cultivo):
@@ -3903,20 +3936,24 @@ def _brassica_corto_residual(cultivo):
             "BRASSICA — BARBECHO CORTO/PRESIEMBRA — SOJA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
-            "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja\n\n"
+            "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — ⚠️ respetar 30-40 días antes de soja\n"
+            "➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS soja. Opción biotipos resistentes. (Corteva Argentina)\n\n"
             "PSI inmediato (quema + residual corto):\n"
             "✅ Voraxor (Trifludimoxazin/Saflufenacil) 100-150 cc/ha + Glifosato — 7 DAS\n"
-            "✅ Flumioxazin 48% (Sumisoya) 50-100 cc/ha + Glifosato — PSI en mezcla"
+            "✅ Flumioxazin 48% (Sumisoya) 50-100 cc/ha + Glifosato — PSI en mezcla\n"
+            "⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación"
         )
     else:
         return (
             "BRASSICA — BARBECHO CORTO/PRESIEMBRA — MAÍZ — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
             "🥇 Biciclopirone 20% (Acuron Uno) 0,75-1 L/ha + Atrazina 90% 1 kg/ha\n"
             "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
-            "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz\n\n"
+            "🥉 Flurocloridona 25% (Rainbow) 1,5 L/ha — sin restricción en maíz\n"
+            "➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS maíz. Opción biotipos resistentes. (Corteva Argentina)\n\n"
             "PSI inmediato (quema + residual corto):\n"
             "✅ Voraxor (Trifludimoxazin/Saflufenacil) 100-150 cc/ha + Glifosato — 7 DAS\n"
-            "✅ Flumioxazin 48% (Sumisoya) 50-100 cc/ha + Glifosato — PSI en mezcla"
+            "✅ Flumioxazin 48% (Sumisoya) 50-100 cc/ha + Glifosato — PSI en mezcla\n"
+            "⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación"
         )
 
 def _brassica_corto_ambos(cultivo):
@@ -3965,7 +4002,9 @@ def _brassica_girasol_residual():
         "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha — 96-97% a 150 DDA. Sin restricción\n"
         "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha\n"
         "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
-        "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia"
+        "🥉 Diflufenican 50% (Brodal) 250 cc/ha solo — menor eficacia\n"
+        "➕ Gallery SC (Isoxaben) 250 cc/ha — MOA K1, hasta 60 DAS girasol. Opción biotipos resistentes a PDS/ALS. (Corteva Argentina)\n"
+        "⚠️ Gallery no controla crucíferas ya nacidas — solo residual sobre semillas en germinación"
     )
 
 def _brassica_girasol_largo_ambos():
@@ -4012,11 +4051,12 @@ def _brassica_trigo_residual():
         "BRASSICA — BARBECHO TRIGO/CEBADA — PREVENIR NUEVOS NACIMIENTOS (RESIDUAL)\n\n"
         "🥇 Flurocloridona 25% (Rainbow/Talis) 1,5 L/ha — mejor residualidad a largo plazo (Gigón 2024)\n"
         "   ⚠️ No superar 1,5 L/ha en trigo. Respetar 30-40 días antes de soja siguiente.\n\n"
-        "🥈 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — muy estable a 150 DDA (Gigón 2024)\n\n"
-        "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
-        "➕ Opción mixta (Brassica + raigrás en una sola aplicación):\n"
-        "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — triple MoA, requiere buena humedad\n"
-        "   ⚠️ Solo trigo (marbete Bayer). En cebada: sin registro formal — uso posible en barbecho largo/corto y PSI hasta 7 DAS máximo, con riesgo de fitotoxicidad si llueve entre aplicación y emergencia.\n\n"
+        "🥈 Gallery SC (Isoxaben) 250 cc/ha — MOA K1, 70-90 días residual. Especial para crucíferas con resistencia múltiple a ALS/glifosato/PDS. Hasta día de siembra. (Viento Sur 2026 / Corteva Argentina)\n\n"
+        "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenican 50% (Brodal) 250 cc/ha — muy estable a 150 DDA (Gigón 2024)\n\n"
+        "➕ Terbutilazina 50% (Terbine) 1,5 kg/ha — solo, menor eficacia\n"
+        "➕ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — triple MoA, controla Brassica Y raigrás\n"
+        "   ⚠️ Solo trigo (marbete Bayer). En cebada: sin registro formal — PSI hasta 7 DAS máximo.\n"
+        "➕ Voraxor (Trifludimoxazin/Saflufenacil) 200 cc/ha — residual corto-medio sobre Brassica. Hasta 7 DAS. (Viento Sur 2026)\n\n"
         "⚠️ Todos actúan sobre semillas y plántulas en germinación. No controlan crucíferas ya nacidas."
     )
 
@@ -4029,7 +4069,10 @@ def _brassica_trigo_ambos():
         "PSI doble MOA (sobre lote limpio o en mezcla si maleza <30% cobertura):\n"
         "✅ Sumyzin T Max (Terbutilazina/Flumioxazin) 1,5 L/ha + Glifosato — 10-15 DAS\n"
         "✅ Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — PEE cultivo+maleza\n"
-        "   ⚠️ Sin registro en cebada — solo trigo (marbete Bayer).\n\n"
+        "   ⚠️ Sin registro en cebada — solo trigo (marbete Bayer).\n"
+        "✅ Gallery SC (Isoxaben) 250 cc/ha — aplicar solo sobre lote limpio o post-quema. MOA K1, 70-90 días residual\n"
+        "✅ Voraxor (Trifludimoxazin/Saflufenacil) 200 cc/ha — residual corto-medio, hasta 7 DAS\n"
+        "   ⚠️ Gallery y Voraxor no controlan crucíferas nacidas — solo residual\n\n"
         "⚠️ Roseta mayor a 10 cm: doble golpe con Paraquat 27,6% (Gramoxone)\n"
         "⚠️ PPO requiere aceite vegetal 0,5% v/v\n"
         "⚠️ Sumyzin T Max: semilla trigo ≥4 cm, NO suelos livianos, ≥20mm lluvia"
