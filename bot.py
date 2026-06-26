@@ -23,21 +23,15 @@ logger = logging.getLogger(__name__)
 # --- INFO DE COADYUVANTES ---
 COADYUVANTES_INFO = (
     "💧 COADYUVANTES Y ACEITES — Opciones y dosis:\n\n"
-    "Aceites y MSO (penetración cuticular — para PPO, ACCasa, malezas difíciles):\n"
-    "✅ Versión (aceite vegetal) — 0,5-1 L/ha\n"
-    "✅ MSO Max (aceite metilado de soja) — 200-250 cc/ha\n"
-    "✅ Rizospray Extremo (MSO + organosilicona, Rizobacter SENASA 37.021) — 200-500 cc/ha — antievaporante + penetrante cuticular. Recomendado en herbicidas de contacto y malezas difíciles o estresadas\n\n"
-    "Coadyuvantes multirol:\n"
-    "✅ A35 T Bio — 40-80 cc/ha\n"
-    "✅ A35 T GOLD — 100-150 cc/ha\n"
-    "✅ wr4 BIO — 40-80 cc/ha\n\n"
-    "Compatibilizadores de mezclas en tanque (previenen y recuperan cortes de caldo):\n"
-    "✅ ALL OK (Alltec Bio SENASA 39.326) — 200-400 cc/ha preventivo / 400-600 cc/ha recuperador\n"
-    "   Especialmente indicado para mezclas SL/CE/SC y sales de glifosato + 2,4D\n"
-    "✅ Alltec Ultra — 80-100 cc/ha\n\n"
-    "Correctores de agua dura (secuestrantes de cationes Ca²⁺/Mg²⁺ — agua >300-400 ppm):\n"
-    "✅ Sulfato de amonio — 1-2 kg/ha — económico, especial para glifosato potásico\n"
-    "⚠️ All Ok NO corrige agua dura — corrige incompatibilidad física entre formulaciones"
+    "Coadyuvantes:\n"
+    "✅ A35 T Bio — Coadyuvante — 40-80 cc/ha\n"
+    "✅ wr4 BIO — Corrector — 40-80 cc/ha\n"
+    "✅ Alltec Ultra — Coadyuvante + Corrector — 80-100 cc/ha\n"
+    "✅ Mso max — Coadyuvante + Aceite — 200-250 cc/ha\n"
+    "✅ Version — Aceite — 0,5-1 l/ha\n"
+    "✅ A35 T GOLD — Coadyuvante + Aceite — 100-150 cc/ha\n\n"
+    "Compatibilizador:\n"
+    "✅ ALL OK — Prevén / Correctivo — 400-600 cc/ha"
 )
 
 # --- INFO DE 2,4D ---
@@ -2218,6 +2212,85 @@ def pee_trigo_cruciferas_ambos():
         "   ✅ Saflufenacil 70% (Heat) 25 g/ha + hormonal — SIN aceite desde Z1.2"
     )
 
+def poe_trigo_raigras_conv():
+    return (
+        "TRIGO / CEBADA — RAIGRÁS — POE (Post-emergencia del cultivo)\n\n"
+        "Aplicar desde Z1.2 (2-3 hojas del cultivo). Ventana óptima: raigrás en 2-4 hojas.\n\n"
+        "🥇 Pinoxaden 5% (Axial) 0,6-0,8 L/ha + aceite mineral 1% v/v\n"
+        "   ACCasa — mejor control en raigrás resistente a glifosato\n"
+        "   ⚠️ No mezclar con hormonales (2,4D, MCPA) — antagonismo\n\n"
+        "🥈 Iodosulfurón/Mesosulfurón (Hussar Plus OD) 1-1,2 L/ha\n"
+        "   ALS doble MoA — buena selectividad en trigo. Desde Z1.2\n"
+        "   ⚠️ Verificar resistencia ALS en el lote antes de usar\n\n"
+        "🥉 Clodinafop 24% (Gizmo / Topick 24EC) 0,4-0,5 L/ha + aceite mineral\n"
+        "   ACCasa — desde Z1.2-Z1.3\n"
+        "🥉 Piroxulam 21,5% (PowerFlex) 0,45 L/ha\n"
+        "   ALS — desde Z1.3 hasta fin de macollaje\n\n"
+        "⚠️ ACCasa (Axial, Clodinafop): agregar aceite mineral o metilado 0,5-1% v/v\n"
+        "⚠️ No mezclar ACCasa con hormonales — aplicar con intervalo de 7-10 días si se necesitan ambos\n"
+        "⚠️ Raigrás resistente a ACCasa: evaluar Hussar Plus como alternativa de MOA diferente\n"
+        "⚠️ FRÍO/HELADAS: no aplicar si hubo o se esperan temperaturas <3°C en los 3 días previos o posteriores — riesgo de fitotoxicidad en el cultivo"
+    )
+
+def poe_trigo_raigras_cl():
+    return (
+        "TRIGO CL — RAIGRÁS — POE (Post-emergencia del cultivo)\n\n"
+        "✅ Imazamox (Pulsar 70 WG / Trigosol) — ALS\n"
+        "   Dosis según marbete. Desde Z1.2 del cultivo.\n\n"
+        "⚠️ SOLO en trigos Clearfield (CL) — fitotóxico en trigo convencional\n"
+        "⚠️ Verificar resistencia ALS en biotipos locales de raigrás\n"
+        "⚠️ Para raigrás con resistencia confirmada a ALS, consultar con Ingeniero Agrónomo\n"
+        "⚠️ FRÍO/HELADAS: no aplicar si hubo o se esperan temperaturas <3°C en los 3 días previos o posteriores — riesgo de fitotoxicidad en el cultivo"
+    )
+
+def poe_trigo_raigras_hb4():
+    return (
+        "TRIGO HB4 — RAIGRÁS — POE (Post-emergencia del cultivo)\n\n"
+        "✅ Glufosinato 28% (Finale / Liberty) 2-3 L/ha\n"
+        "   EPSP no específico — amplio espectro, sin resistencias cruzadas con glifosato\n"
+        "   Aplicar en las horas de mayor radiación solar\n\n"
+        "⚠️ SOLO en trigos HB4 tolerantes a glufosinato — fitotóxico en cualquier otro biotipo\n"
+        "⚠️ Contacto — aplicar con raigrás en estado de hoja activa, no bajo estrés\n"
+        "⚠️ FRÍO/HELADAS: no aplicar si hubo o se esperan temperaturas <3°C en los 3 días previos o posteriores — riesgo de fitotoxicidad en el cultivo"
+    )
+
+def poe_trigo_cruciferas():
+    return (
+        "TRIGO / CEBADA — CRUCÍFERAS — POE (Post-emergencia del cultivo)\n\n"
+        "DESDE Z1.2 (estado de hojas — antes de macollaje):\n\n"
+        "🥇 Bromoxinil 24% (Bromotril) 1,5 L/ha + MCPA 1,5 L/ha\n"
+        "   PPO contacto + hormonal sistémico — sinergia sobre crucíferas chicas\n"
+        "   ✅ Opcional: + Saflufenacil 70% (Heat) 25 g/ha si la densidad es alta o la maleza está pasada de tamaño\n\n"
+        "🥈 Bromoxinil 24% (Bromotril) 1,5 L/ha solo — desde Z1.2, plantas en plántula\n\n"
+        "DESDE Z2.1 (macollaje):\n\n"
+        "🥇 Bromoxinil 24% (Bromotril) 1,5 L/ha + 2,4D 750 g ia/ha o MCPA\n"
+        "   ✅ Opcional: + Saflufenacil 70% (Heat) 25 g/ha en alta densidad o maleza pasada\n\n"
+        "🥈 Flurocloridona 25% (Rainbow) 600 cc/ha + 2,4D 750 g ia/ha o MCPA\n"
+        "   ⚠️ Media dosis flurocloridona para evitar fitotoxicidad en cultivo\n\n"
+        "🥉 Carfentrazone 40% (Shark) 75-120 cc/ha + 2,4D 750 g ia/ha o MCPA\n\n"
+        "⚠️ Saflufenacil (Heat), Carfentrazone (Shark) y Bromoxinil: SIN aceite en estado de hojas\n"
+        "⚠️ Crucíferas son sensibles a auxínicos — plantas chicas responden bien. Roseta >10 cm: eficacia cae\n"
+        "⚠️ Resistencia a ALS confirmada en gran parte de zona núcleo — no usar sulfonilureas solas\n"
+        "⚠️ Trigos HB4: Glufosinato 28% 2-3 L/ha como alternativa total\n"
+        "⚠️ FRÍO/HELADAS: no aplicar PPO ni hormonales si hubo o se esperan temperaturas <3°C en los 3 días previos o posteriores — riesgo de fitotoxicidad en el cultivo"
+    )
+
+def poe_trigo_conyza():
+    return (
+        "TRIGO / CEBADA — CONYZA (Rama Negra) — POE (Post-emergencia del cultivo)\n\n"
+        "Desde Z2.1 (macollaje). Controlar plantas menores a 10 cm.\n\n"
+        "✅ Metsulfurón 60% (Ally/Errasin WP) + Dicamba 57,5% (Banvel) — ALS+auxínico\n"
+        "✅ 2,4D 750 g ia/ha + Dicamba 57,5% (Banvel) — auxínicos, estándar\n"
+        "✅ 2,4D 750 g ia/ha + Picloram 24% (Tordón) — auxínicos, plantas pasadas\n"
+        "✅ 2,4D 750 g ia/ha + Saflufenacil 70% (Heat) 25 g/ha — malezas <10 cm. SIN aceite\n"
+        "✅ Saflufenacil 70% (Heat) 25 g/ha solo — malezas <10 cm. SIN aceite\n"
+        "✅ Clopyralid/MCPA (Lontrel) — auxínico selectivo\n"
+        "✅ Glufosinato 28% — solo Trigos HB4\n\n"
+        "⚠️ Conyza >10 cm: eficacia cae significativamente. Priorizar control temprano.\n"
+        "⚠️ Resistencia a glifosato y ALS confirmada — evitar sulfonilureas solas\n"
+        "⚠️ TODO PENDIENTE DE COMPLETAR CON PODIO — agregar datos de ensayos cuando estén disponibles"
+    )
+
 def pee_soja_amaranthus_residual():
     return (
         "SOJA — AMARANTHUS SPP. (Yuyo Colorado) — PEE RESIDUAL\n\n"
@@ -2297,7 +2370,7 @@ def pee_soja_cruciferas_nacida():
         "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
         "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
         "⚠️ ANTAGONISMO — Glifosato potásico (sal K) + Fomesafén en AGUA DURA (>300-400 ppm):\n"
-        "   Daño en soja hasta 5% a 15 DDA. Agregar sulfato de amonio 1-2 kg/ha para mitigar.\n"
+        "   Daño en soja hasta 5% a 15 DDA. Agregar ALL OK 300 cc/ha o sulfato de amonio para mitigar.\n"
         "   En agua blanda el daño es mínimo (1,5%) y no requiere corrección. (Gigón, Agroconsultas)\n\n"
         "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/Presiembra\n"
         "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/Presiembra\n\n"
@@ -2318,7 +2391,7 @@ def pee_soja_cruciferas_ambos():
         "   + (Fomesafén 11,9%/S-metolacloro 51,8%) (EDDUS) 2,5-3 L/ha\n\n"
         "🥉 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha\n\n"
-        "⚠️ Glifosato potásico + Fomesafén en agua dura (>300-400 ppm): agregar sulfato de amonio 1-2 kg/ha\n"
+        "⚠️ Glifosato potásico + Fomesafén en agua dura (>300-400 ppm): agregar ALL OK 300 cc/ha\n"
     )
 
 def pee_soja_commelina_general():
@@ -5057,8 +5130,19 @@ async def handle_callback(update, context):
                 "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
                 reply_markup=kb_poe_maiz_biotipo()
             )
+        elif cultivo_elegido == "trigo":
+            context.user_data['poe_cultivo'] = 'trigo'
+            await query.message.reply_text(
+                "Trigo / Cebada POE ✅\n\n¿Qué maleza querés controlar?",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="poe_trigo_maleza_raigras")],
+                    [InlineKeyboardButton("🌼 Crucíferas", callback_data="poe_trigo_maleza_cruciferas")],
+                    [InlineKeyboardButton("🌱 Conyza / Rama Negra", callback_data="poe_trigo_maleza_conyza")],
+                    [InlineKeyboardButton("❓ Otra maleza", callback_data="poe_trigo_maleza_otra")],
+                ])
+            )
         else:
-            cultivo_nombre = {"soja": "Soja", "girasol": "Girasol", "trigo": "Trigo/Cebada", "sorgo": "Sorgo"}.get(cultivo_elegido, cultivo_elegido)
+            cultivo_nombre = {"soja": "Soja", "girasol": "Girasol", "sorgo": "Sorgo"}.get(cultivo_elegido, cultivo_elegido)
             context.user_data['cm_cultivo'] = cultivo_elegido
             await query.message.reply_text(
                 f"Cultivo: {cultivo_nombre} ✅\n\n¿Qué maleza querés controlar?",
@@ -5066,7 +5150,7 @@ async def handle_callback(update, context):
                     [InlineKeyboardButton("🌿 Especificá la maleza escribiéndola", callback_data="poe_maleza_texto")]
                 ])
             )
-            # Para soja/girasol/trigo/sorgo POE — mandar a la API con cultivo+POE
+            # Para soja/girasol/sorgo POE — mandar a la API con cultivo+POE
             texto_api = f"herbicidas POE post-emergencia en {cultivo_elegido}"
             response = client.messages.create(
                 model="claude-sonnet-4-6",
@@ -5075,6 +5159,41 @@ async def handle_callback(update, context):
                 messages=[{"role": "user", "content": texto_api}]
             )
             await query.message.reply_text(response.content[0].text)
+        return
+
+    # Flujo POE trigo — maleza
+    if data.startswith("poe_trigo_maleza_"):
+        maleza = data.replace("poe_trigo_maleza_", "")
+        context.user_data.clear()
+        if maleza == "raigras":
+            await query.message.reply_text(
+                "Raigrás POE en Trigo/Cebada ✅\n\n¿Qué biotipo de trigo/cebada tenés?",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🌾 Convencional", callback_data="poe_trigo_biotipo_conv")],
+                    [InlineKeyboardButton("🧬 Trigo CL (Clearfield)", callback_data="poe_trigo_biotipo_cl")],
+                    [InlineKeyboardButton("🧬 Trigo HB4", callback_data="poe_trigo_biotipo_hb4")],
+                ])
+            )
+        elif maleza == "cruciferas":
+            await query.message.reply_text(poe_trigo_cruciferas())
+        elif maleza == "conyza":
+            await query.message.reply_text(poe_trigo_conyza())
+        elif maleza == "otra":
+            await query.message.reply_text(
+                "Para otras malezas en POE de trigo/cebada, escribí tu consulta con cultivo + maleza + POE y te respondo con la información disponible."
+            )
+        return
+
+    # Flujo POE trigo — biotipo raigrás
+    if data.startswith("poe_trigo_biotipo_"):
+        biotipo = data.replace("poe_trigo_biotipo_", "")
+        context.user_data.clear()
+        if biotipo == "conv":
+            await query.message.reply_text(poe_trigo_raigras_conv())
+        elif biotipo == "cl":
+            await query.message.reply_text(poe_trigo_raigras_cl())
+        elif biotipo == "hb4":
+            await query.message.reply_text(poe_trigo_raigras_hb4())
         return
 
     # Flujo PEE guiado — maleza
