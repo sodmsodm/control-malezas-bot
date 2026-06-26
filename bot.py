@@ -23,15 +23,21 @@ logger = logging.getLogger(__name__)
 # --- INFO DE COADYUVANTES ---
 COADYUVANTES_INFO = (
     "💧 COADYUVANTES Y ACEITES — Opciones y dosis:\n\n"
-    "Coadyuvantes:\n"
-    "✅ A35 T Bio — Coadyuvante — 40-80 cc/ha\n"
-    "✅ wr4 BIO — Corrector — 40-80 cc/ha\n"
-    "✅ Alltec Ultra — Coadyuvante + Corrector — 80-100 cc/ha\n"
-    "✅ Mso max — Coadyuvante + Aceite — 200-250 cc/ha\n"
-    "✅ Version — Aceite — 0,5-1 l/ha\n"
-    "✅ A35 T GOLD — Coadyuvante + Aceite — 100-150 cc/ha\n\n"
-    "Compatibilizador:\n"
-    "✅ ALL OK — Prevén / Correctivo — 400-600 cc/ha"
+    "Aceites y MSO (penetración cuticular — para PPO, ACCasa, malezas difíciles):\n"
+    "✅ Versión (aceite vegetal) — 0,5-1 L/ha\n"
+    "✅ MSO Max (aceite metilado de soja) — 200-250 cc/ha\n"
+    "✅ Rizospray Extremo (MSO + organosilicona, Rizobacter SENASA 37.021) — 200-500 cc/ha — antievaporante + penetrante cuticular. Recomendado en herbicidas de contacto y malezas difíciles o estresadas\n\n"
+    "Coadyuvantes multirol:\n"
+    "✅ A35 T Bio — 40-80 cc/ha\n"
+    "✅ A35 T GOLD — 100-150 cc/ha\n"
+    "✅ wr4 BIO — 40-80 cc/ha\n\n"
+    "Compatibilizadores de mezclas en tanque (previenen y recuperan cortes de caldo):\n"
+    "✅ ALL OK (Alltec Bio SENASA 39.326) — 200-400 cc/ha preventivo / 400-600 cc/ha recuperador\n"
+    "   Especialmente indicado para mezclas SL/CE/SC y sales de glifosato + 2,4D\n"
+    "✅ Alltec Ultra — 80-100 cc/ha\n\n"
+    "Correctores de agua dura (secuestrantes de cationes Ca²⁺/Mg²⁺ — agua >300-400 ppm):\n"
+    "✅ Sulfato de amonio — 1-2 kg/ha — económico, especial para glifosato potásico\n"
+    "⚠️ All Ok NO corrige agua dura — corrige incompatibilidad física entre formulaciones"
 )
 
 # --- INFO DE 2,4D ---
@@ -2291,7 +2297,7 @@ def pee_soja_cruciferas_nacida():
         "✅ Glifosato + Epirefenacil 5,5% (Empera) 600 cc/ha\n"
         "✅ Glufosinato 28% 1-2,5 L/ha + Saflufenacil o Carfentrazone\n\n"
         "⚠️ ANTAGONISMO — Glifosato potásico (sal K) + Fomesafén en AGUA DURA (>300-400 ppm):\n"
-        "   Daño en soja hasta 5% a 15 DDA. Agregar ALL OK 300 cc/ha o sulfato de amonio para mitigar.\n"
+        "   Daño en soja hasta 5% a 15 DDA. Agregar sulfato de amonio 1-2 kg/ha para mitigar.\n"
         "   En agua blanda el daño es mínimo (1,5%) y no requiere corrección. (Gigón, Agroconsultas)\n\n"
         "⚠️ Con hormonal (Glifosato/2,4D, Glifosato/MCPA, Glifosato/2,4D+Dicamba 25 DAS) — requiere carencia antes de siembra, ver Barbecho Corto/Presiembra\n"
         "⚠️ Doble golpe: Glifosato/2,4D // Paraquat 27,6% 1,5-2,5 L/ha o Glufosinato — ver Barbecho Corto/Presiembra\n\n"
@@ -2312,7 +2318,7 @@ def pee_soja_cruciferas_ambos():
         "   + (Fomesafén 11,9%/S-metolacloro 51,8%) (EDDUS) 2,5-3 L/ha\n\n"
         "🥉 Glifosato + Carfentrazone 40% (Shark) 70-80 cc/ha\n"
         "   + Sulfentrazone 50% (Authority/Capaz) 0,4-0,5 L/ha\n\n"
-        "⚠️ Glifosato potásico + Fomesafén en agua dura (>300-400 ppm): agregar ALL OK 300 cc/ha\n"
+        "⚠️ Glifosato potásico + Fomesafén en agua dura (>300-400 ppm): agregar sulfato de amonio 1-2 kg/ha\n"
     )
 
 def pee_soja_commelina_general():
@@ -3496,9 +3502,7 @@ def _doble_trigo_br_ln():
         "🥉 Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n\n"
         "⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n⚠️ Cletodim (Select): 15 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
-        "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata sin problema\n"
-        "➕ Gallery SC (Isoxaben) 250 cc/ha + Cletodim 24% (Select) 0,8 L/ha — MOA K1 para Brassica residual, Cletodim para Lolium nacido. Para biotipos Brassica con resistencia a PDS.\n"
-        "   ⚠️ Gallery cubre solo Brassica residual — Cletodim cubre Lolium nacido"
+        "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata sin problema"
     )
 
 def _doble_trigo_br_lr():
@@ -3507,13 +3511,8 @@ def _doble_trigo_br_lr():
         "⚠️ DOS MALEZAS PROBLEMA — ninguna emergida, objetivo 100% residual\n\n"
         "UN SOLO GOLPE — sin antagonismo:\n\n"
         "🥇 Flurocloridona 25% (Rainbow) 1,5 L/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha\n"
-        "🥈 Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha — triple MOA, cubre Brassica Y Lolium en un solo producto\n"
-        "   ⚠️ Solo trigo (marbete Bayer). Sin registro en cebada.\n"
         "🥈 Flurocloridona 25% (Rainbow) 1,5 L/ha + Terbutilazina 50% (Terbine) 1,5 kg/ha\n"
-        "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n"
-        "➕ Gallery SC (Isoxaben) 250 cc/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — MOA K1+VLCFA, para biotipos Brassica con resistencia múltiple a PDS/ALS\n"
-        "➕ Voraxor (Trifludimoxazin/Saflufenacil) 200 cc/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha — residual corto-medio para ambas malezas\n"
-        "   ⚠️ Gallery y Voraxor cubren solo Brassica — el componente gramínea lo aporta Pyroxasulfone\n\n"
+        "🥉 Terbutilazina 50% (Terbine) 1,5 kg/ha + Diflufenicán 50% (Brodal) 250 cc/ha\n\n"
         "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo — presiembra inmediata\n"
@@ -3537,9 +3536,7 @@ def _doble_trigo_br_la():
         "✅ Glifosato 1080 g ia/ha + Cletodim 24% (Select) 0,8 L/ha + Mateno Plus (Flufenacet/Diflufenican/Aclonifen) 2-2,25 L/ha\n"
         "   Cleto+Glifo atacan Lolium nacido. Mateno cubre residual Lolium Y Brassica en una sola aplicación.\n"
         "   ⚠️ Solo trigo (marbete Bayer). En cebada: sin registro formal — PSI hasta 7 DAS máximo, riesgo fitotoxicidad.\n"
-        "   ⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v\n"
-        "➕ Gallery SC (Isoxaben) 250 cc/ha + Pyroxasulfone 85% (Yamato) 210 cc/ha + Cletodim 24% (Select) 0,8 L/ha — MOA K1+VLCFA para Brassica residual, Cletodim+Pyroxa para Lolium nacido+residual. Para biotipos con resistencia múltiple.\n"
-        "   ⚠️ Gallery cubre solo Brassica residual — Pyroxasulfone+Cletodim cubren Lolium"
+        "   ⚠️ Cletodim requiere aceite vegetal o metilado 0,5-1% v/v"
     )
 
 def _doble_trigo_ba_ln():
@@ -3575,8 +3572,7 @@ def _doble_trigo_ba_lr():
         "⚠️ Yamato requiere lluvia ≥20 mm dentro de los 15 días post-aplicación\n"
         "⚠️ Diflufenicán (Brodal): 10 días intervalo antes de siembra trigo/cebada\n"
         "⚠️ Flurocloridona (Rainbow): 0 días intervalo\n"
-        "⚠️ Opción 🥇 es una mezcla compleja — verificar compatibilidad física antes de aplicar\n"
-        "➕ Reemplazar Flurocloridona por Gallery SC (Isoxaben) 250 cc/ha — mismo rol residual Brassica, MOA K1 diferente. Para biotipos con resistencia a PDS (flurocloridona/diflufenican)."
+        "⚠️ Opción 🥇 es una mezcla compleja — verificar compatibilidad física antes de aplicar"
     )
 
 def _doble_trigo_ba_la():
