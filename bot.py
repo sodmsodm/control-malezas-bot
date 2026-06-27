@@ -3044,6 +3044,33 @@ def detectar_poe_maiz_guiado(texto):
             maleza = "conyza"
     return {"biotipo": biotipo, "maleza": maleza}
 
+def detectar_poe_trigo_guiado(texto):
+    t = texto.lower().strip()
+    POE_MOMENTOS = ["poe", "post-emergencia", "postemergencia", "post emergencia", "postemer"]
+    es_poe = any(kw in t for kw in POE_MOMENTOS)
+    if not es_poe:
+        return None
+    es_trigo = any(kw in t for kw in ["trigo", "cebada", "fina", "cereal"])
+    if not es_trigo:
+        return None
+    # Detectar maleza si viene en el texto
+    maleza = None
+    if any(kw in t for kw in ["raigras", "raigrás", "lolium", "rye grass", "ryegrass"]):
+        maleza = "raigras"
+    elif any(kw in t for kw in ["crucif", "brassica", "nabo", "nabón", "nabón", "mostaza", "mostacilla"]):
+        maleza = "cruciferas"
+    elif any(kw in t for kw in ["conyza", "rama negra", "coniza", "voladora"]):
+        maleza = "conyza"
+    # Detectar biotipo si viene (solo relevante para raigrás)
+    biotipo = None
+    if any(kw in t for kw in ["clearfield", " cl ", "cl trigo", "trigo cl"]):
+        biotipo = "cl"
+    elif any(kw in t for kw in ["hb4", "hb 4"]):
+        biotipo = "hb4"
+    elif any(kw in t for kw in ["convencional", "convencion"]):
+        biotipo = "conv"
+    return {"maleza": maleza, "biotipo": biotipo}
+
 def kb_poe_maiz_biotipo():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("🌽 Convencional", callback_data="poe_maiz_biotipo_convencional")],
@@ -4799,6 +4826,45 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text(
                 "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
                 reply_markup=kb_poe_maiz_biotipo()
+            )
+        return
+
+    # Detectar POE trigo/cebada en texto libre
+    poe_trigo_info = detectar_poe_trigo_guiado(user_message)
+    if poe_trigo_info is not None:
+        maleza = poe_trigo_info.get("maleza")
+        biotipo = poe_trigo_info.get("biotipo")
+        context.user_data.clear()
+        if maleza == "raigras":
+            if biotipo == "cl":
+                await update.message.reply_text(poe_trigo_raigras_cl())
+            elif biotipo == "hb4":
+                await update.message.reply_text(poe_trigo_raigras_hb4())
+            elif biotipo == "conv":
+                await update.message.reply_text(poe_trigo_raigras_conv())
+            else:
+                await update.message.reply_text(
+                    "Raigrás POE en Trigo/Cebada ✅\n\n¿Qué biotipo de trigo/cebada tenés?",
+                    reply_markup=InlineKeyboardMarkup([
+                        [InlineKeyboardButton("🌾 Convencional", callback_data="poe_trigo_biotipo_conv")],
+                        [InlineKeyboardButton("🧬 Trigo CL (Clearfield)", callback_data="poe_trigo_biotipo_cl")],
+                        [InlineKeyboardButton("🧬 Trigo HB4", callback_data="poe_trigo_biotipo_hb4")],
+                    ])
+                )
+        elif maleza == "cruciferas":
+            await update.message.reply_text(poe_trigo_cruciferas())
+        elif maleza == "conyza":
+            await update.message.reply_text(poe_trigo_conyza())
+        else:
+            # No detectó maleza — mostrar selector completo
+            await update.message.reply_text(
+                "Trigo / Cebada POE ✅\n\n¿Qué maleza querés controlar?",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="poe_trigo_maleza_raigras")],
+                    [InlineKeyboardButton("🌼 Crucíferas", callback_data="poe_trigo_maleza_cruciferas")],
+                    [InlineKeyboardButton("🌱 Conyza / Rama Negra", callback_data="poe_trigo_maleza_conyza")],
+                    [InlineKeyboardButton("❓ Otra maleza", callback_data="poe_trigo_maleza_otra")],
+                ])
             )
         return
 
