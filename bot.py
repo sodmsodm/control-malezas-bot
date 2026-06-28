@@ -5112,6 +5112,17 @@ async def handle_callback(update, context):
                     "Antes de responder, repasemos algunos parámetros 🌽\n\n¿Qué biotipo de maíz tenés?",
                     reply_markup=kb_poe_maiz_biotipo()
                 )
+            elif cultivo in ("trigo", "cebada"):
+                context.user_data.clear()
+                await query.message.reply_text(
+                    "Trigo / Cebada POE ✅\n\n¿Qué maleza querés controlar?",
+                    reply_markup=InlineKeyboardMarkup([
+                        [InlineKeyboardButton("🌿 Raigrás / Lolium", callback_data="poe_trigo_maleza_raigras")],
+                        [InlineKeyboardButton("🌼 Crucíferas", callback_data="poe_trigo_maleza_cruciferas")],
+                        [InlineKeyboardButton("🌱 Conyza / Rama Negra", callback_data="poe_trigo_maleza_conyza")],
+                        [InlineKeyboardButton("❓ Otra maleza", callback_data="poe_trigo_maleza_otra")],
+                    ])
+                )
             else:
                 if cultivo and maleza:
                     texto_api = f"herbicidas para {maleza} en {cultivo} en POE post-emergencia"
